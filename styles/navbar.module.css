@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+.sticky {
+  background-color: #27323a !important;
+  transition: all 0.3s ease-out 0s !important;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  color: white;
+}
+
+.navbar {
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 0.3rem 2rem !important;
+  font-size: 1.2rem !important;
+  min-height: 3em;
+  color: white;
+}
+.navbar_nav {
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+}
+.navbar-brand {
+  color: rgb(250, 250, 250) !important;
+}
+
+.navbar_nav .nav_link {
+  color: white !important;
+  padding-right: 0.7rem !important;
+  padding-left: 0.7rem !important;
+}
+
+.nav_item {
+  position: relative;
+  margin-left: 2em;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer !important;
+  z-index: 5;
+}
+
+.navbar_nav .nav_item a:hover::after {
+  width: 100%;
+}
