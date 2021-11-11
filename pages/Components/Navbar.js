@@ -32,7 +32,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="#home">
           <Nav.Item >
-            <img width="60" src="./favicon.ico" alt="logo"></img>
+            <img width="50" src="./favicon.ico" alt="logo"></img>
           </Nav.Item>
         </Navbar.Brand>
         <Navbar >
