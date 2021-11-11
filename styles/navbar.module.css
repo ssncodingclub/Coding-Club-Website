@@ -11,6 +11,7 @@
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
+  margin-top: 15px;
   font-size: 1.2rem !important;
   min-height: 3em;
   color: white;
