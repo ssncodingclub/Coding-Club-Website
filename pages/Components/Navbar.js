@@ -32,8 +32,6 @@ function NavBar() {
       expand="md"
       className={styles.navbar + " " + (navColor ? styles.sticky : "")}
     >
-
-
       <Container>
         <Navbar.Brand href="#home">
           <Nav.Item >
@@ -77,12 +75,6 @@ function NavBar() {
                 <li ><a href="/about">About</a></li>
               </ul>
             </div>
-            {/* {
-              expand == false ?
-                <MdMenu onClick={() => { openMobileNav(); }} className={styles.mobile_nav_menu} color="white" size={40}></MdMenu>
-                :
-                <MdClose onClick={() => { setExpanded(false) }} className={styles.mobile_nav_menu} color="white" size={40}></MdClose>
-            } */}
           </Nav>
         </Navbar>
       </Container>
