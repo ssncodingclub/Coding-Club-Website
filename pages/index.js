@@ -20,7 +20,21 @@ export default function Home() {
           <BsChevronDoubleDown color="white" size="45"></BsChevronDoubleDown>
         </div>
       </main>
-
+      <div >
+        {/* events,upskill,community section */}
+      </div>
+      <div >
+        {/* thriving community */}
+      </div>
+      <div >
+        {/* lots of domains */}
+      </div>
+      <div >
+        {/* open source */}
+      </div>
+      <div >
+        {/* non stop events+footer */}
+      </div>
     </div>
   )
 }
