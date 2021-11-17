@@ -44,10 +44,10 @@ export default function Home() {
           </Col>
         </Row>
         <Row>
-          <Col sm={{ span: 12, order: 2 }} md={{ span: 7, order: 1 }} className={styles.domainInfoContainer}>
+          <Col xs={{ order: "last" }} sm={{ order: "last" }} md={{ span: 7, order: "first" }} className={styles.domainInfoContainer}>
             <p className={styles.domainInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. </p>
           </Col>
-          <Col sm={{ span: 12, order: 1 }} md={{ span: 5, order: 2 }} className={styles.domainImgContainer}>
+          <Col xs={{ order: "first" }} sm={{ order: "first" }} md={{ span: 5, order: "last" }} className={styles.domainImgContainer}>
             <img src="./HomePage/sd.png" className={styles.domainImages} alt="Title" />
             <h4 className={styles.domainName}>Software Development</h4>
           </Col>
