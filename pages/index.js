@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
+import { Col, Row } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import styles from '../styles/Home.module.css';
 import Navbar from './Components/Navbar';
@@ -26,8 +27,41 @@ export default function Home() {
       <div >
         {/* thriving community */}
       </div>
-      <div >
+      <div className={styles.domainSection}>
         {/* lots of domains */}
+        <Row>
+          <Col sm="12" md="6">
+            <img src="./HomePage/LoD.png" className={styles.domainHeader} alt="Title" />
+          </Col>
+        </Row>
+        <Row className={styles.domainRow}>
+          <Col sm="12" md="5" className={styles.domainImgContainer}>
+            <img src="./HomePage/cp.png" className={styles.domainImages} alt="Title" />
+            <h4 className={styles.domainName}>Competitive Programming</h4>
+          </Col>
+          <Col sm="12" md="7" className={styles.domainInfoContainer}>
+            <p className={styles.domainInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={{ span: 12, order: 2 }} md={{ span: 7, order: 1 }} className={styles.domainInfoContainer}>
+            <p className={styles.domainInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. </p>
+          </Col>
+          <Col sm={{ span: 12, order: 1 }} md={{ span: 5, order: 2 }} className={styles.domainImgContainer}>
+            <img src="./HomePage/sd.png" className={styles.domainImages} alt="Title" />
+            <h4 className={styles.domainName}>Software Development</h4>
+          </Col>
+
+        </Row>
+        <Row className={styles.domainRow}>
+          <Col sm="12" md="5" className={styles.domainImgContainer}>
+            <img src="./HomePage/ml.png" className={styles.domainImages} alt="Title" />
+            <h4 className={styles.domainName}>Machine Learning</h4>
+          </Col>
+          <Col sm="12" md="7" className={styles.domainInfoContainer}>
+            <p className={styles.domainInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. </p>
+          </Col>
+        </Row>
       </div>
       <div >
         {/* open source */}
