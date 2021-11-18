@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React, { useEffect, useState } from "react";
@@ -6,9 +7,12 @@ import Container from "react-bootstrap/Container";
 import styles from '../../styles/navbar.module.css';
 
 function NavBar() {
-  const [expand, updateExpanded] = useState(false);
+  const [expand, setExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
 
+  function openMobileNav() {
+    setExpanded(true);
+  }
   function scrollHandler() {
     if (window.scrollY >= 40) {
       updateNavbar(true);
@@ -24,7 +28,6 @@ function NavBar() {
   });
   return (
     <Navbar
-      expanded={expand}
       fixed="top"
       expand="md"
       className={styles.navbar + " " + (navColor ? styles.sticky : "")}
@@ -32,21 +35,46 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="#home">
           <Nav.Item >
-            <img width="60" src="./favicon.ico" alt="logo"></img>
+            <img width="50" src="./favicon.ico" alt="logo"></img>
           </Nav.Item>
         </Navbar.Brand>
         <Navbar >
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
-            <Link href="/" passHref>
+            <Link href="/" onClick={() => { setExpanded(false) }} passHref>
               <Nav.Item className={styles.nav_item}>
                 Home
               </Nav.Item>
             </Link>
-            <Link href="/about" passHref>
+            <Link href="/about" onClick={() => { setExpanded(false) }} passHref>
               <Nav.Item className={styles.nav_item}>
                 About
               </Nav.Item>
             </Link>
+            <Link href="/about" onClick={() => { setExpanded(false) }} passHref>
+              <Nav.Item className={styles.nav_item}>
+                Meets
+              </Nav.Item>
+            </Link>
+            <Link href="/about" passHref>
+              <Nav.Item className={styles.nav_item}>
+                Projects
+              </Nav.Item>
+            </Link>
+            <Link href="/about" onClick={() => { setExpanded(false) }} passHref>
+              <Nav.Item className={styles.nav_item}>
+                Blog
+              </Nav.Item>
+            </Link>
+            <div className={styles.menuToggle}>
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul className={styles.mobilenavul + " " + styles.menu} >
+                <li><a href="/">Home</a></li>
+                <li ><a href="/about">About</a></li>
+              </ul>
+            </div>
           </Nav>
         </Navbar>
       </Container>

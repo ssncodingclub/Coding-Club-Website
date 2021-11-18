@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 
 .sticky {
-  background-color: #27323a !important;
+  background-color: #070707 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   color: white;
@@ -10,7 +10,7 @@
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 1rem 2rem !important;
   font-size: 1.2rem !important;
   min-height: 3em;
   color: white;
@@ -41,4 +41,112 @@
 
 .navbar_nav .nav_item a:hover::after {
   width: 100%;
+}
+.navbar-brand {
+  color: rgb(250, 250, 250) !important;
+}
+.mobile_nav_menu {
+  display: none;
+}
+
+.mobilenavul {
+  padding: 0;
+  list-style-type: none;
+  opacity: 1;
+  color: white;
+}
+
+.mobilenav {
+  background-color: #1e1e23;
+  height: 100vh;
+}
+
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  top: 10px;
+  left: 25px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.menuToggle input {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.menuToggle span {
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
+}
+
+.menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: white;
+}
+.menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  box-shadow: 0 0 10px #85888c;
+  margin: -40px 0 0 -180px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #030e4d;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu li {
+  padding: 10px 0;
+  transition-delay: 2s;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+@media (max-width: 850px) {
+  .nav_item {
+    display: none;
+  }
+  .menuToggle {
+    display: flex;
+  }
 }
