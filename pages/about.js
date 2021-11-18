@@ -1,20 +1,31 @@
-/* eslint-disable @next/next/no-img-element */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/about.module.css';
 import Navbar from './Components/Navbar';
+import Domain from './Components/Domain';
+import domains from '../data/domains.json';
+
 export default function About() {
+
   return (
     <div className={styles.container}>
       <Head>
         <title>SSN Coding Club</title>
         <meta name="description" content="Official SSN Coding Club Website" />
         <link rel="icon" href="/favicon.ico" />
+        {/* for fontawesome */}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Head>
       <Navbar />
-      <main className={styles.main}>
+      <main>
+        <div>
+          {
+            domains.map((domain, i) => {
+              return <Domain domain={domain} key={i} />
+            })
+          }
+        </div>
       </main>
-
     </div>
   )
 }

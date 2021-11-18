@@ -1,0 +1,110 @@
+[
+  {
+    "title": "The Core Committee",
+    "discord": "@core-committee",
+    "tags": ["admin"],
+    "bgColorStyle": {
+      "background": "linear-gradient(135deg, #1f005c, #35005e, #5f0060, #8f0860, #bc365d, #dd635c, #f28c5f, #fcaa67, #ffb56b)"
+    },
+    "members": [
+      {
+        "name": "Vrishin Vigneshwar",
+        "position": "President",
+        "alt": "vrishin",
+        "profilePic": "/profiles/vrishin.jpeg",
+        "socials": {
+          "github": "https://github.com/vrishinvv/",
+          "linkedin": "https://www.linkedin.com/in/vrishinvv?originalSubdomain=in",
+          "instagram": "https://www.instagram.com/vrishinvv/"
+        }
+      },
+      {
+        "name": "Vrishin Vigneshwar",
+        "position": "President",
+        "alt": "vrishin",
+        "profilePic": "/profiles/vrishin.jpeg",
+        "socials": {
+          "github": "https://github.com/vrishinvv/",
+          "linkedin": "https://www.linkedin.com/in/vrishinvv?originalSubdomain=in",
+          "instagram": "https://www.instagram.com/vrishinvv/"
+        }
+      },
+      {
+        "name": "Vrishin Vigneshwar",
+        "position": "President",
+        "alt": "vrishin",
+        "profilePic": "/profiles/vrishin.jpeg",
+        "socials": {
+          "github": "https://github.com/vrishinvv/",
+          "linkedin": "https://www.linkedin.com/in/vrishinvv?originalSubdomain=in",
+          "instagram": "https://www.instagram.com/vrishinvv/"
+        }
+      },
+      {
+        "name": "Vrishin Vigneshwar",
+        "position": "President",
+        "alt": "vrishin",
+        "profilePic": "/profiles/vrishin.jpeg",
+        "socials": {
+          "github": "https://github.com/vrishinvv/",
+          "linkedin": "https://www.linkedin.com/in/vrishinvv?originalSubdomain=in",
+          "instagram": "https://www.instagram.com/vrishinvv/"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Software Development Team",
+    "discord": "@software-development",
+    "tags": ["web-dev", "app-dev"],
+    "bgColorStyle": {
+      "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
+    },
+    "members": [
+      {
+        "name": "Sneha Sriram",
+        "position": "Head",
+        "alt": "sneha",
+        "profilePic": "/profiles/sneha.jpeg",
+        "socials": {
+          "github": "https://github.com/snehask7/",
+          "linkedin": "https://www.linkedin.com/in/sneha-sriram-",
+          "instagram": "https://www.instagram.com/sneha_sk_/"
+        }
+      },
+      {
+        "name": "Sneha Sriram",
+        "position": "Head",
+        "alt": "sneha",
+        "profilePic": "/profiles/sneha.jpeg",
+        "socials": {
+          "github": "https://github.com/snehask7/",
+          "linkedin": "https://www.linkedin.com/in/sneha-sriram-",
+          "instagram": "https://www.instagram.com/sneha_sk_/"
+        }
+      },
+      {
+        "name": "Sneha Sriram",
+        "position": "Head",
+        "alt": "sneha",
+        "profilePic": "/profiles/sneha.jpeg",
+        "socials": {
+          "github": "https://github.com/snehask7/",
+          "linkedin": "https://www.linkedin.com/in/sneha-sriram-",
+          "instagram": "https://www.instagram.com/sneha_sk_/"
+        }
+      },
+      {
+        "name": "Sneha Sriram",
+        "position": "Head",
+        "alt": "sneha",
+        "profilePic": "/profiles/sneha.jpeg",
+        "socials": {
+          "github": "https://github.com/snehask7/",
+          "linkedin": "https://www.linkedin.com/in/sneha-sriram-",
+          "instagram": "https://www.instagram.com/sneha_sk_/"
+        }
+      }
+    ]
+  }
+]

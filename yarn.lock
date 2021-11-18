@@ -144,26 +144,6 @@
   "resolved" "https://registry.npmjs.org/@next/react-refresh-utils/-/react-refresh-utils-12.0.1.tgz"
   "version" "12.0.1"
 
-"@next/swc-android-arm64@12.0.1":
-
-"@next/swc-darwin-arm64@12.0.1":
-
-"@next/swc-darwin-x64@12.0.1":
-
-"@next/swc-linux-arm-gnueabihf@12.0.1":
-
-"@next/swc-linux-arm64-gnu@12.0.1":
-
-"@next/swc-linux-arm64-musl@12.0.1":
-
-"@next/swc-linux-x64-gnu@12.0.1":
-
-"@next/swc-linux-x64-musl@12.0.1":
-
-"@next/swc-win32-arm64-msvc@12.0.1":
-
-"@next/swc-win32-ia32-msvc@12.0.1":
-
 "@next/swc-win32-x64-msvc@12.0.1":
   "integrity" "sha512-li3CCXpdMX0+wJlQpy0xZmHCgHMebaBf5X2BIAJrv8cQXYc6dejeojttXLFNCF0dNAo3UzlbP6h7N+8p6Wbakw=="
   "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.0.1.tgz"
@@ -1353,8 +1333,6 @@
   "integrity" "sha1-FQStJSMVjKpA20onh8sBQRmU6k8="
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
-
-"fsevents@~2.3.1":
 
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
