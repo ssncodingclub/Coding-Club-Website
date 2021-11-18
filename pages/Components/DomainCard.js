@@ -1,7 +1,7 @@
 import React from "react";
 import styles from '../../styles/Card.module.css';
 
-const DomainCard = ({title, discord, tags, style}) => {
+const DomainCard = ({title="", discord="", tags=[], style=""}) => {
 
   return (
     <>

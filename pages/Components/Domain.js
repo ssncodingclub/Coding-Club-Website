@@ -3,7 +3,15 @@ import styles from '../../styles/Card.module.css';
 import DomainCard from "./DomainCard";
 import ProfileCard from "./ProfileCard";
 
-const Domain = ({ domain }) => {
+const Domain = ({ domain = {
+    title: "",
+    discord: "",
+    tags: [],
+    bgColorStyle: {
+      background: "linear-gradient(135deg, #1f005c, #35005e, #5f0060, #8f0860, #bc365d, #dd635c, #f28c5f, #fcaa67, #ffb56b)"
+    },
+    members: []
+  }, }) => {
 
   return (
     <div className={styles.container} style={{paddingLeft: "2rem"}}>

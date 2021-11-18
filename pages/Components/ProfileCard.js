@@ -2,7 +2,18 @@ import React from "react";
 import styles from '../../styles/Card.module.css';
 import Image from 'next/image';
 
-const ProfileCard = ({name, position, alt, profilePic, socials, marginFlag=true}) => {
+const ProfileCard = ({
+    name="", 
+    position="", 
+    alt="", 
+    profilePic="", 
+    socials={
+      github: "",
+      linkedin: "",
+      instagram: ""
+    }, 
+    marginFlag=true
+  }) => {
   return (
     <>
       <article className={styles.card} style={{marginLeft: marginFlag ? "-2rem" : "-50px"}}>
