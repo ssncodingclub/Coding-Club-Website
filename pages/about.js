@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar';
 import Domain from './Components/Domain';
 import Department from './Components/Department';
 import domains from '../data/domains.json';
-import Faq from './Components/FAQ'
+import Faq from './Components/Faq'
 import departments from '../data/departments.json';
 import { Container, Row } from 'react-bootstrap';
 
