@@ -1,3 +1,7 @@
+:root {
+  --dept-bg-color:#e1d8ee; /*#0f2027, #A72693, #FFF*/
+}
+
 html,
 body {
   padding: 0;

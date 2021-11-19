@@ -4,9 +4,11 @@ import styles from '../styles/about.module.css';
 import Navbar from './Components/Navbar';
 import Domain from './Components/Domain';
 import Department from './Components/Department';
+import Faq from './Components/Faq';
 import domains from '../data/domains.json';
+import questions from '../data/faq.json';
 import departments from '../data/departments.json';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Accordion } from 'react-bootstrap';
 
 export default function About() {
 
@@ -26,6 +28,7 @@ export default function About() {
           <h1>About Us!</h1>
         </div>
         <div>
+          <h2 className={styles.Subheader}>What we do ? </h2>
           <Container className="mt-10" className={styles.departmentContainer}>
             <Row>
               {
@@ -37,11 +40,32 @@ export default function About() {
           </Container>
         </div>
         <div>
+          <h2 className={styles.Subheader}>What are we ? </h2>
           {
             domains.map((domain, i) => {
               return <Domain domain={domain} key={i} />
             })
           }
+        </div>
+        {/* <div>
+          <h2 className={styles.Subheader}>Wanna join us ? </h2>
+          { FORM LINK HERE IG, SOME FORM OF FORM }
+        </div> */}
+        <div>
+        <h2 className={styles.Subheader}>Frequently asked Questions</h2>
+            
+          <Container>
+            <Accordion defaultActiveKey='0' flush>
+            {
+              questions.map((question, i) => {
+                const key_val = {
+                  key: "" + i
+                };
+                return <Faq questionnaire={{...key_val , ...question}} key={i} />
+              })
+            }
+            </Accordion>
+          </Container>
         </div>
       </main>
     </div>

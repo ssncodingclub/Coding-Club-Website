@@ -11,7 +11,7 @@ const Department = ({ department = {
     alt: ""
   }, }) => {
     return (
-        <Col md="3" lg="3" sm="3">
+        <Col md="6" lg="3" sm="6">
             <div className={styles.main}>
                 <div className={styles.service}>
                     <div className={styles.service_logo}>
