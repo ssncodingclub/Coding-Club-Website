@@ -4,11 +4,10 @@ import styles from '../styles/about.module.css';
 import Navbar from './Components/Navbar';
 import Domain from './Components/Domain';
 import Department from './Components/Department';
-import Faq from './Components/Faq';
 import domains from '../data/domains.json';
-import questions from '../data/faq.json';
+import Faq from './Components/FAQ'
 import departments from '../data/departments.json';
-import { Container, Row, Accordion } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 export default function About() {
 
@@ -47,24 +46,10 @@ export default function About() {
             })
           }
         </div>
-        {/* <div>
-          <h2 className={styles.Subheader}>Wanna join us ? </h2>
-          { FORM LINK HERE IG, SOME FORM OF FORM }
-        </div> */}
         <div>
-        <h2 className={styles.Subheader}>Frequently asked Questions</h2>
-            
+          <h2 className={styles.Subheader}>Frequently asked Questions</h2>
           <Container>
-            <Accordion defaultActiveKey='0' flush>
-            {
-              questions.map((question, i) => {
-                const key_val = {
-                  key: "" + i
-                };
-                return <Faq questionnaire={{...key_val , ...question}} key={i} />
-              })
-            }
-            </Accordion>
+            <Faq />
           </Container>
         </div>
       </main>
