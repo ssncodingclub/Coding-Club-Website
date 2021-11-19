@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
-
 .department-container{
     margin-top: 25px;
 }
@@ -28,6 +27,9 @@
     top: 53%;
     transform: translate(-50%, -50%);
      */
+     display: grid;
+     place-items: center;
+ 
     z-index: 2;
     box-shadow: 0 0 20px -15px #030380;
     transition: transform 0.8s;
@@ -52,12 +54,23 @@
 }
 
 .service h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19.5px;
     height: auto;
     width: 80%;
     background: #FFF;
     margin: 50px auto;
     padding: 5px;
     position: relative;
+}
+
+.service p{
+    position: absolute;
+    font-family: 'Overpass', monospace;
+    top: 100px; 
+    height: 80%;
+    width: 90%;
+    opacity: 0;
 }
 
 .service h4::after{
@@ -84,4 +97,26 @@
 
 .service:hover img{
     transform: rotate(360deg);
+}
+
+.service:hover h4{
+    animation: fadeOut 0.5s linear forwards;
+}
+
+.service:hover p{
+    animation: fadeIn 0.5s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    45% { opacity:0.3; }
+    66% { opacity:0.6; }
+    100% { opacity:1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity:1; }
+    45% { opacity:0.6; }
+    66% { opacity:0.3; }
+    100% { opacity:0; }
 }

@@ -11,15 +11,15 @@ const Department = ({ department = {
     alt: ""
   }, }) => {
     return (
-        <Col md="4" lg="4">
+        <Col md="3" lg="3" sm="3">
             <div className={styles.main}>
                 <div className={styles.service}>
                     <div className={styles.service_logo}>
                         {/* <Image src={department.icon} alt={department.alt}  /> */}
                         <img src={department.icon} alt={department.alt} />
                     </div>
-                    <h4>{department.name}</h4>
-                    <p>{department.description}</p>
+                        <h4>{department.name}</h4>
+                        <p>{department.description}</p>
                 </div>
             </div>
         </Col>

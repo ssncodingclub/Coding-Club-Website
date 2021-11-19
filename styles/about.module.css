@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Overpass:wght@300&family=Poppins:wght@700&display=swap');
+
+.Header {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Header h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    color: gradient(linear, left top, right top, from(#f8f8f8), to(#f8f8f8));
+}
+
 .container {
     display: flex;
     margin-top: 80px;
@@ -7,4 +21,10 @@
 
 .departmentContainer{
     margin-top: 25px;
+}
+
+@media (max-width: 426px){
+    .Header h1{
+        font-size: 40px;
+    }
 }

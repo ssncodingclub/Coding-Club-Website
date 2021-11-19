@@ -22,6 +22,9 @@ export default function About() {
       <Navbar />
 
       <main>
+        <div className={styles.Header}>
+          <h1>About Us!</h1>
+        </div>
         <div>
           <Container className="mt-10" className={styles.departmentContainer}>
             <Row>
