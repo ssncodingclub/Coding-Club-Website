@@ -4,3 +4,7 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.departmentContainer{
+    margin-top: 25px;
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+
+.department-container{
+    margin-top: 25px;
+}
+
+.main{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+
+    display: grid;
+    place-items: center;
+}
+
+.service {
+    width: 250px;
+    height: 300px;
+    background: #FFF;
+    padding: 2rem;
+    border-radius: 10px;
+    position: absolute;
+    /* bottom: auto; */
+    /* left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+     */
+    z-index: 2;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform 0.8s;
+
+}
+
+.service_logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #FFF;
+    /* border: 18px solid var(--bs-body-color1);  */
+    border: 18px solid #070707;
+    /* Change to page bg color */
+}
+
+.service_logo img{
+    width: 50px;
+    margin-top: 20px; 
+    transition: transform 1.0s;
+}
+
+.service h4{
+    height: auto;
+    width: 80%;
+    background: #FFF;
+    margin: 50px auto;
+    padding: 5px;
+    position: relative;
+}
+
+.service h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right , #FFF, #007BFF);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.service h4::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right ,  #007BFF, #FFF);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.service:hover img{
+    transform: rotate(360deg);
+}
