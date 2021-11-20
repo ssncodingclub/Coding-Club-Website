@@ -10,7 +10,7 @@ const DomainCard = ({title="", discord="", tags=[], style=""}) => {
           <p>-------</p>
           <h2 style={{fontSize: "30px"}}>
             {
-              title.split(' ').map((word, i) => {
+              title.split('\n').map((word, i) => {
                 return (<>
                   {word}<br key={i}/>
                 </>);

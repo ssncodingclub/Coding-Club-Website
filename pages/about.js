@@ -27,7 +27,7 @@ export default function About() {
           <h1>About Us!</h1>
         </div>
         <div>
-          <h2 className={styles.Subheader}>What we do ? </h2>
+          <h2 className={styles.Subheader}>What do we do? </h2>
           <Container className="mt-10" className={styles.departmentContainer}>
             <Row>
               {
@@ -39,7 +39,7 @@ export default function About() {
           </Container>
         </div>
         <div>
-          <h2 className={styles.Subheader}>What are we ? </h2>
+          <h2 className={styles.Subheader}>Who are we? </h2>
           {
             domains.map((domain, i) => {
               return <Domain domain={domain} key={i} />
