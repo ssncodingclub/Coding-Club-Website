@@ -19,36 +19,58 @@
         }
       },
       {
-        "name": "Vrishin Vigneshwar",
-        "position": "President",
-        "alt": "vrishin",
-        "profilePic": "/profiles/vrishin.jpeg",
+        "name": "Venkataraman Nagarajan",
+        "position": "Vice President",
+        "alt": "venkat",
+        "profilePic": "/profiles/venkat.jpeg",
         "socials": {
-          "github": "https://github.com/vrishinvv/",
-          "linkedin": "https://www.linkedin.com/in/vrishinvv?originalSubdomain=in",
-          "instagram": "https://www.instagram.com/vrishinvv/"
+          "github": "https://github.com/Venkataraman-Nagarajan",
+          "linkedin": "https://www.linkedin.com/in/venkataraman-nagarajan/",
+          "instagram": null
         }
       },
       {
-        "name": "Vrishin Vigneshwar",
-        "position": "President",
-        "alt": "vrishin",
-        "profilePic": "/profiles/vrishin.jpeg",
+        "name": "Sakthi Sairaj",
+        "position": "Secretary",
+        "alt": "sakthi",
+        "profilePic": "/profiles/sakthi.jpeg",
         "socials": {
-          "github": "https://github.com/vrishinvv/",
-          "linkedin": "https://www.linkedin.com/in/vrishinvv?originalSubdomain=in",
-          "instagram": "https://www.instagram.com/vrishinvv/"
+          "github": "https://github.com/Sakthi-Sairaj",
+          "linkedin": "https://www.linkedin.com/in/sakthi-sairaj/",
+          "instagram": null
         }
       },
       {
-        "name": "Vrishin Vigneshwar",
-        "position": "President",
-        "alt": "vrishin",
-        "profilePic": "/profiles/vrishin.jpeg",
+        "name": "Vanathi Ganeshraj",
+        "position": "Joint Secretary",
+        "alt": "vanathi",
+        "profilePic": "/profiles/vanathi.jpeg",
         "socials": {
-          "github": "https://github.com/vrishinvv/",
-          "linkedin": "https://www.linkedin.com/in/vrishinvv?originalSubdomain=in",
-          "instagram": "https://www.instagram.com/vrishinvv/"
+          "github": "https://github.com/vanathi-g/",
+          "linkedin": "https://www.linkedin.com/in/vanathi-g/",
+          "instagram": "https://www.instagram.com/vanathi_21/"
+        }
+      },
+      {
+        "name": "Aditya Krishna",
+        "position": "Event Head",
+        "alt": "aditya",
+        "profilePic": "/profiles/adityakp.jpeg",
+        "socials": {
+          "github": "https://github.com/adityakp15/",
+          "linkedin": "https://www.linkedin.com/in/aditya-krishna-p-1507411a2/",
+          "instagram": "https://www.instagram.com/adityakp15/"
+        }
+      },
+      {
+        "name": "Shashank Ravishankar",
+        "position": "Tech Lead",
+        "alt": "shashank",
+        "profilePic": "/profiles/shashank.jpeg",
+        "socials": {
+          "github": "https://github.com/Shashank-77/",
+          "linkedin": "https://www.linkedin.com/in/shashank-ravishankar/",
+          "instagram": "https://www.instagram.com/shashravi2k/"
         }
       }
     ]
@@ -73,36 +95,178 @@
         }
       },
       {
-        "name": "Sneha Sriram",
-        "position": "Head",
-        "alt": "sneha",
-        "profilePic": "/profiles/sneha.jpeg",
+        "name": "Dhiganth Rao",
+        "position": "Deputy Head",
+        "alt": "dhiganth",
+        "profilePic": "/profiles/dhiganth.jpeg",
         "socials": {
-          "github": "https://github.com/snehask7/",
-          "linkedin": "https://www.linkedin.com/in/sneha-sriram-",
-          "instagram": "https://www.instagram.com/sneha_sk_/"
+          "github": "https://github.com/dhiganthrao/",
+          "linkedin": "https://www.linkedin.com/in/dhiganthrao/",
+          "instagram": "https://www.instagram.com/dhiganthrao/"
         }
       },
       {
-        "name": "Sneha Sriram",
-        "position": "Head",
-        "alt": "sneha",
-        "profilePic": "/profiles/sneha.jpeg",
+        "name": "Shashank Panda",
+        "position": "Member",
+        "alt": "shashankpanda",
+        "profilePic": "/profiles/shashankpanda.jpeg",
         "socials": {
-          "github": "https://github.com/snehask7/",
-          "linkedin": "https://www.linkedin.com/in/sneha-sriram-",
-          "instagram": "https://www.instagram.com/sneha_sk_/"
+          "github": "https://github.com/shashankp4nda/",
+          "linkedin": "https://www.linkedin.com/in/shashank-panda/",
+          "instagram": "https://www.instagram.com/shashankpanda/"
         }
       },
       {
-        "name": "Sneha Sriram",
-        "position": "Head",
-        "alt": "sneha",
-        "profilePic": "/profiles/sneha.jpeg",
+        "name": "Nithin Balaji",
+        "position": "Member",
+        "alt": "nithin",
+        "profilePic": "/profiles/nithin.jpeg",
         "socials": {
-          "github": "https://github.com/snehask7/",
-          "linkedin": "https://www.linkedin.com/in/sneha-sriram-",
-          "instagram": "https://www.instagram.com/sneha_sk_/"
+          "github": "https://github.com/thenithinbalaji/",
+          "linkedin": "https://www.linkedin.com/in/thenithinbalaji/",
+          "instagram": "https://www.instagram.com/thenithinbalaji/"
+        }
+      },
+      {
+        "name": "Aditya R",
+        "position": "Member",
+        "alt": "adityar",
+        "profilePic": "/profiles/adityar.jpeg",
+        "socials": {
+          "github": "https://github.com/adityar224/",
+          "linkedin": "https://www.linkedin.com/in/aditya-r-2496941ba/",
+          "instagram": "https://www.instagram.com/aditya.bolt/"
+        }
+      },
+      {
+        "name": "Vignesh Balaji",
+        "position": "Member",
+        "alt": "vignesh",
+        "profilePic": "/profiles/vignesh.jpeg",
+        "socials": {
+          "github": "https://github.com/vigbality/",
+          "linkedin": "https://www.linkedin.com/in/vignesh-balaji-saravanarajan-397713200/",
+          "instagram": "https://www.instagram.com/vigneshbalaji.exe/"
+        }
+      },
+      {
+        "name": "Srinithyee SK",
+        "position": "Member",
+        "alt": "srinithyee",
+        "profilePic": "/profiles/srinithyee.jpeg",
+        "socials": {
+          "github": "https://github.com/Srinithyee/",
+          "linkedin": "https://www.linkedin.com/in/srinithyeesk/",
+          "instagram": null
+        }
+      },
+      {
+        "name": "Lokesh NN",
+        "position": "Member",
+        "alt": "lokesh",
+        "profilePic": "/profiles/lokesh.jpeg",
+        "socials": {
+          "github": "https://github.com/lokeshn011101/",
+          "linkedin": "https://www.linkedin.com/in/lokesh-n-n",
+          "instagram": "https://www.instagram.com/_being_lokesh_/"
+        }
+      },
+      {
+        "name": "Harisaran G",
+        "position": "Member",
+        "alt": "harisaran",
+        "profilePic": "/profiles/harisaran.jpeg",
+        "socials": {
+          "github": "https://github.com/harisarang/",
+          "linkedin": "https://www.linkedin.com/in/harisaran-g/",
+          "instagram": "https://www.instagram.com/harisaran_g/"
+        }
+      },
+      {
+        "name": "Sabesh Bharathi",
+        "position": "Member",
+        "alt": "sabesh",
+        "profilePic": "/profiles/sabesh.jpeg",
+        "socials": {
+          "github": "https://github.com/programVeins/",
+          "linkedin": "https://www.linkedin.com/in/sabeshbharathi/",
+          "instagram": "https://www.instagram.com/kannilingus/"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Machine Learning Team",
+    "discord": "@ml-ai",
+    "tags": ["research", "deep-learning"],
+    "bgColorStyle": {
+      "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
+    },
+    "members": [
+      {
+        "name": "Siddharth Sriraman",
+        "position": "Head",
+        "alt": "siddharth",
+        "profilePic": "/profiles/siddharth.jpeg",
+        "socials": {
+          "github": "https://github.com/sid-sr/",
+          "linkedin": "https://www.linkedin.com/in/siddharth-sriraman",
+          "instagram": "https://www.instagram.com/siddharthsriraman/"
+        }
+      },
+      {
+        "name": "Mahesh Bharadwaj",
+        "position": "Deputy Head",
+        "alt": "mahesh",
+        "profilePic": "/profiles/mahesh.jpeg",
+        "socials": {
+          "github": "https://github.com/MaheshBharadwaj/",
+          "linkedin": "https://www.linkedin.com/in/maheshbharadwaj/",
+          "instagram": "https://www.instagram.com/_mahesh23_/"
+        }
+      },
+      {
+        "name": "Shashanka Venkatesh",
+        "position": "Member",
+        "alt": "shashanka",
+        "profilePic": "/profiles/shashanka.jpeg",
+        "socials": {
+          "github": "https://github.com/ShashankaVenkatesh/",
+          "linkedin": "https://www.linkedin.com/in/shashankavenkatesh/",
+          "instagram": "https://www.instagram.com/shashanka_venkatesh/"
+        }
+      },
+      {
+        "name": "Sachin Krishan",
+        "position": "Member",
+        "alt": "sachin",
+        "profilePic": "/profiles/sachin.jpg",
+        "socials": {
+          "github": "https://github.com/SachinKrishan/",
+          "linkedin": "https://www.linkedin.com/in/sachin-krishan-t-3b1920198/",
+          "instagram": null
+        }
+      },
+      {
+        "name": "Karthik D",
+        "position": "Member",
+        "alt": "karthik",
+        "profilePic": "/profiles/karthik.jpeg",
+        "socials": {
+          "github": "https://github.com/karthik-d/",
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/karthik.desingu/"
+        }
+      },
+      {
+        "name": "Pranith ",
+        "position": "Member",
+        "alt": "shashanka",
+        "profilePic": "/profiles/pranith.jpeg",
+        "socials": {
+          "github": "https://github.com/pran13-git/",
+          "linkedin": "https://www.linkedin.com/in/pranith-%E2%80%8E-6673581b7/",
+          "instagram": "https://www.instagram.com/meepranii/"
         }
       }
     ]
