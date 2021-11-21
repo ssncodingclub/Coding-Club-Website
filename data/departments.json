@@ -19,12 +19,5 @@
         "id": "competitive-programming-team",
         "icon": "/domain-icons/cp.svg",
         "alt": "CP"
-    },
-    {
-        "name": "Design, Social Media & Marketting",
-        "description": "Design & Social Media Team",
-        "id": "design-social-media-team",
-        "icon": "/domain-icons/dsm.svg",
-        "alt": "DSM"
     }
 ]

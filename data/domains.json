@@ -274,7 +274,7 @@
   {
     "title":"Competitive\nProgramming\nTeam",
     "discord": "@CP Team",
-    "tags": ["competitive-programming", "dsa"],
+    "tags": ["algorithms", "dsa"],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },

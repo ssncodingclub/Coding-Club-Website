@@ -12,8 +12,10 @@
 }
 
 .card_list {
+    /* width: 100%; */
     display: flex;
     padding: 3rem;
+    padding-left: 2.5rem;
     overflow-x: scroll;
 }
 

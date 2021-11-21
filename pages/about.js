@@ -23,11 +23,15 @@ export default function About() {
       <Navbar />
 
       <main>
-        <div className={styles.Header}>
-          <h1>About Us!</h1>
+        <div className={styles.header}>
+          <h1>About Us</h1>
+        </div>
+        <div className={styles.subcontainer}>
+          <h2 className={styles.subheader}>What is SSN Coding Club?</h2>
+          <p className={styles.para}>We are a community of coders specialised in domains like competitive coding, machine learning, web and app development etc. We aim to support and nurture future developers and ensure equity in coding!</p>
         </div>
         <div>
-          <h2 className={styles.Subheader}>What do we do? </h2>
+          <h2 className={styles.subheader}>What do we do?</h2>
           <Container className="mt-10" className={styles.departmentContainer}>
             <Row>
               {
@@ -39,16 +43,16 @@ export default function About() {
           </Container>
         </div>
         <div>
-          <h2 className={styles.Subheader}>Who are we? </h2>
+          <h2 className={styles.subheader}>Meet the team!</h2>
           {
             domains.map((domain, i) => {
-              return <Domain domain={domain} key={i} />
+              return <Domain key={i} domain={domain}/>
             })
           }
         </div>
         <div>
-          <h2 className={styles.Subheader}>Frequently asked Questions</h2>
-          <Container>
+          <h2 className={styles.subheader}>Frequently Asked Questions</h2>
+          <Container className={styles.faqContainer}>
             <Faq />
           </Container>
         </div>

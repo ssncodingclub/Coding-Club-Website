@@ -10,20 +10,15 @@ import Typography from '@mui/material/Typography';
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-    backgroundColor: "#E0C6B2", 
-    border: "2px solid #E0C6B2",
-    borderRadius: "10px",
-    '&:not(:last-child)': {
-        borderBottom: 0,
-    },
-    '&:before': {
-        display: 'none',
-    },
+    backgroundColor: "white", 
+    border: "4px solid white",
+    marginBottom: "25px",
+    borderRadius: "8px"
 }));
 
 const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color: '#E0C6B2', fontWeight: "bold" }} />}
+        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color: 'white', fontWeight: "bold" }} />}
         {...props}
     />
 ))(({ theme }) => ({
@@ -42,7 +37,7 @@ const AccordionSummary = styled((props) => (
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     padding: theme.spacing(2),
-    backgroundColor: "#E0C6B2AA",
+    backgroundColor: "white",
     borderRadius: "10px",
 }));
 
@@ -62,10 +57,17 @@ export default function CustomizedAccordions() {
                     };
                     return <Accordion expanded={expanded === key_val.key} onChange={handleChange(key_val.key)}>
                         <AccordionSummary aria-controls={`${key_val.key}d-content`} id={`${key_val.key}d-header`}>
-                            <Typography>{questionnaire.question}</Typography>
+                            <Typography style={{
+                                fontSize: "20px",
+                                fontWeight: "400",
+                                fontFamily: "Poppins, sans-serif"
+                            }}>{questionnaire.question}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography>
+                            <Typography style={{
+                                fontSize: "18px",
+                                fontFamily: "Overpass, sans-serif"
+                            }}>
                                 {questionnaire.answer}
                             </Typography>
                         </AccordionDetails>
