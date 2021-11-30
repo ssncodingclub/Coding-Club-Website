@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Software Development",
+        "description": "Software Development Team",
+        "id": "software-development-team",
+        "icon": "/domain-icons/dev.svg",
+        "alt": "DEV"
+    },
+    {
+        "name": "Machine Learning",
+        "description": "Machine Learning Team",
+        "id": "machine-learning-team",
+        "icon": "/domain-icons/ml.svg",
+        "alt": "ML" 
+    },
+    {
+        "name": "Competitive Programming",
+        "description": "Competitive Programming Team",
+        "id": "competitive-programming-team",
+        "icon": "/domain-icons/cp.svg",
+        "alt": "CP"
+    }
+]
