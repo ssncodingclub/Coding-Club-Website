@@ -1,0 +1,9 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M77.5 40C77.5 60.7107 60.7107 77.5 40 77.5M77.5 40C77.5 19.2893 60.7107 2.5 40 2.5M77.5 40H2.5M40 77.5C19.2893 77.5 2.5 60.7107 2.5 40M40 77.5C40 77.5 56.6667 65 56.6667 40C56.6667 15 40 2.5 40 2.5M40 77.5C40 77.5 23.3333 65 23.3333 40C23.3333 15 40 2.5 40 2.5M2.5 40C2.5 19.2893 19.2893 2.5 40 2.5" stroke="url(#paint0_linear_413_4)" stroke-width="5"/>
+<defs>
+<linearGradient id="paint0_linear_413_4" x1="40" y1="2.5" x2="40" y2="77.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E12FB9"/>
+<stop offset="1" stop-color="#F89A27"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row, Button, Container, Card } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import styles from '../styles/Home.module.css';
 import Navbar from './Components/Navbar';
+import cardDetails from '../data/cardInfo.json';
 export default function Home() {
   return (
     <div className={styles.parallax}>
@@ -129,6 +130,7 @@ export default function Home() {
             </Row>
           </Container>
         </div>
+
       </div>
       <div className={styles.placeholder}></div>
       <footer className={styles.footerContainer}>
