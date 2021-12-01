@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import { Col, Row, Button, Container } from "react-bootstrap";
+import { Col, Row, Button, Container, Card } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import styles from '../styles/Home.module.css';
 import Navbar from './Components/Navbar';
+import cardDetails from '../data/cardInfo.json';
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -22,7 +23,25 @@ export default function Home() {
         </div>
       </main>
       <div >
-        {/* events,upskill,community section */}
+        <Container className={styles.infoContainer}>
+          <Row>
+            {
+              cardDetails.map((cardInfo, i) => {
+                return <Col md="6" sm="12" lg="4" >
+                  <Card className={styles.infoContainerCard}>
+                    <Card.Img variant="top" src={cardInfo.img} />
+                    <Card.Body>
+                      <Card.Title className={styles.infoContainerCardTitle}>{cardInfo.title}</Card.Title>
+                      <Card.Text> {cardInfo.description}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              })
+            }
+
+          </Row>
+        </Container>
       </div>
       <div>
         <div className={styles.thrivingCommunityHeaderContainer}>
@@ -32,7 +51,7 @@ export default function Home() {
           <Button className={styles.joinUsButton}><a href="#" >Join Us</a></Button>
         </div>
         <Container >
-          <img src="./HomePage/discord.png" alt="Discord screenshot" className={styles.discordImage}/>
+          <img src="./HomePage/discord.png" alt="Discord screenshot" className={styles.discordImage} />
         </Container>
       </div>
       <div className={styles.domainSection}>

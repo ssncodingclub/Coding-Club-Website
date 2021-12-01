@@ -189,6 +189,9 @@
     margin-bottom: 3rem;
 }
 
+
+/* Thriving community part */
+
 .thrivingCommunityHeaderContainer {
     width: 75%;
     max-width: 600px;
@@ -241,4 +244,49 @@
     width: 90%;
     margin: 0 auto 10rem auto;
     display: block;
+}
+
+
+/* Informative Cards  */
+
+.infoContainer {
+    width: 80%;
+    margin-bottom: 10rem;
+}
+
+.infoContainerCard {
+    height: 324px;
+    width: 231px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5rem;
+    background: transparent;
+}
+
+.infoContainerCard img {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.infoContainerCardTitle {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 150%;
+    /* or 37px */
+    text-align: center;
+    /* Neutral / White */
+    color: #FFFFFF;
+}
+
+.infoContainerCard p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    /* or 25px */
+    color: #A6A6A6;
 }
