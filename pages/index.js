@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button, Container } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import styles from '../styles/Home.module.css';
 import Navbar from './Components/Navbar';
@@ -24,8 +24,16 @@ export default function Home() {
       <div >
         {/* events,upskill,community section */}
       </div>
-      <div >
-        {/* thriving community */}
+      <div>
+        <div className={styles.thrivingCommunityHeaderContainer}>
+          <img src="./HomePage/TC_1.svg" alt="Title-part-1" />
+          <img src="./HomePage/TC_2.svg" alt="Title-part-2" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo. Vivamus velit dolor, tempor id venenatis id, viverra quis velit. </p>
+          <Button className={styles.joinUsButton}><a href="#" >Join Us</a></Button>
+        </div>
+        <Container >
+          <img src="./HomePage/discord.png" alt="Discord screenshot" className={styles.discordImage}/>
+        </Container>
       </div>
       <div className={styles.domainSection}>
         {/* lots of domains */}
@@ -54,7 +62,8 @@ export default function Home() {
 
         </Row>
         <Row className={styles.domainRow}>
-          <Col sm="12" md="5" className={styles.domainImgContainer}>
+          <Col s
+            m="12" md="5" className={styles.domainImgContainer}>
             <img src="./HomePage/ml.png" className={styles.domainImages} alt="Title" />
             <h4 className={styles.domainName}>Machine Learning</h4>
           </Col>
