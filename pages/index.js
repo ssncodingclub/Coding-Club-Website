@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import { Col, Row, Button, Container, Card } from "react-bootstrap";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import cardDetails from '../data/cardInfo.json';
 import styles from '../styles/Home.module.css';
 import Navbar from './Components/Navbar';
-import cardDetails from '../data/cardInfo.json';
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -91,8 +91,17 @@ export default function Home() {
           </Col>
         </Row>
       </div>
-      <div >
-        {/* open source */}
+      <div className={styles.opensourceSection}>
+        <div className={styles.gradientDiv}>
+          <div className={styles.opensourceDiv}>
+            <h1>Oops! We do</h1><h1>Open Source too</h1>
+            <h6>Lorem ipsum dolor sit amet, <br />consectetur epsit.</h6>
+            <button className={styles.openSourceButton}>Check it out</button>
+            <img src="./HomePage/guy1.png" alt="Title" className={styles.openSourceImg1} />
+            <img src="./HomePage/guy2.png" alt="Title" className={styles.openSourceImg2} />
+
+          </div>
+        </div>
       </div>
       <div >
         {/* non stop events+footer */}
