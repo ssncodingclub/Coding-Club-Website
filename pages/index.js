@@ -6,6 +6,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import cardDetails from '../data/cardInfo.json';
 import styles from '../styles/Home.module.css';
 import Navbar from './Components/Navbar';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,10 +20,10 @@ export default function Home() {
         <div className={styles.headerSection}>
           <img src="./Title.png" className={styles.responsive} alt="Title" />
           <h1 className={styles.h1Text}>More than just a club.</h1>
-          <BsChevronDoubleDown color="white" size="45"></BsChevronDoubleDown>
+          <a href="#info" ><BsChevronDoubleDown color="white" size="45"></BsChevronDoubleDown></a>
         </div>
       </main>
-      <div >
+      <div id="info" >
         <Container className={styles.infoContainer}>
           <Row>
             {
