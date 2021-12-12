@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@400&family=Overpass:wght@300&family=Poppins:wght@600&display=swap");
 
+.parallax {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
+  position: relative;
+  z-index: 10;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #070707;
 }
 
 .main {
@@ -182,6 +190,22 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
+}
+
+.tileSection {
+  position: relative;
+  z-index: 5;
+}
+
+.tileContainer {
+  padding: 0.2rem;
+}
+
+/* placeholder for footer (parallax effect) */
+.placeholder {
+  position: relative;
+  z-index: 1;
+  height: 90vh;
 }
 
 .thrivingCommunityHeaderContainer p {
