@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@400&family=Overpass:wght@300&family=Poppins:wght@600&display=swap");
 
 .parallax {
   margin: 0;
@@ -294,4 +295,163 @@
   line-height: 150%;
   /* or 25px */
   color: #a6a6a6;
+}
+
+.opensourceSection {
+  margin-top: 2rem;
+  text-align: center;
+}
+.gradientDiv {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    112deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(50, 62, 167, 1) 24%,
+    rgba(191, 44, 105, 1) 50%,
+    rgba(253, 29, 29, 1) 77%,
+    rgba(252, 176, 69, 1) 93%
+  );
+  height: 25rem;
+  margin: auto;
+  margin-bottom: 10rem;
+  border-radius: 8rem;
+  width: 80%;
+}
+
+.opensourceDiv {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.opensourceDiv h1 {
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 4rem;
+}
+
+.opensourceDiv h6 {
+  font-family: Rubik;
+  color: white;
+}
+.openSourceButton {
+  background-color: white;
+  border: none;
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 20px;
+  font-family: "Lato", sans-serif;
+  margin-top: 1em;
+}
+
+@media (max-width: 1030px) {
+  .opensourceDiv h1 {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .opensourceDiv h6 {
+    font-family: Rubik;
+    color: white;
+  }
+}
+.openSourceImg1 {
+  position: absolute;
+  width: 30%;
+  margin-left: 40%;
+  margin-top: -10%;
+}
+
+.openSourceImg2 {
+  position: absolute;
+  width: 30%;
+  margin-left: 70%;
+  margin-top: -30%;
+}
+@media (max-width: 1030px) {
+  .openSourceImg1 {
+    width: 40%;
+    margin-left: 20%;
+    margin-top: -10%;
+  }
+
+  .openSourceImg2 {
+    width: 40%;
+    margin-left: 60%;
+    margin-top: -40%;
+  }
+}
+@media (max-width: 765px) {
+  .gradientDiv {
+    height: 18rem;
+    width: 100%;
+  }
+  .openSourceImg1 {
+    width: 40%;
+    margin-left: 15%;
+    margin-top: -10%;
+  }
+
+  .openSourceImg2 {
+    width: 40%;
+    margin-left: 50%;
+    margin-top: -40%;
+  }
+}
+
+@media (max-width: 572px) {
+  .gradientDiv {
+    height: 13rem;
+    border-radius: 5rem;
+  }
+  .opensourceDiv h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .opensourceDiv h6 {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  .openSourceButton {
+    padding: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 20px;
+    font-size: 10px;
+  }
+  .openSourceImg1 {
+    margin-left: 25%;
+    margin-top: -10%;
+  }
+  .openSourceImg2 {
+    margin-left: 60%;
+    margin-top: -40%;
+  }
+}
+
+@media (max-width: 444px) {
+  .gradientDiv {
+    height: 10rem;
+  }
+  .opensourceDiv h1 {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .opensourceDiv h6 {
+    font-size: 0.5rem;
+    font-weight: 100;
+  }
+
+  .openSourceImg1 {
+    margin-left: 20%;
+    margin-top: -5%;
+  }
+  .openSourceImg2 {
+    margin-left: 50%;
+    margin-top: -35%;
+  }
 }
