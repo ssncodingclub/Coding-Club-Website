@@ -215,29 +215,13 @@
   background-color: powderblue;
 }
 
-/* footer */
+/* placeholder for footer (parallax effect) */
 .placeholder {
   position: relative;
   z-index: 1;
   height: 90vh;
 }
 
-.footerContainer {
-  position: fixed;
-  bottom: 0;
-  z-index: 5;
-  height: 90vh;
-  color: white;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100vw;
-}
 .thrivingCommunityHeaderContainer p {
   margin-top: 5rem;
   margin-bottom: 5rem;

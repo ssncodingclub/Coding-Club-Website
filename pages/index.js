@@ -5,6 +5,7 @@ import { Col, Row, Button, Container, Card } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import styles from '../styles/Home.module.css';
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 import cardDetails from '../data/cardInfo.json';
 export default function Home() {
   return (
@@ -133,12 +134,7 @@ export default function Home() {
 
       </div>
       <div className={styles.placeholder}></div>
-      <footer className={styles.footerContainer}>
-        <div className={styles.footer}>
-          <h1>Join us today!</h1>
-          <h2>Lorem Ipsum</h2>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
