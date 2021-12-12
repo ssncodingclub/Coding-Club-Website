@@ -6,6 +6,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import styles from '../styles/Home.module.css';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import Tile from './Components/Tile';
 import cardDetails from '../data/cardInfo.json';
 export default function Home() {
   return (
@@ -73,65 +74,33 @@ export default function Home() {
           <Container fluid>
             <Row className={styles.tileRow}>
               <Col sm="12" md="3" className={styles.tileContainer}>
-                <div className={`${styles.tileContent} ${styles.blueTile}`}>
-                  <h1>Title</h1>
-                  <h2>Subtitle</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo.</p>
-                </div>
+                {/*TODO: Can pass required content for tiles as props */}
+                <Tile tileColor="darkseagreen" />
               </Col>
               <Col sm="12" md="3" className={styles.tileContainer}>
-              <div className={styles.tileContent}>
-                  <h1>Title</h1>
-                  <h2>Subtitle</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo.</p>
-                </div>
+                <Tile tileColor="azure" />
               </Col>
               <Col sm="12" md="3" className={styles.tileContainer}>
-              <div className={styles.tileContent}>
-                  <h1>Title</h1>
-                  <h2>Subtitle</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo.</p>
-                </div>
+              <Tile tileColor="pink" />
               </Col>
               <Col sm="12" md="3" className={styles.tileContainer}>
-              <div className={styles.tileContent}>
-                  <h1>Title</h1>
-                  <h2>Subtitle</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo.</p>
-                </div>
+                <Tile tileColor="lightblue" />
               </Col>
               <Col sm="12" md="3" className={styles.tileContainer}>
-                <div className={`${styles.tileContent} ${styles.blueTile}`}>
-                  <h1>Title</h1>
-                  <h2>Subtitle</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo.</p>
-                </div>
+                <Tile tileColor="azure" />
               </Col>
               <Col sm="12" md="3" className={styles.tileContainer}>
-              <div className={styles.tileContent}>
-                  <h1>Title</h1>
-                  <h2>Subtitle</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo.</p>
-                </div>
+                <Tile tileColor="lightblue" />
               </Col>
               <Col sm="12" md="3" className={styles.tileContainer}>
-              <div className={styles.tileContent}>
-                  <h1>Title</h1>
-                  <h2>Subtitle</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo.</p>
-                </div>
+              <Tile tileColor="darkseagreen" />
               </Col>
               <Col sm="12" md="3" className={styles.tileContainer}>
-              <div className={styles.tileContent}>
-                  <h1>Title</h1>
-                  <h2>Subtitle</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tellus quis lacus laoreet commodo.</p>
-                </div>
+                <Tile tileColor="pink" />
               </Col>
             </Row>
           </Container>
         </div>
-
       </div>
       <div className={styles.placeholder}></div>
       <Footer />

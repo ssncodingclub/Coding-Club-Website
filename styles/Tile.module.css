@@ -1,0 +1,14 @@
+/* tiles in home page */  
+.tileContent {
+    background-color: gray;
+    min-height: 50vh;
+    padding: 2rem;
+}
+
+.tileContent > p {
+    margin-bottom: 0;
+}
+
+.blueTile {
+    background-color: powderblue;
+}
