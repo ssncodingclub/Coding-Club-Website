@@ -1,0 +1,86 @@
+[
+    {
+        "text": "Freshers Induction Meet",
+        "date": "November 13 2021",
+        "category": {
+			"tag": "General",
+			"color": "grey"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "CP Team: Dynamic programming Session",
+        "date": "November 6th 2021",
+        "category": {
+			"tag": "CP",
+			"color": "orangered"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "ML Team: Building an ML Pipeline from Scratch",
+        "date": "October 3rd 2021",
+        "category": {
+			"tag": "AI/ML",
+			"color": "green"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "SD Team: Git for Open Source",
+        "date": "October 2nd 2021",
+        "category": {
+			"tag": "SD",
+			"color": "purple"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "SD Team: Introduction to software Development",
+        "date": "September 26th 2021",
+        "category": {
+			"tag": "SD",
+			"color": "purple"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "ML Team: Introduction to ML, Scope and Roadmap",
+        "date": "September 19th 2021",
+        "category": {
+			"tag": "AI/ML",
+			"color": "green"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "CP Team: Greedy Algorithms",
+        "date": "September 3rd 2021",
+        "category": {
+			"tag": "CP",
+			"color": "orangered"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    }
+]
