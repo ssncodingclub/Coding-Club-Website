@@ -72,7 +72,10 @@ export default function Meets()     {
                 {/* for fontawesome */}
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             </Head>
-            <Navbar />
+            <Navbar />            
+            <div className={styles.header}>
+                    <h1>Meets Timeline</h1>
+            </div> 
             <Dropdown style={{"margin-left": "90%"}}>
                 <Dropdown.Toggle variant="dark" id="dropdown-basic">
                     filters
@@ -85,9 +88,6 @@ export default function Meets()     {
                 </Dropdown.Menu>
             </Dropdown>
             <div className={styles.main}>
-                <div className={styles.header}>
-                    <h1>Meets Timeline</h1>
-                </div> 
                 {Timeline(filter)}
             </div>
         </div>
