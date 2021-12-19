@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import timelineData from '../data/meets.json'
 import styles from "../styles/meets.module.css";
 /* eslint-disable @next/next/no-img-element */
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import { BsChevronDoubleDown } from "react-icons/bs";
-import cardDetails from "../data/cardInfo.json";
+import { Dropdown } from "react-bootstrap";
 import Navbar from "./Components/Navbar";
 
 const TimelineItem = ({ data }) => (
@@ -29,16 +27,42 @@ const TimelineItem = ({ data }) => (
     </div>
 );
 
-const Timeline = () =>
-    timelineData.length > 0 && (
-        <div className={styles.timelineContainer}>
-            {timelineData.map((data) => (
+const Timeline = (filter) =>    {
+    if (filter === "All")   {
+        return ( 
+            <div className={styles.timelineContainer}>
+            {
+                timelineData.map((data) => (
                 <TimelineItem data={data} />
             ))}
         </div>
-    );
+        );
+    }
+    else    {
+        return(
+        <div className={styles.timelineContainer}>
+            {
+                timelineData.filter((data) => data.category.tag == filter).map((result) => (
+                    <TimelineItem data={result} />
+                ))
+            }
+        </div>);
+    }
+}
+
+// const Timeline = () =>
+//     timelineData.length > 0 && (
+//         <div className={styles.timelineContainer}>
+//             {timelineData.map((data) => (
+//                 <TimelineItem data={data}/>
+//             ))}
+//         </div>
+//     );
+
 
 export default function Meets()     {
+    const [filter, setfilter] = useState("All");
+
     return ( 
         <div className={styles.container}>
             <Head>
@@ -49,11 +73,22 @@ export default function Meets()     {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             </Head>
             <Navbar />
+            <Dropdown style={{"margin-left": "90%"}}>
+                <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                    filters
+                </Dropdown.Toggle>
+                <Dropdown.Menu style={{"background-color": "#070707"}}>
+                    <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("All")}>All</button></Dropdown.Item>
+                    <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("CP")}>CP</button></Dropdown.Item>
+                    <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("AI/ML")}>ML/AI</button></Dropdown.Item>
+                    <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("SD")}>SDev</button></Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
             <div className={styles.main}>
                 <div className={styles.header}>
                     <h1>Meets Timeline</h1>
-                </div>
-                <Timeline />
+                </div> 
+                {Timeline(filter)}
             </div>
         </div>
     )

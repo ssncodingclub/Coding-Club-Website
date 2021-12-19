@@ -1,5 +1,41 @@
 [
     {
+        "text": "Upcoming CP session",
+        "date": "January 15th 2021",
+        "category": {
+			"tag": "CP",
+			"color": "orangered"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "Upcoming SD session",
+        "date": "January 6th 2021",
+        "category": {
+			"tag": "SD",
+			"color": "purple"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "Upcoming ML session",
+        "date": "December 25th 2021",
+        "category": {
+			"tag": "AI/ML",
+			"color": "green"
+		},
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
         "text": "Freshers Induction Meet",
         "date": "November 13 2021",
         "category": {
