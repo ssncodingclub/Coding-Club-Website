@@ -60,7 +60,7 @@ function NavBar() {
                 Projects
               </Nav.Item>
             </Link>
-            <Link href="/about" onClick={() => { setExpanded(false) }} passHref>
+            <Link href="/blog" onClick={() => { setExpanded(false) }} passHref>
               <Nav.Item className={styles.nav_item}>
                 Blog
               </Nav.Item>
