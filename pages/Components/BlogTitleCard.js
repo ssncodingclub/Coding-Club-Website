@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const BlogTitleCard = () => {
   return (
-    <div className={styles.blogTitle_element_container}>
-      <div className={styles.blogTitle_image_container}>
-        <img src="./BlogPage/dummyimage.jpg" alt="BlogTitle" className={styles.blogTitle_image} />
+    <div className={styles.blog_title_element_container}>
+      <div className={styles.blog_title_image_container}>
+        <img src="./BlogPage/dummyimage.jpg" alt="BlogTitle" className={styles.blog_title_image} />
       </div>
-      <div className={styles.blogTitle_text_container}>
+      <div className={styles.blog_title_text_container}>
         <div className={styles.post_info}>
           <div className={styles.post_domain}>Software Development</div>
           <div className={styles.info_divider}></div>

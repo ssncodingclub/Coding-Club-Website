@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "./Components/Navbar";
 import styles from "../styles/Blog.module.css";
 import BlogTitleCard from "./Components/BlogTitleCard";
+import BlogCards from "./Components/BlogCards";
 
 export default function Blog() {
   return (
@@ -28,8 +29,13 @@ export default function Blog() {
             {/*Get immersed in knowledge with our blogs!*/}Catchy Text
           </h2>
         </div>
-        <div>
+
+        <div className={styles.blog_container}>
           <BlogTitleCard />
+        </div>
+
+        <div className={styles.blog_container}>
+          <BlogCards />
         </div>
 
         {/* <Footer /> */}
