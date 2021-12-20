@@ -32,9 +32,9 @@
   font-size: 40px;
   font-weight: 600;
   color: #fff;
-  margin-top: 80px;
+  margin-top: 20px;
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 20px;
 }
 
 .subcontainer {
@@ -66,7 +66,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
   font-family: "Lato", sans-serif;
   margin: 0;
 }
@@ -95,7 +94,7 @@
   flex-direction: column;
   position: relative;
   width: 50%;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .timelineContainer::after {

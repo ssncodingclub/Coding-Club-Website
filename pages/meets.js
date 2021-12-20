@@ -88,6 +88,9 @@ export default function Meets()     {
                 </Dropdown.Menu>
             </Dropdown>
             <div className={styles.main}>
+                <div className={styles.subheader}>
+                    <h1>{filter} meets</h1>
+                </div>
                 {Timeline(filter)}
             </div>
         </div>
