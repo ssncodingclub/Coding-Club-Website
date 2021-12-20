@@ -14,7 +14,10 @@ const TimelineItem = ({ data }) => (
                 {data.category.tag}
             </span>
             <time>{data.date}</time>
-            <p>{data.text}</p>
+            <h4 className={styles.meetTitle}>{data.text}</h4>
+            <div className={styles.meetDesc}>
+                {data.description}
+            </div>
             <a
                     href={data.link.url}
                     target="_blank"

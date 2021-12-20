@@ -120,6 +120,19 @@
   width: 50%;
 }
 
+.meetTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  margin-top: 10px;
+}
+
+.meetDesc {
+  margin-bottom: 7.5px;
+  font-size: 11.5px;
+  color: #777;
+}
+
 .timelineItem:nth-child(odd) {
   align-self: flex-end;
   justify-content: flex-start;
