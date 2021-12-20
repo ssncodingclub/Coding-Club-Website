@@ -2,55 +2,61 @@
   {
     "domain": "Domain",
     "publishDate": "December 12, 2021",
-    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nisi.",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odio molestiae mollitia accusamus sed iusto, doloremque tempore amet nihil laborum recusandae deleniti quidem deserunt voluptatibus explicabo rem praesentium repellendus perspiciatis.",
     "authorName": "Name",
     "authorPic": "./BlogPage/profilepic.png",
-    "authorDomain": "Author Domain"
+    "authorDomain": "Author Domain",
+    "postImage": "./BlogPage/dummyimage.jpg"
   },
   {
     "domain": "Domain",
     "publishDate": "December 12, 2021",
-    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nisi.",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odio molestiae mollitia accusamus sed iusto, doloremque tempore amet nihil laborum recusandae deleniti quidem deserunt voluptatibus explicabo rem praesentium repellendus perspiciatis.",
     "authorName": "Name",
     "authorPic": "./BlogPage/profilepic.png",
-    "authorDomain": "Author Domain"
+    "authorDomain": "Author Domain",
+    "postImage": "./BlogPage/dummyimage.jpg"
   },
   {
     "domain": "Domain",
     "publishDate": "December 12, 2021",
-    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nisi.",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odio molestiae mollitia accusamus sed iusto, doloremque tempore amet nihil laborum recusandae deleniti quidem deserunt voluptatibus explicabo rem praesentium repellendus perspiciatis.",
     "authorName": "Name",
     "authorPic": "./BlogPage/profilepic.png",
-    "authorDomain": "Author Domain"
+    "authorDomain": "Author Domain",
+    "postImage": "./BlogPage/dummyimage.jpg"
   },
   {
     "domain": "Domain",
     "publishDate": "December 12, 2021",
-    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nisi.",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odio molestiae mollitia accusamus sed iusto, doloremque tempore amet nihil laborum recusandae deleniti quidem deserunt voluptatibus explicabo rem praesentium repellendus perspiciatis.",
     "authorName": "Name",
     "authorPic": "./BlogPage/profilepic.png",
-    "authorDomain": "Author Domain"
+    "authorDomain": "Author Domain",
+    "postImage": "./BlogPage/dummyimage.jpg"
   },
   {
     "domain": "Domain",
     "publishDate": "December 12, 2021",
-    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nisi.",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odio molestiae mollitia accusamus sed iusto, doloremque tempore amet nihil laborum recusandae deleniti quidem deserunt voluptatibus explicabo rem praesentium repellendus perspiciatis.",
     "authorName": "Name",
     "authorPic": "./BlogPage/profilepic.png",
-    "authorDomain": "Author Domain"
+    "authorDomain": "Author Domain",
+    "postImage": "./BlogPage/dummyimage.jpg"
   },
   {
     "domain": "Domain",
     "publishDate": "December 12, 2021",
-    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nisi.",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odio molestiae mollitia accusamus sed iusto, doloremque tempore amet nihil laborum recusandae deleniti quidem deserunt voluptatibus explicabo rem praesentium repellendus perspiciatis.",
     "authorName": "Name",
     "authorPic": "./BlogPage/profilepic.png",
-    "authorDomain": "Author Domain"
+    "authorDomain": "Author Domain",
+    "postImage": "./BlogPage/dummyimage.jpg"
   }
 ]

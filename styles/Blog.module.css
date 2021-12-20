@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@400&family=Overpass:wght@300&family=Poppins:wght@600&display=swap");
 
-.blog_container {
-  height: fit-content;
+.blog_main_container {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .header {
@@ -91,6 +92,7 @@
 .blog_title_image {
   width: 100%;
   min-height: 480px;
+  max-height: 480px;
   object-fit: cover;
   border-radius: 10px;
 }

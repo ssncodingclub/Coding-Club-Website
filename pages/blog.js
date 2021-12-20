@@ -20,7 +20,7 @@ export default function Blog() {
       </Head>
       <Navbar />
 
-      <main>
+      <main className={styles.blog_main_container}>
         <div className={styles.header}>
           <h1>Blog</h1>
         </div>
