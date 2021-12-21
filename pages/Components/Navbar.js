@@ -50,7 +50,7 @@ function NavBar() {
                 About
               </Nav.Item>
             </Link>
-            <Link href="/about" onClick={() => { setExpanded(false) }} passHref>
+            <Link href="/meets" onClick={() => { setExpanded(false) }} passHref>
               <Nav.Item className={styles.nav_item}>
                 Meets
               </Nav.Item>

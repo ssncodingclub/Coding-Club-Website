@@ -1,0 +1,132 @@
+[
+    {
+        "text": "Upcoming CP session",
+        "date": "January 15th 2021",
+        "category": {
+			"tag": "CP",
+			"color": "orangered"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "meeting link"
+        }
+    },
+    {
+        "text": "Upcoming SD session",
+        "date": "January 6th 2021",
+        "category": {
+			"tag": "SD",
+			"color": "purple"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "meeting link"
+        }
+    },
+    {
+        "text": "Upcoming ML session",
+        "date": "December 25th 2021",
+        "category": {
+			"tag": "AI/ML",
+			"color": "green"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "meeting link"
+        }
+    },
+    {
+        "text": "Freshers Induction Meet",
+        "date": "November 13 2021",
+        "category": {
+			"tag": "General",
+			"color": "grey"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "CP Team: Dynamic programming Session",
+        "date": "November 6th 2021",
+        "category": {
+			"tag": "CP",
+			"color": "orangered"
+		},
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "ML Team: Building an ML Pipeline from Scratch",
+        "date": "October 3rd 2021",
+        "category": {
+			"tag": "AI/ML",
+			"color": "green"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "SD Team: Git for Open Source",
+        "date": "October 2nd 2021",
+        "category": {
+			"tag": "SD",
+			"color": "purple"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "SD Team: Introduction to software Development",
+        "date": "September 26th 2021",
+        "category": {
+			"tag": "SD",
+			"color": "purple"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "ML Team: Introduction to ML, Scope and Roadmap",
+        "date": "September 19th 2021",
+        "category": {
+			"tag": "AI/ML",
+			"color": "green"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    },
+    {
+        "text": "CP Team: Greedy Algorithms",
+        "date": "September 3rd 2021",
+        "category": {
+			"tag": "CP",
+			"color": "orangered"
+		},
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "link": {
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "text": "watch the session recording"
+        }
+    }
+]
