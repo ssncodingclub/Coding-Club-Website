@@ -55,7 +55,7 @@ function NavBar() {
                 Meets
               </Nav.Item>
             </Link>
-            <Link href="/about" passHref>
+            <Link href="/projects" passHref>
               <Nav.Item className={styles.nav_item}>
                 Projects
               </Nav.Item>
