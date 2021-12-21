@@ -74,6 +74,10 @@
   text-align: center;
 }
 
+.filterDropdown {
+  margin-left: 90%;
+}
+
 .filterButton {
   width: 100%;
   background: none;
@@ -270,5 +274,29 @@
 
   .timelineItemContent time {
     margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .filterDropdown {
+    margin: 0;
+    align-self: center;
+  }
+  .main {
+    width: 90%;
+    align-self: center;
+  }
+  .timelineContainer {
+    width: 100%;
+  }
+  .timelineItem {
+    max-width: 307px;
+    min-width: 178px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .timelineContainer::after {
+    visibility: hidden;
   }
 }

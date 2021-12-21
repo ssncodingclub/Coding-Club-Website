@@ -79,7 +79,7 @@ export default function Meets()     {
             <div className={styles.header}>
                     <h1>Meets Timeline</h1>
             </div> 
-            <Dropdown style={{"margin-left": "90%"}}>
+            <Dropdown className={styles.filterDropdown}>
                 <Dropdown.Toggle variant="dark" id="dropdown-basic">
                     filters
                 </Dropdown.Toggle>
