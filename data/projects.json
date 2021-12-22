@@ -7,15 +7,18 @@
       "contributors": [
         {
           "name": "contributor1",
-          "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
+          "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+          "role": "in-charge"
         },
         {
           "name": "contributor2",
-          "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
+          "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+          "role": "deputy in-charge"
         },
         {
           "name": "contributor3",
-          "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
+          "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+          "role": "front-end"
         }
       ]
     },
@@ -25,18 +28,21 @@
         "domain": "Software Development",
         "projectImage": "./Projects/dummyimage.jpeg",
         "contributors": [
-          {
-            "name": "contributor1",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor2",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor3",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          }
+            {
+                "name": "contributor1",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "in-charge"
+              },
+              {
+                "name": "contributor2",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "deputy in-charge"
+              },
+              {
+                "name": "contributor3",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "front-end"
+              }
         ]
       },
       {
@@ -45,18 +51,21 @@
         "domain": "Software Development",
         "projectImage": "./Projects/dummyimage.jpeg",
         "contributors": [
-          {
-            "name": "contributor1",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor2",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor3",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          }
+            {
+                "name": "contributor1",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "in-charge"
+              },
+              {
+                "name": "contributor2",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "deputy in-charge"
+              },
+              {
+                "name": "contributor3",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "front-end"
+              }
         ]
       },
       {
@@ -65,18 +74,21 @@
         "domain": "Software Development",
         "projectImage": "./Projects/dummyimage.jpeg",
         "contributors": [
-          {
-            "name": "contributor1",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor2",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor3",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          }
+            {
+                "name": "contributor1",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "in-charge"
+              },
+              {
+                "name": "contributor2",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "deputy in-charge"
+              },
+              {
+                "name": "contributor3",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "front-end"
+              }
         ]
       },
       {
@@ -85,18 +97,21 @@
         "domain": "Software Development",
         "projectImage": "./Projects/dummyimage.jpeg",
         "contributors": [
-          {
-            "name": "contributor1",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor2",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor3",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          }
+            {
+                "name": "contributor1",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "in-charge"
+              },
+              {
+                "name": "contributor2",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "deputy in-charge"
+              },
+              {
+                "name": "contributor3",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "front-end"
+              }
         ]
       },
       {
@@ -105,18 +120,21 @@
         "domain": "Software Development",
         "projectImage": "./Projects/dummyimage.jpeg",
         "contributors": [
-          {
-            "name": "contributor1",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor2",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          },
-          {
-            "name": "contributor3",
-            "picture": "https://avatars.githubusercontent.com/u/33625524?v=4"
-          }
+            {
+                "name": "contributor1",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "in-charge"
+              },
+              {
+                "name": "contributor2",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "deputy in-charge"
+              },
+              {
+                "name": "contributor3",
+                "picture": "https://avatars.githubusercontent.com/u/33625524?v=4",
+                "role": "front-end"
+              }
         ]
       }
   ]

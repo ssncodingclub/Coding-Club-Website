@@ -156,8 +156,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #494949 74%);
+  background-color: inherit;
+  /* background-image: linear-gradient(315deg, #000000 0%, #494949 74%); */
   height: 600px;
   width: 60%;
   margin: 5%;
@@ -252,4 +252,82 @@
 
 .ExpandedCard p::-webkit-scrollbar-track {
   background: inherit;
+}
+
+.ContributorList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  max-width: 600px;
+  overflow-y: scroll;
+}
+
+.ContributorList::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.ContributorList::-webkit-scrollbar-thumb {
+  background: inherit;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ContributorList::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+.contributorItem {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  padding: 20px;
+}
+
+.contributorItem:hover {
+  background-color: #494949;
+}
+
+.contributorItem img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.contributorInfo {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.ContributorList h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: white;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.contributorInfo h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.contributorInfo p {
+  display: flex;
+  align-self: flex-end;
+  font-size: 10px;
+  color: #777;
+}
+
+.social_icon {
+  text-decoration: none;
+  color: #dcdcdc;
+  margin-left: 20px;
+  font-size: 25px;
+  align-self: center;
 }

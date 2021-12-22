@@ -32,11 +32,29 @@ const ExpandedCard = () => {
   );
 }
 
-// const ContributorList = () =>  {
-//   return (
-
-//   );
-// }
+const ContributorList = (contributors) =>  {
+  return (
+    <div className={styles.ContributorList}>
+      <h3>Contributors to this project</h3>
+        {
+          contributors.map((contributor) => (
+            <div className={styles.contributorItem}>
+              <img src={contributor.picture} />
+              <div className={styles.contributorInfo}>
+                <h4>{contributor.name}</h4>
+                <p>{contributor.role}</p>
+              </div>
+              <a 
+                href="https://github.com/shashankp4nda" 
+                className={`fa fa-github ${styles.social_icon}`}
+                target="_blank" 
+                rel="noreferrer" ></a>
+            </div>
+          ))
+        }
+    </div>
+  );
+}
 
 const ProjectCard = ({ name, techStack, domain, projectImage, id }) => {
   const classNamePrefix = "projectcard_item_",
@@ -74,7 +92,7 @@ const Projects = () => {
         {/* for fontawesome */}
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
       <Navbar />
@@ -105,6 +123,7 @@ const Projects = () => {
 
           <div className={styles.right_pane}>
             {ExpandedCard()}
+            {ContributorList(projects[0].contributors)}
           </div>
         </div>
 
