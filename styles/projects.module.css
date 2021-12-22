@@ -71,8 +71,6 @@
   grid-column-gap: 2.5rem;
   grid-row-gap: 2.5rem;
   flex: 1;
-  height: 600px;
-  overflow-y: scroll;
   padding-right: 20px;
 }
 
@@ -98,6 +96,9 @@
   align-items: center;
   display: flex;
   flex-direction: row;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 100px;
 }
 
 .project_card > .projects_card_item_image > img {
