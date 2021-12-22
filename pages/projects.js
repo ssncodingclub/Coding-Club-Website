@@ -3,6 +3,8 @@ import styles from "../styles/projects.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import Navbar from "./Components/Navbar";
+import projects from "../data/projects.json"
+
 
 const ExpandedCard = () => {
   return (
@@ -30,6 +32,11 @@ const ExpandedCard = () => {
   );
 }
 
+// const ContributorList = () =>  {
+//   return (
+
+//   );
+// }
 
 const ProjectCard = ({ name, techStack, domain, projectImage, id }) => {
   const classNamePrefix = "projectcard_item_",
@@ -58,129 +65,6 @@ const ProjectCard = ({ name, techStack, domain, projectImage, id }) => {
 };
 
 const Projects = () => {
-  const projects = [
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-      contributors: [
-        {
-          name: "contributor1",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor2",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor3",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        }
-      ]
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-      contributors: [
-        {
-          name: "contributor1",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor2",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor3",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        }
-      ]
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-      contributors: [
-        {
-          name: "contributor1",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor2",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor3",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        }
-      ]
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-      contributors: [
-        {
-          name: "contributor1",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor2",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor3",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        }
-      ]
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-      contributors: [
-        {
-          name: "contributor1",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor2",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor3",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        }
-      ]
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-      contributors: [
-        {
-          name: "contributor1",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor2",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        },
-        {
-          name: "contributor3",
-          picture: "https://avatars.githubusercontent.com/u/33625524?v=4"
-        }
-      ]
-    },
-  ];
-
   return (
     <div className={styles.container}>
       <Head>
