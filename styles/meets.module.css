@@ -298,9 +298,3 @@
     min-width: 178px;
   }
 }
-
-@media only screen and (max-width: 410px) {
-  .timelineContainer::after {
-    visibility: hidden;
-  }
-}
