@@ -266,8 +266,8 @@
   .timelineItemContent,
   .timelineItem:nth-child(odd) .timelineItemIontent {
     padding: 15px 10px;
-    text-align: center;
-    align-items: center;
+    text-align: flex-end;
+    align-items: flex-end;
   }
 
   .timelineItemContent .tag {
@@ -296,11 +296,5 @@
   .timelineItem {
     max-width: 307px;
     min-width: 178px;
-  }
-}
-
-@media only screen and (max-width: 410px) {
-  .timelineContainer::after {
-    visibility: hidden;
   }
 }

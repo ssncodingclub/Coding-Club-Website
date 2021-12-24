@@ -71,9 +71,34 @@
   grid-column-gap: 2.5rem;
   grid-row-gap: 2.5rem;
   flex: 1;
+  padding-right: 20px;
 }
+
+.left_pane::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.left_pane::-webkit-scrollbar-thumb {
+  background: #707070;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.left_pane::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
 .right_pane {
   flex: 1;
+  width: 60%;
+  height: 600px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 100px;
 }
 
 .project_card > .projects_card_item_image > img {
@@ -82,6 +107,7 @@
 .project_card:hover > .projects_card_item_image > img {
   transform: scale(1.08);
 }
+
 .projects_card_image {
   border-radius: 10px;
 }
@@ -124,4 +150,185 @@
   }
 }
 
+/* ----------- EXPANDED CARD STYLES ----------- */
 
+.ExpandedCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: inherit;
+  /* background-image: linear-gradient(315deg, #000000 0%, #494949 74%); */
+  height: 600px;
+  width: 60%;
+  margin: 5%;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #494949;
+}
+
+.imageContainer {
+  border-radius: 20px 20px 0 0;
+  background-color: black;
+  height: 45%;
+  width: 100%;
+  bottom: 20%;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  object-fit: cover;
+}
+
+.imageContainer > img {
+  transition: transform 1s ease-out;
+}
+.imageContainer:hover > img {
+  transform: scale(1.08);
+}
+
+.subheader h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.ExpandedCard a {
+  background: #777;
+  align-self: center;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.ExpandedCard a:hover {
+  text-decoration: none;
+  background: linear-gradient(
+    to left,
+    #8a2387,
+    #e94057,
+    #f27121
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: transform 1s ease-out;
+  transform: scale(1.08);
+}
+
+.ExpandedCard p {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  justify-content: flex-start;
+  line-height: 24px;
+  margin: 15px 0;
+  overflow-y: scroll;
+  color: white;
+  width: 90%;
+  padding-left: 10%;
+  padding-right: 5%;
+  max-height: 25%;
+}
+
+.ExpandedCard p::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.ExpandedCard p::-webkit-scrollbar-thumb {
+  background: inherit;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ExpandedCard p::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+.ContributorList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  max-width: 600px;
+  overflow-y: scroll;
+}
+
+.ContributorList::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.ContributorList::-webkit-scrollbar-thumb {
+  background: inherit;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ContributorList::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+.contributorItem {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  padding: 20px;
+}
+
+.contributorItem:hover {
+  background-color: #494949;
+}
+
+.contributorItem img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.contributorInfo {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.ContributorList h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: white;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.contributorInfo h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.contributorInfo p {
+  display: flex;
+  align-self: flex-end;
+  font-size: 10px;
+  color: #777;
+}
+
+.social_icon {
+  text-decoration: none;
+  color: #dcdcdc;
+  margin-left: 20px;
+  font-size: 25px;
+  align-self: center;
+}

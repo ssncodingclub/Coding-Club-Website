@@ -3,8 +3,58 @@ import styles from "../styles/projects.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import Navbar from "./Components/Navbar";
+import projects from "../data/projects.json"
 
-const ExpandedCard = () => {};
+
+const ExpandedCard = () => {
+  return (
+    <div className={styles.ExpandedCard}>
+      <div className={styles.imageContainer}>
+        <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29kZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+      </div>
+      <div className={styles.subheader}>
+        <h1>Project Title</h1>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Hendrerit dolor
+        magna eget est lorem ipsum dolor sit amet. Aliquam faucibus purus in
+        massa tempor nec feugiat nisl. Malesuada bibendum arcu vitae elementum
+        curabitur vitae nunc. Magnis dis parturient montes nascetur ridiculus
+        mus mauris vitae. Blandit massa enim nec dui. Interdum posuere lorem
+        ipsum dolor sit amet consectetur adipiscing. Sed risus ultricies
+        tristique nulla aliquet enim. Venenatis tellus in metus vulputate eu
+        scelerisque. Egestas pretium aenean pharetra magna. Commodo quis
+        imperdiet massa tincidunt nunc pulvinar sapien. Eros in cursus turpis
+      </p>
+      <a href="/"> Check it out </a>
+    </div>
+  );
+}
+
+const ContributorList = (contributors) =>  {
+  return (
+    <div className={styles.ContributorList}>
+      <h3>Contributors to this project</h3>
+        {
+          contributors.map((contributor) => (
+            <div className={styles.contributorItem}>
+              <img src={contributor.picture} />
+              <div className={styles.contributorInfo}>
+                <h4>{contributor.name}</h4>
+                <p>{contributor.role}</p>
+              </div>
+              <a 
+                href="https://github.com/shashankp4nda" 
+                className={`fa fa-github ${styles.social_icon}`}
+                target="_blank" 
+                rel="noreferrer" ></a>
+            </div>
+          ))
+        }
+    </div>
+  );
+}
 
 const ProjectCard = ({ name, techStack, domain, projectImage, id }) => {
   const classNamePrefix = "projectcard_item_",
@@ -33,45 +83,6 @@ const ProjectCard = ({ name, techStack, domain, projectImage, id }) => {
 };
 
 const Projects = () => {
-  const projects = [
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-    },
-    {
-      name: "Genuine Genie",
-      techStack: "Node.js",
-      domain: "Software Development",
-      projectImage: "./Projects/dummyimage.jpeg",
-    },
-  ];
-
   return (
     <div className={styles.container}>
       <Head>
@@ -81,7 +92,7 @@ const Projects = () => {
         {/* for fontawesome */}
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
       <Navbar />
@@ -110,7 +121,10 @@ const Projects = () => {
             ))}
           </div>
 
-          <div className={styles.right_pane}></div>
+          <div className={styles.right_pane}>
+            {ExpandedCard()}
+            {ContributorList(projects[0].contributors)}
+          </div>
         </div>
 
         {/* <Footer /> */}
