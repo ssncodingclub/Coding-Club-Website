@@ -81,8 +81,7 @@
 .left_pane::-webkit-scrollbar-thumb {
   background: #707070;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .left_pane::-webkit-scrollbar-track {
@@ -247,8 +246,7 @@
 .ExpandedCard p::-webkit-scrollbar-thumb {
   background: inherit;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .ExpandedCard p::-webkit-scrollbar-track {
@@ -262,6 +260,7 @@
   height: 600px;
   max-width: 600px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .ContributorList::-webkit-scrollbar {
@@ -271,8 +270,7 @@
 .ContributorList::-webkit-scrollbar-thumb {
   background: inherit;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .ContributorList::-webkit-scrollbar-track {
