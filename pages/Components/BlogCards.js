@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../../styles/Blog.module.css";
-import cards from "../../data/blogcards.json";
 import Link from "next/link";
 
 const BlogCard = ({
@@ -49,23 +48,28 @@ const BlogCard = ({
   );
 };
 
-const BlogCards = () => {
+const BlogCards = ({ cards }) => {
   return (
     <div className={styles.blogcards_container}>
-      {cards.map((card, i) => (
-        <BlogCard
-          key={i}
-          id={i}
-          domain={card.domain}
-          publishDate={card.publishDate}
-          title={card.title}
-          summary={card.summary}
-          authorName={card.authorName}
-          authorPic={card.authorPic}
-          authorDomain={card.authorDomain}
-          postImage={card.postImage}
-        />
-      ))}
+      {cards
+        .filter((card, i) => {
+          if (i == 0) return false;
+          return true;
+        })
+        .map((card, i) => (
+          <BlogCard
+            key={i}
+            id={i}
+            domain={card.domain}
+            publishDate={card.publishDate}
+            title={card.title}
+            summary={card.summary}
+            authorName={card.authorName}
+            authorPic={card.authorPic}
+            authorDomain={card.authorDomain}
+            postImage={card.postImage}
+          />
+        ))}
     </div>
   );
 };

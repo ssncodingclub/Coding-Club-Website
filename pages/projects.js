@@ -6,24 +6,36 @@ import Navbar from "./Components/Navbar";
 import Projects from "../data/projects.json";
 import Link from "next/link";
 import Modal from "react-modal";
+import CloseIcon from "@mui/icons-material/Close";
 
-const RightCard = ({ id }) => {
-  console.log(id);
-  const { name, projectDescription, projectLink } = Projects[id];
-  return (
-    <div className={styles.RightCard}>
-      <div className={styles.imageContainer}>
-        <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29kZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+const RightCard = ({ id, modalIsOpen, closeModal }) => {
+  if (id !== null) {
+    const { name, projectDescription, projectLink } = Projects[id];
+    return (
+      <div className={styles.RightCard}>
+        {modalIsOpen ? (
+          <CloseIcon
+            className={styles.rightcard_modalclose}
+            onClick={() => closeModal()}
+          ></CloseIcon>
+        ) : (
+          ""
+        )}
+        <div className={styles.imageContainer}>
+          <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29kZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+        </div>
+        <div className={styles.subheader}>
+          <h1>{name}</h1>
+        </div>
+        <p className={styles.project_desc}>{projectDescription}</p>
+        <div className={styles.project_link}>
+          <Link href={projectLink}>Check it out</Link>
+        </div>
       </div>
-      <div className={styles.subheader}>
-        <h1>{name}</h1>
-      </div>
-      <p className={styles.project_desc}>{projectDescription}</p>
-      <div className={styles.project_link}>
-        <Link href={projectLink}>Check it out</Link>
-      </div>
-    </div>
-  );
+    );
+  } else {
+    return <h2 className={styles.defaulttext_rightcard}>Select any of the Projects!</h2>;
+  }
 };
 
 const ContributorList = ({ contributors }) => {
@@ -79,18 +91,17 @@ const ProjectCard = ({ name, techStack, domain, projectImage, id, width, showDes
 
 const ProjectsPage = () => {
   const [windowWidth, setWindowWidth] = useState(0);
-  const [projectId, setprojectId] = useState(0);
+  const [projectId, setprojectId] = useState(null);
   const [modalIsOpen, setmodalIsOpen] = useState(false);
 
   useEffect(() => {
+    Modal.setAppElement("body");
     setWindowWidth(window.screen.width);
   }, []);
 
   const showDescription = (id) => {
-    if (windowWidth <= 425) {
-      setprojectId(id);
-      showModal();
-    }
+    setprojectId(id);
+    if (windowWidth <= 425) showModal();
   };
 
   const showModal = () => {
@@ -125,32 +136,36 @@ const ProjectsPage = () => {
           </h2>
         </div> */}
 
-        <div className={styles.project_submain_container}>
-          <div className={styles.left_pane}>
-            {Projects.map((project, i) => (
-              <ProjectCard
-                showDescription={showDescription}
-                width={windowWidth}
-                id={i}
-                name={project.name}
-                domain={project.domain}
-                techStack={project.techStack}
-                projectImage={project.projectImage}
-              />
-            ))}
-          </div>
+        {Projects.length > 0 ? (
+          <div className={styles.project_submain_container}>
+            <div className={styles.left_pane}>
+              {Projects.map((project, i) => (
+                <ProjectCard
+                  showDescription={showDescription}
+                  width={windowWidth}
+                  id={i}
+                  name={project.name}
+                  domain={project.domain}
+                  techStack={project.techStack}
+                  projectImage={project.projectImage}
+                />
+              ))}
+            </div>
 
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            contentLabel="Project Description"
-          >
-            <RightCard id={projectId} />
-          </Modal>
-          <div className={styles.right_pane}>
-            <RightCard id={projectId} />
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              contentLabel="Project Description"
+            >
+              <RightCard id={projectId} modalIsOpen={modalIsOpen} closeModal={closeModal} />
+            </Modal>
+            <div className={styles.right_pane}>
+              <RightCard id={projectId} modalIsOpen={modalIsOpen} closeModal={closeModal} />
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className={styles.coming_soon}>Coming Soon 😉</div>
+        )}
 
         {/* <Footer /> */}
       </main>

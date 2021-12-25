@@ -27,12 +27,14 @@ a:visited {
 }
 @media screen and (max-width: 426px) {
   .ReactModal__Content {
-    top: 5em !important;
-    bottom: 1em !important;
+    top: 6em !important;
+    bottom: 0.5em !important;
+    left: 1em !important;
     border-radius: 10px !important;
     border: 0 !important;
     padding: 0 !important;
     background: none !important;
+    width: calc(100vw - 2em) !important;
   }
   .ReactModal__Overlay {
     background-color: rgba(0, 0, 0, 0.75) !important;
