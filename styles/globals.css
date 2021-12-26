@@ -1,13 +1,13 @@
 :root {
-  --dept-bg-color:#FCFFF7;
+  --dept-bg-color: #fcfff7;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #070707 !important;
   height: 100%;
 }
@@ -24,4 +24,19 @@ a:visited {
 
 * {
   box-sizing: border-box;
+}
+@media screen and (max-width: 426px) {
+  .ReactModal__Content {
+    top: 6em !important;
+    bottom: 0.5em !important;
+    left: 1em !important;
+    border-radius: 10px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    width: calc(100vw - 2em) !important;
+  }
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+  }
 }

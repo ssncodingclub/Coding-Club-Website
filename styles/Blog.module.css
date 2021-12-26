@@ -103,7 +103,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 
   padding: 5px 40px;
   padding-right: 5px;
@@ -112,7 +112,7 @@
 .post_info {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   flex: 0.5;
   font-size: 12px;
 }
@@ -154,7 +154,7 @@
 .post_creator {
   flex: 1;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .post_creator_image {
@@ -200,7 +200,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 
   padding: 20px 0;
 }
@@ -224,7 +224,7 @@
 .post_card_creator {
   flex: 1;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 
   margin: 18px 0;

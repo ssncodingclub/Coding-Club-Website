@@ -1,67 +1,74 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/projects.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import Navbar from "./Components/Navbar";
-import projects from "../data/projects.json"
+import Projects from "../data/projects.json";
+import Link from "next/link";
+import Modal from "react-modal";
+import CloseIcon from "@mui/icons-material/Close";
 
-
-const ExpandedCard = () => {
-  return (
-    <div className={styles.ExpandedCard}>
-      <div className={styles.imageContainer}>
-        <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29kZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+const RightCard = ({ id, modalIsOpen, closeModal }) => {
+  if (id !== null) {
+    const { name, projectDescription, projectLink } = Projects[id];
+    return (
+      <div className={styles.RightCard}>
+        {modalIsOpen ? (
+          <CloseIcon
+            className={styles.rightcard_modalclose}
+            onClick={() => closeModal()}
+          ></CloseIcon>
+        ) : (
+          ""
+        )}
+        <div className={styles.imageContainer}>
+          <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29kZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+        </div>
+        <div className={styles.subheader}>
+          <h1>{name}</h1>
+        </div>
+        <p className={styles.project_desc}>{projectDescription}</p>
+        <div className={styles.project_link}>
+          <Link href={projectLink}>Check it out</Link>
+        </div>
       </div>
-      <div className={styles.subheader}>
-        <h1>Project Title</h1>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Hendrerit dolor
-        magna eget est lorem ipsum dolor sit amet. Aliquam faucibus purus in
-        massa tempor nec feugiat nisl. Malesuada bibendum arcu vitae elementum
-        curabitur vitae nunc. Magnis dis parturient montes nascetur ridiculus
-        mus mauris vitae. Blandit massa enim nec dui. Interdum posuere lorem
-        ipsum dolor sit amet consectetur adipiscing. Sed risus ultricies
-        tristique nulla aliquet enim. Venenatis tellus in metus vulputate eu
-        scelerisque. Egestas pretium aenean pharetra magna. Commodo quis
-        imperdiet massa tincidunt nunc pulvinar sapien. Eros in cursus turpis
-      </p>
-      <a href="/"> Check it out </a>
-    </div>
-  );
-}
+    );
+  } else {
+    return <h2 className={styles.defaulttext_rightcard}>Select any of the Projects!</h2>;
+  }
+};
 
-const ContributorList = (contributors) =>  {
+const ContributorList = ({ contributors }) => {
   return (
     <div className={styles.ContributorList}>
       <h3>Contributors to this project</h3>
-        {
-          contributors.map((contributor) => (
-            <div className={styles.contributorItem}>
-              <img src={contributor.picture} />
-              <div className={styles.contributorInfo}>
-                <h4>{contributor.name}</h4>
-                <p>{contributor.role}</p>
-              </div>
-              <a 
-                href="https://github.com/shashankp4nda" 
-                className={`fa fa-github ${styles.social_icon}`}
-                target="_blank" 
-                rel="noreferrer" ></a>
+      <div>
+        {contributors.map((contributor) => (
+          <div className={styles.contributorItem}>
+            <img src={contributor.picture} />
+            <div className={styles.contributorInfo}>
+              <h4>{contributor.name}</h4>
+              <p>{contributor.role}</p>
             </div>
-          ))
-        }
+            <a
+              href="https://github.com/shashankp4nda"
+              className={`fa fa-github ${styles.social_icon}`}
+              target="_blank"
+              rel="noreferrer"
+            ></a>
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
-const ProjectCard = ({ name, techStack, domain, projectImage, id }) => {
+const ProjectCard = ({ name, techStack, domain, projectImage, id, width, showDescription }) => {
   const classNamePrefix = "projectcard_item_",
     className = classNamePrefix + id;
 
   return (
-    <div className={`${styles.project_card} ${className}`}>
+    <div className={`${styles.project_card} ${className}`} onClick={() => showDescription(id)}>
       <div className={styles.projects_card_item_image}>
         <img src={projectImage} alt="ProjectTitle" className={styles.projects_card_image} />
       </div>
@@ -82,7 +89,28 @@ const ProjectCard = ({ name, techStack, domain, projectImage, id }) => {
   );
 };
 
-const Projects = () => {
+const ProjectsPage = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [projectId, setprojectId] = useState(null);
+  const [modalIsOpen, setmodalIsOpen] = useState(false);
+
+  useEffect(() => {
+    Modal.setAppElement("body");
+    setWindowWidth(window.screen.width);
+  }, []);
+
+  const showDescription = (id) => {
+    setprojectId(id);
+    if (windowWidth <= 425) showModal();
+  };
+
+  const showModal = () => {
+    setmodalIsOpen(true);
+  };
+  const closeModal = () => {
+    setmodalIsOpen(false);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -108,24 +136,36 @@ const Projects = () => {
           </h2>
         </div> */}
 
-        <div className={styles.project_submain_container}>
-          <div className={styles.left_pane}>
-            {projects.map((project, i) => (
-              <ProjectCard
-                id={i}
-                name={project.name}
-                domain={project.domain}
-                techStack={project.techStack}
-                projectImage={project.projectImage}
-              />
-            ))}
-          </div>
+        {Projects.length > 0 ? (
+          <div className={styles.project_submain_container}>
+            <div className={styles.left_pane}>
+              {Projects.map((project, i) => (
+                <ProjectCard
+                  showDescription={showDescription}
+                  width={windowWidth}
+                  id={i}
+                  name={project.name}
+                  domain={project.domain}
+                  techStack={project.techStack}
+                  projectImage={project.projectImage}
+                />
+              ))}
+            </div>
 
-          <div className={styles.right_pane}>
-            {ExpandedCard()}
-            {ContributorList(projects[0].contributors)}
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              contentLabel="Project Description"
+            >
+              <RightCard id={projectId} modalIsOpen={modalIsOpen} closeModal={closeModal} />
+            </Modal>
+            <div className={styles.right_pane}>
+              <RightCard id={projectId} modalIsOpen={modalIsOpen} closeModal={closeModal} />
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className={styles.coming_soon}>Coming Soon 😉</div>
+        )}
 
         {/* <Footer /> */}
       </main>
@@ -133,4 +173,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsPage;

@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import styles from "../styles/Blog.module.css";
 import BlogTitleCard from "./Components/BlogTitleCard";
 import BlogCards from "./Components/BlogCards";
+import cards from "../data/blogcards";
 
 export default function Blog() {
   return (
@@ -26,17 +27,23 @@ export default function Blog() {
         </div>
         <div className={styles.subcontainer}>
           <h2 className={styles.subheader}>
-            {/*Get immersed in knowledge with our blogs!*/}Catchy Text
+            {/*Get immersed in knowledge with our blogs!*/}
+            {cards.length > 0 ? "Catchy Text" : "Coming Soon! 😉"}
           </h2>
         </div>
+        {cards.length > 0 ? (
+          <>
+            <div className={styles.blog_container}>
+              <BlogTitleCard cards={cards} id={0} />
+            </div>
 
-        <div className={styles.blog_container}>
-          <BlogTitleCard />
-        </div>
-
-        <div className={styles.blog_container}>
-          <BlogCards />
-        </div>
+            <div className={styles.blog_container}>
+              <BlogCards cards={cards} />
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
 
         {/* <Footer /> */}
       </main>

@@ -29,10 +29,9 @@
 
 .container {
   display: flex;
-  margin-top: 200px;
+  padding-top: 200px;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 90px;
 }
 
 .faqContainer {
@@ -47,11 +46,17 @@
     font-size: 30px;
   }
 }
+.coming_soon {
+  text-align: center;
+  color: white;
+  font-family: Rubik;
+  margin-top: 5rem;
+}
 
 .project_submain_container {
   font-family: Rubik;
   position: relative;
-  width: 98%;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin: 5rem auto 0 auto;
@@ -70,37 +75,9 @@
   grid-template-columns: auto auto;
   grid-column-gap: 2.5rem;
   grid-row-gap: 2.5rem;
-  flex: 1;
-  padding-right: 20px;
+  margin: 0 auto;
+  flex: 0.9;
 }
-
-.left_pane::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.left_pane::-webkit-scrollbar-thumb {
-  background: #707070;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.left_pane::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
-}
-
-.right_pane {
-  flex: 1;
-  width: 60%;
-  height: 600px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 100px;
-}
-
 .project_card > .projects_card_item_image > img {
   transition: transform 1s ease-out;
 }
@@ -128,7 +105,7 @@
 .projects_card_text_container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 
   padding: 20px 0;
 }
@@ -148,37 +125,80 @@
     grid-template-columns: auto;
     flex: 0.75;
   }
+  .project_submain_container {
+    margin-bottom: 20px;
+  }
+  .RightCard {
+    padding-bottom: 0;
+  }
 }
 
 /* ----------- EXPANDED CARD STYLES ----------- */
 
-.ExpandedCard {
+.right_pane {
+  flex: 1;
+  width: 0;
+  height: calc(95vh - 3em);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 100px;
+  padding-bottom: 20px;
+}
+
+.RightCard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: left;
-  background-color: inherit;
-  /* background-image: linear-gradient(315deg, #000000 0%, #494949 74%); */
-  height: 600px;
-  width: 60%;
-  margin: 5%;
-  border-radius: 20px;
-  padding-bottom: 20px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #494949;
+  background-color: #17141d;
+  height: 100%;
+  width: 100%;
+  margin-left: 2rem;
+  border-radius: 10px;
+  overflow: auto;
+  position: relative;
+}
+.project_desc {
+  flex: 2;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  justify-content: flex-start;
+  line-height: 24px;
+  color: white;
+  width: 95%;
+  padding-left: 30px;
+  padding-right: 10px;
+  overflow: auto;
+}
+
+.project_desc::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.project_desc::-webkit-scrollbar-thumb {
+  background: inherit;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.project_desc::-webkit-scrollbar-track {
+  background: inherit;
 }
 
 .imageContainer {
-  border-radius: 20px 20px 0 0;
+  max-height: 200px;
+  border-radius: 10px 10px 0 0;
   background-color: black;
-  height: 45%;
+  flex: 1;
   width: 100%;
-  bottom: 20%;
   overflow: hidden;
 }
 
-.imageContainer img {
+.imageContainer > img {
+  width: 100%;
   object-fit: cover;
 }
 
@@ -186,19 +206,21 @@
   transition: transform 1s ease-out;
 }
 .imageContainer:hover > img {
-  transform: scale(1.08);
+  transform: scale(1.04);
 }
 
+.subheader {
+  padding: 15px 0 10px 0;
+}
 .subheader h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: Rubik;
   font-size: 40px;
   font-weight: 500;
   color: #fff;
-  margin-top: 30px;
   text-align: center;
 }
-
-.ExpandedCard a {
+.project_link {
+  flex: 0.1;
   background: #777;
   align-self: center;
   background-clip: content-box;
@@ -207,61 +229,32 @@
   font-size: 17px;
   font-weight: bold;
   margin: 20px;
+  transition: all 1s ease-out;
 }
 
-.ExpandedCard a:hover {
+.project_link:hover {
   text-decoration: none;
-  background: linear-gradient(
-    to left,
-    #8a2387,
-    #e94057,
-    #f27121
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #8a2387, #e94057, #f27121);
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transition: transform 1s ease-out;
   transform: scale(1.08);
 }
-
-.ExpandedCard p {
-  display: flex;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  justify-content: flex-start;
-  line-height: 24px;
-  margin: 15px 0;
-  overflow-y: scroll;
+.defaulttext_rightcard {
+  text-align: center;
+  width: 100%;
+}
+.rightcard_modalclose {
+  position: absolute;
   color: white;
-  width: 90%;
-  padding-left: 10%;
-  padding-right: 5%;
-  max-height: 25%;
-}
-
-.ExpandedCard p::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.ExpandedCard p::-webkit-scrollbar-thumb {
-  background: inherit;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.ExpandedCard p::-webkit-scrollbar-track {
-  background: inherit;
+  right: 1rem;
+  top: 1rem;
 }
 
 .ContributorList {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 600px;
-  max-width: 600px;
-  overflow-y: scroll;
 }
 
 .ContributorList::-webkit-scrollbar {
@@ -271,8 +264,7 @@
 .ContributorList::-webkit-scrollbar-thumb {
   background: inherit;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .ContributorList::-webkit-scrollbar-track {
@@ -331,4 +323,15 @@
   margin-left: 20px;
   font-size: 25px;
   align-self: center;
+}
+@media screen and (max-width: 426px) {
+  .right_pane {
+    display: none;
+  }
+  .project_submain_container {
+    padding: 0;
+  }
+  .RightCard {
+    margin: 0;
+  }
 }

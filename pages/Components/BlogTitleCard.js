@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../../styles/Blog.module.css";
-import { Container, Row } from "react-bootstrap";
 import Link from "next/link";
+// import cards from "../../data/blogcards";
 
-const BlogTitleCard = () => {
+const BlogTitleCard = ({ id }) => {
   let domain = "Software Development",
     publishDate = "December 18, 2021",
     title = "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
@@ -15,6 +15,7 @@ const BlogTitleCard = () => {
     authorName = "Post Creator",
     authorPic = "./BlogPage/profilepic.png",
     authorDomain = "Post Creator Specialization";
+  // let { domain, publishDate, title, summary, authorName, authorPic, authorDomain } = cards[id];
 
   if (summary.length > 360) summary = summary.substring(0, 356) + "...";
   if (title.length > 60) title = title.substring(0, 57) + "...";
