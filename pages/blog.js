@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import styles from "../styles/Blog.module.css";
 import BlogTitleCard from "./Components/BlogTitleCard";
 import BlogCards from "./Components/BlogCards";
-import cards from "../data/blogcards.json";
+import cards from "../data/blogcards";
 
 export default function Blog() {
   return (

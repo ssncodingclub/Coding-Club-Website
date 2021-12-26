@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/Blog.module.css";
 import Link from "next/link";
+import cards from "../../data/blogcards";
 
 const BlogCard = ({
   domain,
@@ -48,7 +49,7 @@ const BlogCard = ({
   );
 };
 
-const BlogCards = ({ cards }) => {
+const BlogCards = () => {
   return (
     <div className={styles.blogcards_container}>
       {cards
