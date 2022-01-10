@@ -7,7 +7,7 @@ function Footer() {
         <footer className={styles.footerContainer}>
             <div className={styles.footer}>
             <h1>Join us today!</h1>
-            <h2>Lorem Ipsum</h2>
+            <h2>Try! Catch! Show!</h2>
             </div>
         </footer>
     );

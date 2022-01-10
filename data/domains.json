@@ -357,14 +357,14 @@
         }
       },
       {
-        "name": "Vandhana Vishnuraj",
+        "name": "Deepak Sriram",
         "position": "Member",
-        "alt": "vandhana",
-        "profilePic": "/profiles/CP/vandhana.jpeg",
+        "alt": "deepak",
+        "profilePic": "/profiles/CP/deepak.jpg",
         "socials": {
           "github": null,
-          "linkedin": "https://www.linkedin.com/in/vandhana-vishnuraj/",
-          "instagram": "https://www.instagram.com/wandhana.__/"
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/deepak_sriram/"
         }
       }
     ]
@@ -394,7 +394,7 @@
         "alt": "shreya",
         "profilePic": "/profiles/DSM/shreya.jpeg",
         "socials": {
-          "github": null,
+          "github": "https://github.com/shreya1110-dev",
           "linkedin": "https://www.linkedin.com/in/shreya-sriram-s1/",
           "instagram": "https://www.instagram.com/_shreya._.sriram_/"
         }
@@ -477,14 +477,25 @@
         }
       },
       {
-        "name": "Ashwath Sridharan",
+        "name": "Akash Kumar",
         "position": "Member",
-        "alt": "ashwath",
-        "profilePic": "/profiles/DSM/ashwath.jpeg",
+        "alt": "akash",
+        "profilePic": "/profiles/DSM/akash.jpg",
         "socials": {
           "github": null,
-          "linkedin": "https://www.linkedin.com/in/ashwath-sridharan/",
-          "instagram": "https://www.instagram.com/ashwath_sridharan/"
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/awkaaash/"
+        }
+      },
+      {
+        "name": "Ananya Kundu",
+        "position": "Member",
+        "alt": "ananya",
+        "profilePic": "/profiles/DSM/ananya.jpeg",
+        "socials": {
+          "github": null,
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/malakundu/"
         }
       }
     ]

@@ -17,7 +17,7 @@
 
 .service {
     width: 90%;
-    height: 300px;
+    height: 370px;
     padding: 0rem;
     border-radius: 10px;
     position: absolute;
@@ -140,22 +140,56 @@
     .service h4{
         font-size: 14px;
     }
+    .service p{
+        font-size: 15px;
+    }
 }
 
-@media (min-width: 376px) and (max-width: 426px){
+@media (min-width: 450px) and (max-width: 750px){
     .service{
         width: 90%;
     }
     .service h4{
         font-size: 19.5px;
     }
+    .service p{
+        font-size: 13px;
+    }
 }
 
-@media (max-width: 375px){
+@media (min-width: 760px) and (max-width: 900px){
+    .service{
+        width: 90%;
+    }
+    .service h4{
+        font-size: 19.5px;
+    }
+    .service p{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 430px){
+    .service{
+        width: 90%;
+    }
+    .service h4{
+        font-size: 19.5px;
+    }
+    .service p{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 376px){
     .service{
         width: 80%;
     }
     .service h4{
         font-size: 17.5px;
     }
+    .service p{
+        font-size: 12.5px;
+    }
 }
+
