@@ -1,31 +1,31 @@
 [{
         "title": "Events",
         "img": "./HomePage/Cards/events.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Check out the events lined up for you and join what you like. We would love for you to engage with us!"
     },
     {
         "title": "Upskill",
         "img": "./HomePage/Cards/upskill.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Widen your horizons and work on anything that interests you! Continue to improve with the help of the community. We got your back!"
     },
     {
         "title": "Community",
         "img": "./HomePage/Cards/community.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Get to know the family! We would love to interact with you ;)"
     },
     {
         "title": "Projects",
         "img": "./HomePage/Cards/projects.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Explore your interests by building projects. For more inspiration, look into some of the most interesting projects that we have already worked on."
     },
     {
         "title": "Mentorship",
         "img": "./HomePage/Cards/mentorship.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "We have arranged diverse platforms for you to ping us with your doubts. Feel free to reach out to us on any of these platforms."
     },
     {
-        "title": "Mentorship",
+        "title": "Vision",
         "img": "./HomePage/Cards/mentorship.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "To enable any student, from any department, from any background, to learn to code and program, to an extent where they can teach it to others one day."
     }
 ]

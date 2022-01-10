@@ -28,7 +28,7 @@ export default function Blog() {
         <div className={styles.subcontainer}>
           <h2 className={styles.subheader}>
             {/*Get immersed in knowledge with our blogs!*/}
-            {cards.length > 0 ? "Catchy Text" : "Coming Soon! 😉"}
+            {cards.length > 0 ? "while (i=inspiration):\n\tprint (“scroll down”)":"Coming Soon! 😉"}
           </h2>
         </div>
         {cards.length > 0 ? (

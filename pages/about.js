@@ -28,7 +28,7 @@ export default function About() {
         </div>
         <div className={styles.subcontainer}>
           <h2 className={styles.subheader}>What is SSN Coding Club?</h2>
-          <p className={styles.para}>We are a community of coders specialised in domains like competitive coding, machine learning, web and app development etc. We aim to support and nurture future developers and ensure equity in coding!</p>
+          <p className={styles.para}>We are a community of coders specialised in domains like Competitive Coding, Machine Learning, Web and App Development etc. We aim to support and nurture future developers and ensure equity in coding!</p>
         </div>
         <div>
           <h2 className={styles.subheader}>What do we do?</h2>
