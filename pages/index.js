@@ -21,13 +21,14 @@ export default function Home() {
         <Navbar />
         <main className={styles.main}>
           <div className={styles.headerSection}>
-            <img src="./Title.png" className={styles.responsive} alt="Title" />
+            {/* <img src="./Title.png" className={styles.responsive} alt="Title" /> */}
+
+            <div className={styles.header}>
+              <h1>SSN Coding Club</h1>
+            </div>
             <h1 className={styles.h1Text}>More than just a club.</h1>
             <a href="#info">
-              <BsChevronDoubleDown
-                color="white"
-                size="45"
-              ></BsChevronDoubleDown>
+              <BsChevronDoubleDown color="white" size="45"></BsChevronDoubleDown>
             </a>
           </div>
         </main>
@@ -57,14 +58,12 @@ export default function Home() {
             <img src="./HomePage/TC_1.svg" alt="Title-part-1" />
             <img src="./HomePage/TC_2.svg" alt="Title-part-2" />
             <p>
-              We are the biggest ever community in SSN. What, you don't believe
-              us? We hit 1000+ members on our discord channel in 1 year. Talk
-              about speed. Wait there's more - we are what we are because of our
-              unrivaled community.
+              We are the biggest ever community in SSN. What, you don't believe us? We hit 1000+
+              members on our discord channel in 1 year. Talk about speed. Wait there's more - we are
+              what we are because of our unrivaled community.
               <br />
-              <br /> We engage with everyone and the community chooses what we
-              should focus on next. We are present on several platforms and we
-              are looking to interact with you!{" "}
+              <br /> We engage with everyone and the community chooses what we should focus on next.
+              We are present on several platforms and we are looking to interact with you!{" "}
             </p>
             <Button className={styles.joinUsButton}>
               <a href="#">Join Us</a>
@@ -82,27 +81,18 @@ export default function Home() {
           {/* lots of domains */}
           <Row>
             <Col sm="12" md="6">
-              <img
-                src="./HomePage/LoD.png"
-                className={styles.domainHeader}
-                alt="Title"
-              />
+              <img src="./HomePage/LoD.png" className={styles.domainHeader} alt="Title" />
             </Col>
           </Row>
           <Row className={styles.domainRow}>
             <Col sm="12" md="5" className={styles.domainImgContainer}>
-              <img
-                src="./HomePage/cp.png"
-                className={styles.domainImages}
-                alt="Title"
-              />
+              <img src="./HomePage/cp.png" className={styles.domainImages} alt="Title" />
               <h4 className={styles.domainName}>Competitive Programming</h4>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-                We assist you in learning the best practices for competitive
-                programming. Through these experiences, you will also get better
-                at thinking on your feet.{" "}
+                We assist you in learning the best practices for competitive programming. Through
+                these experiences, you will also get better at thinking on your feet.{" "}
               </p>
             </Col>
           </Row>
@@ -114,9 +104,8 @@ export default function Home() {
               className={styles.domainInfoContainer}
             >
               <p className={styles.domainInfo}>
-                We will assist you in building your profile. You can learn the
-                best industry practices by building projects. We will also
-                enable collaboration in projects.{" "}
+                We will assist you in building your profile. You can learn the best industry
+                practices by building projects. We will also enable collaboration in projects.{" "}
               </p>
             </Col>
             <Col
@@ -125,27 +114,19 @@ export default function Home() {
               md={{ span: 5, order: "last" }}
               className={styles.domainImgContainer}
             >
-              <img
-                src="./HomePage/sd.png"
-                className={styles.domainImages}
-                alt="Title"
-              />
+              <img src="./HomePage/sd.png" className={styles.domainImages} alt="Title" />
               <h4 className={styles.domainName}>Software Development</h4>
             </Col>
           </Row>
           <Row className={styles.domainRow}>
             <Col s m="12" md="5" className={styles.domainImgContainer}>
-              <img
-                src="./HomePage/ml.png"
-                className={styles.domainImages}
-                alt="Title"
-              />
+              <img src="./HomePage/ml.png" className={styles.domainImages} alt="Title" />
               <h4 className={styles.domainName}>Machine Learning</h4>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-                We teach and code machine learning from scratch, providing a
-                roadmap for everyone to follow at their own pace.{" "}
+                We teach and code machine learning from scratch, providing a roadmap for everyone to
+                follow at their own pace.{" "}
               </p>
             </Col>
           </Row>
@@ -159,17 +140,16 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, <br />
                 consectetur epsit.
               </h6>
-              <button className={styles.openSourceButton}>Check it out</button>
-              <img
-                src="./HomePage/guy1.png"
-                alt="Title"
-                className={styles.openSourceImg1}
-              />
-              <img
-                src="./HomePage/guy2.png"
-                alt="Title"
-                className={styles.openSourceImg2}
-              />
+              <button
+                className={styles.openSourceButton}
+                onClick={() => {
+                  location.href = "https://github.com/ssncodingclub";
+                }}
+              >
+                Check it out
+              </button>
+              <img src="./HomePage/guy1.png" alt="Title" className={styles.openSourceImg1} />
+              <img src="./HomePage/guy2.png" alt="Title" className={styles.openSourceImg2} />
             </div>
           </div>
         </div>

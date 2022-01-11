@@ -1,5 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@400&family=Overpass:wght@300&family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&display=swap");
+
+.header {
+  text-align: center;
+  color: #f63c54; /*non-webkit fallback*/
+  background: -webkit-linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
+  background: linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+}
+
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 90px;
+  /* font-weight: 950 !important;
+  background: #8a2387; 
+  background: -webkit-linear-gradient(
+    to left,
+    #8a2387,
+    #e94057,
+    #f27121
+  ); 
+  background: linear-gradient(
+    to left,
+    #8a2387,
+    #e94057,
+    #f27121
+  ); 
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
 
 .parallax {
   margin: 0;
@@ -168,6 +202,10 @@
   font-size: large;
   color: #a8a8a8;
   text-align: justify;
+  transition: color 200ms ease;
+}
+.domainInfo:hover {
+  color: white;
 }
 
 .domainImages {
@@ -180,6 +218,13 @@
 
 .domainRow {
   margin-bottom: 3rem;
+}
+
+.domainName {
+  transition: color 200ms ease;
+}
+.domainName:hover {
+  color: #ff2c80;
 }
 
 /* Thriving community part */
@@ -346,6 +391,9 @@
   border-radius: 20px;
   font-family: "Lato", sans-serif;
   margin-top: 1em;
+}
+.openSourceButton a {
+  color: black !important;
 }
 
 @media (max-width: 1030px) {

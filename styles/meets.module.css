@@ -1,30 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@400&family=Overpass:wght@300&family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&display=swap");
 
 .header {
-  color: #fff;
   text-align: center;
-  margin-bottom: 1rem;
+  color: #f63c54; /*non-webkit fallback*/
+  background: -webkit-linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
+  background: linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
 }
 
 .header h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 85px;
-  background: #8a2387; /* fallback for old browsers */
+  /* background: #8a2387; 
   background: -webkit-linear-gradient(
     to left,
     #8a2387,
     #e94057,
     #f27121
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to left,
     #8a2387,
     #e94057,
     #f27121
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   background-clip: content-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .subheader {
