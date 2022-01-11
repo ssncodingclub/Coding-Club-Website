@@ -88,12 +88,12 @@
 
 .dropdownContainer {
   position: relative;
-  z-index: 10;
+  z-index: 20;
   background: #070707;
 }
 
 .filterDropdown {
-  z-index: 10;
+  z-index: 20;
   position: relative;
   background: #070707;
   margin-left: 90%;
@@ -108,7 +108,7 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  z-index: 10;
+  z-index: 20;
   position: relative;
 }
 
@@ -308,6 +308,7 @@
     margin: 0;
     align-self: center;
     margin-left: 45%;
+    z-index: 20;
   }
   .main {
     width: 90%;
@@ -328,6 +329,7 @@
     margin: 0;
     align-self: center;
     margin-left: 40%;
+    z-index: 20;
   }
   .meetTitle {
     font-size: 1.2em;
