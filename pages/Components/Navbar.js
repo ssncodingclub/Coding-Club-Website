@@ -33,7 +33,7 @@ function NavBar() {
       className={styles.navbar + " " + (navColor ? styles.sticky : "")}
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <Nav.Item>
             <img width="50" src="./favicon.ico" alt="logo"></img>
           </Nav.Item>
