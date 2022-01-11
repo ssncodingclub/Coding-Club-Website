@@ -2,8 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&display=swap");
 
 .blog_main_container {
+  position: relative;
+  background-color: #070707;
+  padding-bottom: 90vh;
   max-width: 1500px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .header {
@@ -306,4 +310,11 @@
   .blog_title_text_container {
     padding-bottom: 0;
   }
+}
+
+/* placeholder for footer (parallax effect) */
+.placeholder {
+  position: relative;
+  z-index: 1;
+  height: 90vh;
 }

@@ -336,8 +336,10 @@
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
+  text-align: center;
   font-size: 17px;
   line-height: 150%;
+  text-align: justify;
   /* or 25px */
   color: #a6a6a6;
 }

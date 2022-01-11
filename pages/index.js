@@ -66,7 +66,7 @@ export default function Home() {
               We are present on several platforms and we are looking to interact with you!{" "}
             </p>
             <Button className={styles.joinUsButton}>
-              <a href="#">Join Us</a>
+              <a href="https://linktr.ee/ssncc" target="_blank">Join Us</a>
             </Button>
           </div>
           <Container>
