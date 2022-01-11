@@ -28,7 +28,19 @@ export default function Blog() {
         <div className={styles.subcontainer}>
           <h2 className={styles.subheader}>
             {/*Get immersed in knowledge with our blogs!*/}
-            {cards.length > 0 ? "while (i=inspiration):\n\tprint (“scroll down”)":"Coming Soon! 😉"}
+            {cards.length > 0 ? (
+              <>
+                <span style={{ color: "#63ADF2" }}>while&nbsp;</span>(
+                <span style={{ color: "#FFFBFE" }}>i</span>{" "}
+                <span style={{ color: "#63ADF2" }}>==</span>{" "}
+                <span style={{ color: "#BDD5EA" }}>'inspiration'</span>): &nbsp;
+                <span style={{ color: "#63ADF2" }}>print</span>(
+                <span style={{ color: "#BDD5EA" }}>'scroll down 👇'</span>)
+              </>
+            ) : (
+              // 'while (i == "inspiration"):\n\tprint (“scroll down”)'
+              "Coming Soon! 😉"
+            )}
           </h2>
         </div>
         {cards.length > 0 ? (
