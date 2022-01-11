@@ -58,15 +58,15 @@
 
 .mobilenav {
   background-color: #1e1e23;
-  height: 100vh;
+  height: 100%;
 }
 
 .menuToggle {
   display: none;
   flex-direction: column;
   position: relative;
-  top: 10px;
-  left: 25px;
+  top: 5px;
+  right: 10px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
