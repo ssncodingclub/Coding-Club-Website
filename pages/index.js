@@ -60,7 +60,7 @@ export default function Home() {
             We are the biggest ever community in SSN. What, you don't believe us? We hit 1000+ members on our discord channel in 1 year. Talk about speed. Wait there's more - we are what we are because of our unrivaled community.<br /><br /> We engage with everyone and the community chooses what we should focus on next. We are present on several platforms and we are looking to interact with you!{" "}
             </p>
             <Button className={styles.joinUsButton}>
-              <a href="#">Join Us</a>
+              <a href="https://linktr.ee/ssncc" target="_blank">Join Us</a>
             </Button>
           </div>
           <Container>
@@ -89,7 +89,7 @@ export default function Home() {
                 className={styles.domainImages}
                 alt="Title"
               />
-              <h4 className={styles.domainName}>Competitive Programming</h4>
+              <h3 className={styles.domainName}>Competitive Programming</h3>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
@@ -120,7 +120,7 @@ export default function Home() {
                 className={styles.domainImages}
                 alt="Title"
               />
-              <h4 className={styles.domainName}>Software Development</h4>
+              <h3 className={styles.domainName}>Software Development</h3>
             </Col>
           </Row>
           <Row className={styles.domainRow}>
@@ -130,7 +130,7 @@ export default function Home() {
                 className={styles.domainImages}
                 alt="Title"
               />
-              <h4 className={styles.domainName}>Machine Learning</h4>
+              <h3 className={styles.domainName}>Machine Learning</h3>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>

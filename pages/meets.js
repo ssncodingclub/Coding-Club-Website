@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import { Dropdown } from "react-bootstrap";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+
 
 const TimelineItem = ({ data }) => (
     <div className={styles.timelineItem}>
@@ -67,6 +69,7 @@ export default function Meets()     {
     const [filter, setfilter] = useState("All");
 
     return ( 
+        <>
         <div className={styles.container}>
             <Head>
                 <title>SSN Coding Club</title>
@@ -79,17 +82,19 @@ export default function Meets()     {
             <div className={styles.header}>
                     <h1>Meets Timeline</h1>
             </div> 
-            <Dropdown className={styles.filterDropdown}>
-                <Dropdown.Toggle variant="dark" id="dropdown-basic">
-                    filters
-                </Dropdown.Toggle>
-                <Dropdown.Menu style={{"background-color": "#070707"}}>
-                    <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("All")}>All</button></Dropdown.Item>
-                    <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("CP")}>CP</button></Dropdown.Item>
-                    <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("AI/ML")}>ML/AI</button></Dropdown.Item>
-                    <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("SD")}>SDev</button></Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
+            <div className={styles.dropdownContainer}>
+                <Dropdown style={{"z-index": "10", "position": "relative"}} className={styles.filterDropdown}>
+                    <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                        filters
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu style={{"background-color": "#070707"}}>
+                        <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("All")}>All</button></Dropdown.Item>
+                        <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("CP")}>CP</button></Dropdown.Item>
+                        <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("AI/ML")}>ML/AI</button></Dropdown.Item>
+                        <Dropdown.Item><button className={styles.filterButton} onClick={() => setfilter("SD")}>SDev</button></Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+            </div>
             <div className={styles.main}>
                 <div className={styles.subheader}>
                     <h1>{filter} meets</h1>
@@ -97,5 +102,9 @@ export default function Meets()     {
                 {Timeline(filter)}
             </div>
         </div>
+        <div className={styles.placeholder}>
+            <Footer />
+        </div>    
+        </>
     )
 }

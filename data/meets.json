@@ -1,40 +1,14 @@
 [
     {
-        "text": "Upcoming CP session",
-        "date": "January 15th 2021",
-        "category": {
-			"tag": "CP",
-			"color": "orangered"
-		},
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "text": "meeting link"
-        }
-    },
-    {
-        "text": "Upcoming SD session",
-        "date": "January 6th 2021",
-        "category": {
-			"tag": "SD",
-			"color": "purple"
-		},
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "text": "meeting link"
-        }
-    },
-    {
-        "text": "Upcoming ML session",
-        "date": "December 25th 2021",
+        "text": "ML Introduction meet",
+        "date": "December 24th 2021",
         "category": {
 			"tag": "AI/ML",
 			"color": "green"
 		},
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "url": "https://drive.google.com/file/d/1Riif_DLrFSXkddbCa0LDKjGI7Z3jE-tj/view?usp=sharing",
             "text": "meeting link"
         }
     },
@@ -47,7 +21,7 @@
 		},
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "url": "https://drive.google.com/file/d/1hGbsxVKASgBUoM_W5hh0eD9P_nH2ayov/view?usp=sharing",
             "text": "watch the session recording"
         }
     },
@@ -60,7 +34,7 @@
 		},
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "url": "https://drive.google.com/file/d/1KGrHKm0-B9bNbYCfm4QVAZmp_pG_0Spg/view?usp=sharing",
             "text": "watch the session recording"
         }
     },
@@ -73,7 +47,7 @@
 		},
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "url": "https://drive.google.com/file/d/13qAwL4qAGZM2PWDsVroYkav_U1auelOm/view?usp=sharing",
             "text": "watch the session recording"
         }
     },
@@ -86,7 +60,7 @@
 		},
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "url": "https://drive.google.com/file/d/1IoxrZPiwlOQi_XYQGJHcE6ywoDxc1A49/view?usp=sharing",
             "text": "watch the session recording"
         }
     },
@@ -99,7 +73,7 @@
 		},
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "url": "https://drive.google.com/file/d/1SzZ6vGY5HgAEByo64xYS3wWsHIQXQthP/view?usp=sharing",
             "text": "watch the session recording"
         }
     },
@@ -112,7 +86,7 @@
 		},
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "url": "https://drive.google.com/file/d/1AZb31RPOuY1MJXCKPio77MVdZXiNl9Pf/view?usp=sharing",
             "text": "watch the session recording"
         }
     },
@@ -125,7 +99,7 @@
 		},
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "link": {
-            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "url": "https://drive.google.com/file/d/16WzVPFDrRJFAOVNUwiJuA7AvON8RHaDM/view?usp=sharing",
             "text": "watch the session recording"
         }
     }

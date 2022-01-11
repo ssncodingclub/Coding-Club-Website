@@ -8,6 +8,7 @@ import domains from '../data/domains.json';
 import Faq from './Components/Faq'
 import departments from '../data/departments.json';
 import { Container, Row } from 'react-bootstrap';
+import Footer from "./Components/Footer";
 
 export default function About() {
 
@@ -22,7 +23,7 @@ export default function About() {
       </Head>
       <Navbar />
 
-      <main>
+      <main className={styles.about_main_container}>
         <div className={styles.header}>
           <h1>About Us</h1>
         </div>
@@ -42,7 +43,7 @@ export default function About() {
             </Row>
           </Container>
         </div>
-        <div>
+        <div className={styles.content}>
           <h2 className={styles.subheader}>Meet the team!</h2>
           {
             domains.map((domain, i) => {
@@ -50,13 +51,16 @@ export default function About() {
             })
           }
         </div>
-        <div>
+        <div className={styles.faq}>
           <h2 className={styles.subheader}>Frequently Asked Questions</h2>
           <Container className={styles.faqContainer}>
             <Faq />
           </Container>
         </div>
       </main>
+      <div className={styles.placeholder}>
+          <Footer />
+      </div>
     </div>
   )
 }

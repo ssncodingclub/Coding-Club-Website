@@ -1,16 +1,42 @@
+@import url("https://use.fontawesome.com/2d1db3434b.js");
+
 .footerContainer {
-    position: fixed;
-    bottom: 0;
-    z-index: 5;
-    height: 90vh;
-    color: white;
+  position: fixed;
+  flex-direction: column;
+  bottom: 0;
+  z-index: 5;
+  height: 90vh;
+  color: white;
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -5;
+  justify-content: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.social_media {
+  position: relative;
+  margin-top: 20px;
+  font-size: 30px;
+  z-index: 20;
+}
+
+.social_icon {
+  text-decoration: none;
+  margin: 0 30px;
+  height: 40px;
+  width: 40px;
+}
+
+.social_media a:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
