@@ -124,13 +124,26 @@
   margin: -40px 0 0 -175px;
   padding: 50px;
   padding-top: 125px;
-  background: rgb(255, 58, 130);
+
+  background: #fc466b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3f5efb,
+    #fc466b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right top,
+    #3f5efb,
+    #fc466b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: rgb(255, 58, 130);
   background: linear-gradient(
     180deg,
     rgba(255, 58, 130, 1) 17%,
     rgba(255, 29, 77, 1) 51%,
     rgba(255, 0, 10, 1) 77%
-  );
+  ); */
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
