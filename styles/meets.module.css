@@ -10,6 +10,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+  z-index: 10;
+  position: relative;
 }
 
 .header h1 {
@@ -64,6 +66,7 @@
   margin-top: 200px;
   flex-direction: column;
   justify-content: center;
+  background-color: #070707;
 }
 
 .main {
@@ -304,6 +307,7 @@
   .filterDropdown {
     margin: 0;
     align-self: center;
+    margin-left: 45%;
   }
   .main {
     width: 90%;
@@ -316,6 +320,17 @@
   .timelineItem {
     max-width: 307px;
     min-width: 178px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .filterDropdown {
+    margin: 0;
+    align-self: center;
+    margin-left: 40%;
+  }
+  .meetTitle {
+    font-size: 1.2em;
   }
 }
 
