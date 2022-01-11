@@ -92,13 +92,13 @@ function NavBar() {
                   <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="/about">Meets</a>
+                  <a href="/meets">Meets</a>
                 </li>
                 <li>
-                  <a href="/about">Projects</a>
+                  <a href="/projects">Projects</a>
                 </li>
                 <li>
-                  <a href="/about">Blog</a>
+                  <a href="/blog">Blog</a>
                 </li>
               </ul>
             </div>
