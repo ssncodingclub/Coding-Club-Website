@@ -10,6 +10,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+  z-index: 10;
+  position: relative;
 }
 
 .header h1 {
@@ -64,6 +66,7 @@
   margin-top: 200px;
   flex-direction: column;
   justify-content: center;
+  background-color: #070707;
 }
 
 .main {
@@ -85,12 +88,12 @@
 
 .dropdownContainer {
   position: relative;
-  z-index: 10;
+  z-index: 20;
   background: #070707;
 }
 
 .filterDropdown {
-  z-index: 10;
+  z-index: 20;
   position: relative;
   background: #070707;
   margin-left: 90%;
@@ -105,7 +108,7 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  z-index: 10;
+  z-index: 20;
   position: relative;
 }
 
@@ -304,6 +307,8 @@
   .filterDropdown {
     margin: 0;
     align-self: center;
+    margin-left: 45%;
+    z-index: 20;
   }
   .main {
     width: 90%;
@@ -316,6 +321,18 @@
   .timelineItem {
     max-width: 307px;
     min-width: 178px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .filterDropdown {
+    margin: 0;
+    align-self: center;
+    margin-left: 40%;
+    z-index: 20;
+  }
+  .meetTitle {
+    font-size: 1.2em;
   }
 }
 

@@ -34,6 +34,12 @@
   -webkit-text-fill-color: transparent; */
 }
 
+.about_main_container {
+  position: relative;
+  z-index: 10;
+  background-color: #070707;
+}
+
 .subheader {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -84,3 +90,10 @@
   }
 }
 
+/* placeholder for footer (parallax effect) */
+.placeholder {
+  position: relative;
+  z-index: 1;
+  height: 90vh;
+  margin-top: 40px;
+}
