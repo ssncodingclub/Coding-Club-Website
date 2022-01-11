@@ -7,6 +7,7 @@ import Projects from "../data/projects.json";
 import Link from "next/link";
 import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
+import Footer from "./Components/Footer";
 
 const RightCard = ({ id, modalIsOpen, closeModal }) => {
   if (id !== null) {
@@ -124,7 +125,6 @@ const ProjectsPage = () => {
         />
       </Head>
       <Navbar />
-
       <main className={styles.projects_main_container}>
         <div className={styles.header}>
           <h1>Projects</h1>
@@ -166,9 +166,11 @@ const ProjectsPage = () => {
         ) : (
           <div className={styles.coming_soon}>Coming Soon 😉</div>
         )}
-
-        {/* <Footer /> */}
       </main>
+      {/* <Footer /> */}
+      <div className={styles.placeholder}>
+        <Footer />
+      </div>
     </div>
   );
 };

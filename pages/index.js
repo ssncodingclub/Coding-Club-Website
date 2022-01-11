@@ -67,7 +67,7 @@ export default function Home() {
               are looking to interact with you!{" "}
             </p>
             <Button className={styles.joinUsButton}>
-              <a href="#">Join Us</a>
+              <a href="https://linktr.ee/ssncc" target="_blank">Join Us</a>
             </Button>
           </div>
           <Container>
@@ -96,7 +96,7 @@ export default function Home() {
                 className={styles.domainImages}
                 alt="Title"
               />
-              <h4 className={styles.domainName}>Competitive Programming</h4>
+              <h3 className={styles.domainName}>Competitive Programming</h3>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
@@ -130,7 +130,7 @@ export default function Home() {
                 className={styles.domainImages}
                 alt="Title"
               />
-              <h4 className={styles.domainName}>Software Development</h4>
+              <h3 className={styles.domainName}>Software Development</h3>
             </Col>
           </Row>
           <Row className={styles.domainRow}>
@@ -140,7 +140,7 @@ export default function Home() {
                 className={styles.domainImages}
                 alt="Title"
               />
-              <h4 className={styles.domainName}>Machine Learning</h4>
+              <h3 className={styles.domainName}>Machine Learning</h3>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>

@@ -1,13 +1,15 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import Head from "next/head";
-import styles from "../styles/about.module.css";
-import Navbar from "./Components/Navbar";
-import Domain from "./Components/Domain";
-import Department from "./Components/Department";
-import domains from "../data/domains.json";
-import Faq from "./Components/Faq";
-import departments from "../data/departments.json";
-import { Container, Row } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Head from 'next/head';
+import styles from '../styles/about.module.css';
+import Navbar from './Components/Navbar';
+import Domain from './Components/Domain';
+import Department from './Components/Department';
+import domains from '../data/domains.json';
+import Faq from './Components/Faq'
+import departments from '../data/departments.json';
+import { Container, Row } from 'react-bootstrap';
+import Footer from "./Components/Footer";
+
 
 export default function About() {
   return (
@@ -24,7 +26,7 @@ export default function About() {
       </Head>
       <Navbar />
 
-      <main>
+      <main className={styles.about_main_container}>
         <div className={styles.header}>
           <h1>About Us</h1>
         </div>
@@ -46,19 +48,22 @@ export default function About() {
             </Row>
           </Container>
         </div>
-        <div style={{ paddingTop: "10px" }}>
+        <div className={styles.content}>
           <h2 className={styles.subheader}>Meet the team!</h2>
           {domains.map((domain, i) => {
             return <Domain key={i} domain={domain} />;
           })}
         </div>
-        <div>
+        <div className={styles.faq}>
           <h2 className={styles.subheader}>Frequently Asked Questions</h2>
           <Container className={styles.faqContainer}>
             <Faq />
           </Container>
         </div>
       </main>
+      <div className={styles.placeholder}>
+          <Footer />
+      </div>
     </div>
   );
 }
