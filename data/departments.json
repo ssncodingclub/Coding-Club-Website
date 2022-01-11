@@ -1,23 +1,23 @@
 [
-    {
-        "name": "Software Development",
-        "id": "software-development-team",
-        "icon": "/domain-icons/dev.svg",
-        "alt": "DEV",
-        "description": "Hey you there reading this. How do you think this website was built? \nYou don't know or do you know enough? You will answer all these real life application questions with us.\nLearn state of the art application building, end to end full stack - no compromise. \nWhat concept you wanna learn - you name it \nWe have people for all of those tools out there xD"
-    },
-    {
-        "name": "Machine Learning",
-        "id": "machine-learning-team",
-        "icon": "/domain-icons/ml.svg",
-        "alt": "ML",
-        "description": "What if I said, in 15 years time, the code that you write now, duh \"manually\", will learn to write itself automatically.\n Interesting? That's barely scratching the surface. Come find out about the future with us where we teach and code machine learning from scratch. \nWe give a roadmap for everyone to follow at their own pace."
-    },
-    {
-        "name": "Competitive Programming",
-        "id": "competitive-programming-team",
-        "icon": "/domain-icons/cp.svg",
-        "alt": "CP",
-        "description": "Do you want to know how to invert a binary tree? Jokes aside - We focus on teaching the tricks and trades of popular cp concepts, and as if that's not all, we hold contests where you can battle it out with your peers and challenge yourself. Btw Did we mention we are available 24/7 on any questions and doubts? XD"
-    }
+  {
+    "name": "Software Development",
+    "id": "software-development-team",
+    "icon": "/domain-icons/dev.svg",
+    "alt": "DEV",
+    "description": "Hey you there reading this. How do you think this website was built? \nYou don't know or do you know enough? You will answer all these real life application questions with us.\nLearn state-of-the-art app building, end-to-end full stack - no compromise. \nWhat concept you wanna learn - you name it. We have people for all tools out there xD."
+  },
+  {
+    "name": "Machine Learning",
+    "id": "machine-learning-team",
+    "icon": "/domain-icons/ml.svg",
+    "alt": "ML",
+    "description": "What if I said, in 15 years time, the code that you write now, duh \"manually\", will learn to write itself automatically.\n Interesting? That's barely scratching the surface. Come find out about the future with us where we teach and code machine learning from scratch. \nWe give a roadmap for everyone to follow at their own pace."
+  },
+  {
+    "name": "Competitive Programming",
+    "id": "competitive-programming-team",
+    "icon": "/domain-icons/cp.svg",
+    "alt": "CP",
+    "description": "Do you want to know how to invert a binary tree? Jokes aside - We focus on teaching the tricks and trades of popular cp concepts, and as if that's not all, we hold contests where you can battle it out with your peers and challenge yourself. BTW, did we mention we are available 24/7 on any questions and doubts? xD"
+  }
 ]
