@@ -293,6 +293,7 @@
   font-weight: normal;
   font-size: 17px;
   line-height: 150%;
+  text-align: justify;
   /* or 25px */
   color: #a6a6a6;
 }
