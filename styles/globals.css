@@ -37,6 +37,7 @@ a:visited {
     width: calc(100vw - 2em) !important;
   }
   .ReactModal__Overlay {
+    z-index: 1000 !important;
     background-color: rgba(0, 0, 0, 0.75) !important;
   }
 }
