@@ -57,7 +57,14 @@ export default function Home() {
             <img src="./HomePage/TC_1.svg" alt="Title-part-1" />
             <img src="./HomePage/TC_2.svg" alt="Title-part-2" />
             <p>
-            We are the biggest ever community in SSN. What, you don't believe us? We hit 1000+ members on our discord channel in 1 year. Talk about speed. Wait there's more - we are what we are because of our unrivaled community.<br /><br /> We engage with everyone and the community chooses what we should focus on next. We are present on several platforms and we are looking to interact with you!{" "}
+              We are the biggest ever community in SSN. What, you don't believe
+              us? We hit 1000+ members on our discord channel in 1 year. Talk
+              about speed. Wait there's more - we are what we are because of our
+              unrivaled community.
+              <br />
+              <br /> We engage with everyone and the community chooses what we
+              should focus on next. We are present on several platforms and we
+              are looking to interact with you!{" "}
             </p>
             <Button className={styles.joinUsButton}>
               <a href="https://linktr.ee/ssncc" target="_blank">Join Us</a>
@@ -93,7 +100,9 @@ export default function Home() {
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-              We assist you in learning the best practices for competitive programming. Through these experiences, you will also get better at thinking on your feet.{" "}
+                We assist you in learning the best practices for competitive
+                programming. Through these experiences, you will also get better
+                at thinking on your feet.{" "}
               </p>
             </Col>
           </Row>
@@ -105,8 +114,9 @@ export default function Home() {
               className={styles.domainInfoContainer}
             >
               <p className={styles.domainInfo}>
-              We will assist you in building your profile. You can learn the best industry practices by building projects. We will also enable collaboration in projects.
-                {" "}
+                We will assist you in building your profile. You can learn the
+                best industry practices by building projects. We will also
+                enable collaboration in projects.{" "}
               </p>
             </Col>
             <Col
@@ -134,7 +144,8 @@ export default function Home() {
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-              We teach and code machine learning from scratch. We give a roadmap for everyone to follow at their own pace.{" "}
+                We teach and code machine learning from scratch, providing a
+                roadmap for everyone to follow at their own pace.{" "}
               </p>
             </Col>
           </Row>
