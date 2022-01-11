@@ -17,7 +17,10 @@ export default function Home() {
           <title>SSN Coding Club</title>
           <meta name="description" content="Official SSN Coding Club Website" />
           <link rel="icon" href="/favicon.ico" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
         </Head>
         <Navbar />
         <main className={styles.main}>
@@ -56,8 +59,13 @@ export default function Home() {
         </div>
         <div>
           <div className={styles.thrivingCommunityHeaderContainer}>
-            <img src="./HomePage/TC_1.svg" alt="Title-part-1" />
-            <img src="./HomePage/TC_2.svg" alt="Title-part-2" />
+            {/* <img src="./HomePage/TC_1.svg" alt="Title-part-1" />
+            <img src="./HomePage/TC_2.svg" alt="Title-part-2" /> */}
+            <div className={styles.thrivingCommunityHeader}>
+              <div className={styles.thrivingCommunityHeader1}>thriving</div>
+              <div className={styles.thrivingCommunityHeader2}>community</div>
+            </div>
+
             <p>
               We are the biggest ever community in SSN. What, you don't believe us? We hit 1000+
               members on our discord channel in 1 year. Talk about speed. Wait there's more - we are
@@ -67,7 +75,9 @@ export default function Home() {
               We are present on several platforms and we are looking to interact with you!{" "}
             </p>
             <Button className={styles.joinUsButton}>
-              <a href="https://linktr.ee/ssncc" target="_blank">Join Us</a>
+              <a href="https://linktr.ee/ssncc" target="_blank">
+                Join Us
+              </a>
             </Button>
           </div>
           <Container>
@@ -81,8 +91,11 @@ export default function Home() {
         <div className={styles.domainSection}>
           {/* lots of domains */}
           <Row>
-            <Col sm="12" md="6">
-              <img src="./HomePage/LoD.png" className={styles.domainHeader} alt="Title" />
+            <Col sm="12" md="8">
+              <div className={styles.domainHeader}>
+                <div className={styles.domainHeader1}>Lots of</div>
+                <div className={styles.domainHeader2}>Domains</div>
+              </div>
             </Col>
           </Row>
           <Row className={styles.domainRow}>
