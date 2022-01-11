@@ -124,7 +124,13 @@
   margin: -40px 0 0 -175px;
   padding: 50px;
   padding-top: 125px;
-  background-color: rgb(92, 3, 92);
+  background: rgb(255, 58, 130);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 58, 130, 1) 17%,
+    rgba(255, 29, 77, 1) 51%,
+    rgba(255, 0, 10, 1) 77%
+  );
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
