@@ -82,14 +82,13 @@ const ProjectsPage = () => {
     if (windowWidth <= 425) showModal();
   };
   const disableScrolling = () => {
-    var x = window.scrollX;
-    var y = window.scrollY;
-    window.onscroll = function () {
-      window.scrollTo(x, y);
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.onscroll = () => {
+      window.scrollTo({ top: scrollTop, left: 0, behavior: "instant" });
     };
   };
   const enableScrolling = () => {
-    window.onscroll = function () {};
+    window.onscroll = () => {};
   };
   const showModal = () => {
     disableScrolling();
