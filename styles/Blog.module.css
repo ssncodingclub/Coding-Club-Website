@@ -28,8 +28,9 @@
 
 .appleHeader {
   text-align: center;
-  background: url("../public/biggradient.jpg");
-  background-clip: text;
+  background: rgb(244, 58, 79);
+  background: linear-gradient(rgba(244, 58, 79, 1) 0%, rgba(118, 0, 171, 1) 100%);
+  background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: cover;
