@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "./Components/Navbar";
 import styles from "../styles/Blog.module.css";
@@ -7,8 +8,12 @@ import BlogCards from "./Components/BlogCards";
 import cards from "../data/blogcards";
 import Footer from "./Components/Footer";
 
-
 export default function Blog() {
+  const [isAppleDevice, setIsAppleDevice] = useState(false);
+  useEffect(() => {
+    setIsAppleDevice(/iPhone|iPad|iPod/i.test(navigator.userAgent));
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,9 +29,15 @@ export default function Blog() {
       <Navbar />
 
       <main className={styles.blog_main_container}>
-        <div className={styles.header}>
-          <h1>Blog</h1>
-        </div>
+        {isAppleDevice ? (
+          <div className={styles.appleHeader}>
+            <h1>Blog</h1>
+          </div>
+        ) : (
+          <div className={styles.header}>
+            <h1>Blog</h1>
+          </div>
+        )}
         <div className={styles.subcontainer}>
           <h2 className={styles.subheader}>
             {/*Get immersed in knowledge with our blogs!*/}
@@ -58,7 +69,6 @@ export default function Blog() {
         ) : (
           <></>
         )}
-
       </main>
       {/* <Footer /> */}
       <div className={styles.placeholder}>

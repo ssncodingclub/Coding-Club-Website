@@ -69,10 +69,12 @@ const ProjectsPage = () => {
   const [windowWidth, setWindowWidth] = useState(0);
   const [projectId, setprojectId] = useState(null);
   const [modalIsOpen, setmodalIsOpen] = useState(false);
+  const [isAppleDevice, setIsAppleDevice] = useState(false);
 
   useEffect(() => {
     Modal.setAppElement("body");
     setWindowWidth(window.screen.width);
+    setIsAppleDevice(/iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
 
   const showDescription = (id) => {
@@ -112,9 +114,15 @@ const ProjectsPage = () => {
       </Head>
       <Navbar />
       <main className={styles.projects_main_container}>
-        <div className={styles.header}>
-          <h1>Projects</h1>
-        </div>
+        {isAppleDevice ? (
+          <div className={styles.appleHeader}>
+            <h1>Projects</h1>
+          </div>
+        ) : (
+          <div className={styles.header}>
+            <h1>Projects</h1>
+          </div>
+        )}
         {/*
         <div className={styles.subcontainer}>
           <h2 className={styles.subheader}>
