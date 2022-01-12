@@ -1,14 +1,36 @@
-/* tiles in home page */  
+/* tiles in home page */
 .tileContent {
-    background-color: gray;
-    min-height: 50vh;
-    padding: 2rem;
+  background-color: gray;
+  min-height: 50vh;
+  padding: 2rem;
+  text-align: center;
 }
 
 .tileContent > p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.blueTile {
-    background-color: powderblue;
+.blueBG {
+  background-color: #9ed3d7;
+}
+
+.greenBG {
+  background-color: #42d696;
+}
+
+.purpleBG {
+  background-color: #768ed6;
+}
+/* .blueBG {
+  background-color: #383da5;
+} */
+.redBG {
+  background-color: #d66c56;
+}
+.img {
+  width: 100%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
 }
