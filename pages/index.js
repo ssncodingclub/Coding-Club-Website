@@ -226,8 +226,9 @@ export default function Home() {
           </Container>
         </div>
       </div>
-      <div className={styles.placeholder}></div>
-      <Footer />
+      <div className={styles.placeholder}>
+        <Footer />
+      </div>
     </div>
   );
 }
