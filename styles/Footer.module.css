@@ -58,12 +58,26 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
-
+.social_icon {
+  margin-top: -10px;
+}
+.discord:hover .social_icon {
+  color: #7289da;
+}
+.linkedin:hover .social_icon {
+  color: #0072b1;
+}
+.github:hover .social_icon {
+  color: #6cc644;
+}
 @media (max-width: 550px) {
   .footer h1 {
     font-size: 50px;
   }
   .footer h2 {
     font-size: 23px;
+  }
+  .social_media {
+    font-size: 30px;
   }
 }
