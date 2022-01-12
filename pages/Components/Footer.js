@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 import styles from "../../styles/Footer.module.css";
-function Footer() {
+
+const Footer = () => {
+  const [isAppleDevice, setIsAppleDevice] = useState(false);
+  useEffect(() => {
+    setIsAppleDevice(/iPhone|iPad|iPod/i.test(navigator.userAgent));
+  }, []);
+
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footer}>
-        <div className={styles.footerText}>
+        <div className={isAppleDevice ? styles.appleFooterText : styles.footerText}>
           <h1>Join us today!</h1>
           <h2>Try! Catch! Show!</h2>
         </div>
@@ -25,11 +31,10 @@ function Footer() {
           <a href="https://discord.com/invite/hSGEaRUnws" className={styles.discord}>
             <FaDiscord className={styles.social_icon} />
           </a>
-
         </div>
       </div>
-    </footer >
+    </footer>
   );
-}
+};
 
 export default Footer;
