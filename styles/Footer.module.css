@@ -2,7 +2,7 @@
   position: fixed;
   flex-direction: column;
   bottom: 0;
-  z-index: 5;
+  z-index: -5;
   height: 90vh;
   color: white;
 }

@@ -30,6 +30,9 @@
   padding-right: 0.7rem !important;
   padding-left: 0.7rem !important;
 }
+.navbar_nav {
+  font-weight: 700 !important;
+}
 
 .nav_item {
   position: relative;
@@ -90,8 +93,7 @@
   border-radius: 3px;
   z-index: 1;
   transform-origin: 5px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 .menuToggle span:first-child {
@@ -126,11 +128,7 @@
   padding-top: 125px;
 
   background: #fc466b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #3f5efb,
-    #fc466b
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right top,
     #3f5efb,
