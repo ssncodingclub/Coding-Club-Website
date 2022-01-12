@@ -3,7 +3,6 @@
 
 .header {
   text-align: center;
-  text-align: center;
   background: url("../public/biggradient.jpg");
   background-clip: text;
   -webkit-background-clip: text;
@@ -15,6 +14,20 @@
 }
 
 .header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85px;
+}
+
+.appleHeader {
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+}
+
+.appleHeader h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
 }
@@ -67,7 +80,7 @@
 }
 
 @media (max-width: 426px) {
-  .header h1 {
+  .header h1, .appleHeader h1 {
     font-size: 50px;
   }
   .subheader {
