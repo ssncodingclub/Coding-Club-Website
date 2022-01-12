@@ -1,7 +1,6 @@
 /* tiles in home page */
 .tileContent {
   background-color: gray;
-  min-height: 50vh;
   padding: 2rem;
   text-align: center;
 }

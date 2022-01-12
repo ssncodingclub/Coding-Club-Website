@@ -177,32 +177,32 @@ export default function Home() {
         <div className={styles.tileSection}>
           <Container fluid>
             <Row className={styles.tileRow}>
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
                 <Tile tileColor="blueBG" tileImage="sudoku.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
                 <Tile tileColor="greenBG" tileImage="flutter.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
                 {/*TODO: Can pass required content for tiles as props */}
                 <Tile tileColor="purpleBG" tileImage="mlrecap.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
                 <Tile tileColor="redBG" tileImage="induction.jpeg" />
               </Col>
 
 
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
                 <Tile tileColor="greenBG" tileImage="dp.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
                 <Tile tileColor="redBG" tileImage="pipeline.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
                 <Tile tileColor="blueBG" tileImage="git.jpeg" />
               </Col>
 
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
                 <Tile tileColor="purpleBG" tileImage="devintro.jpeg" />
               </Col>
             </Row>
