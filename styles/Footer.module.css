@@ -86,3 +86,9 @@
     font-size: 30px;
   }
 }
+
+@media (max-height: 580px) {
+  .footerContainer {
+    position: relative;
+  }
+}
