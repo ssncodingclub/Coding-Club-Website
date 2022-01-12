@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState, useEffect } from "react";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import cardDetails from "../data/cardInfo.json";
@@ -175,8 +175,8 @@ export default function Home() {
               <h1>Oops! We do</h1>
               <h1>Open Source too</h1>
               <h6>
-                Lorem ipsum dolor sit amet, <br />
-                consectetur epsit.
+                Take a look at <br />
+                the projects on our github!
               </h6>
               <button
                 className={styles.openSourceButton}
