@@ -28,6 +28,11 @@
   background-position-y: -1rem;
 }
 
+.appleFooterText {
+  text-align: center;
+  color: rgb(244, 58, 79);
+}
+
 .footer h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 90px;
