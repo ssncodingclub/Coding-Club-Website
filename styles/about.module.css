@@ -20,7 +20,8 @@
 
 .appleHeader {
   text-align: center;
-  color: white;
+  color: rgb(244, 58, 79);
+  background-size: cover;
 }
 
 .appleHeader h1 {
