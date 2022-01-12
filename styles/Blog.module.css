@@ -5,9 +5,10 @@
   position: relative;
   background-color: #070707;
   padding-bottom: 90vh;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin: 0 auto;
   z-index: 10;
+  width: 100%;
 }
 
 .header {
@@ -44,9 +45,6 @@
   margin-top: 80px;
   text-align: center;
   margin-bottom: 3.5rem;
-  /* made width 750 for now, footer overlaps when content is missing. Remove next two lines after blogs are added */
-  width: 750px;
-  background-color: #070707;
 }
 
 .subcontainer {
