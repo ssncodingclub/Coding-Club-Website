@@ -176,6 +176,7 @@
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
   background-size: cover;
+  background-position-x: -6rem;
 }
 .domainHeader1,
 .domainHeader2 {

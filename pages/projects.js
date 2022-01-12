@@ -79,11 +79,22 @@ const ProjectsPage = () => {
     setprojectId(id);
     if (windowWidth <= 425) showModal();
   };
-
+  const disableScrolling = () => {
+    var x = window.scrollX;
+    var y = window.scrollY;
+    window.onscroll = function () {
+      window.scrollTo(x, y);
+    };
+  };
+  const enableScrolling = () => {
+    window.onscroll = function () {};
+  };
   const showModal = () => {
+    disableScrolling();
     setmodalIsOpen(true);
   };
   const closeModal = () => {
+    enableScrolling();
     setmodalIsOpen(false);
   };
 
