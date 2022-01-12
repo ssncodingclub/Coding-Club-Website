@@ -83,6 +83,10 @@
   .subheader {
     font-size: 30px;
   }
+
+  .container {
+    margin-top: 120px;
+  }
 }
 
 /* placeholder for footer (parallax effect) */
