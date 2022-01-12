@@ -19,11 +19,7 @@
 
 .appleHeader {
   text-align: center;
-  background: url("../public/biggradient.jpg");
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: cover;
+  color: rgb(244, 58, 79);
 }
 
 .appleHeader h1 {
@@ -264,6 +260,7 @@
   color: white;
   right: 1rem;
   top: 1rem;
+  z-index: 1000;
 }
 
 .ContributorList {
