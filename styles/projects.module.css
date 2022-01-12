@@ -3,34 +3,18 @@
 
 .header {
   text-align: center;
-  color: #f63c54; /*non-webkit fallback*/
-  background: -webkit-linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
-  background: linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
-  background-clip: content-box;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -6rem;
 }
 
 .header h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
-  /* background: #8a2387; 
-  background: -webkit-linear-gradient(
-    to left,
-    #8a2387,
-    #e94057,
-    #f27121
-  ); 
-  background: linear-gradient(
-    to left,
-    #8a2387,
-    #e94057,
-    #f27121
-  ); 
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .projects_main_container {
@@ -197,8 +181,7 @@
 .project_desc::-webkit-scrollbar-thumb {
   background: inherit;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .project_desc::-webkit-scrollbar-track {
@@ -281,8 +264,7 @@
 .ContributorList::-webkit-scrollbar-thumb {
   background: inherit;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .ContributorList::-webkit-scrollbar-track {

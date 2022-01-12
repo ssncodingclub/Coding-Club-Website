@@ -105,8 +105,10 @@ export default function Home() {
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-                We assist you in learning the best practices for competitive programming. Through
-                these experiences, you will also get better at thinking on your feet.{" "}
+                Do you want to know how to invert a binary tree? Jokes aside - We focus on teaching
+                the tricks and trades of popular cp concepts, and as if that's not all, we hold
+                contests where you can battle it out with your peers and challenge yourself. BTW,
+                did we mention we are available 24/7 on any questions and doubts? xD
               </p>
             </Col>
           </Row>
@@ -118,8 +120,11 @@ export default function Home() {
               className={styles.domainInfoContainer}
             >
               <p className={styles.domainInfo}>
-                We will assist you in building your profile. You can learn the best industry
-                practices by building projects. We will also enable collaboration in projects.{" "}
+                Hey you there reading this. How do you think this website was built? You don't know
+                or do you know enough? You will answer all these real life application questions
+                with us. Learn state-of-the-art app building, end-to-end full stack - no compromise.
+                What concept you wanna learn - you name it. We have people for all tools out there
+                xD.
               </p>
             </Col>
             <Col
@@ -139,8 +144,10 @@ export default function Home() {
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-                We teach and code machine learning from scratch, providing a roadmap for everyone to
-                follow at their own pace.{" "}
+                What if I said, in 15 years time, the code that you write now, duh "manually",
+                will learn to write itself automatically. Interesting? That's barely scratching
+                the surface. Come find out about the future with us where we teach and code machine
+                learning from scratch. We give a roadmap for everyone to follow at their own pace.
               </p>
             </Col>
           </Row>

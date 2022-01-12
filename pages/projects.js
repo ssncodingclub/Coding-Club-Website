@@ -39,31 +39,6 @@ const RightCard = ({ id, modalIsOpen, closeModal }) => {
   }
 };
 
-const ContributorList = ({ contributors }) => {
-  return (
-    <div className={styles.ContributorList}>
-      <h3>Contributors to this project</h3>
-      <div>
-        {contributors.map((contributor) => (
-          <div className={styles.contributorItem}>
-            <img src={contributor.picture} />
-            <div className={styles.contributorInfo}>
-              <h4>{contributor.name}</h4>
-              <p>{contributor.role}</p>
-            </div>
-            <a
-              href="https://github.com/shashankp4nda"
-              className={`fa fa-github ${styles.social_icon}`}
-              target="_blank"
-              rel="noreferrer"
-            ></a>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 const ProjectCard = ({ name, techStack, domain, projectImage, id, width, showDescription }) => {
   const classNamePrefix = "projectcard_item_",
     className = classNamePrefix + id;
@@ -104,11 +79,22 @@ const ProjectsPage = () => {
     setprojectId(id);
     if (windowWidth <= 425) showModal();
   };
-
+  const disableScrolling = () => {
+    var x = window.scrollX;
+    var y = window.scrollY;
+    window.onscroll = function () {
+      window.scrollTo(x, y);
+    };
+  };
+  const enableScrolling = () => {
+    window.onscroll = function () {};
+  };
   const showModal = () => {
+    disableScrolling();
     setmodalIsOpen(true);
   };
   const closeModal = () => {
+    enableScrolling();
     setmodalIsOpen(false);
   };
 
@@ -167,7 +153,6 @@ const ProjectsPage = () => {
           <div className={styles.coming_soon}>Coming Soon 😉</div>
         )}
       </main>
-      {/* <Footer /> */}
       <div className={styles.placeholder}>
         <Footer />
       </div>

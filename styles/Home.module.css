@@ -4,35 +4,18 @@
 
 .header {
   text-align: center;
-  color: #f63c54; /*non-webkit fallback*/
-  background: -webkit-linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
-  background: linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
-  background-clip: content-box;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -3rem;
 }
 
 .header h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 90px;
-  /* font-weight: 950 !important;
-  background: #8a2387; 
-  background: -webkit-linear-gradient(
-    to left,
-    #8a2387,
-    #e94057,
-    #f27121
-  ); 
-  background: linear-gradient(
-    to left,
-    #8a2387,
-    #e94057,
-    #f27121
-  ); 
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .parallax {
@@ -186,13 +169,14 @@
   width: 80%;
   height: auto;
   margin-bottom: 5rem;
-  color: rgba(255, 49, 115, 1); /*non-webkit fallback*/
-  background: linear-gradient(rgba(255, 49, 115, 1) 0%, rgba(255, 86, 40, 1) 100%);
-  background: -webkit-linear-gradient(rgba(255, 49, 115, 1) 0%, rgba(255, 86, 40, 1) 100%);
-  background-clip: content-box;
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+  background-size: cover;
+  background-position-x: -6rem;
 }
 .domainHeader1,
 .domainHeader2 {
@@ -250,21 +234,12 @@
   margin-bottom: 5rem;
 }
 .thrivingCommunityHeader {
-  color: #f63c54; /*non-webkit fallback*/
-  background: linear-gradient(
-    rgb(247, 65, 37) 0%,
-    rgba(232, 125, 32, 1) 50%,
-    rgb(240, 187, 53) 100%
-  );
-  background: -webkit-linear-gradient(
-    rgb(247, 65, 37) 0%,
-    rgba(232, 125, 32, 1) 50%,
-    rgb(240, 187, 53) 100%
-  );
-  background-clip: content-box;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+  background-size: cover;
 }
 .thrivingCommunityHeader1 {
   font-size: 144px;
@@ -481,6 +456,9 @@
   }
 }
 @media (max-width: 769px) {
+  .header {
+    background-position-y: -6rem;
+  }
   .gradientDiv {
     height: 18rem;
     width: 100%;
@@ -556,6 +534,9 @@
 }
 
 @media (max-width: 444px) {
+  .header {
+    background-position-x: -8rem;
+  }
   .gradientDiv {
     height: 10rem;
   }
@@ -576,7 +557,9 @@
     margin-left: 50%;
     margin-top: -35%;
   }
-
+  .thrivingCommunityHeader {
+    background-position-x: -8rem;
+  }
   .thrivingCommunityHeader1 {
     font-size: calc(100vw - 83vw);
     font-family: "Montserrat", sans-serif;
