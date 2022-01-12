@@ -51,6 +51,9 @@
   margin-top: 80px;
   text-align: center;
   margin-bottom: 3.5rem;
+  /* made width 750 for now, footer overlaps when content is missing. Remove next two lines after blogs are added */
+  width: 750px;
+  background-color: #070707;
 }
 
 .subcontainer {
