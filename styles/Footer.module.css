@@ -1,5 +1,3 @@
-@import url("https://use.fontawesome.com/2d1db3434b.js");
-
 .footerContainer {
   position: fixed;
   flex-direction: column;
@@ -17,6 +15,28 @@
   justify-content: center;
   height: 100%;
   width: 100vw;
+}
+
+.footerText {
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -1rem;
+}
+
+.footer h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 90px;
+}
+
+.footer h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  font-size: 40px;
 }
 
 .social_media {
@@ -37,4 +57,13 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+@media (max-width: 550px) {
+  .footer h1 {
+    font-size: 50px;
+  }
+  .footer h2 {
+    font-size: 23px;
+  }
 }
