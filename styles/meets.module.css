@@ -19,9 +19,25 @@
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
 }
+.appleHeader {
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position-y: 6rem;
+  z-index: 10;
+  position: relative;
+}
+
+.appleHeader h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85px;
+}
 
 .subheader {
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: #fff;
@@ -322,7 +338,8 @@
 }
 
 @media screen and (max-width: 420px) {
-  .header h1 {
+  .header h1,
+  .appleHeader h1 {
     font-size: 20vw;
   }
 }

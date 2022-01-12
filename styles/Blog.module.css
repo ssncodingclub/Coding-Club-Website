@@ -26,6 +26,22 @@
   font-size: 85px;
 }
 
+.appleHeader {
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position-y: 1rem;
+  background-position-x: 2rem;
+}
+
+.appleHeader h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85px;
+}
+
 .subheader {
   font-family: "Poppins", sans-serif;
   font-size: 40px;

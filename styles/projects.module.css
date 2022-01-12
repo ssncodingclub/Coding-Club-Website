@@ -17,6 +17,20 @@
   font-size: 85px;
 }
 
+.appleHeader {
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+}
+
+.appleHeader h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85px;
+}
+
 .projects_main_container {
   flex-direction: column;
   position: relative;

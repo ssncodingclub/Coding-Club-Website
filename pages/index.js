@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
@@ -10,6 +11,11 @@ import Tile from "./Components/Tile";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const [isAppleDevice, setIsAppleDevice] = useState(false);
+  useEffect(() => {
+    setIsAppleDevice(/iPhone|iPad|iPod/i.test(navigator.userAgent));
+  }, []);
+
   return (
     <div className={styles.parallax}>
       <div className={styles.container}>
@@ -25,11 +31,13 @@ export default function Home() {
         <Navbar />
         <main className={styles.main}>
           <div className={styles.headerSection}>
-            {/* <img src="./Title.png" className={styles.responsive} alt="Title" /> */}
-
-            <div className={styles.header}>
-              <h1>SSN Coding Club</h1>
-            </div>
+            {isAppleDevice ? (
+              <img src="./Title.png" className={styles.responsive} alt="Title" />
+            ) : (
+              <div className={styles.header}>
+                <h1>SSN Coding Club</h1>
+              </div>
+            )}
             <h1 className={styles.h1Text}>More than just a club.</h1>
             <a href="#info">
               <BsChevronDoubleDown color="white" size="45"></BsChevronDoubleDown>
@@ -59,12 +67,17 @@ export default function Home() {
         </div>
         <div>
           <div className={styles.thrivingCommunityHeaderContainer}>
-            {/* <img src="./HomePage/TC_1.svg" alt="Title-part-1" />
-            <img src="./HomePage/TC_2.svg" alt="Title-part-2" /> */}
-            <div className={styles.thrivingCommunityHeader}>
-              <div className={styles.thrivingCommunityHeader1}>thriving</div>
-              <div className={styles.thrivingCommunityHeader2}>community</div>
-            </div>
+            {isAppleDevice ? (
+              <>
+                <img src="./HomePage/TC_1.svg" alt="Title-part-1" />
+                <img src="./HomePage/TC_2.svg" alt="Title-part-2" />{" "}
+              </>
+            ) : (
+              <div className={styles.thrivingCommunityHeader}>
+                <div className={styles.thrivingCommunityHeader1}>thriving</div>
+                <div className={styles.thrivingCommunityHeader2}>community</div>
+              </div>
+            )}
 
             <p>
               We are the biggest ever community in SSN. What, you don't believe us? We hit 1000+
@@ -92,10 +105,14 @@ export default function Home() {
           {/* lots of domains */}
           <Row>
             <Col sm="12" md="8">
-              <div className={styles.domainHeader}>
-                <div className={styles.domainHeader1}>Lots of</div>
-                <div className={styles.domainHeader2}>Domains</div>
-              </div>
+              {isAppleDevice ? (
+                <img src="./HomePage/LoD.png" className={styles.domainHeader} alt="Title" />
+              ) : (
+                <div className={styles.domainHeader}>
+                  <div className={styles.domainHeader1}>Lots of</div>
+                  <div className={styles.domainHeader2}>Domains</div>
+                </div>
+              )}
             </Col>
           </Row>
           <Row className={styles.domainRow}>
@@ -144,9 +161,9 @@ export default function Home() {
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-                What if I said, in 15 years time, the code that you write now, duh "manually",
-                will learn to write itself automatically. Interesting? That's barely scratching
-                the surface. Come find out about the future with us where we teach and code machine
+                What if I said, in 15 years time, the code that you write now, duh "manually", will
+                learn to write itself automatically. Interesting? That's barely scratching the
+                surface. Come find out about the future with us where we teach and code machine
                 learning from scratch. We give a roadmap for everyone to follow at their own pace.
               </p>
             </Col>
