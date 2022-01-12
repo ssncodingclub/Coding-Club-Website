@@ -308,6 +308,10 @@
   .blog_title_text_container {
     padding-bottom: 0;
   }
+
+  .container {
+    margin-top: 120px;
+  }
 }
 
 /* placeholder for footer (parallax effect) */

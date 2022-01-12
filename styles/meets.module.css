@@ -337,6 +337,9 @@
   .appleHeader h1 {
     font-size: 20vw;
   }
+  .container {
+    margin-top: 120px;
+  }
 }
 
 @media screen and (max-width: 426px) {
