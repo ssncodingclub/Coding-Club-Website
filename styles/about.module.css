@@ -3,35 +3,20 @@
 
 .header {
   text-align: center;
-  color: #f63c54; /*non-webkit fallback*/
-  background: -webkit-linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
-  background: linear-gradient(#8a2387, #e94057, #fc7b2a, #ff9100);
-  background-clip: content-box;
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -6rem;
+  background-position-x: -8rem;
 }
 
 .header h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
-  /* background: #8a2387; 
-  background: -webkit-linear-gradient(
-    to left,
-    #8a2387,
-    #e94057,
-    #f27121
-  ); 
-  background: linear-gradient(
-    to left,
-    #8a2387,
-    #e94057,
-    #f27121
-  ); 
-
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .about_main_container {
