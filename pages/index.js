@@ -5,10 +5,10 @@ import Head from "next/head";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import cardDetails from "../data/cardInfo.json";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import Tile from "./Components/Tile";
 import styles from "../styles/Home.module.css";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import Tile from "./Components/Tile";
 
 export default function Home() {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
@@ -194,30 +194,33 @@ export default function Home() {
         <div className={styles.tileSection}>
           <Container fluid>
             <Row className={styles.tileRow}>
-              <Col sm="12" md="3" className={styles.tileContainer}>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
+                <Tile tileColor="blueBG" tileImage="sudoku.jpeg" />
+              </Col>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
+                <Tile tileColor="greenBG" tileImage="flutter.jpeg" />
+              </Col>
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
                 {/*TODO: Can pass required content for tiles as props */}
-                <Tile tileColor="darkseagreen" />
+                <Tile tileColor="purpleBG" tileImage="mlrecap.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
-                <Tile tileColor="azure" />
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
+                <Tile tileColor="redBG" tileImage="induction.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
-                <Tile tileColor="pink" />
+
+
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
+                <Tile tileColor="greenBG" tileImage="dp.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
-                <Tile tileColor="lightblue" />
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
+                <Tile tileColor="redBG" tileImage="pipeline.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
-                <Tile tileColor="azure" />
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
+                <Tile tileColor="blueBG" tileImage="git.jpeg" />
               </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
-                <Tile tileColor="lightblue" />
-              </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
-                <Tile tileColor="darkseagreen" />
-              </Col>
-              <Col sm="12" md="3" className={styles.tileContainer}>
-                <Tile tileColor="pink" />
+
+              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
+                <Tile tileColor="purpleBG" tileImage="devintro.jpeg" />
               </Col>
             </Row>
           </Container>
