@@ -123,7 +123,7 @@ export default function Home() {
                         </Col>
                         <Col sm="12" md="7" className={styles.domainInfoContainer}>
                             <p className={styles.domainInfo}>
-                                We are a community of passionate coders. Join us on a journey to master the tricks of the trade - popular CP concepts, algorithms and stratagems, boosting your cognitive and logical reasoning as well as enhancing your coding interviews skills along the way. It doesn't end there! We also hold contests where you can battle it out with your peers and challenge yourself. Our team is available 24/7 to clarify your doubts, provide curated resources and any other assistance you may need.
+                                We are a community of passionate coders. Join us on a journey to master the tricks of the trade - popular CP concepts, algorithms and stratagems, boosting your cognitive and logical reasoning as well as enhancing your coding interviews skills along the way. We also hold contests where you can battle it out with your peers and challenge yourself. We are available 24/7 to clarify your doubts and for any other assistance you may need.
                             </p>
                         </Col>
                     </Row>
