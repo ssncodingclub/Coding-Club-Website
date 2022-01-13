@@ -224,6 +224,7 @@
 }
 
 .domainName {
+  margin-top: 10px;
   transition: color 200ms ease;
 }
 .domainName:hover {

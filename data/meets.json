@@ -6,7 +6,7 @@
       "tag": "AI/ML",
       "color": "green"
     },
-    "description": "ML team introduced everyone to logistic regression, handcrafted features and the need for deep learning.",
+    "description": "ML team introduced everyone to logistic regression, handcrafted image features and the need for deep learning.",
     "link": {
       "url": "https://ssneduin.sharepoint.com/sites/SSNCodingClub/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FML%2DAI%2FRecordings%2FML%2DAI%2D20220112%5F181335%2DMeeting%20Recording%2Emp4&parent=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FML%2DAI%2FRecordings",
       "text": "watch the session recording"
@@ -34,7 +34,7 @@
     }
   },
   {
-    "text": "ML Introduction meet",
+    "text": "ML Introduction Meet",
     "date": "December 24th 2021",
     "category": {
       "tag": "AI/ML",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "text": "CP Team: Dynamic programming Session",
+    "text": "CP Team: Dynamic Programming Session",
     "date": "November 6th 2021",
     "category": {
       "tag": "CP",
@@ -99,13 +99,13 @@
     }
   },
   {
-    "text": "SD Team: Introduction to software Development",
+    "text": "SD Team: Introduction to Software Development",
     "date": "September 26th 2021",
     "category": {
       "tag": "SD",
       "color": "purple"
     },
-    "description": "SD team introduces audience to the various types of software development. Software dev Terminologies and Tech stacks are discussed.",
+    "description": "SD team introduces audience to the various types of software development. Software dev terminologies and tech stacks are discussed.",
     "link": {
       "url": "https://drive.google.com/file/d/1SzZ6vGY5HgAEByo64xYS3wWsHIQXQthP/view?usp=sharing",
       "text": "watch the session recording"

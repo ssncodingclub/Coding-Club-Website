@@ -84,7 +84,7 @@ export default function Home() {
               what we are because of our unrivaled community.
               <br />
               <br /> We engage with everyone and the community chooses what we should focus on next.
-              We are present on several platforms and we are looking to interact with you!{" "}
+              We are present on several platforms and we are looking forward to interact with you!{" "}
             </p>
             <Button className={styles.joinUsButton}>
               <a href="https://linktr.ee/ssncc" target="_blank">
@@ -134,7 +134,7 @@ export default function Home() {
               className={styles.domainInfoContainer}
             >
               <p className={styles.domainInfo}>
-                Rome wasn't built in a day, and neither was our website. Learn state-of-the-art app building and end-to-end full stack development with zero compromises. Do you have anything in particular you want to learn? No problem! Our team of developers have experience in various fields, and can help out whenever required.
+                Rome wasn't built in a day, and neither was our website. Learn state-of-the-art app building and end-to-end full-stack development with zero compromises. Do you have anything in particular you want to learn? No problem! Our team of developers have experience in various fields, and can help out whenever required.
               </p>
             </Col>
             <Col
@@ -163,10 +163,10 @@ export default function Home() {
           <div className={styles.gradientDiv}>
             <div className={styles.opensourceDiv}>
               <h1>Oops! We do</h1>
-              <h1>Open Source too</h1>
+              <h1>Open Source too!</h1>
               <h6>
                 Take a look at <br />
-                the projects on our github!
+                the projects on our GitHub!
               </h6>
               <button
                 className={styles.openSourceButton}

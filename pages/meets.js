@@ -89,7 +89,7 @@ export default function Meets() {
             className={styles.filterDropdown}
           >
             <Dropdown.Toggle variant="dark" id="dropdown-basic">
-              filters
+              Filters
             </Dropdown.Toggle>
             <Dropdown.Menu style={{ "background-color": "#070707" }}>
               <Dropdown.Item>
