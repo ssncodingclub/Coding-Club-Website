@@ -171,7 +171,7 @@
           "linkedin": "https://www.linkedin.com/in/sabeshbharathi/",
           "instagram": "https://www.instagram.com/kannilingus/"
         }
-      }
+      },
       {
         "name": "Nithin Balaji",
         "position": "Member",
@@ -273,7 +273,7 @@
     ]
   },
   {
-    "title":"Competitive\nProgramming\nTeam",
+    "title": "Competitive\nProgramming\nTeam",
     "discord": "@CP Team",
     "tags": ["algorithms", "dsa"],
     "bgColorStyle": {
@@ -371,7 +371,7 @@
     ]
   },
   {
-    "title":"Design and\nSocial Media\nTeam",
+    "title": "Design and\nSocial Media\nTeam",
     "discord": "@Design/Social Team",
     "tags": ["socials", "marketing"],
     "bgColorStyle": {
