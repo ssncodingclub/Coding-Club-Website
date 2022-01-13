@@ -74,7 +74,7 @@ const ProjectsPage = () => {
   useEffect(() => {
     Modal.setAppElement("body");
     setWindowWidth(window.screen.width);
-    setIsAppleDevice(/iPhone|iPad|iPod/i.test(navigator.userAgent));
+    setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
 
   const showDescription = (id) => {
