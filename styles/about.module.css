@@ -100,7 +100,12 @@
 @media (max-height: 580px) {
   .header {
     text-align: center;
-    background: rgb(244, 58, 79);
+    background: linear-gradient(
+      to right,
+      rgb(255, 96, 170),
+      rgb(255, 139, 61),
+      rgb(255, 118, 182)
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
