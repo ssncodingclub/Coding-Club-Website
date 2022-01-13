@@ -106,50 +106,6 @@
         }
       },
       {
-        "name": "Shashank Panda",
-        "position": "Member",
-        "alt": "shashankpanda",
-        "profilePic": "/profiles/Dev/shashankpanda.jpeg",
-        "socials": {
-          "github": "https://github.com/shashankp4nda/",
-          "linkedin": "https://www.linkedin.com/in/shashank-panda/",
-          "instagram": "https://www.instagram.com/shashankpanda/"
-        }
-      },
-      {
-        "name": "Nithin Balaji",
-        "position": "Member",
-        "alt": "nithin",
-        "profilePic": "/profiles/Dev/nithin.jpeg",
-        "socials": {
-          "github": "https://github.com/thenithinbalaji/",
-          "linkedin": "https://www.linkedin.com/in/thenithinbalaji/",
-          "instagram": "https://www.instagram.com/thenithinbalaji/"
-        }
-      },
-      {
-        "name": "Aditya R",
-        "position": "Member",
-        "alt": "adityar",
-        "profilePic": "/profiles/Dev/adityar.jpeg",
-        "socials": {
-          "github": "https://github.com/adityar224/",
-          "linkedin": "https://www.linkedin.com/in/aditya-r-2496941ba/",
-          "instagram": "https://www.instagram.com/aditya.bolt/"
-        }
-      },
-      {
-        "name": "Vignesh Balaji",
-        "position": "Member",
-        "alt": "vignesh",
-        "profilePic": "/profiles/Dev/vignesh.jpeg",
-        "socials": {
-          "github": "https://github.com/vigbality/",
-          "linkedin": "https://www.linkedin.com/in/vignesh-balaji-saravanarajan-397713200/",
-          "instagram": "https://www.instagram.com/vigneshbalaji.exe/"
-        }
-      },
-      {
         "name": "Srinithyee SK",
         "position": "Member",
         "alt": "srinithyee",
@@ -158,6 +114,17 @@
           "github": "https://github.com/Srinithyee/",
           "linkedin": "https://www.linkedin.com/in/srinithyeesk/",
           "instagram": null
+        }
+      },
+      {
+        "name": "Shashank Panda",
+        "position": "Member",
+        "alt": "shashankpanda",
+        "profilePic": "/profiles/Dev/shashankpanda.jpeg",
+        "socials": {
+          "github": "https://github.com/shashankp4nda/",
+          "linkedin": "https://www.linkedin.com/in/shashank-panda/",
+          "instagram": "https://www.instagram.com/shashankpanda/"
         }
       },
       {
@@ -171,6 +138,18 @@
           "instagram": "https://www.instagram.com/_being_lokesh_/"
         }
       },
+      {
+        "name": "Aditya R",
+        "position": "Member",
+        "alt": "adityar",
+        "profilePic": "/profiles/Dev/adityar.jpeg",
+        "socials": {
+          "github": "https://github.com/adityar224/",
+          "linkedin": "https://www.linkedin.com/in/aditya-r-2496941ba/",
+          "instagram": "https://www.instagram.com/aditya.bolt/"
+        }
+      },
+      ,
       {
         "name": "Harisaran G",
         "position": "Member",
@@ -191,6 +170,28 @@
           "github": "https://github.com/programVeins/",
           "linkedin": "https://www.linkedin.com/in/sabeshbharathi/",
           "instagram": "https://www.instagram.com/kannilingus/"
+        }
+      }
+      {
+        "name": "Nithin Balaji",
+        "position": "Member",
+        "alt": "nithin",
+        "profilePic": "/profiles/Dev/nithin.jpeg",
+        "socials": {
+          "github": "https://github.com/thenithinbalaji/",
+          "linkedin": "https://www.linkedin.com/in/thenithinbalaji/",
+          "instagram": "https://www.instagram.com/thenithinbalaji/"
+        }
+      },
+      {
+        "name": "Vignesh Balaji",
+        "position": "Member",
+        "alt": "vignesh",
+        "profilePic": "/profiles/Dev/vignesh.jpeg",
+        "socials": {
+          "github": "https://github.com/vigbality/",
+          "linkedin": "https://www.linkedin.com/in/vignesh-balaji-saravanarajan-397713200/",
+          "instagram": "https://www.instagram.com/vigneshbalaji.exe/"
         }
       }
     ]
