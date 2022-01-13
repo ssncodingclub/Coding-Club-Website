@@ -312,6 +312,28 @@
   }
 }
 
+@media (max-height: 580px) {
+  .header {
+    text-align: center;
+    background: linear-gradient(
+      to right,
+      rgb(255, 96, 170),
+      rgb(255, 139, 61),
+      rgb(255, 118, 182)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -6rem;
+    background-position-x: -8rem;
+  }
+  .header h1 {
+    color: rgb(244, 58, 79);
+  }
+}
+
 /* placeholder for footer (parallax effect) */
 .placeholder {
   position: relative;
