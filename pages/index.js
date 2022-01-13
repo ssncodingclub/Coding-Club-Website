@@ -9,12 +9,15 @@ import styles from "../styles/Home.module.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Tile from "./Components/Tile";
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-217065873-1');
 
 export default function Home() {
-    const [isAppleDevice, setIsAppleDevice] = useState(false);
-    useEffect(() => {
-        setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
-    }, []);
+  const [isAppleDevice, setIsAppleDevice] = useState(false);
+  useEffect(() => {
+    setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
+    ReactGA.send("pageview");
+  }, []);
 
     return (
         <div className={styles.parallax}>
