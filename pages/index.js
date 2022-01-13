@@ -122,10 +122,7 @@ export default function Home() {
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-                Do you want to know how to invert a binary tree? Jokes aside - We focus on teaching
-                the tricks and trades of popular cp concepts, and as if that's not all, we hold
-                contests where you can battle it out with your peers and challenge yourself. BTW,
-                did we mention we are available 24/7 on any questions and doubts? xD
+                We are a community of passionate coders. Join us on a journey to master the tricks of the trade - popular CP concepts, algorithms and stratagems, boosting your cognitive and logical reasoning as well as enhancing your coding interviews skills along the way. We also hold contests where you can battle it out with your peers and challenge yourself. We are available 24/7 to clarify your doubts and for any other assistance you may need.
               </p>
             </Col>
           </Row>
@@ -137,11 +134,7 @@ export default function Home() {
               className={styles.domainInfoContainer}
             >
               <p className={styles.domainInfo}>
-                Hey you there reading this. How do you think this website was built? You don't know
-                or do you know enough? You will answer all these real life application questions
-                with us. Learn state-of-the-art app building, end-to-end full stack - no compromise.
-                What concept you wanna learn - you name it. We have people for all tools out there
-                xD.
+                Rome wasn't built in a day, and neither was our website. Learn state-of-the-art app building and end-to-end full stack development with zero compromises. Do you have anything in particular you want to learn? No problem! Our team of developers have experience in various fields, and can help out whenever required.
               </p>
             </Col>
             <Col
@@ -161,10 +154,7 @@ export default function Home() {
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p className={styles.domainInfo}>
-                What if I said, in 15 years time, the code that you write now, duh "manually", will
-                learn to write itself automatically. Interesting? That's barely scratching the
-                surface. Come find out about the future with us where we teach and code machine
-                learning from scratch. We give a roadmap for everyone to follow at their own pace.
+                What if you were told that 15 years from now, the code that you currently write "manually", will learn to write itself automatically. Interesting, right? That's barely scratching the surface. Come learn about the future with us where we teach and code machine learning from scratch. We also provide a roadmap so everyone can learn at their own pace.
               </p>
             </Col>
           </Row>
