@@ -9,11 +9,14 @@ import styles from "../styles/Home.module.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Tile from "./Components/Tile";
+import ReactGA from 'react-ga4';
+ReactGA.initialize('G-BZBV2494EV');
 
 export default function Home() {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
+    ReactGA.send("pageview");
   }, []);
 
   return (
