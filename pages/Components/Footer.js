@@ -32,7 +32,7 @@ const Footer = () => {
                         <FaDiscord className={styles.social_icon} />
                     </a>
                 </div>
-                <p style={{ color: 'grey', position: 'absolute', bottom: '0', textAlign: 'center' }}>We use Google Analytics on this site to collect data </p>
+                <p style={{ color: 'grey', position: 'absolute', bottom: '0', textAlign: 'center' }}>We use Google Analytics to monitor site analytics</p>
 
             </div>
         </footer>
