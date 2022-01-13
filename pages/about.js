@@ -14,7 +14,7 @@ import Footer from "./Components/Footer";
 export default function About() {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
   useEffect(() => {
-    setIsAppleDevice(/iPhone|iPad|iPod/i.test(navigator.userAgent));
+    setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
 
   return (
