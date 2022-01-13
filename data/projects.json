@@ -3,7 +3,7 @@
     "name": "Genuine Genie",
     "techStack": "Node.js",
     "domain": "Software Development",
-    "projectImage": "./Projects/dummyimage.jpeg",
+    "projectImage": "./Projects/ggbot.jpg",
     "contributors": [
       {
         "name": "contributor1",
@@ -28,7 +28,7 @@
     "name": "SSN Coding Club Website",
     "techStack": "Next.js",
     "domain": "Software Development",
-    "projectImage": "./Projects/dummyimage.jpeg",
+    "projectImage": "./Projects/website.jpg",
     "contributors": [
       {
         "name": "contributor1",
