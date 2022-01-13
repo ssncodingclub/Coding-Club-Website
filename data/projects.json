@@ -22,11 +22,11 @@
       }
     ],
     "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, gnissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iure",
-    "projectLink": "/projects"
+    "projectLink": "https://github.com/ssncodingclub/discord-bot-GenuineGenie"
   },
   {
     "name": "SSN Coding Club Website",
-    "techStack": "NextJS",
+    "techStack": "Next.js",
     "domain": "Software Development",
     "projectImage": "./Projects/dummyimage.jpeg",
     "contributors": [
@@ -47,6 +47,6 @@
       }
     ],
     "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, gnissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iure",
-    "projectLink": "/projects"
+    "projectLink": "https://github.com/ssncodingclub/Coding-Club-Website"
   }
 ]
