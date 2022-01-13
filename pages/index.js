@@ -78,7 +78,6 @@ export default function Home() {
                 <div className={styles.thrivingCommunityHeader2}>community</div>
               </div>
             )}
-
             <p>
               We are the biggest ever community in SSN. What, you don't believe us? We hit 1000+
               members on our discord channel in 1 year. Talk about speed. Wait there's more - we are
