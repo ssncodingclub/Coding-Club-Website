@@ -9,8 +9,8 @@ import styles from "../styles/Home.module.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Tile from "./Components/Tile";
-import ReactGA from 'react-ga4';
-ReactGA.initialize('G-BZBV2494EV');
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-217065873-1');
 
 export default function Home() {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
