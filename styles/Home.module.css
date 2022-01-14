@@ -34,7 +34,6 @@
   background-color: #070707;
 }
 
-
 .main {
   flex: 1;
   display: flex;
@@ -168,23 +167,28 @@
 }
 
 .domainHeader {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-bottom: 5rem;
-  text-align: center;
+  text-align: left;
   background: url("../public/biggradient.jpg");
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
   background-size: cover;
-  background-position-x: -6rem;
+  background-position-x: -15rem;
+}
+.domainHeaderApple {
+  width: 80%;
+  height: auto;
+  margin-bottom: 5rem;
 }
 .domainHeader1,
 .domainHeader2 {
-  font-size: 60px;
+  font-size: 90px;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: -20px;
+  margin-bottom: -30px;
 }
 
 .domainInfoContainer,
@@ -220,6 +224,7 @@
 }
 
 .domainName {
+  margin-top: 10px;
   transition: color 200ms ease;
 }
 .domainName:hover {
@@ -489,7 +494,7 @@
   }
   .domainHeader1,
   .domainHeader2 {
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: -15px;
   }
 }
@@ -530,7 +535,7 @@
   }
   .domainHeader1,
   .domainHeader2 {
-    font-size: 41px;
+    font-size: 50px;
     margin-bottom: -15px;
   }
 }
@@ -575,10 +580,9 @@
 
   .domainHeader1,
   .domainHeader2 {
-    font-size: 31px;
+    font-size: 35px;
     margin-bottom: -15px;
   }
-  
 }
 @media (max-width: 575.5px) {
   .row2 {

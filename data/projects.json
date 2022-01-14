@@ -3,7 +3,7 @@
     "name": "Genuine Genie",
     "techStack": "Node.js",
     "domain": "Software Development",
-    "projectImage": "./Projects/dummyimage.jpeg",
+    "projectImage": "./Projects/ggbot.jpg",
     "contributors": [
       {
         "name": "contributor1",
@@ -21,14 +21,14 @@
         "role": "front-end"
       }
     ],
-    "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, gnissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iure",
-    "projectLink": "/projects"
+    "projectDescription": "A bot that can do everything? Yes you read that right, this is an advanced community server setup and moderation discord-bot with about 50+ commands and 10+ features!! A glimpse of some moderation features include an automatic role-claim channel, an auto-poll channel to get community opinion and a suggestions channel that can be reviewed by the community as well as by moderators. Another unique feature is the 'thanks leaderboard' which really motivates server members to help each other out. Additionally, there are over 50 commands that not only aid in moderating & managing the server but also provide a refreshing way to have fun and interact with the community. The features of GG bot doesn't stop here, it's now an open source project and if you would like to contribute check out the github repo!",
+    "projectLink": "https://github.com/ssncodingclub/discord-bot-GenuineGenie"
   },
   {
     "name": "SSN Coding Club Website",
-    "techStack": "NextJS",
+    "techStack": "Next.js",
     "domain": "Software Development",
-    "projectImage": "./Projects/dummyimage.jpeg",
+    "projectImage": "./Projects/website.jpg",
     "contributors": [
       {
         "name": "contributor1",
@@ -46,7 +46,7 @@
         "role": "front-end"
       }
     ],
-    "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, gnissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iureLorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore asperiores accusamus, dignissimos quaerat rerum repudiandae deserunt dolorem debitis, nam ipsa temporibus aperiam delectus possimus, voluptate doloremque ullam? Voluptates voluptatem perferendis earum consequuntur ut voluptas iure",
-    "projectLink": "/projects"
+    "projectDescription": "The website you are looking at right now is maintained as an open source project by the SSN coding club! This is the ultimate resource to get all information about the club in one place. Get to know what our vision is and what we have to offer from the homepage. Meet the team and reach out to us using the information provided in the 'About' page. Find out when our next meets are scheduled and also access past recordings using the easy-to-navigate timeline on the 'Meets' page. Take a look at the projects you can contribute to or perhaps get your own project featured on the 'Projects' page.\nThis is just the start of the website - we have implemented the core pages but there are a variety of new features that can be added by contributors. Learn how to contribute below!",
+    "projectLink": "https://github.com/ssncodingclub/Coding-Club-Website"
   }
 ]
