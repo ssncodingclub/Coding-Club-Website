@@ -1,5 +1,18 @@
 [
   {
+    "text": "Introduction to CP",
+    "date": "January 14th 2022",
+    "category": {
+      "tag": "CP",
+      "color": "orangered"
+    },
+    "description": "The CP team welcomes the newly-joined batch of freshers and introduces them to the realm of competitive programming in this freshers targetted event.",
+    "link": {
+      "url": "https://ssneduin.sharepoint.com/sites/SSNCodingClub/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings%2FCompetitive%20Programming-20220114_181946-Meeting%20Recording%2Emp4&parent=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings",
+      "text": "watch the session recording"
+    }
+  },
+  {
     "text": "Building a Sudoku Solver: Part 1 Simple Image Classifier",
     "date": "January 12th 2022",
     "category": {
