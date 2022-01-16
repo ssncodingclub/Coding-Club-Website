@@ -1,5 +1,22 @@
 [
   {
+    "text": "Build a Flutter app from scratch",
+    "date": "January 16th 2022",
+    "category": {
+      "tag": "SD",
+      "color": "purple"
+    },
+    "description": "Live Demo: SD team build a basic flutter app (BMI Calculator) from scratch. The build-in flutter widgets were covered.",
+    "link": {
+      "url": "https://ssneduin.sharepoint.com/sites/SSNCodingClub/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FSoftware%20Development%20-%2FRecordings%2FMeeting%20in%20_Software%20Development%20-_-20220116_180433-Meeting%20Recording%2Emp4&parent=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FSoftware%20Development%20-%2FRecordings",
+      "text": "watch the session recording"
+    },
+    "resource": {
+      "url": "https://github.com/ssncodingclub/BMI_Calculator",
+      "text": "view resources"
+    }
+  },
+  {
     "text": "Introduction to CP",
     "date": "January 14th 2022",
     "category": {
