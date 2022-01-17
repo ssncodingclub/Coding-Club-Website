@@ -2,9 +2,7 @@
   {
     "title": "The\nCore\nCommittee",
     "discord": "@Core Committee",
-    "tags": [
-      "admin"
-    ],
+    "tags": ["admin"],
     "bgColorStyle": {
       "background": "linear-gradient(135deg, #1f005c, #35005e, #5f0060, #8f0860, #bc365d, #dd635c, #f28c5f, #fcaa67, #ffb56b)"
     },
@@ -80,10 +78,7 @@
   {
     "title": "Software\nDevelopment\nTeam",
     "discord": "@Software Dev Team",
-    "tags": [
-      "web/app-dev",
-      "open-source"
-    ],
+    "tags": ["web/app-dev", "open-source"],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
@@ -177,6 +172,26 @@
         }
       },
       {
+        "name": "Mohamed Arshad",
+        "position": "Member",
+        "alt": "arshad",
+        "profilePic": "/profiles/Dev/arshad.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/mohamed-arshad-vaseem-37621b1a4/",
+          "instagram": "https://www.instagram.com/mohamed_arshad07/"
+        }
+      },
+      {
+        "name": "Kailash SR",
+        "position": "Member",
+        "alt": "kailash",
+        "profilePic": "/profiles/Dev/kailash.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kailash-saravanan-8034671bb/",
+          "instagram": "https://www.instagram.com/kail.designs/"
+        }
+      },
+      {
         "name": "Nithin Balaji",
         "position": "Member",
         "alt": "nithin",
@@ -203,10 +218,7 @@
   {
     "title": "Machine\nLearning\nTeam",
     "discord": "@ML/AI Team",
-    "tags": [
-      "research",
-      "deep-learning"
-    ],
+    "tags": ["research", "deep-learning"],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
@@ -282,10 +294,7 @@
   {
     "title": "Competitive\nProgramming\nTeam",
     "discord": "@CP Team",
-    "tags": [
-      "algorithms",
-      "dsa"
-    ],
+    "tags": ["algorithms", "dsa"],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
@@ -383,10 +392,7 @@
   {
     "title": "Design and\nSocial Media\nTeam",
     "discord": "@Design/Social Team",
-    "tags": [
-      "socials",
-      "marketing"
-    ],
+    "tags": ["socials", "marketing"],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
