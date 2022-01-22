@@ -1,5 +1,18 @@
 [
   {
+    "text": "Introduction to time complexity and other fundamentals",
+    "date": "January 21st 2022",
+    "category": {
+      "tag": "CP",
+      "color": "orangered"
+    },
+    "description": "CP team introduces the concept of time complexity and other basics of CP. Live solving of CP problems, audience doubts were entertained",
+    "link": {
+      "url": "https://ssneduin.sharepoint.com/sites/SSNCodingClub/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings%2FCompetitive%20Programming-20220121_160355-Meeting%20Recording%2Emp4&parent=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings",
+      "text": "watch the session recording"
+    }
+  },
+  {
     "text": "Build a Flutter app from scratch",
     "date": "January 16th 2022",
     "category": {
