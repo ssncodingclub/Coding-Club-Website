@@ -78,7 +78,7 @@
   {
     "title": "Software\nDevelopment\nTeam",
     "discord": "@Software Dev Team",
-    "tags": ["web-dev", "app-dev"],
+    "tags": ["web/app-dev", "open-source"],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
@@ -103,17 +103,6 @@
           "github": "https://github.com/dhiganthrao/",
           "linkedin": "https://www.linkedin.com/in/dhiganthrao/",
           "instagram": "https://www.instagram.com/dhiganthrao/"
-        }
-      },
-      {
-        "name": "Srinithyee SK",
-        "position": "Member",
-        "alt": "srinithyee",
-        "profilePic": "/profiles/Dev/srinithyee.jpeg",
-        "socials": {
-          "github": "https://github.com/Srinithyee/",
-          "linkedin": "https://www.linkedin.com/in/srinithyeesk/",
-          "instagram": null
         }
       },
       {
@@ -169,6 +158,37 @@
           "github": "https://github.com/programVeins/",
           "linkedin": "https://www.linkedin.com/in/sabeshbharathi/",
           "instagram": "https://www.instagram.com/thirdbesh/"
+        }
+      },
+      {
+        "name": "Aman Khemka",
+        "position": "Member",
+        "alt": "aman",
+        "profilePic": "/profiles/Dev/aman.jpeg",
+        "socials": {
+          "github": "https://github.com/amanrk28/",
+          "linkedin": "https://www.linkedin.com/in/amanrk28/",
+          "instagram": "https://www.instagram.com/amanrk28/"
+        }
+      },
+      {
+        "name": "Mohamed Arshad",
+        "position": "Member",
+        "alt": "arshad",
+        "profilePic": "/profiles/Dev/arshad.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/mohamed-arshad-vaseem-37621b1a4/",
+          "instagram": "https://www.instagram.com/mohamed_arshad07/"
+        }
+      },
+      {
+        "name": "Kailash SR",
+        "position": "Member",
+        "alt": "kailash",
+        "profilePic": "/profiles/Dev/kailash.jpg",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kailash-saravanan-8034671bb/",
+          "instagram": "https://www.instagram.com/kail.designs/"
         }
       },
       {
