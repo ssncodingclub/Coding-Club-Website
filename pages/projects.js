@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import Navbar from "./Components/Navbar";
 import Projects from "../data/projects.json";
-import Link from "next/link";
 import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Footer from "./Components/Footer";
@@ -30,7 +29,7 @@ const RightCard = ({ id, modalIsOpen, closeModal }) => {
         </div>
         <p className={styles.project_desc}>{projectDescription}</p>
         <div className={styles.project_link}>
-          <Link href={projectLink}>Check it out</Link>
+          <a href={projectLink} target="_blank">Check it out</a>
         </div>
       </div>
     );
