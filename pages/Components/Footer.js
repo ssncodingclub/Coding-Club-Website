@@ -16,10 +16,10 @@ const Footer = () => {
                     <h2>Try! Catch! Show!</h2>
                 </div>
                 <div className={styles.social_media}>
-                    <a href="https://in.linkedin.com/company/ssn-coding-club" className={styles.linkedin}>
+                    <a href="https://in.linkedin.com/company/ssn-coding-club" className={styles.linkedin} target="_blank">
                         <FaLinkedin className={styles.social_icon} />
                     </a>
-                    <a href="https://github.com/ssncodingclub" className={styles.github}>
+                    <a href="https://github.com/ssncodingclub" className={styles.github} target="_blank">
                         <FaGithub className={styles.social_icon} />
                     </a>
                     <a
@@ -28,7 +28,7 @@ const Footer = () => {
                         rel="noreferrer"
                         className={`fa fa-instagram ${styles.social_icon}`}
                     ></a>
-                    <a href="https://discord.com/invite/hSGEaRUnws" className={styles.discord}>
+                    <a href="https://discord.com/invite/hSGEaRUnws" className={styles.discord} target="_blank">
                         <FaDiscord className={styles.social_icon} />
                     </a>
                 </div>
