@@ -42,6 +42,16 @@
   z-index: 5;
 }
 
+.nav_icons
+{
+  position: relative;
+  margin-left: 1em;
+  cursor:pointer;
+  margin-top: -0.20rem;
+  z-index: 5;
+}
+
+
 .navbar_nav .nav_item a:hover::after {
   width: 100%;
 }
@@ -165,5 +175,8 @@
   }
   .menuToggle {
     display: flex;
+  }
+  .nav_icons {
+    display: none;
   }
 }

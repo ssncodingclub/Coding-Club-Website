@@ -5,6 +5,8 @@ import React, { useEffect, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/navbar.module.css";
+import {IoToggle} from 'react-icons/io5';
+import {MdOutlineDarkMode} from 'react-icons/md'
 
 function NavBar() {
   const [expand, setExpanded] = useState(false);
@@ -40,6 +42,8 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar>
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
+            <Nav.Item style={{"cursor": "auto"}} className={styles.nav_icons} ><MdOutlineDarkMode/></Nav.Item>
+            <Nav.Item className={styles.nav_icons}> <IoToggle/></Nav.Item>          
             <Link
               href="/"
               onClick={() => {
@@ -47,7 +51,7 @@ function NavBar() {
               }}
               passHref
             >
-              <Nav.Item className={styles.nav_item}>Home</Nav.Item>
+            <Nav.Item className={styles.nav_item}>Home</Nav.Item>
             </Link>
             <Link
               href="/about"
@@ -85,6 +89,10 @@ function NavBar() {
               <span></span>
               <span></span>
               <ul className={styles.mobilenavul + " " + styles.menu}>
+                <li>
+                  <a href="/"><IoToggle /></a>
+                  <MdOutlineDarkMode  style={{"display" :"inline-block","margin-left":"1rem"}}/>
+                </li>
                 <li>
                   <a href="/">Home</a>
                 </li>
