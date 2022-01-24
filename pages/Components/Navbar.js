@@ -9,7 +9,7 @@ import {IoToggle} from 'react-icons/io5';
 import {MdOutlineToggleOff} from 'react-icons/md'
 import {FiSun,FiMoon} from 'react-icons/fi';
 
-
+  
 function NavBar(props) {
   const [expand, setExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
@@ -85,6 +85,7 @@ function NavBar(props) {
               href="/about"
               onClick={() => {
                 setExpanded(false);
+
               }}
               passHref
             >
@@ -94,6 +95,7 @@ function NavBar(props) {
               href="/meets"
               onClick={() => {
                 setExpanded(false);
+
               }}
               passHref
             >
@@ -106,14 +108,18 @@ function NavBar(props) {
               href="/blog"
               onClick={() => {
                 setExpanded(false);
+
               }}
               passHref
             >
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
-            <Nav.Item className={styles.nav_toggle_icons} onClick={handleClick}>
+            {props.hide && (
+              <Nav.Item className={styles.nav_toggle_icons} onClick={handleClick}>
               {theme ? <div className={styles.toggle_icons_light}><FiMoon  size={20}/></div> : <div className={styles.toggle_icons}><FiSun size={20}/></div> }
-            </Nav.Item> 
+              </Nav.Item> 
+            )}
+
             <div className={styles.menuToggle}>
               <input type="checkbox"/>
               <span className={theme ? styles.menuSpan_light : "" }></span>

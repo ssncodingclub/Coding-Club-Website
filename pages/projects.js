@@ -110,7 +110,7 @@ const ProjectsPage = () => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar />
+      <Navbar theme={()=> {}} hide={false} />
       <main className={styles.projects_main_container}>
         {isAppleDevice ? (
           <div className={styles.appleHeader}>

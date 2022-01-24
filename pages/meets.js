@@ -73,7 +73,7 @@ export default function Meets() {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
-        <Navbar />
+        <Navbar theme={()=> {}} hide={false} />
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Meets Timeline</h1>
