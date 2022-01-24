@@ -73,7 +73,7 @@ export default function Home() {
               {cardDetails.map((cardInfo, i) => {
                 return (
                   <Col md="6" sm="12" lg="4">
-                    <Card className={styles.infoContainerCard}>
+                    <Card className={theme ? styles.infoContainerCard_light:styles.infoContainerCard}>
                       <Card.Img variant="top" src={cardInfo.img} />
                       <Card.Body>
                         <Card.Title className={theme ? styles.infoContainerCardTitle_light:styles.infoContainerCardTitle}>
@@ -89,7 +89,7 @@ export default function Home() {
           </Container>
         </div>
         <div>
-          <div className={styles.thrivingCommunityHeaderContainer}>
+          <div className={theme ?styles.thrivingCommunityHeaderContainer_light: styles.thrivingCommunityHeaderContainer}>
             {isAppleDevice ? (
               <>
                 <img src="./HomePage/TC_1.svg" alt="Title-part-1" />

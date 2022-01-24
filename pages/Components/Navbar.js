@@ -5,43 +5,26 @@ import React, { useEffect, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/navbar.module.css";
-import {IoToggle} from 'react-icons/io5';
-import {MdOutlineToggleOff} from 'react-icons/md'
-import {FiSun,FiMoon} from 'react-icons/fi';
+import { FiSun, FiMoon } from 'react-icons/fi';
 
-  
+
 function NavBar(props) {
   const [expand, setExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
   const [theme, setTheme] = useState(false);
-  // const [hide, setHide] = useState(false);
 
-  function handleClick()
-  {
-    if(theme === false)
-    {
+  function handleClick() {
+    if (theme === false) {
       setTheme(true);
       props.theme(!theme);
-    } 
-    else
-    {
+    }
+    else {
       setTheme(false);
       props.theme(!theme);
     }
 
   }
 
-  // function handleHide(state)
-  // {
-  //   if(state === false)
-  //   {
-  //     setHide(true);
-  //   }
-  //   else
-  //   {
-  //     setHide(false);
-  //   }
-  // }
 
   function scrollHandler() {
     if (window.scrollY >= 40) {
@@ -51,7 +34,7 @@ function NavBar(props) {
     }
   }
 
-  const handleScroll = () => {};
+  const handleScroll = () => { };
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -60,8 +43,8 @@ function NavBar(props) {
     <Navbar
       fixed="top"
       expand="md"
-      className={theme ? styles.navbar_light + " " + (navColor ? styles.sticky_light : "") 
-      : styles.navbar + " " + (navColor ? styles.sticky : "")}
+      className={theme ? styles.navbar_light + " " + (navColor ? styles.sticky_light : "")
+        : styles.navbar + " " + (navColor ? styles.sticky : "")}
     >
       <Container>
         <Navbar.Brand href="/">
@@ -79,7 +62,7 @@ function NavBar(props) {
               }}
               passHref
             >
-            <Nav.Item className={styles.nav_item}>Home</Nav.Item>
+              <Nav.Item className={styles.nav_item}>Home</Nav.Item>
             </Link>
             <Link
               href="/about"
@@ -116,15 +99,15 @@ function NavBar(props) {
             </Link>
             {props.hide && (
               <Nav.Item className={styles.nav_toggle_icons} onClick={handleClick}>
-              {theme ? <div className={styles.toggle_icons_light}><FiMoon  size={20}/></div> : <div className={styles.toggle_icons}><FiSun size={20}/></div> }
-              </Nav.Item> 
+                {theme ? <div className={styles.toggle_icons_light}><FiMoon size={20} /></div> : <div className={styles.toggle_icons}><FiSun size={20} /></div>}
+              </Nav.Item>
             )}
 
             <div className={styles.menuToggle}>
-              <input type="checkbox"/>
-              <span className={theme ? styles.menuSpan_light : "" }></span>
-              <span className={theme ? styles.menuSpan_light : "" }></span>
-              <span className={theme ? styles.menuSpan_light : "" }></span>
+              <input type="checkbox" />
+              <span className={theme ? styles.menuSpan_light : ""}></span>
+              <span className={theme ? styles.menuSpan_light : ""}></span>
+              <span className={theme ? styles.menuSpan_light : ""}></span>
               <ul className={styles.mobilenavul + " " + styles.menu}>
 
                 <li>

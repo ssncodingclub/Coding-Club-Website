@@ -218,10 +218,17 @@
   margin-bottom: 2rem;
 }
 
-.domainInfo , .domainInfo_light{
+.domainInfo {
   font-family: "Rubik", sans-serif;
   font-size: large;
   color: #a8a8a8;
+  text-align: justify;
+  transition: color 200ms ease;
+}
+.domainInfo_light {
+  font-family: "Rubik", sans-serif;
+  font-size: large;
+  color: #5a5a5a;
   text-align: justify;
   transition: color 200ms ease;
 }
@@ -229,9 +236,8 @@
   color: white;
 }
 
-.domainInfo_light:hover
-{
-  color: #070707;
+.domainInfo_light:hover {
+  color: #000000;
 }
 
 .domainImages {
@@ -251,13 +257,11 @@
   transition: color 200ms ease;
 }
 
-.domainName_light
-{
+.domainName_light {
   color: #070707;
 }
 
-.domainName_light:hover
-{
+.domainName_light:hover {
   color: #ff2c80;
 }
 .domainName:hover {
@@ -266,7 +270,8 @@
 
 /* Thriving community part */
 
-.thrivingCommunityHeaderContainer {
+.thrivingCommunityHeaderContainer,
+.thrivingCommunityHeaderContainer_light {
   width: 75%;
   max-width: 600px;
   margin-left: auto;
@@ -316,6 +321,14 @@
   line-height: 36px;
   color: #a8a8a8;
 }
+.thrivingCommunityHeaderContainer_light p {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  color: #5a5a5a;
+}
 
 .joinUsButton {
   display: block;
@@ -330,8 +343,7 @@
   margin: auto;
 }
 
-.joinUsButton_light
-{
+.joinUsButton_light {
   display: block;
   width: 308px;
   max-width: 90%;
@@ -341,10 +353,11 @@
   background: linear-gradient(106.01deg, #ea739e 38.85%, #9f58f9 91.61%);
   border-color: white;
   border-radius: 44px;
-  margin: auto;  
+  margin: auto;
 }
 
-.joinUsButton a, .joinUsButton_light {
+.joinUsButton a,
+.joinUsButton_light {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -357,11 +370,11 @@
 }
 
 .joinUsButton:visited,
-.joinUsButton:hover{
+.joinUsButton:hover {
   border-color: #000000;
 }
 .joinUsButton_light:hover,
-.joinUsButton_light:visited{
+.joinUsButton_light:visited {
   border-color: white;
 }
 .discordImage {
@@ -377,7 +390,8 @@
   margin-bottom: 8rem;
 }
 
-.infoContainerCard {
+.infoContainerCard,
+.infoContainerCard_light {
   height: 324px;
   width: 231px;
   display: flex;
@@ -387,7 +401,8 @@
   border: none;
 }
 
-.infoContainerCard img {
+.infoContainerCard img,
+.infoContainerCard_light img {
   height: 100px;
   width: 100px;
   margin: auto;
@@ -426,6 +441,18 @@
   text-align: justify;
   /* or 25px */
   color: #a6a6a6;
+}
+
+.infoContainerCard_light p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: justify;
+  /* or 25px */
+  color: #5a5a5a;
 }
 
 .opensourceSection {
