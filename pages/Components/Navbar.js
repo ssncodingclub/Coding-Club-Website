@@ -6,15 +6,43 @@ import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/navbar.module.css";
 import {IoToggle} from 'react-icons/io5';
-import {MdOutlineDarkMode} from 'react-icons/md'
+import {MdOutlineToggleOff} from 'react-icons/md'
+import {FiSun,FiMoon} from 'react-icons/fi';
 
-function NavBar() {
+
+function NavBar(props) {
   const [expand, setExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
+  const [theme, setTheme] = useState(false);
+  // const [hide, setHide] = useState(false);
 
-  function openMobileNav() {
-    setExpanded(true);
+  function handleClick()
+  {
+    if(theme === false)
+    {
+      setTheme(true);
+      props.theme(!theme);
+    } 
+    else
+    {
+      setTheme(false);
+      props.theme(!theme);
+    }
+
   }
+
+  // function handleHide(state)
+  // {
+  //   if(state === false)
+  //   {
+  //     setHide(true);
+  //   }
+  //   else
+  //   {
+  //     setHide(false);
+  //   }
+  // }
+
   function scrollHandler() {
     if (window.scrollY >= 40) {
       updateNavbar(true);
@@ -32,7 +60,8 @@ function NavBar() {
     <Navbar
       fixed="top"
       expand="md"
-      className={styles.navbar + " " + (navColor ? styles.sticky : "")}
+      className={theme ? styles.navbar_light + " " + (navColor ? styles.sticky_light : "") 
+      : styles.navbar + " " + (navColor ? styles.sticky : "")}
     >
       <Container>
         <Navbar.Brand href="/">
@@ -42,8 +71,7 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar>
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
-            <Nav.Item style={{"cursor": "auto"}} className={styles.nav_icons} ><MdOutlineDarkMode/></Nav.Item>
-            <Nav.Item className={styles.nav_icons}> <IoToggle/></Nav.Item>          
+
             <Link
               href="/"
               onClick={() => {
@@ -83,16 +111,16 @@ function NavBar() {
             >
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
+            <Nav.Item className={styles.nav_toggle_icons} onClick={handleClick}>
+              {theme ? <div className={styles.toggle_icons_light}><FiMoon  size={20}/></div> : <div className={styles.toggle_icons}><FiSun size={20}/></div> }
+            </Nav.Item> 
             <div className={styles.menuToggle}>
-              <input type="checkbox" />
-              <span></span>
-              <span></span>
-              <span></span>
+              <input type="checkbox"/>
+              <span className={theme ? styles.menuSpan_light : "" }></span>
+              <span className={theme ? styles.menuSpan_light : "" }></span>
+              <span className={theme ? styles.menuSpan_light : "" }></span>
               <ul className={styles.mobilenavul + " " + styles.menu}>
-                <li>
-                  <a href="/"><IoToggle /></a>
-                  <MdOutlineDarkMode  style={{"display" :"inline-block","margin-left":"1rem"}}/>
-                </li>
+
                 <li>
                   <a href="/">Home</a>
                 </li>

@@ -34,6 +34,17 @@
   background-color: #070707;
 }
 
+.container_light {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
 .main {
   flex: 1;
   display: flex;
@@ -57,8 +68,15 @@
   color: white;
   font-family: "Rubik", sans-serif;
 }
+.h1Text_light {
+  color: #070707;
+  font-family: "Rubik", sans-serif;
+}
 
 .headerSection .h1Text {
+  margin-top: 1.5rem;
+}
+.headerSection .h1Text_light {
   margin-top: 1.5rem;
 }
 
@@ -200,7 +218,7 @@
   margin-bottom: 2rem;
 }
 
-.domainInfo {
+.domainInfo , .domainInfo_light{
   font-family: "Rubik", sans-serif;
   font-size: large;
   color: #a8a8a8;
@@ -209,6 +227,11 @@
 }
 .domainInfo:hover {
   color: white;
+}
+
+.domainInfo_light:hover
+{
+  color: #070707;
 }
 
 .domainImages {
@@ -226,6 +249,16 @@
 .domainName {
   margin-top: 10px;
   transition: color 200ms ease;
+}
+
+.domainName_light
+{
+  color: #070707;
+}
+
+.domainName_light:hover
+{
+  color: #ff2c80;
 }
 .domainName:hover {
   color: #ff2c80;
@@ -297,7 +330,21 @@
   margin: auto;
 }
 
-.joinUsButton a {
+.joinUsButton_light
+{
+  display: block;
+  width: 308px;
+  max-width: 90%;
+  height: 70px;
+  left: 566px;
+  top: 418px;
+  background: linear-gradient(106.01deg, #ea739e 38.85%, #9f58f9 91.61%);
+  border-color: white;
+  border-radius: 44px;
+  margin: auto;  
+}
+
+.joinUsButton a, .joinUsButton_light {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -310,10 +357,13 @@
 }
 
 .joinUsButton:visited,
-.joinUsButton:hover {
+.joinUsButton:hover{
   border-color: #000000;
 }
-
+.joinUsButton_light:hover,
+.joinUsButton_light:visited{
+  border-color: white;
+}
 .discordImage {
   width: 90%;
   margin: 0 auto 10rem auto;
@@ -334,6 +384,7 @@
   margin: auto;
   margin-bottom: 5rem;
   background: transparent;
+  border: none;
 }
 
 .infoContainerCard img {
@@ -352,6 +403,17 @@
   text-align: center;
   /* Neutral / White */
   color: #ffffff;
+}
+.infoContainerCardTitle_light {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 150%;
+  /* or 37px */
+  text-align: center;
+  /* Neutral / White */
+  color: #070707;
 }
 
 .infoContainerCard p {
