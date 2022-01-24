@@ -35,7 +35,11 @@ export default function Home() {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
+<<<<<<< HEAD
         <Navbar theme={handle} hide={true} />
+=======
+        <Navbar theme={handle} />
+>>>>>>> 0e2d7094f852e8bfaeb4ff0b3742ebac0e09c82a
         <main className={styles.main}>
           <div className={styles.headerSection}>
             {isAppleDevice ? (
