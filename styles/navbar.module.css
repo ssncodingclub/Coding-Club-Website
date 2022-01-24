@@ -6,6 +6,12 @@
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   color: white;
 }
+.sticky_light {
+  background-color: white !important;
+  transition: all 0.3s ease-out 0s !important;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  color: black;
+}
 
 .navbar {
   position: fixed !important;
@@ -14,6 +20,14 @@
   font-size: 1.2rem !important;
   min-height: 3em;
   color: white;
+}
+.navbar_light {
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 1rem 2rem !important;
+  font-size: 1.2rem !important;
+  min-height: 3em;
+  color: #070707;
 }
 .navbar_nav {
   margin-left: auto;
@@ -42,12 +56,69 @@
   z-index: 5;
 }
 
+.nav_icons
+{
+  position: relative;
+  margin-left: 1em;
+  cursor:pointer;
+  margin-top: -0.20rem;
+  z-index: 5;
+}
+.nav_toggle_icons
+{
+  position: relative;
+  margin-left: 1em;
+  cursor:pointer;
+  margin-top: -0.20rem;
+  z-index: 5;
+}
+
+
 .navbar_nav .nav_item a:hover::after {
   width: 100%;
 }
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
+
+
+.toggle_icons_light
+{
+  position: relative;
+  border: 1px solid black;
+  border-radius: 30%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+.toggle_icons
+{
+  border: 1px solid #7b7b7b;
+  border-radius: 30%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 1rem;
+
+
+
+}
+.toggle_icons_light:hover
+{
+  background-color: rgb(224, 224, 224);
+}
+.toggle_icons:hover{
+  content: "light mode";
+  background-color: #535353;
+}
+
+
+
+
 .mobile_nav_menu {
   display: none;
 }
@@ -80,7 +151,7 @@
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .menuToggle span {
@@ -91,7 +162,20 @@
   position: relative;
   background: #ffffff;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 3;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+
+span.menuSpan_light
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  position: relative;
+  background: black;
+  border-radius: 3px;
   transform-origin: 5px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
@@ -126,7 +210,6 @@
   margin: -40px 0 0 -175px;
   padding: 50px;
   padding-top: 125px;
-
   background: #fc466b; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
@@ -142,6 +225,7 @@
     rgba(255, 29, 77, 1) 51%,
     rgba(255, 0, 10, 1) 77%
   ); */
+  z-index: 2;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
@@ -165,5 +249,13 @@
   }
   .menuToggle {
     display: flex;
+  }
+  .nav_icons {
+    display: none;
+  }
+  .nav_toggle_icons
+  {
+    margin-right: 2rem;
+    z-index: 0;
   }
 }

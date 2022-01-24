@@ -5,14 +5,27 @@ import React, { useEffect, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import styles from "../../styles/navbar.module.css";
+import { FiSun, FiMoon } from 'react-icons/fi';
 
-function NavBar() {
+
+function NavBar(props) {
   const [expand, setExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
+  const [theme, setTheme] = useState(false);
 
-  function openMobileNav() {
-    setExpanded(true);
+  function handleClick() {
+    if (theme === false) {
+      setTheme(true);
+      props.theme(!theme);
+    }
+    else {
+      setTheme(false);
+      props.theme(!theme);
+    }
+
   }
+
+
   function scrollHandler() {
     if (window.scrollY >= 40) {
       updateNavbar(true);
@@ -21,7 +34,7 @@ function NavBar() {
     }
   }
 
-  const handleScroll = () => {};
+  const handleScroll = () => { };
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -30,7 +43,8 @@ function NavBar() {
     <Navbar
       fixed="top"
       expand="md"
-      className={styles.navbar + " " + (navColor ? styles.sticky : "")}
+      className={theme ? styles.navbar_light + " " + (navColor ? styles.sticky_light : "")
+        : styles.navbar + " " + (navColor ? styles.sticky : "")}
     >
       <Container>
         <Navbar.Brand href="/">
@@ -40,6 +54,7 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar>
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
+
             <Link
               href="/"
               onClick={() => {
@@ -53,6 +68,7 @@ function NavBar() {
               href="/about"
               onClick={() => {
                 setExpanded(false);
+
               }}
               passHref
             >
@@ -62,6 +78,7 @@ function NavBar() {
               href="/meets"
               onClick={() => {
                 setExpanded(false);
+
               }}
               passHref
             >
@@ -74,17 +91,25 @@ function NavBar() {
               href="/blog"
               onClick={() => {
                 setExpanded(false);
+
               }}
               passHref
             >
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
+            {props.hide && (
+              <Nav.Item className={styles.nav_toggle_icons} onClick={handleClick}>
+                {theme ? <div className={styles.toggle_icons_light}><FiMoon size={20} /></div> : <div className={styles.toggle_icons}><FiSun size={20} /></div>}
+              </Nav.Item>
+            )}
+
             <div className={styles.menuToggle}>
               <input type="checkbox" />
-              <span></span>
-              <span></span>
-              <span></span>
+              <span className={theme ? styles.menuSpan_light : ""}></span>
+              <span className={theme ? styles.menuSpan_light : ""}></span>
+              <span className={theme ? styles.menuSpan_light : ""}></span>
               <ul className={styles.mobilenavul + " " + styles.menu}>
+
                 <li>
                   <a href="/">Home</a>
                 </li>
