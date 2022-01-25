@@ -1,5 +1,22 @@
 [
   {
+    "text": "Building a Sudoku Solver: Part 2 Deep Nueral Networks",
+    "date": "January 24th 2022",
+    "category": {
+      "tag": "AI/ML",
+      "color": "green"
+    },
+    "description": "Part 2 of the Sudoku Solver Series, ML Team introduce and code nueral Networks, introduce image recognition with deep learning.",
+    "link": {
+      "url": "https://drive.google.com/drive/u/0/folders/1I-wGsunFiNhTuUboipZzaVi22YfKPumo",
+      "text": "watch the session recording"
+    },
+    "resource": {
+      "url": "https://github.com/ssncodingclub/Machine-Learning/tree/master/Meet-5",
+      "text": "view resources"
+    }
+  },
+  {
     "text": "Introduction to time complexity and other fundamentals",
     "date": "January 21st 2022",
     "category": {
