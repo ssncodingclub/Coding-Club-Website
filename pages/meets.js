@@ -18,13 +18,14 @@ const TimelineItem = ({ data }) => (
       <time>{data.date}</time>
       <h4 className={styles.meetTitle}>{data.text}</h4>
       <div className={styles.meetDesc}>{data.description}</div>
-      <span ><a href={data.link.url} target="_blank" rel="noreferrer">
+      <span ><a href={data.link.url} target="_blank" rel="noreferrer" title="session recordings">
         <FaPlayCircle size={28} style={{ color: data.category.color }}></FaPlayCircle>
       </a>
       {data.resource ? (
-        <a href={data.resource.url} target="_blank" rel="noreferrer">
+        <a href={data.resource.url} target="_blank" rel="noreferrer" title="resources">
           <FaFileAlt className={styles.res_icons} size={28}  style={{ color: data.category.color }}></FaFileAlt>
         </a>
+        
       ) : null}</span>
 
       <span className={styles.circle} />
