@@ -7,6 +7,7 @@ import timelineData from "../data/meets.json";
 import styles from "../styles/meets.module.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import { FaPlayCircle,FaFileAlt} from "react-icons/fa";
 
 const TimelineItem = ({ data }) => (
   <div className={styles.timelineItem}>
@@ -17,14 +18,15 @@ const TimelineItem = ({ data }) => (
       <time>{data.date}</time>
       <h4 className={styles.meetTitle}>{data.text}</h4>
       <div className={styles.meetDesc}>{data.description}</div>
-      <a href={data.link.url} target="_blank" rel="noreferrer">
-        {data.link.text}
+      <span ><a href={data.link.url} target="_blank" rel="noreferrer" title="session recordings">
+        <FaPlayCircle size={28} style={{ color: data.category.color }}></FaPlayCircle>
       </a>
       {data.resource ? (
-        <a href={data.resource.url} target="_blank" rel="noreferrer">
-          {data.resource.text}
+        <a href={data.resource.url} target="_blank" rel="noreferrer" title="resources">
+          <FaFileAlt className={styles.res_icons} size={28}  style={{ color: data.category.color }}></FaFileAlt>
         </a>
-      ) : null}
+        
+      ) : null}</span>
 
       <span className={styles.circle} />
     </div>
