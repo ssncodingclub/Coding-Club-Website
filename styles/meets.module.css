@@ -155,7 +155,16 @@
   font-size: 11.5px;
   color: #777;
 }
-
+.meetStatus{
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
 .timelineItem:nth-child(odd) {
   align-self: flex-end;
   justify-content: flex-start;

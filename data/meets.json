@@ -12,7 +12,8 @@
     },
     "resource": {
       "url": "https://github.com/ssncodingclub/Machine-Learning/tree/master/Meet-5"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "Introduction to time complexity and other fundamentals",
@@ -24,7 +25,8 @@
     "description": "CP team introduces the concept of time complexity and other basics of CP. Live solving of CP problems, audience doubts were entertained",
     "link": {
       "url": "https://ssneduin.sharepoint.com/sites/SSNCodingClub/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings%2FCompetitive%20Programming-20220121_160355-Meeting%20Recording%2Emp4&parent=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "Build a Flutter app from scratch",
@@ -39,7 +41,8 @@
     },
     "resource": {
       "url": "https://github.com/ssncodingclub/BMI_Calculator"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "Introduction to CP",
@@ -51,7 +54,8 @@
     "description": "The CP team welcomes the newly-joined batch of freshers and introduces them to the realm of competitive programming in this freshers targetted event.",
     "link": {
       "url": "https://ssneduin.sharepoint.com/sites/SSNCodingClub/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings%2FCompetitive%20Programming-20220114_181946-Meeting%20Recording%2Emp4&parent=%2Fsites%2FSSNCodingClub%2FShared%20Documents%2FCompetitive%20Programming%2FRecordings"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "Building a Sudoku Solver Part 1: Simple Image Classifier",
@@ -66,7 +70,8 @@
     },
     "resource": {
       "url": "https://github.com/ssncodingclub/Machine-Learning/tree/master/Meet-4"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "Introduction to Flutter: Dart Basics",
@@ -81,7 +86,8 @@
     },
     "resource": {
       "url": "https://github.com/ssncodingclub/Software-Development/tree/main/Meet-3"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "ML Introduction Meet",
@@ -93,7 +99,8 @@
     "description": "Introductory session to AI/ML for freshers + a quick recap of the topics discussed in previous meets by the AI/ML team.",
     "link": {
       "url": "https://drive.google.com/file/d/1Riif_DLrFSXkddbCa0LDKjGI7Z3jE-tj/view?usp=sharing"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "Freshers Induction Meet",
@@ -105,7 +112,8 @@
     "description": "Induction meet conducted to introduce the freshers to the various domains and activities of the SSN Coding club.",
     "link": {
       "url": "https://drive.google.com/file/d/1hGbsxVKASgBUoM_W5hh0eD9P_nH2ayov/view?usp=sharing"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "CP Team: Dynamic Programming Session",
@@ -117,7 +125,8 @@
     "description": "The CP team of SSN Coding club delivers a presentation teaching the Dynamic programming approach of solving problems.",
     "link": {
       "url": "https://drive.google.com/file/d/1KGrHKm0-B9bNbYCfm4QVAZmp_pG_0Spg/view?usp=sharing"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "ML Team: Building an ML Pipeline from Scratch",
@@ -129,7 +138,8 @@
     "description": "ML team runs audience through the process of building an ML Pipeline.",
     "link": {
       "url": "https://drive.google.com/file/d/13qAwL4qAGZM2PWDsVroYkav_U1auelOm/view?usp=sharing"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "SD Team: Git for Open Source",
@@ -141,7 +151,8 @@
     "description": "SD team talks about open-source software development. Basics of git as a version control system are taught.",
     "link": {
       "url": "https://drive.google.com/file/d/1IoxrZPiwlOQi_XYQGJHcE6ywoDxc1A49/view?usp=sharing"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "SD Team: Introduction to Software Development",
@@ -153,7 +164,8 @@
     "description": "SD team introduces audience to the various types of software development. Software dev terminologies and tech stacks are discussed.",
     "link": {
       "url": "https://drive.google.com/file/d/1SzZ6vGY5HgAEByo64xYS3wWsHIQXQthP/view?usp=sharing"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "ML Team: Introduction to ML, Scope and Roadmap",
@@ -165,7 +177,8 @@
     "description": "Introduction to ML is delivered by the ML team. Scope and roadmap of ML journey are discussed.",
     "link": {
       "url": "https://drive.google.com/file/d/1AZb31RPOuY1MJXCKPio77MVdZXiNl9Pf/view?usp=sharing"
-    }
+    },
+    "status":"finished"
   },
   {
     "text": "CP Team: Greedy Algorithms",
@@ -177,6 +190,7 @@
     "description": "The CP team of SSN Coding club delivers a presentation teaching the Greedy approach of solving problems.",
     "link": {
       "url": "https://drive.google.com/file/d/16WzVPFDrRJFAOVNUwiJuA7AvON8RHaDM/view?usp=sharing"
-    }
+    },
+    "status":"finished"
   }
 ]
