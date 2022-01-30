@@ -26,7 +26,7 @@ export default function Blog() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar theme = {()=> {}} hide={false}/>
+      <Navbar />
 
       <main className={styles.blog_main_container}>
         {isAppleDevice ? (
