@@ -15,20 +15,19 @@
 
 .navbar {
   position: fixed !important;
-  transition: all 0.3s ease-out 0s !important;
   padding: 1rem 2rem !important;
   font-size: 1.2rem !important;
   min-height: 3em;
+  background-color: #070707;
   color: white;
 
 }
 .navbar_light {
   position: fixed !important;
-  transition: all 0.3s ease-out 0s !important;
   padding: 1rem 2rem !important;
   font-size: 1.2rem !important;
   min-height: 3em;
-  color: #070707;
+  background-color: white;
 }
 .navbar_nav {
   margin-left: auto;

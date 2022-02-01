@@ -15,9 +15,12 @@ ReactGA.initialize("UA-217065873-1");
 export default function Home() {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
   const [theme, setTheme] = useState(false);
+
+
   function handle(theme) {
     setTheme(theme);
   }
+  
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
     ReactGA.send("pageview");
