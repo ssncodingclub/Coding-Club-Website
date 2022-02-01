@@ -230,31 +230,9 @@
   margin: 15px 0;
   max-width: 250px;
 }
-
-.timelineItemContent a {
-  background: #777;
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 14px;
-  font-weight: bold;
+.res_icons{
+  margin-left: 1rem;
 }
-
-.timelineItemContent a:hover {
-  text-decoration: none;
-  background: linear-gradient(
-    to left,
-    #8a2387,
-    #e94057,
-    #f27121
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 14px;
-  font-weight: bold;
-}
-
 .timelineItemContent .circle {
   background-color: #fff;
   border: 3px solid #e17b77;
