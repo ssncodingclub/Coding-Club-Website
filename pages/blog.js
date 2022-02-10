@@ -10,6 +10,11 @@ import Footer from "./Components/Footer";
 
 export default function Blog() {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
+  const [theme, setTheme] = useState(false);
+
+  function handle(theme) {
+    setTheme(theme);
+  }
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
@@ -26,9 +31,9 @@ export default function Blog() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar theme = {()=> {}} hide={false}/>
+      <Navbar theme = {handle} hide={true}/>
 
-      <main className={styles.blog_main_container}>
+      <main className={theme?styles.blog_main_container_light:styles.blog_main_container}>
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Blog</h1>
@@ -52,7 +57,7 @@ export default function Blog() {
               </>
             ) : (
               // 'while (i == "inspiration"):\n\tprint (“scroll down”)'
-              "Coming Soon! 😉"
+              <h1 className={theme? styles.coming_soon: " "}>Coming Soon! 😉</h1>
             )}
           </h2>
         </div>
@@ -72,7 +77,7 @@ export default function Blog() {
       </main>
       {/* <Footer /> */}
       <div className={styles.placeholder}>
-        <Footer />
+        <Footer theme={theme}/>
       </div>
     </div>
   );

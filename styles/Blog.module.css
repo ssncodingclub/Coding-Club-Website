@@ -10,6 +10,15 @@
   z-index: 10;
   width: 100%;
 }
+.blog_main_container_light {
+  position: relative;
+  background-color: white;
+  padding-bottom: 90vh;
+  /* max-width: 1500px; */
+  margin: 0 auto;
+  z-index: 10;
+  width: 100%;
+}
 
 .header {
   text-align: center;
@@ -20,6 +29,11 @@
   background-attachment: fixed;
   background-size: cover;
   background-position-y: -6rem;
+}
+
+.coming_soon
+{
+  color: #070707;
 }
 
 .header h1 {
