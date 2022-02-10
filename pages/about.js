@@ -68,18 +68,18 @@ export default function About() {
         <div className={styles.content}>
           <h2 className={theme ? styles.subheader_light :styles.subheader}>Meet the team!</h2>
           {domains.map((domain, i) => {
-            return <Domain key={i} domain={domain} />;
+            return <Domain key={i} domain={domain} theme={theme} />;
           })}
         </div>
         <div className={styles.faq}>
           <h2 className={theme ? styles.subheader_light :styles.subheader}>Frequently Asked Questions</h2>
           <Container className={styles.faqContainer}>
-            <Faq />
+            <Faq theme={theme}/>
           </Container>
         </div>
       </main>
       <div className={styles.placeholder}>
-        <Footer />
+        <Footer theme={theme} />
       </div>
     </div>
   );
