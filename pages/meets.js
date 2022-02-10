@@ -57,6 +57,11 @@ const Timeline = (filter) => {
 
 export default function Meets() {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
+  const [theme, setTheme] = useState(false);
+
+  function handle(theme) {
+    setTheme(theme);
+  }
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
@@ -64,7 +69,7 @@ export default function Meets() {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={theme? styles.container_light : styles.container}>
         <Head>
           <title>SSN Coding Club</title>
           <meta name="description" content="Official SSN Coding Club Website" />
@@ -75,20 +80,20 @@ export default function Meets() {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
-        <Navbar theme={()=> {}} hide={false} />
+        <Navbar theme={handle} hide={true} />
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Meets Timeline</h1>
           </div>
         ) : (
-          <div className={styles.header}>
+          <div className={theme ? styles.header_light : styles.header}>
             <h1>Meets Timeline</h1>
           </div>
         )}
-        <div className={styles.dropdownContainer}>
+        <div className={theme ? styles.dropdownContainer_light  : styles.dropdownContainer}>
           <Dropdown
             style={{ "z-index": "10", position: "relative" }}
-            className={styles.filterDropdown}
+            className={theme ? styles.filterDropdown_light :styles.filterDropdown}
           >
             <Dropdown.Toggle variant="dark" id="dropdown-basic">
               Filters
@@ -117,15 +122,15 @@ export default function Meets() {
             </Dropdown.Menu>
           </Dropdown>
         </div>
-        <div className={styles.main}>
-          <div className={styles.subheader}>
+        <div className={theme ? styles.main_light :styles.main}>
+          <div className={theme?styles.subheader_light:styles.subheader}>
             <h1>{filter} meets</h1>
           </div>
           {Timeline(filter)}
         </div>
       </div>
       <div className={styles.placeholder}>
-        <Footer />
+        <Footer theme={theme} />
       </div>
     </>
   );
