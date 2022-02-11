@@ -10,12 +10,18 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Tile from "./Components/Tile";
 import ReactGA from "react-ga";
+import { withRouter } from 'next/router';
+
 ReactGA.initialize("UA-217065873-1");
 
-export default function Home() {
+function Home({ router: { query } }) {
+  let neww = false;
+  if(query.currTheme === "light")
+  {
+    neww = true;
+  }
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  const [theme, setTheme] = useState(false);
-
+  const [theme, setTheme] = useState(neww);
 
   function handle(theme) {
     setTheme(theme);
@@ -38,7 +44,7 @@ export default function Home() {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
-        <Navbar theme={handle} hide={true} />
+        <Navbar theme={handle} hide={true} transfer={theme}/>
         <main className={styles.main}>
           <div className={styles.headerSection}>
             {isAppleDevice ? (
@@ -330,3 +336,4 @@ export default function Home() {
     </div>
   );
 }
+export default withRouter(Home);

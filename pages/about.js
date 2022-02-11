@@ -10,10 +10,19 @@ import Faq from "./Components/Faq";
 import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
+import { withRouter } from 'next/router';
 
-export default function About() {
+
+function About({ router: { query } }) {
+
+  let neww = false;
+  if(query.currTheme === "light")
+  {
+    neww = true;
+  }
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(neww);
+  
 
   function handle(theme) {
     setTheme(theme);
@@ -22,6 +31,8 @@ export default function About() {
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
+
+
 
   return (
     <div className={styles.container}>
@@ -35,7 +46,7 @@ export default function About() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar theme={handle} hide={true} />
+      <Navbar theme={handle} hide={true} transfer={theme} />
 
       <main className={theme? styles.about_main_container_light : styles.about_main_container}>
         {isAppleDevice ? (
@@ -84,3 +95,4 @@ export default function About() {
     </div>
   );
 }
+export default withRouter(About);

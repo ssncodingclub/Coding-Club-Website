@@ -34,7 +34,7 @@
   transition: transform 0.8s;
 
   background: var(--dept-bg-color);
-  box-shadow: -1rem 0 3rem #000;
+  /* box-shadow: -1rem 0 3rem #000; */
 }
 
 .service_logo {

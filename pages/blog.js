@@ -7,10 +7,16 @@ import BlogTitleCard from "./Components/BlogTitleCard";
 import BlogCards from "./Components/BlogCards";
 import cards from "../data/blogcards";
 import Footer from "./Components/Footer";
+import { withRouter } from 'next/router';
 
-export default function Blog() {
+function Blog({ router: { query } }) {
+  let neww = false;
+  if(query.currTheme === "light")
+  {
+    neww = true;
+  }
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(neww);
 
   function handle(theme) {
     setTheme(theme);
@@ -31,7 +37,7 @@ export default function Blog() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar theme = {handle} hide={true}/>
+      <Navbar theme = {handle} hide={true} transfer = {theme}/>
 
       <main className={theme?styles.blog_main_container_light:styles.blog_main_container}>
         {isAppleDevice ? (
@@ -82,3 +88,4 @@ export default function Blog() {
     </div>
   );
 }
+export default withRouter(Blog);

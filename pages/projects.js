@@ -7,6 +7,8 @@ import Projects from "../data/projects.json";
 import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Footer from "./Components/Footer";
+import { withRouter } from 'next/router';
+
 
 const RightCard = ({ id, modalIsOpen, closeModal }) => {
   if (id !== null) {
@@ -64,12 +66,17 @@ const ProjectCard = ({ name, techStack, domain, projectImage, id, width, showDes
   );
 };
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ router: { query } }) => {
+  let neww = false;
+  if(query.currTheme === "light")
+  {
+    neww = true;
+  }
   const [windowWidth, setWindowWidth] = useState(0);
   const [projectId, setprojectId] = useState(null);
   const [modalIsOpen, setmodalIsOpen] = useState(false);
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(neww);
 
   function handle(theme) {
     setTheme(theme);
@@ -114,7 +121,7 @@ const ProjectsPage = () => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar theme={handle} hide={true} />
+      <Navbar theme={handle} hide={true} transfer = {theme} />
       <main className={theme? styles.projects_main_container_light:styles.projects_main_container}>
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
@@ -171,4 +178,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default withRouter(ProjectsPage);

@@ -8,6 +8,7 @@ import styles from "../styles/meets.module.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import { FaPlayCircle,FaFileAlt} from "react-icons/fa";
+import { withRouter } from 'next/router';
 
 const TimelineItem = ({ data }) => (
   <div className={styles.timelineItem}>
@@ -55,9 +56,14 @@ const Timeline = (filter) => {
   }
 };
 
-export default function Meets() {
+function Meets({ router: { query } }) {
+  let neww = false;
+  if(query.currTheme === "light")
+  {
+    neww = true;
+  }
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(neww);
 
   function handle(theme) {
     setTheme(theme);
@@ -80,7 +86,7 @@ export default function Meets() {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
-        <Navbar theme={handle} hide={true} />
+        <Navbar theme={handle} hide={true} transfer={theme} />
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Meets Timeline</h1>
@@ -135,3 +141,4 @@ export default function Meets() {
     </>
   );
 }
+export default withRouter(Meets);

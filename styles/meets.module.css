@@ -334,7 +334,7 @@
 }
 
 @media only screen and (max-width: 890px) {
-  .filterDropdown {
+  .filterDropdown,.filterDropdown_light {
     margin: 0;
     align-self: center;
     margin-left: 45%;
@@ -355,7 +355,7 @@
 }
 
 @media only screen and (max-width: 690px) {
-  .filterDropdown {
+  .filterDropdown,.filterDropdown_light {
     margin: 0;
     align-self: center;
     margin-left: 40%;

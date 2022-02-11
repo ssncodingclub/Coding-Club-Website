@@ -11,8 +11,7 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 function NavBar(props) {
   const [expand, setExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
-  const [theme, setTheme] = useState(false);
-
+  const [theme, setTheme] = useState(props.transfer);
   function handleClick() {
     if (theme === false) {
       setTheme(true);
@@ -22,10 +21,13 @@ function NavBar(props) {
       setTheme(false);
       props.theme(!theme);
     }
-
   }
-
-
+  let neww = "dark";
+  if(theme) {
+    neww = "light";
+  } else {
+    neww = "dark";
+  }
   function scrollHandler() {
     if (window.scrollY >= 40) {
       updateNavbar(true);
@@ -56,7 +58,12 @@ function NavBar(props) {
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
 
             <Link
-              href="/"
+              href={{
+                pathname:"/",
+                query: {
+                  currTheme : neww
+                }
+              }}
               onClick={() => {
                 setExpanded(false);
               }}
@@ -65,33 +72,51 @@ function NavBar(props) {
               <Nav.Item className={styles.nav_item}>Home</Nav.Item>
             </Link>
             <Link
-              href="/about"
+              href={{
+                pathname:"/about",
+                query: {
+                  currTheme : neww
+                }
+              }}
               onClick={() => {
                 setExpanded(false);
-
               }}
               passHref
             >
               <Nav.Item className={styles.nav_item}>About</Nav.Item>
             </Link>
             <Link
-              href="/meets"
+              href={{
+                pathname:"/meets",
+                query: {
+                  currTheme : neww
+                }
+              }}
               onClick={() => {
                 setExpanded(false);
-
               }}
               passHref
             >
               <Nav.Item className={styles.nav_item}>Meets</Nav.Item>
             </Link>
-            <Link href="/projects" passHref>
+            <Link href={{
+                pathname:"/projects",
+                query: {
+                  currTheme : neww
+                }
+              }}
+            passHref>
               <Nav.Item className={styles.nav_item}>Projects</Nav.Item>
             </Link>
             <Link
-              href="/blog"
+              href={{
+                pathname:"/blog",
+                query: {
+                  currTheme : neww
+                }
+              }}
               onClick={() => {
                 setExpanded(false);
-
               }}
               passHref
             >
@@ -111,19 +136,84 @@ function NavBar(props) {
               <ul className={styles.mobilenavul + " " + styles.menu}>
 
                 <li>
-                  <a href="/">Home</a>
+                  <Link
+                    href={{
+                      pathname:"/",
+                      query: {
+                        currTheme : neww
+                      }
+                    }}
+                    onClick={() => {
+                      setExpanded(false);
+                    }}
+                    passHref
+                  >
+                <Nav.Item style={{cursor: "pointer"}}>Home</Nav.Item>
+                 </Link>
                 </li>
                 <li>
-                  <a href="/about">About</a>
+                <Link
+                    href={{
+                      pathname:"/about",
+                      query: {
+                        currTheme : neww
+                      }
+                    }}
+                    onClick={() => {
+                      setExpanded(false);
+                    }}
+                    passHref
+                  >
+                <Nav.Item style={{cursor: "pointer"}}>About</Nav.Item>
+                 </Link>
                 </li>
                 <li>
-                  <a href="/meets">Meets</a>
+                <Link
+                    href={{
+                      pathname:"/meets",
+                      query: {
+                        currTheme : neww
+                      }
+                    }}
+                    onClick={() => {
+                      setExpanded(false);
+                    }}
+                    passHref
+                  >
+                <Nav.Item style={{cursor: "pointer"}}>Meets</Nav.Item>
+                 </Link>
                 </li>
                 <li>
-                  <a href="/projects">Projects</a>
+                <Link
+                    href={{
+                      pathname:"/projects",
+                      query: {
+                        currTheme : neww
+                      }
+                    }}
+                    onClick={() => {
+                      setExpanded(false);
+                    }}
+                    passHref
+                  >
+                <Nav.Item style={{cursor: "pointer"}}>Projects</Nav.Item>
+                 </Link>
                 </li>
                 <li>
-                  <a href="/blog">Blog</a>
+                <Link
+                    href={{
+                      pathname:"/blog",
+                      query: {
+                        currTheme : neww
+                      }
+                    }}
+                    onClick={() => {
+                      setExpanded(false);
+                    }}
+                    passHref
+                  >
+                <Nav.Item style={{cursor: "pointer"}}>Blog</Nav.Item>
+                 </Link>
                 </li>
               </ul>
             </div>
