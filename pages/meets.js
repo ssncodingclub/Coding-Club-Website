@@ -2,7 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import { Dropdown } from "react-bootstrap";
+import { Badge, Dropdown } from "react-bootstrap";
 import timelineData from "../data/meets.json";
 import styles from "../styles/meets.module.css";
 import Footer from "./Components/Footer";
@@ -17,6 +17,7 @@ const TimelineItem = ({ data }) => (
         {data.category.tag}
       </span>
       <time>{data.date}</time>
+      <Badge className={styles.meetStatus} bg={data.status==="finished"?"success":"secondary"}>{data.status}</Badge>
       <h4 className={styles.meetTitle}>{data.text}</h4>
       <div className={styles.meetDesc}>{data.description}</div>
       <span ><a href={data.link.url} target="_blank" rel="noreferrer" title="session recordings">
