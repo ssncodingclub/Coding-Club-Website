@@ -10,22 +10,13 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Tile from "./Components/Tile";
 import ReactGA from "react-ga";
-import { withRouter } from 'next/router';
 
 ReactGA.initialize("UA-217065873-1");
 
-function Home({ router: { query } }) {
-  let neww = false;
-  if(query.currTheme === "light")
-  {
-    neww = true;
-  }
-  const [isAppleDevice, setIsAppleDevice] = useState(false);
-  const [theme, setTheme] = useState(neww);
+export default function Home(props) {
 
-  function handle(theme) {
-    setTheme(theme);
-  }
+  const [isAppleDevice, setIsAppleDevice] = useState(false);
+  console.log(props);
   
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
@@ -34,7 +25,7 @@ function Home({ router: { query } }) {
 
   return (
     <div className={styles.parallax}>
-      <div className={theme ? styles.container_light : styles.container}>
+      <div className={props.theme ? styles.container_light : styles.container}>
         <Head>
           <title>SSN Coding Club</title>
           <meta name="description" content="Official SSN Coding Club Website" />
@@ -44,7 +35,7 @@ function Home({ router: { query } }) {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
-        <Navbar theme={handle} hide={true} transfer={theme}/>
+        <Navbar props={props}/>
         <main className={styles.main}>
           <div className={styles.headerSection}>
             {isAppleDevice ? (
@@ -58,11 +49,11 @@ function Home({ router: { query } }) {
                 <h1>SSN Coding Club</h1>
               </div>
             )}
-            <h1 className={theme ? styles.h1Text_light : styles.h1Text}>
+            <h1 className={props.theme ? styles.h1Text_light : styles.h1Text}>
               More than just a club.
             </h1>
             <a href="#info">
-              {theme ? (
+              {props.theme ? (
                 <BsChevronDoubleDown
                   color="black"
                   size="45"
@@ -82,10 +73,10 @@ function Home({ router: { query } }) {
               {cardDetails.map((cardInfo, i) => {
                 return (
                   <Col md="6" sm="12" lg="4">
-                    <Card className={theme ? styles.infoContainerCard_light:styles.infoContainerCard}>
+                    <Card className={props.theme ? styles.infoContainerCard_light:styles.infoContainerCard}>
                       <Card.Img variant="top" src={cardInfo.img} />
                       <Card.Body>
-                        <Card.Title className={theme ? styles.infoContainerCardTitle_light:styles.infoContainerCardTitle}>
+                        <Card.Title className={props.theme ? styles.infoContainerCardTitle_light:styles.infoContainerCardTitle}>
                           {cardInfo.title}
                         </Card.Title>
                         <Card.Text> {cardInfo.description}</Card.Text>
@@ -98,7 +89,7 @@ function Home({ router: { query } }) {
           </Container>
         </div>
         <div>
-          <div className={theme ?styles.thrivingCommunityHeaderContainer_light: styles.thrivingCommunityHeaderContainer}>
+          <div className={props.theme ?styles.thrivingCommunityHeaderContainer_light: styles.thrivingCommunityHeaderContainer}>
             {isAppleDevice ? (
               <>
                 <img src="./HomePage/TC_1.svg" alt="Title-part-1" />
@@ -122,7 +113,7 @@ function Home({ router: { query } }) {
             </p>
             <Button
               className={
-                theme ? styles.joinUsButton_light : styles.joinUsButton
+                props.theme ? styles.joinUsButton_light : styles.joinUsButton
               }
             >
               <a href="https://linktr.ee/ssncc" target="_blank">
@@ -165,14 +156,14 @@ function Home({ router: { query } }) {
                 alt="Title"
               />
               <h4
-                className={theme ? styles.domainName_light : styles.domainName}
+                className={props.theme ? styles.domainName_light : styles.domainName}
               >
                 Competitive Programming
               </h4>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p
-                className={theme ? styles.domainInfo_light : styles.domainInfo}
+                className={props.theme ? styles.domainInfo_light : styles.domainInfo}
               >
                 Join us on a journey to master the tricks of the trade - popular
                 CP concepts, algorithms and stratagems, boosting your cognitive,
@@ -191,7 +182,7 @@ function Home({ router: { query } }) {
               className={styles.domainInfoContainer}
             >
               <p
-                className={theme ? styles.domainInfo_light : styles.domainInfo}
+                className={props.theme ? styles.domainInfo_light : styles.domainInfo}
               >
                 Rome wasn't built in a day, and neither was our website. Learn
                 state-of-the-art app building and end-to-end full-stack
@@ -213,7 +204,7 @@ function Home({ router: { query } }) {
                 alt="Title"
               />
               <h4
-                className={theme ? styles.domainName_light : styles.domainName}
+                className={props.theme ? styles.domainName_light : styles.domainName}
               >
                 Software Development
               </h4>
@@ -227,14 +218,14 @@ function Home({ router: { query } }) {
                 alt="Title"
               />
               <h4
-                className={theme ? styles.domainName_light : styles.domainName}
+                className={props.theme ? styles.domainName_light : styles.domainName}
               >
                 Machine Learning
               </h4>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
               <p
-                className={theme ? styles.domainInfo_light : styles.domainInfo}
+                className={props.theme ? styles.domainInfo_light : styles.domainInfo}
               >
                 What if you were told that 15 years from now, the code that you
                 currently write "manually", will learn to write itself
@@ -331,9 +322,8 @@ function Home({ router: { query } }) {
         </div>
       </div>
       <div className={styles.placeholder}>
-        <Footer theme={theme} />
+        <Footer theme={props.theme} />
       </div>
     </div>
   );
 }
-export default withRouter(Home);

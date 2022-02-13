@@ -7,7 +7,6 @@ import Projects from "../data/projects.json";
 import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Footer from "./Components/Footer";
-import { withRouter } from 'next/router';
 
 
 const RightCard = ({ id, modalIsOpen, closeModal }) => {
@@ -66,21 +65,14 @@ const ProjectCard = ({ name, techStack, domain, projectImage, id, width, showDes
   );
 };
 
-const ProjectsPage = ({ router: { query } }) => {
-  let neww = false;
-  if(query.currTheme === "light")
-  {
-    neww = true;
-  }
+const ProjectsPage = (props) => {
+
   const [windowWidth, setWindowWidth] = useState(0);
   const [projectId, setprojectId] = useState(null);
   const [modalIsOpen, setmodalIsOpen] = useState(false);
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  const [theme, setTheme] = useState(neww);
 
-  function handle(theme) {
-    setTheme(theme);
-  }
+
   useEffect(() => {
     Modal.setAppElement("body");
     setWindowWidth(window.screen.width);
@@ -110,7 +102,7 @@ const ProjectsPage = ({ router: { query } }) => {
   };
 
   return (
-    <div className={theme?styles.container_light:styles.container}>
+    <div className={props.theme?styles.container_light:styles.container}>
       <Head>
         <title>SSN Coding Club</title>
         <meta name="description" content="Official SSN Coding Club Website" />
@@ -121,8 +113,8 @@ const ProjectsPage = ({ router: { query } }) => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar theme={handle} hide={true} transfer = {theme} />
-      <main className={theme? styles.projects_main_container_light:styles.projects_main_container}>
+      <Navbar props={props}/>
+      <main className={props.theme? styles.projects_main_container_light:styles.projects_main_container}>
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Projects</h1>
@@ -140,7 +132,7 @@ const ProjectsPage = ({ router: { query } }) => {
         </div> */}
 
         {Projects.length > 0 ? (
-          <div className={theme?styles.project_submain_container_light:styles.project_submain_container}>
+          <div className={props.theme?styles.project_submain_container_light:styles.project_submain_container}>
             <div className={styles.left_pane}>
               {Projects.map((project, i) => (
                 <ProjectCard
@@ -151,7 +143,7 @@ const ProjectsPage = ({ router: { query } }) => {
                   domain={project.domain}
                   techStack={project.techStack}
                   projectImage={project.projectImage}
-                  theme={theme}
+                  theme={props.theme}
                 />
               ))}
             </div>
@@ -172,10 +164,10 @@ const ProjectsPage = ({ router: { query } }) => {
         )}
       </main>
       <div className={styles.placeholder}>
-        <Footer theme={theme} />
+        <Footer theme={props.theme} />
       </div>
     </div>
   );
 };
 
-export default withRouter(ProjectsPage);
+export default ProjectsPage

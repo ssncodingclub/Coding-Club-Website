@@ -7,20 +7,12 @@ import BlogTitleCard from "./Components/BlogTitleCard";
 import BlogCards from "./Components/BlogCards";
 import cards from "../data/blogcards";
 import Footer from "./Components/Footer";
-import { withRouter } from 'next/router';
 
-function Blog({ router: { query } }) {
-  let neww = false;
-  if(query.currTheme === "light")
-  {
-    neww = true;
-  }
+export default function Blog(props) {
+
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  const [theme, setTheme] = useState(neww);
 
-  function handle(theme) {
-    setTheme(theme);
-  }
+
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
@@ -31,27 +23,25 @@ function Blog({ router: { query } }) {
         <title>SSN Coding Club</title>
         <meta name="description" content="Official SSN Coding Club Website" />
         <link rel="icon" href="/favicon.ico" />
-        {/* for fontawesome */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar theme = {handle} hide={true} transfer = {theme}/>
+      <Navbar props={props}/>
 
-      <main className={theme?styles.blog_main_container_light:styles.blog_main_container}>
+      <main className={props.theme?styles.blog_main_container_light:styles.blog_main_container}>
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Blog</h1>
           </div>
         ) : (
-          <div className={theme? styles.header_light:styles.header}>
+          <div className={props.theme? styles.header_light:styles.header}>
             <h1>Blog</h1>
           </div>
         )}
         <div className={styles.subcontainer}>
           <h2 className={styles.subheader}>
-            {/*Get immersed in knowledge with our blogs!*/}
             {cards.length > 0 ? (
               <>
                 <span style={{ color: "#63ADF2" }}>while&nbsp;</span>(
@@ -62,8 +52,7 @@ function Blog({ router: { query } }) {
                 <span style={{ color: "#BDD5EA" }}>'scroll down 👇'</span>)
               </>
             ) : (
-              // 'while (i == "inspiration"):\n\tprint (“scroll down”)'
-              <h1 className={theme? styles.coming_soon: " "}>Coming Soon! 😉</h1>
+              <h1 className={props.theme? styles.coming_soon: " "}>Coming Soon! 😉</h1>
             )}
           </h2>
         </div>
@@ -81,11 +70,9 @@ function Blog({ router: { query } }) {
           <></>
         )}
       </main>
-      {/* <Footer /> */}
       <div className={styles.placeholder}>
-        <Footer theme={theme}/>
+        <Footer theme={props.theme}/>
       </div>
     </div>
   );
 }
-export default withRouter(Blog);
