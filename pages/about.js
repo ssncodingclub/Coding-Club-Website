@@ -40,7 +40,7 @@ export default function About(props) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar props={props}/>
+      <Navbar transfer={props.theme} fn = {props.setTheme}/>
 
       <main className={props.theme? styles.about_main_container_light : styles.about_main_container}>
         {isAppleDevice ? (

@@ -78,7 +78,7 @@ export default function Meets(props) {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
-        <Navbar props={props}/>
+        <Navbar transfer={props.theme} fn = {props.setTheme}/>
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Meets Timeline</h1>

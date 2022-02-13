@@ -16,7 +16,6 @@ ReactGA.initialize("UA-217065873-1");
 export default function Home(props) {
 
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  console.log(props);
   
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
@@ -35,7 +34,7 @@ export default function Home(props) {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
-        <Navbar props={props}/>
+        <Navbar transfer={props.theme} fn = {props.setTheme}/>
         <main className={styles.main}>
           <div className={styles.headerSection}>
             {isAppleDevice ? (

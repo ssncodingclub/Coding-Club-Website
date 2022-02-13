@@ -12,8 +12,6 @@ function NavBar(props) {
   const [expand, setExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
 
-
-
   function scrollHandler() {
     if (window.scrollY >= 40) {
       updateNavbar(true);
@@ -31,7 +29,7 @@ function NavBar(props) {
     <Navbar
       fixed="top"
       expand="md"
-      className={props.props.theme ? styles.navbar_light + " " + (navColor ? styles.sticky_light : "")
+      className={props.transfer? styles.navbar_light + " " + (navColor ? styles.sticky_light : "")
         : styles.navbar + " " + (navColor ? styles.sticky : "")}
     >
       <Container>
@@ -84,15 +82,15 @@ function NavBar(props) {
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
             
-            <Nav.Item className={styles.nav_toggle_icons} onClick={()=> props.props.setTheme(!props.props.theme) }>
-              {props.props.theme ? <div className={styles.toggle_icons_light}><FiMoon size={20} /></div> : <div className={styles.toggle_icons}><FiSun size={20} /></div>}
+            <Nav.Item className={styles.nav_toggle_icons} onClick={()=> props.fn(!props.transfer) }>
+              {props.transfer? <div className={styles.toggle_icons_light}><FiMoon size={20} /></div> : <div className={styles.toggle_icons}><FiSun size={20} /></div>}
             </Nav.Item>
             
             <div className={styles.menuToggle}>
               <input type="checkbox" />
-              <span className={props.props.theme ? styles.menuSpan_light : ""}></span>
-              <span className={props.props.theme ? styles.menuSpan_light : ""}></span>
-              <span className={props.props.theme ? styles.menuSpan_light : ""}></span>
+              <span className={props.transfer? styles.menuSpan_light : ""}></span>
+              <span className={props.transfer? styles.menuSpan_light : ""}></span>
+              <span className={props.transfer? styles.menuSpan_light : ""}></span>
               <ul className={styles.mobilenavul + " " + styles.menu}>
 
                 <li>
