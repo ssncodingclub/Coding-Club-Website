@@ -66,12 +66,12 @@ function About({ router: { query } }) {
             and ensure equity in coding!
           </p>
         </div>
-        <div>
+        <div> 
           <h2 className={theme ? styles.subheader_light :styles.subheader}>What do we do?</h2>
           <Container className="mt-10" className={styles.departmentContainer}>
             <Row>
               {departments.map((department, index) => {
-                return <Department key={index} department={department} />;
+                return <Department key={index} department={department} theme={theme} />;
               })}
             </Row>
           </Container>

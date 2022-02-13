@@ -10,13 +10,13 @@ const Department = ({
     id: "",
     icon: "",
     alt: "",
-  },
+  }, theme
 }) => {
-  return (
+  return (  
     <Col md="6" lg="4" sm="6">
       <div className={styles.main}>
         <div className={styles.service}>
-          <div className={styles.service_logo}>
+          <div className={theme ? styles.service_logo_light:styles.service_logo}>
             {/* <Image src={department.icon} alt={department.alt}  /> */}
             <img src={department.icon} alt={department.alt} />
           </div>

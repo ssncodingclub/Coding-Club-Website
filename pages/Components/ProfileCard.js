@@ -11,18 +11,19 @@ const ProfileCard = ({
       github: "",
       linkedin: "",
       instagram: ""
-    }, 
-    marginFlag=true
+    },
+    marginFlag=true,
+    theme
   }) => {
   return (
     <>
-      <article className={styles.card} style={{marginLeft: marginFlag ? "-2rem" : "-50px"}}>
+      <article className={theme? styles.card_light:styles.card} style={{marginLeft: marginFlag ? "-2rem" : "-50px"}}>
         <div className={styles.profile}>
           <div className={styles.profile_pic}>
             <Image width="130" height="130" src={profilePic} alt={alt}></Image>
           </div>
           <header className={styles.card_header}>
-            <h2 className={styles.profile_name}>
+            <h2 className={theme?styles.profile_name_light:styles.profile_name}>
               {
                 name.split(' ').map((word, i) => {
                   return (<>
@@ -41,7 +42,7 @@ const ProfileCard = ({
                   href={socials.linkedin} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className={`fa fa-linkedin ${styles.social_icon}`}
+                  className={`fa fa-linkedin ${theme? styles.social_icon_light:styles.social_icon}`}
                 ></a>
               : null
             }
@@ -52,7 +53,7 @@ const ProfileCard = ({
                   href={socials.github} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className={`fa fa-github ${styles.social_icon}`}
+                  className={`fa fa-github ${theme? styles.social_icon_light:styles.social_icon}`}
                 ></a>
               : null
             }
@@ -63,7 +64,7 @@ const ProfileCard = ({
                   href={socials.instagram} 
                   target="_blank" 
                   rel="noreferrer"
-                  className={`fa fa-instagram ${styles.social_icon}`}
+                  className={`fa fa-instagram ${theme? styles.social_icon_light:styles.social_icon}`}
                 ></a>
               : null
             }

@@ -333,6 +333,13 @@
   }
 }
 
+@media only screen and (max-width:375px) {
+  .container_light{
+    margin-top: 1px ;
+  }
+  
+}
+
 @media only screen and (max-width: 890px) {
   .filterDropdown,.filterDropdown_light {
     margin: 0;
@@ -368,22 +375,23 @@
 
 @media screen and (max-width: 420px) {
   .header h1,
-  .appleHeader h1 {
+  .appleHeader h1,
+  .header_light h1{
     font-size: 20vw;
   }
-  .container {
+  .container,.container_light {
     margin-top: 120px;
   }
 }
 
 @media screen and (max-width: 426px) {
-  .header h1 {
+  .header h1,.header_light h1 {
     font-size: 50px;
   }
 }
 
 @media (max-height: 580px) {
-  .header {
+  .header,.header_light {
     text-align: center;
     background: linear-gradient(
       to right,
@@ -399,7 +407,7 @@
     background-position-y: -6rem;
     background-position-x: -8rem;
   }
-  .header h1 {
+  .header h1,.header_light h1 {
     color: rgb(244, 58, 79);
   }
 }

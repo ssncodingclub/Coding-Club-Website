@@ -45,7 +45,7 @@ function Blog({ router: { query } }) {
             <h1>Blog</h1>
           </div>
         ) : (
-          <div className={styles.header}>
+          <div className={theme? styles.header_light:styles.header}>
             <h1>Blog</h1>
           </div>
         )}

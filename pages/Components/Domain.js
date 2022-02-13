@@ -21,6 +21,7 @@ const Domain = ({ domain = {
           tags={domain.tags}
           discord={domain.discord}
           style={domain.bgColorStyle}
+          theme={theme}
         />
         {
           domain.members.map(({name, position, alt, profilePic, socials}, i) => {
@@ -33,6 +34,7 @@ const Domain = ({ domain = {
                 socials={socials}
                 marginFlag={i===0}
                 key={i}
+                theme={theme}
               />
             </>)
           })
