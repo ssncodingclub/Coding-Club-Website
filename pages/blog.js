@@ -8,8 +8,11 @@ import BlogCards from "./Components/BlogCards";
 import cards from "../data/blogcards";
 import Footer from "./Components/Footer";
 
-export default function Blog() {
+export default function Blog(props) {
+
   const [isAppleDevice, setIsAppleDevice] = useState(false);
+
+
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
@@ -20,27 +23,25 @@ export default function Blog() {
         <title>SSN Coding Club</title>
         <meta name="description" content="Official SSN Coding Club Website" />
         <link rel="icon" href="/favicon.ico" />
-        {/* for fontawesome */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar />
+      <Navbar transfer={props.theme} fn = {props.setTheme}/>
 
-      <main className={styles.blog_main_container}>
+      <main className={props.theme?styles.blog_main_container_light:styles.blog_main_container}>
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Blog</h1>
           </div>
         ) : (
-          <div className={styles.header}>
+          <div className={props.theme? styles.header_light:styles.header}>
             <h1>Blog</h1>
           </div>
         )}
         <div className={styles.subcontainer}>
           <h2 className={styles.subheader}>
-            {/*Get immersed in knowledge with our blogs!*/}
             {cards.length > 0 ? (
               <>
                 <span style={{ color: "#63ADF2" }}>while&nbsp;</span>(
@@ -51,8 +52,7 @@ export default function Blog() {
                 <span style={{ color: "#BDD5EA" }}>'scroll down 👇'</span>)
               </>
             ) : (
-              // 'while (i == "inspiration"):\n\tprint (“scroll down”)'
-              "Coming Soon! 😉"
+              <h1 className={props.theme? styles.coming_soon: " "}>Coming Soon! 😉</h1>
             )}
           </h2>
         </div>
@@ -70,9 +70,8 @@ export default function Blog() {
           <></>
         )}
       </main>
-      {/* <Footer /> */}
       <div className={styles.placeholder}>
-        <Footer />
+        <Footer theme={props.theme}/>
       </div>
     </div>
   );

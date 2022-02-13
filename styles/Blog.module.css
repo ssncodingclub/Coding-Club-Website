@@ -9,6 +9,17 @@
   margin: 0 auto;
   z-index: 10;
   width: 100%;
+  /* margin-top: -110px; */
+}
+.blog_main_container_light {
+  position: relative;
+  background-color: white;
+  padding-bottom: 90vh;
+  /* max-width: 1500px; */
+  margin: 0 auto;
+  z-index: 10;
+  width: 100%;
+  margin-top: -110px;
 }
 
 .header {
@@ -21,8 +32,25 @@
   background-size: cover;
   background-position-y: -6rem;
 }
+.header_light {
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -6rem;
+  margin-top: 110px;
 
-.header h1 {
+}
+
+.coming_soon
+{
+  color: #070707;
+}
+
+.header h1, .header_light  h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
 }

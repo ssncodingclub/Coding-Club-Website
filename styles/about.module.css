@@ -11,6 +11,7 @@
   background-size: cover;
   background-position-y: -6rem;
   background-position-x: -8rem;
+  margin-top: 110px;
 }
 
 .header h1 {
@@ -21,6 +22,8 @@
 .appleHeader {
   text-align: center;
   color: rgb(244, 58, 79);
+  margin-top: 110px;
+
 }
 
 .appleHeader h1 {
@@ -34,11 +37,26 @@
   background-color: #070707;
 }
 
+.about_main_container_light {
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
 .subheader {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: #fff;
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.subheader_light {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #070707;
   margin-top: 80px;
   text-align: center;
   margin-bottom: 3.5rem;
@@ -57,10 +75,17 @@
   font-family: "Overpass", sans-serif;
   font-size: 25px;
 }
+.para_light {
+  width: 80%;
+  max-width: 800px;
+  color: #070707;
+  font-family: "Overpass", sans-serif;
+  font-size: 25px;
+}
 
 .container {
   display: flex;
-  margin-top: 200px;
+  margin-top: 90px;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 90px;

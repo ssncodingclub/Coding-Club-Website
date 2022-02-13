@@ -1,11 +1,11 @@
 import React from "react";
 import styles from '../../styles/Card.module.css';
 
-const DomainCard = ({title="", discord="", tags=[], style=""}) => {
+const DomainCard = ({title="", discord="", tags=[], style="",theme}) => {
 
   return (
     <>
-      <article className={`${styles.card}`} style={{...style, minWidth: "300px"}}>
+      <article className={`${theme? styles.card_light:styles.card}`} style={{...style, minWidth: "300px"}}>
         <header className={styles.card_header}>
           <p>-------</p>
           <h2 style={{fontSize: "30px"}}>

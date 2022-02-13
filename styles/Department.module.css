@@ -28,13 +28,13 @@
      */
   display: grid;
   place-items: center;
-
+  /* background-color: red; */
   z-index: 2;
   box-shadow: 0 0 20px -15px #030380;
   transition: transform 0.8s;
-
   background: var(--dept-bg-color);
-  box-shadow: -1rem 0 3rem #000;
+  /* background: #070707; */
+  /* box-shadow: -1rem 0 3rem #000; */
 }
 
 .service_logo {
@@ -42,16 +42,44 @@
   height: 130px;
   border-radius: 50%;
   margin: -90px auto 0;
-  background: var(--dept-bg-color); /* fallback for old browsers */
+  /* background-color: #070707; */
+  background: var(--dept-bg-color); 
   /* border: 18px solid var(--bs-body-color1);  */
   border: 18px solid #070707;
-  /* Change to page bg color */
+  /* border: 18px solid white; */
+
+}
+.service_logo_light {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: -90px auto 0;
+  /* background-color: #070707; */
+  background: lightgray; 
+
+  border: 18px solid white;
+
 }
 
 .service_logo img {
   width: 50px;
   margin-top: 20px;
   transition: transform 1s;
+  background-color: white;
+
+  /* background-color: #030380; */
+}
+.service_logo_light img{
+  width: 50px;
+  margin-top: 20px;
+  transition: transform 1s;
+  /* background-color: white; */
+  /* border-radius: 50%;
+  padding: 10px;
+  text-shadow: none; */
+  /* -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;   */
 }
 
 .service h4 {
