@@ -6,15 +6,15 @@ import Link from "next/link";
 const BlogTitleCard = ({ id }) => {
   let domain = "Software Development",
     publishDate = "December 18, 2021",
-    title = "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    title = "All About GSOC: Get started on your GSOC journey",
     summary =
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sunt fuga dignissimos \
           ducimus rem doloribus, veritatis aut laborum esse eos reiciendis ipsam quisquam eveniet\
           soluta, debitis repellat! Quasi quidem eos natus quibusdam. Architecto dolor quis, sint\
           eaque nobis accusantium maioresLorem ipsum dolor sit.",
-    authorName = "Post Creator",
+    authorName = "Lokesh",
     authorPic = "./BlogPage/profilepic.png",
-    authorDomain = "Post Creator Specialization";
+    authorDomain = "Software Dev";
   // let { domain, publishDate, title, summary, authorName, authorPic, authorDomain } = cards[id];
 
   if (summary.length > 360) summary = summary.substring(0, 356) + "...";
@@ -31,7 +31,7 @@ const BlogTitleCard = ({ id }) => {
           <div className={styles.info_divider}></div>
           <div className={styles.post_date}>{publishDate}</div>
         </div>
-        <Link href="/blog" className={styles.post_title_link}>
+        <Link href="/blog/all-about-gsoc" className={styles.post_title_link}>
           <h1 className={styles.post_title}>{title}</h1>
         </Link>
         <div className={styles.post_summary}>{summary}</div>
