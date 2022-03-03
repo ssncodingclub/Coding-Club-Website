@@ -8,7 +8,6 @@ export default function Post({ frontmatter: { title, date, cover_image }, slug, 
   return (
     <>
       <div className="card card-page">
-        <h1 className="post-title">{title}</h1>
         <div className="post-body">
           <div dangerouslySetInnerHTML={{ __html: md.render(content) }}></div>
         </div>
