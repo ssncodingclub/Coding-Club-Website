@@ -3,9 +3,9 @@ title: "All about GSoC"
 summary: "FAQs on GSoC"
 domain: "Software Development"
 publishDate: "February 27, 2022"
-postImage: "../BlogPage/dummyimage.jpg"
+postImage: "../BlogPage/gsoc_blog.png"
 authorName: "Lokesh N"
-authorPic: "../BlogPage/profilepic.png"
+authorPic: "../profiles/Dev/lokesh.jpeg"
 authorDomain: "Software Development"
 ---
 

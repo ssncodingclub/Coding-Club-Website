@@ -12,7 +12,7 @@ const BlogCard = ({
   authorPic,
   authorDomain,
   postImage,
-  id,
+  id
 }) => {
   const classNamePrefix = "blogcard_item_",
     className = classNamePrefix + id;
@@ -31,7 +31,8 @@ const BlogCard = ({
           <div className={styles.info_divider}></div>
           <div className={styles.post_date}>{publishDate}</div>
         </div>
-        <Link href="/blog" className={styles.post_card_title_link}>
+        {/* hardcoded for gsoc organizations */}
+        <Link href="blog/gsoc-organizations" className={styles.post_card_title_link}>
           <h2 className={styles.post_card_title}>{title}</h2>
         </Link>
         <div className={styles.post_card_summary}>{summary}</div>
