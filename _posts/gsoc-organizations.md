@@ -5,7 +5,7 @@ domain: "Software Development"
 publishDate: "February 27, 2022"
 postImage: "../BlogPage/gsoc_orgs.png"
 authorName: "Software Dev Team"
-authorPic: "../BlogPage/profilepic.png"
+authorPic: "/favicon.ico"
 authorDomain: "Software Development"
 ---
 
