@@ -85,7 +85,7 @@
   margin-top: 200px;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 426px) {
@@ -340,6 +340,29 @@
   .container {
     margin-top: 120px;
   }
+
+  .btn {
+    font-size: x-small;
+  }
+
+  .postPage {
+    border-color: black;
+    width: 100%;
+  }
+
+  .postImage {
+    width: 90%;
+  }
+
+  .postPage p {
+    font-size: small;
+    text-align: left;
+    margin: 0;
+  }
+
+  .postPage li {
+    font-size: small;
+  }
 }
 
 @media (max-height: 580px) {
@@ -408,6 +431,10 @@
   margin: 30px 20px;
 }
 
+.blogPostTitle {
+  font-size: 3rem;
+}
+
 .postPage h1 {
   font-size: 2rem;
   text-align: center;
@@ -428,7 +455,6 @@
   text-align: justify;
   width: 600px;
   max-width: 80%;
-
   margin: 0 auto;
 }
 
