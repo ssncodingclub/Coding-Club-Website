@@ -401,6 +401,7 @@
   border-width: 2px;
   width: 80%;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .creator_info {
@@ -408,7 +409,7 @@
 }
 
 .postPage h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin: 10px auto;
 }
@@ -438,6 +439,8 @@
 
 .postBody {
   margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .btn {

@@ -12,7 +12,7 @@ export default function Post({ frontmatter: { title, publishDate, postImage, aut
     <div className={styles.PostPageMain}>
       <a href="./" className={styles.btn}>Back to blogs</a>
       <div className={styles.postPage}>
-        <div><h1>{title}</h1></div>
+        <div><h1 style={{"font-size": "3rem"}}>{title}</h1></div>
         <div style={{"text-align": "left"}} className={styles.creator_info}>
           <div className={styles.post_creator}>
             <img src={authorPic} alt="Post Creator" className={styles.post_creator_image} />
