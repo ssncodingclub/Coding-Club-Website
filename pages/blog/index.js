@@ -1,17 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import Navbar from "./Components/Navbar";
-import styles from "../styles/Blog.module.css";
-import BlogTitleCard from "./Components/BlogTitleCard";
-import BlogCards from "./Components/BlogCards";
-import cards from "../data/blogcards";
-import Footer from "./Components/Footer";
+import Navbar from "../Components/Navbar";
+import styles from "../../styles/Blog.module.css";
+import BlogTitleCard from "../Components/BlogTitleCard";
+import BlogCards from "../Components/BlogCards";
+import cards from "../../data/blogcards";
+import Footer from "../Components/Footer";
 
 export default function Blog(props) {
-
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-
 
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
@@ -28,15 +26,15 @@ export default function Blog(props) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar transfer={props.theme} fn = {props.setTheme}/>
+      <Navbar transfer={props.theme} setTheme={props.setTheme} />
 
-      <main className={props.theme?styles.blog_main_container_light:styles.blog_main_container}>
+      <main className={props.theme ? styles.blog_main_container_light : styles.blog_main_container}>
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Blog</h1>
           </div>
         ) : (
-          <div className={props.theme? styles.header_light:styles.header}>
+          <div className={props.theme ? styles.header_light : styles.header}>
             <h1>Blog</h1>
           </div>
         )}
@@ -52,7 +50,7 @@ export default function Blog(props) {
                 <span style={{ color: "#BDD5EA" }}>'scroll down 👇'</span>)
               </>
             ) : (
-              <h1 className={props.theme? styles.coming_soon: " "}>Coming Soon! 😉</h1>
+              <h1 className={props.theme ? styles.coming_soon : " "}>Coming Soon! 😉</h1>
             )}
           </h2>
         </div>
@@ -71,7 +69,7 @@ export default function Blog(props) {
         )}
       </main>
       <div className={styles.placeholder}>
-        <Footer theme={props.theme}/>
+        <Footer theme={props.theme} />
       </div>
     </div>
   );

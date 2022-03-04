@@ -42,15 +42,14 @@
   background-size: cover;
   background-position-y: -6rem;
   margin-top: 110px;
-
 }
 
-.coming_soon
-{
+.coming_soon {
   color: #070707;
 }
 
-.header h1, .header_light  h1 {
+.header h1,
+.header_light h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
 }
@@ -112,6 +111,7 @@
   color: white;
   /* border: solid white; */
 }
+
 .blog_title_element_container {
   display: flex;
   justify-content: space-between;
@@ -218,6 +218,8 @@
 .blogcard_item {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  max-height: 600px;
 }
 .blogcard_item_image {
   width: 100%;
@@ -367,4 +369,91 @@
   position: relative;
   z-index: 1;
   height: 90vh;
+}
+
+/* Slug Styles */
+
+.PostPageMain {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.postPage {
+  margin: 50px auto;
+  align-self: center;
+  color: white;
+  width: 90%;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  max-width: 800px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+.postImage {
+  border-radius: 15px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  width: 80%;
+  height: auto;
+}
+
+.creator_info {
+  margin: 30px 20px;
+}
+
+.postPage h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.postPage h2 {
+  text-align: left;
+  margin: 10px auto;
+}
+
+.postDate {
+  text-align: left;
+}
+
+.postPage p {
+  margin: 20px;
+  text-align: justify;
+  width: 600px;
+  max-width: 80%;
+
+  margin: 0 auto;
+}
+
+.postPage ol {
+  text-align: left;
+  max-width: 400px;
+}
+
+.postBody {
+  margin-bottom: 50px;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 10px;
+  margin: 20px;
+  align-self: flex-start;
+}
+
+.postDate {
+  text-align: right;
+  color: rgb(151, 151, 151);
+  margin: 50px;
 }
