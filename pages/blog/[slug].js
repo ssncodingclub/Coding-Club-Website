@@ -10,7 +10,7 @@ export default function Post({ frontmatter: { title, publishDate, postImage, aut
   const md = new Remarkable();
   return (
     <div className={styles.PostPageMain}>
-      <a href="./" className={styles.btn}>Back to blogs</a>
+      <a href="./" className={styles.btn}>all blogs</a>
       <div className={styles.postPage}>
         <div><h1 style={{"font-size": "3rem", "margin": "15px"}}>{title}</h1></div>
         <div style={{"text-align": "left"}} className={styles.creator_info}>
