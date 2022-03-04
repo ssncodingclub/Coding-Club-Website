@@ -8,7 +8,6 @@ import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Footer from "./Components/Footer";
 
-
 const RightCard = ({ id, modalIsOpen, closeModal }) => {
   if (id !== null) {
     const { name, projectDescription, projectLink } = Projects[id];
@@ -30,7 +29,9 @@ const RightCard = ({ id, modalIsOpen, closeModal }) => {
         </div>
         <p className={styles.project_desc}>{projectDescription}</p>
         <div className={styles.project_link}>
-          <a href={projectLink} target="_blank">Check it out</a>
+          <a href={projectLink} target="_blank">
+            Check it out
+          </a>
         </div>
       </div>
     );
@@ -39,7 +40,16 @@ const RightCard = ({ id, modalIsOpen, closeModal }) => {
   }
 };
 
-const ProjectCard = ({ name, techStack, domain, projectImage, id, width, showDescription,theme }) => {
+const ProjectCard = ({
+  name,
+  techStack,
+  domain,
+  projectImage,
+  id,
+  width,
+  showDescription,
+  theme,
+}) => {
   const classNamePrefix = "projectcard_item_",
     className = classNamePrefix + id;
 
@@ -52,26 +62,26 @@ const ProjectCard = ({ name, techStack, domain, projectImage, id, width, showDes
         <div className={styles.project_domain}>{domain}</div>
         <button
           href="/projects"
-          className={theme?styles.project_card_title_link_light:styles.project_card_title_link}
+          className={theme ? styles.project_card_title_link_light : styles.project_card_title_link}
           onClick={() => {
             console.log("clicked");
           }}
         >
           <h2 className={styles.project_card_title}>{name}</h2>
         </button>
-        <div className={theme?styles.project_card_summary_light:styles.project_card_summary}>{techStack}</div>
+        <div className={theme ? styles.project_card_summary_light : styles.project_card_summary}>
+          {techStack}
+        </div>
       </div>
     </div>
   );
 };
 
 const ProjectsPage = (props) => {
-
   const [windowWidth, setWindowWidth] = useState(0);
   const [projectId, setprojectId] = useState(null);
   const [modalIsOpen, setmodalIsOpen] = useState(false);
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-
 
   useEffect(() => {
     Modal.setAppElement("body");
@@ -102,7 +112,7 @@ const ProjectsPage = (props) => {
   };
 
   return (
-    <div className={props.theme?styles.container_light:styles.container}>
+    <div className={props.theme ? styles.container_light : styles.container}>
       <Head>
         <title>SSN Coding Club</title>
         <meta name="description" content="Official SSN Coding Club Website" />
@@ -113,8 +123,12 @@ const ProjectsPage = (props) => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar transfer={props.theme} fn = {props.setTheme}/>
-      <main className={props.theme? styles.projects_main_container_light:styles.projects_main_container}>
+      <Navbar transfer={props.theme} setTheme={props.setTheme} />
+      <main
+        className={
+          props.theme ? styles.projects_main_container_light : styles.projects_main_container
+        }
+      >
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Projects</h1>
@@ -132,7 +146,13 @@ const ProjectsPage = (props) => {
         </div> */}
 
         {Projects.length > 0 ? (
-          <div className={props.theme?styles.project_submain_container_light:styles.project_submain_container}>
+          <div
+            className={
+              props.theme
+                ? styles.project_submain_container_light
+                : styles.project_submain_container
+            }
+          >
             <div className={styles.left_pane}>
               {Projects.map((project, i) => (
                 <ProjectCard
@@ -170,4 +190,4 @@ const ProjectsPage = (props) => {
   );
 };
 
-export default ProjectsPage
+export default ProjectsPage;

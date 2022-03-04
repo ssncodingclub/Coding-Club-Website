@@ -11,12 +11,8 @@ import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
 
-
 export default function About(props) {
-
-
   const [isAppleDevice, setIsAppleDevice] = useState(false);
-  
 
   function handle(theme) {
     setTheme(theme);
@@ -25,8 +21,6 @@ export default function About(props) {
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
-
-
 
   return (
     <div className={styles.container}>
@@ -40,9 +34,11 @@ export default function About(props) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar transfer={props.theme} fn = {props.setTheme}/>
+      <Navbar transfer={props.theme} setTheme={props.setTheme} />
 
-      <main className={props.theme? styles.about_main_container_light : styles.about_main_container}>
+      <main
+        className={props.theme ? styles.about_main_container_light : styles.about_main_container}
+      >
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>About Us</h1>
@@ -53,15 +49,19 @@ export default function About(props) {
           </div>
         )}
         <div className={styles.subcontainer}>
-          <h2 className={props.theme ? styles.subheader_light :styles.subheader}>What is SSN Coding Club?</h2>
-          <p className={props.theme ?styles.para_light:styles.para}>
+          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+            What is SSN Coding Club?
+          </h2>
+          <p className={props.theme ? styles.para_light : styles.para}>
             We are a community of coders specialised in domains like Competitive Coding, Machine
             Learning, Web and App Development etc. We aim to support and nurture future developers
             and ensure equity in coding!
           </p>
         </div>
-        <div> 
-          <h2 className={props.theme ? styles.subheader_light :styles.subheader}>What do we do?</h2>
+        <div>
+          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+            What do we do?
+          </h2>
           <Container className="mt-10" className={styles.departmentContainer}>
             <Row>
               {departments.map((department, index) => {
@@ -71,15 +71,19 @@ export default function About(props) {
           </Container>
         </div>
         <div className={styles.content}>
-          <h2 className={props.theme ? styles.subheader_light :styles.subheader}>Meet the team!</h2>
+          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+            Meet the team!
+          </h2>
           {domains.map((domain, i) => {
             return <Domain key={i} domain={domain} theme={props.theme} />;
           })}
         </div>
         <div className={styles.faq}>
-          <h2 className={props.theme ? styles.subheader_light :styles.subheader}>Frequently Asked Questions</h2>
+          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+            Frequently Asked Questions
+          </h2>
           <Container className={styles.faqContainer}>
-            <Faq theme={props.theme}/>
+            <Faq theme={props.theme} />
           </Container>
         </div>
       </main>
