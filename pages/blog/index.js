@@ -26,7 +26,7 @@ export default function Blog(props) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Navbar transfer={props.theme} fn={props.setTheme} />
+      <Navbar transfer={props.theme} setTheme={props.setTheme} />
 
       <main className={props.theme ? styles.blog_main_container_light : styles.blog_main_container}>
         {isAppleDevice ? (
