@@ -410,12 +410,12 @@
 .postPage h1 {
   font-size: 3rem;
   text-align: center;
-  margin-left: 20px;
+  margin: 10px auto;
 }
 
 .postPage h2 {
   text-align: left;
-  margin: 20px;
+  margin: 10px auto;
 }
 
 .postDate {
