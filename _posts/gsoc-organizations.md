@@ -36,7 +36,8 @@ authorDomain: "Software Development"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Programming language used:** Dart  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Number of Projects Undertaken:** 3
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Organisation Name: **LibreHealth**  
+### Organisation Name: **LibreHealth**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**About the Org:** LibreHealth is the foundation of a worldwide ecosystem of open source Health IT innovation and is a place where people can come together to build tools that enhance the quality of healthcare around the world.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Project Type:** Web, Mobile apps, Deep Learning  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Programming Languages used:** Dart, Javascript, Python, Java and PHP  

@@ -85,7 +85,7 @@
   margin-top: 200px;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 426px) {
