@@ -350,10 +350,6 @@
     width: 100%;
   }
 
-  .postImage {
-    width: 90%;
-  }
-
   .postPage p {
     font-size: small;
     text-align: left;
@@ -361,6 +357,14 @@
   }
 
   .postPage li {
+    font-size: small;
+  }
+
+  .backText {
+    font-size: small;
+  }
+
+  .postDate {
     font-size: small;
   }
 }
@@ -422,7 +426,7 @@
   border-color: white;
   border-style: solid;
   border-width: 2px;
-  width: 80%;
+  width: 90%;
   height: auto;
   margin-bottom: 20px;
 }
@@ -469,16 +473,31 @@
   margin-right: 20px;
 }
 
-.btn {
-  border-radius: 5px;
+.back {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin: 20px;
+}
+
+.backBtn {
+  border-radius: 50%;
   background-color: black;
   color: white;
   border-style: solid;
   border-color: white;
   border-width: 2px;
   padding: 10px;
-  margin: 20px;
   align-self: flex-start;
+}
+
+.backBtn:hover {
+  cursor: pointer;
+}
+
+.backText {
+  margin: auto 10px;
+  color: white;
 }
 
 .postDate {
