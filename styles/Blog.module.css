@@ -152,7 +152,16 @@
 .post_date {
   color: #a8a8a8;
 }
+.post_date_light
+{
+  color: #646363;
+}
 .post_domain {
+  font-weight: bold;
+}
+.post_domain_light
+{
+  color: black;
   font-weight: bold;
 }
 .info_divider {
@@ -169,13 +178,30 @@
   line-height: 28px;
   font-weight: 400;
 }
-
+.info_divider_light
+{
+  position: relative;
+  top: 2px;
+  width: 4px;
+  height: 4px;
+  margin-right: 6px;
+  margin-left: 6px;
+  border-radius: 12px;
+  background-color: black;
+  color: black;
+  font-size: 10px;
+  line-height: 28px;
+  font-weight: 400;  
+}
 .post_title_link,
-.post_title {
+.post_title,.post_title_light {
   flex: 2;
   cursor: pointer;
 }
-
+.post_title_light
+{
+  color: #070707;
+}
 .post_summary {
   flex: 4;
   width: 100%;
@@ -183,7 +209,21 @@
   padding: 5px 0;
   color: #a8a8a8;
 }
-
+.namee:hover
+{
+  color: darkblue;
+}
+.post_summary_light {
+  flex: 4;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+  color: #8b8989;
+}
+.post_summary_light:hover
+{
+  color: #070707;
+}
 .post_creator {
   flex: 1;
   display: flex;
@@ -202,6 +242,7 @@
   font-size: large;
   font-weight: bold;
 }
+
 .post_creator_details {
   font-size: small;
 }
@@ -230,6 +271,15 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+.name_dark
+{
+  color: red;
+}
+.name_light
+{
+  color:#070707;
+}
 .blogcard_text_container {
   height: 100%;
 
@@ -240,13 +290,26 @@
   padding: 20px 0;
 }
 .post_card_title,
-.post_title {
+.post_title,.post_title_light,.post_card_title_light {
   margin-top: 15px;
   margin-bottom: 10px;
+}
+.post_card_title_light
+{
+  color: #070707;
 }
 .post_card_title_link,
 .post_card_title {
   cursor: pointer;
+}
+.post_card_summary_light
+{
+  flex: 4;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+  color: #858585;
+  font-size: smaller; 
 }
 .post_card_summary {
   flex: 4;
@@ -279,22 +342,26 @@
 }
 
 .post_title,
-.post_card_title {
+.post_card_title,.post_title_light {
   transition: color 200ms ease;
 }
-.post_title:hover,
-.post_card_title:hover {
+.post_title:hover,.post_title_light:hover,
+.post_card_title:hover,.post_card_title_light:hover {
   color: #e94057;
 }
-.post_summary,
-.post_card_summary {
+.post_summary,.post_summary_light
+.post_card_summary,.post_card_summary_light {
   transition: color 200ms ease;
 }
+
 .post_summary:hover,
 .post_card_summary:hover {
   color: white;
 }
-
+.post_card_summary_light:hover
+{
+  color: #070707;
+}
 @media screen and (max-width: 768px) {
   .blog_title_element_container {
     flex-direction: column;
@@ -415,6 +482,21 @@
   border-style: solid;
   border-width: 2px;
   border-color: white;
+}
+.postPage_light
+{
+  margin: 50px auto;
+  align-self: center;
+  color: black;
+  width: 90%;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  max-width: 800px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;  
 }
 
 .postImage {
