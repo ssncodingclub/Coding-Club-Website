@@ -4,13 +4,17 @@ import matter from "gray-matter";
 import { Remarkable } from "remarkable";
 import styles from "../../styles/Blog.module.css";
 import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
 
 
 export default function Post({ frontmatter: { title, publishDate, postImage, authorName, authorPic, authorDomain }, slug, content }) {
   const md = new Remarkable();
   return (
     <div className={styles.PostPageMain}>
-      <a href="./" className={styles.btn}>all blogs</a>
+      <div className={styles.back}>
+        <Link href="./" className={styles.btn}><FaArrowLeft size={50} className={styles.backBtn} /></Link>
+        <p className={styles.backText}>back to blogs</p>
+      </div>
       <div className={styles.postPage}>
         <div><h1 style={{"font-size": "3rem", "margin": "15px"}}>{title}</h1></div>
         <div style={{"text-align": "left"}} className={styles.creator_info}>
