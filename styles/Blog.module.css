@@ -128,6 +128,11 @@
   max-height: 480px;
   object-fit: cover;
   border-radius: 10px;
+  transition: box-shadow .3s;
+}
+.blog_title_image:hover
+{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .blog_title_text_container {
@@ -345,7 +350,7 @@
 }
 
 .post_title,
-.post_card_title,.post_title_light {
+.post_card_title,.post_title_light,.post_card_title_light {
   transition: color 200ms ease;
 }
 .post_title:hover,.post_title_light:hover,
