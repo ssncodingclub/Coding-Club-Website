@@ -23,7 +23,6 @@ function NavBar(props) {
 
   const handleScroll = () => {};
   useEffect(() => {
-    if (router.pathname.includes("blog") && props.transfer) props.setTheme(!props.transfer);
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -86,7 +85,7 @@ function NavBar(props) {
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
 
-            {!router.pathname.includes("blog") && (
+            
               <Nav.Item
                 className={styles.nav_toggle_icons}
                 onClick={() => props.setTheme(!props.transfer)}
@@ -101,7 +100,7 @@ function NavBar(props) {
                   </div>
                 )}
               </Nav.Item>
-            )}
+            
 
             <div className={styles.menuToggle}>
               <input type="checkbox" />

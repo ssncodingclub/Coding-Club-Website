@@ -42,12 +42,12 @@ export default function Blog(props) {
           <h2 className={styles.subheader}>
             {cards.length > 0 ? (
               <>
-                <span style={{ color: "#63ADF2" }}>while&nbsp;</span>(
-                <span style={{ color: "#FFFBFE" }}>i</span>{" "}
+                <span style={{ color: "#63ADF2" }}>while&nbsp;</span><span  style={props.theme ? {color:"black"}:{ color: "white" }}>(</span>
+                <span style={props.theme? {color: "black"}: { color: "#FFFBFE" }}>i</span>{" "}
                 <span style={{ color: "#63ADF2" }}>==</span>{" "}
-                <span style={{ color: "#BDD5EA" }}>'inspiration'</span>): &nbsp;
-                <span style={{ color: "#63ADF2" }}>print</span>(
-                <span style={{ color: "#BDD5EA" }}>'scroll down 👇'</span>)
+                <span style={props.theme? {color: "#7fbef5"}:{ color: "#BDD5EA" }}>'inspiration'</span><span style={props.theme ? {color:"black"}:{ color: "white" }}>)</span><span style={props.theme ? {color:"black"}:{ color: "white" }} >:</span> &nbsp;
+                <span style={{ color: "#63ADF2" }}>print</span><span  style={props.theme ? {color:"black"}:{ color: "white" }}>(</span>
+                <span style={props.theme? {color: "#7fbef5"}:{ color: "#BDD5EA" }}>'scroll down 👇'</span><span  style={props.theme ? {color:"black"}:{ color: "white" }}>)</span>
               </>
             ) : (
               <h1 className={props.theme ? styles.coming_soon : " "}>Coming Soon! 😉</h1>
@@ -57,11 +57,11 @@ export default function Blog(props) {
         {cards.length > 0 ? (
           <>
             <div className={styles.blog_container}>
-              <BlogTitleCard cards={cards} id={0} />
+              <BlogTitleCard cards={cards} id={0} transfer={props.theme}/>
             </div>
 
             <div className={styles.blog_container}>
-              <BlogCards cards={cards} />
+              <BlogCards cards={cards} transfer={props.theme}/>
             </div>
           </>
         ) : (

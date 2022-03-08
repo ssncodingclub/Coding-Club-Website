@@ -19,7 +19,7 @@ a {
 }
 a:link,
 a:visited {
-  color: white !important;
+  color: white;
 }
 
 * {
