@@ -62,7 +62,7 @@ export default function About(props) {
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             What do we do?
           </h2>
-          <Container className="mt-10" className={styles.departmentContainer}>
+          <Container className={`mt-10` + " " + styles.departmentContainer}>
             <Row>
               {departments.map((department, index) => {
                 return <Department key={index} department={department} theme={props.theme} />;

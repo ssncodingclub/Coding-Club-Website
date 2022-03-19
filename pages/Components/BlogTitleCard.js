@@ -3,7 +3,7 @@ import styles from "../../styles/Blog.module.css";
 import Link from "next/link";
 // import cards from "../../data/blogcards";
 
-const BlogTitleCard = ({ id }) => {
+const BlogTitleCard = (props) => {
   let domain = "Software Development",
     publishDate = "December 18, 2021",
     title = "All About GSOC: Get started on your GSOC journey",
@@ -25,19 +25,19 @@ const BlogTitleCard = ({ id }) => {
       </div>
       <div className={styles.blog_title_text_container}>
         <div className={styles.post_info}>
-          <div className={styles.post_domain}>{domain}</div>
-          <div className={styles.info_divider}></div>
-          <div className={styles.post_date}>{publishDate}</div>
+          <div className={props.transfer ? styles.post_domain_light:styles.post_domain}>{domain}</div>
+          <div className={props.transfer?styles.info_divider_light:styles.info_divider}></div>
+          <div className={props.transfer?styles.post_date_light:styles.post_date}>{publishDate}</div>
         </div>
         <Link href="/blog/all-about-gsoc" className={styles.post_title_link}>
-          <h1 className={styles.post_title}>{title}</h1>
+          <h1 className={props.transfer? styles.post_title_light:styles.post_title}>{title}</h1>
         </Link>
-        <div className={styles.post_summary}>{summary}</div>
+        <div className={props.transfer? styles.post_summary_light:styles.post_summary}>{summary}</div>
         <div className={styles.post_creator}>
           <img src={authorPic} alt="Post Creator Name" className={styles.post_creator_image} />
           <div className={styles.post_creator_details}>
             <div className={styles.post_creator_name}>
-              <Link href="/blog">{authorName}</Link>
+              <a href="blog/"style={props.transfer? {color:"black"}:{color:"white"}}>{authorName}</a>
             </div>
             <div className={styles.post_creator_specialization}>{authorDomain}</div>
           </div>

@@ -4,31 +4,35 @@ import matter from "gray-matter";
 import { Remarkable } from "remarkable";
 import styles from "../../styles/Blog.module.css";
 import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
 
 
-export default function Post({ frontmatter: { title, publishDate, postImage, authorName, authorPic, authorDomain }, slug, content }) {
+export default function Post(props) {
   const md = new Remarkable();
   return (
-    <div className={styles.PostPageMain}>
-      <a href="./" className={styles.btn}>Back to blogs</a>
-      <div className={styles.postPage}>
-        <div><h1>{title}</h1></div>
-        <div style={{"text-align": "left"}} className={styles.creator_info}>
+    <div className={props.theme? styles.PostPageMain_light:styles.PostPageMain}>
+      <div className={styles.back}>
+        <Link href="./" className={styles.btn}><FaArrowLeft size={50} className={styles.backBtn} /></Link>
+        <p className={props.theme? styles.backText_light:styles.backText}>back to blogs</p>
+      </div>
+      <div className={props.theme?styles.postPage_light:styles.postPage}>
+        <div><h1 style={{fontSize: "3rem", margin: "15px"}} className={props.theme? styles.title_light:" "}>{props.frontmatter.title}</h1></div>
+        <div style={{textAlign: "left"}} className={styles.creator_info}>
           <div className={styles.post_creator}>
-            <img src={authorPic} alt="Post Creator" className={styles.post_creator_image} />
+            <img src={props.frontmatter.authorPic} alt="Post Creator" className={styles.post_creator_image} />
             <div className={styles.post_creator_details}>
               <div className={styles.post_creator_name}>
-                <Link href="./">{authorName}</Link>
+                <a href="./" style={props.theme?{color:"black"}:null}>{props.frontmatter.authorName}</a>
               </div>
-              <div className={styles.post_creator_specialization}>{authorDomain}</div>
+              <div className={props.theme?styles.post_creator_specialization_light:styles.post_creator_specialization}>{props.frontmatter.authorDomain}</div>
             </div>
           </div>
         </div>
-        <img src={postImage} alt="Blog Image" className={styles.postImage} />
-        <div className={styles.postBody}>
-          <div dangerouslySetInnerHTML={{ __html: md.render(content) }}></div>
+        <img src={props.frontmatter.postImage} alt="Blog Image" className={styles.postImage} />
+        <div className={props.theme?styles.postBody_light:styles.postBody}>
+          <div dangerouslySetInnerHTML={{ __html: md.render(props.content) }}></div>
         </div>
-        <div className={styles.postDate}>{publishDate}</div>
+        <div className={props.theme?styles.postDate_light:styles.postDate}>{props.frontmatter.publishDate}</div>
       </div>
     </div>
   );
@@ -42,7 +46,6 @@ export async function getStaticPaths() {
       slug: filename.replace(".md", ""),
     },
   }));
-  console.log(paths);
 
   return {
     paths,
@@ -50,12 +53,9 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: { slug } }) {
-  console.log(slug);
+export async function getStaticProps({params: { slug }}) {
   const markdownWithMeta = fs.readFileSync(path.join("_posts", slug + ".md"), "utf-8");
-
   const { data: frontmatter, content } = matter(markdownWithMeta);
-  console.log(frontmatter);
 
   return {
     props: {
