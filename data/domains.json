@@ -278,10 +278,22 @@
           "instagram": "https://www.instagram.com/karthik.desingu/"
         }
       },
+
+      {
+        "name": "Anirudh A",
+        "position": "Member",
+        "alt": "anirudh",
+        "profilePic": "/profiles/ML/anirudh.jpg",
+        "socials": {
+          "github": "https://github.com/AAnirudh07",
+          "linkedin": null,
+          "instagram": null
+        }
+      },
       {
         "name": "Pranith ",
         "position": "Member",
-        "alt": "shashanka",
+        "alt": "pranith",
         "profilePic": "/profiles/ML/pranith.jpeg",
         "socials": {
           "github": "https://github.com/pran13-git/",
