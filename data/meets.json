@@ -1,5 +1,21 @@
 [
   {
+    "text": "Deployment of ML Models",
+    "date": "March 27th 2022",
+    "category": {
+      "tag": "AI/ML",
+      "color": "green"
+    },
+    "description": "ML Team demonstrates how to integrate ML into web dev projects and explains how ML Models are deployed in production.",
+    "link": {
+      "url": "https://web.microsoftstream.com/video/0ca7be93-f38f-4756-9942-8d3c101bb32f"
+    },
+    "resource": {
+      "url": "https://github.com/ssncodingclub/Machine-Learning/tree/master/Meet-6"
+    },
+    "status":"finished"
+  },
+  {
     "text": "Introduction to UI/UX",
     "date": "March 19th 2022",
     "category": {
