@@ -53,7 +53,7 @@ const ProfileCard = ({
                   href={socials.discord} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className={`fa fa-discord ${theme? styles.social_icon_light:styles.social_icon}`}
+                  className={`fa-brands fa-discord ${theme? styles.social_icon_light:styles.social_icon}`}
                 ></a>
               : null
             }
