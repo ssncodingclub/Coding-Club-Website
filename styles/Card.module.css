@@ -202,14 +202,18 @@
 .profile {
   padding-left: 10px;
   padding-top: 20px;
+  
 }
 
 .profile_pic {
   margin-bottom: 15px;
+  
 }
 
 .profile_pic img {
   border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .profile_subtitle {
@@ -221,7 +225,6 @@
 }
 
 .social_media {
-  margin-top: 20px;
   font-size: 30px;
 }
 
