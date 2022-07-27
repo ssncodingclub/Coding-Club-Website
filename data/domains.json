@@ -42,7 +42,7 @@
       },
       {
         "name": "Karun Anantharaman",
-        "position": "Head of External Affairs",
+        "position": "Head of Ext. Aff.",
         "alt": "karun",
         "profilePic": "/profiles/Core/Karun-Anantharaman.jpeg",
         "socials": {
@@ -64,7 +64,7 @@
       },
       {
         "name": "Joseph Amirtharaj",
-        "position": "Head of Competitive Programming",
+        "position": "Head of CP",
         "alt": "joseph",
         "profilePic": "/profiles/Core/Josephimmanuel-Amirtharaj.jpeg",
         "socials": {
@@ -106,7 +106,7 @@
         }
       },
       {
-        "name": "Aravind Kannan Rathinasabapathi",
+        "name": "Aravind KR",
         "position": "Member",
         "alt": "aravind",
         "profilePic": "/profiles/Dev/aravindk.jpeg",
@@ -161,7 +161,7 @@
         }
       },
       {
-        "name": " Mohamed Arshad",
+        "name": "Mohamed Arshad",
         "position": "Member",
         "alt": "mohamed",
         "profilePic": "/profiles/Dev/arshad.jpeg",
@@ -172,7 +172,7 @@
         }
       },
       {
-        "name": " Shajith Hameed",
+        "name": "Shajith H",
         "position": "Member",
         "alt": "shajith",
         "profilePic": "/profiles/Dev/shajith.jpeg",
@@ -183,7 +183,7 @@
         }
       },
       {
-        "name": "Gokulram A ",
+        "name": "Gokulram",
         "position": "Member",
         "alt": "gokulram",
         "profilePic": "/profiles/Dev/gokulramA.jpeg",
@@ -204,7 +204,7 @@
     },
     "members": [
       {
-        "name": " Karthik Desingu",
+        "name": "Karthik D",
         "position": "Head",
         "alt": "karthik",
         "profilePic": "/profiles/ML/KarthikD.jpeg",
@@ -215,7 +215,7 @@
         }
       },
       {
-        "name": "Krishi Vijayanand ",
+        "name": "Krishi V",
         "position": "Deputy Head",
         "alt": "krishi",
         "profilePic": "/profiles/ML/kris.jpeg",
@@ -237,7 +237,7 @@
         }
       },
       {
-        "name": "Pranith P ",
+        "name": "Pranith P",
         "position": "Member",
         "alt": "pranith",
         "profilePic": "/profiles/ML/pranith.jpeg",
@@ -248,7 +248,7 @@
         }
       },
       {
-        "name": "Haricharan Bharathi ",
+        "name": "Haricharan B",
         "position": "Member",
         "alt": "haricharan",
         "profilePic": "/profiles/ML/haricharanb.jpeg",
@@ -271,7 +271,7 @@
         }
       },
       {
-        "name": "Varsha Yeshwant ",
+        "name": "Varsha Y",
         "position": "Member",
         "alt": "varsha",
         "profilePic": "/profiles/ML/varsha.jpeg",
@@ -369,7 +369,7 @@
         }
       },
       {
-        "name": "Deepak ",
+        "name": "Deepak",
         "position": "Member",
         "alt": "deepak",
         "profilePic": "/profiles/CP/Deepak.jpeg",
@@ -380,7 +380,7 @@
         }
       },
       {
-        "name": "Saravanan J ",
+        "name": "Saravanan",
         "position": "Member",
         "alt": "saravanan",
         "profilePic": "/profiles/CP/Saravanan.jpeg",
@@ -467,7 +467,7 @@
         }
       },
       {
-        "name": " Gunanicaa Arun",
+        "name": "Gunanicaa",
         "position": "Member",
         "alt": "gunanicca",
         "profilePic": "/profiles/DSM/gunanicaa.jpeg",
@@ -490,7 +490,7 @@
       },
       
       {
-        "name": " Supraja Vaidhyanathan",
+        "name": "Supraja V",
         "position": "Member",
         "alt": "suprajav",
         "profilePic": "/profiles/DSM/suprajav.jpeg",
@@ -501,7 +501,7 @@
         }
       },
       {
-        "name": " Daawood",
+        "name": "Daawood",
         "position": "Member",
         "alt": "daawood",
         "profilePic": "/profiles/DSM/Daawood.jpeg",
@@ -512,7 +512,7 @@
         }
       },
       {
-        "name": " Sanjeevini R",
+        "name": "Sanjeevini R",
         "position": "Member",
         "alt": "sanjeevini",
         "profilePic": "/profiles/DSM/Sanjeevini.jpeg",
@@ -524,7 +524,7 @@
       },
       
       {
-        "name": "Ayshwarya B ",
+        "name": "Ayshwarya B",
         "position": "Member",
         "alt": "ayshwarya ",
         "profilePic": "/profiles/DSM/Ayshwarya.jpeg",
@@ -535,7 +535,7 @@
         }
       },
       {
-        "name": "Y.V.Ojus",
+        "name": "Y.V. Ojus",
         "position": "Member",
         "alt": "ojus",
         "profilePic": "/profiles/DSM/Ojus.jpeg",
@@ -578,7 +578,7 @@
         }
       },
       {
-        "name": "Aathish Sivasubrahmanian ",
+        "name": "Aathish S",
         "position": "Member",
         "alt": "aathish",
         "profilePic": "/profiles/OS/Aathish.jpeg",
@@ -589,7 +589,7 @@
         }
       },
       {
-        "name": "Akash R ",
+        "name": "Akash R",
         "position": "Member",
         "alt": "akashr",
         "profilePic": "/profiles/OS/AkashR.jpeg",
@@ -611,7 +611,7 @@
         }
       },
       {
-        "name": " Themozhi J",
+        "name": "Themozhi J",
         "position": "Member",
         "alt": "themozhi",
         "profilePic": "/profiles/OS/themozhi.jpeg",
