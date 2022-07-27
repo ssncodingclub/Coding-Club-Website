@@ -9,6 +9,17 @@
   margin: 0 auto;
   z-index: 10;
   width: 100%;
+  /* margin-top: -110px; */
+}
+.blog_main_container_light {
+  position: relative;
+  background-color: white;
+  padding-bottom: 90vh;
+  /* max-width: 1500px; */
+  margin: 0 auto;
+  z-index: 10;
+  width: 100%;
+  margin-top: -110px;
 }
 
 .header {
@@ -21,8 +32,24 @@
   background-size: cover;
   background-position-y: -6rem;
 }
+.header_light {
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -6rem;
+  margin-top: 110px;
+}
 
-.header h1 {
+.coming_soon {
+  color: #070707;
+}
+
+.header h1,
+.header_light h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
 }
@@ -58,7 +85,7 @@
   margin-top: 200px;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 90px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 426px) {
@@ -84,6 +111,7 @@
   color: white;
   /* border: solid white; */
 }
+
 .blog_title_element_container {
   display: flex;
   justify-content: space-between;
@@ -100,6 +128,11 @@
   max-height: 480px;
   object-fit: cover;
   border-radius: 10px;
+  transition: box-shadow .3s;
+}
+.blog_title_image:hover
+{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .blog_title_text_container {
@@ -124,7 +157,16 @@
 .post_date {
   color: #a8a8a8;
 }
+.post_date_light
+{
+  color: #646363;
+}
 .post_domain {
+  font-weight: bold;
+}
+.post_domain_light
+{
+  color: black;
   font-weight: bold;
 }
 .info_divider {
@@ -141,13 +183,30 @@
   line-height: 28px;
   font-weight: 400;
 }
-
+.info_divider_light
+{
+  position: relative;
+  top: 2px;
+  width: 4px;
+  height: 4px;
+  margin-right: 6px;
+  margin-left: 6px;
+  border-radius: 12px;
+  background-color: black;
+  color: black;
+  font-size: 10px;
+  line-height: 28px;
+  font-weight: 400;  
+}
 .post_title_link,
-.post_title {
+.post_title,.post_title_light {
   flex: 2;
   cursor: pointer;
 }
-
+.post_title_light
+{
+  color: #070707;
+}
 .post_summary {
   flex: 4;
   width: 100%;
@@ -155,7 +214,21 @@
   padding: 5px 0;
   color: #a8a8a8;
 }
-
+.namee:hover
+{
+  color: darkblue;
+}
+.post_summary_light {
+  flex: 4;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+  color: #8b8989;
+}
+.post_summary_light:hover
+{
+  color: #070707;
+}
 .post_creator {
   flex: 1;
   display: flex;
@@ -174,13 +247,17 @@
   font-size: large;
   font-weight: bold;
 }
+
 .post_creator_details {
   font-size: small;
 }
 .post_creator_specialization {
   color: #a8a8a8;
 }
-
+.post_creator_specialization_light
+{
+  color:#646363;
+}
 .blogcards_container {
   display: grid;
   grid-column-gap: 1.5rem;
@@ -190,6 +267,8 @@
 .blogcard_item {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  max-height: 600px;
 }
 .blogcard_item_image {
   width: 100%;
@@ -199,6 +278,15 @@
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.name_dark
+{
+  color: red;
+}
+.name_light
+{
+  color:#070707;
 }
 .blogcard_text_container {
   height: 100%;
@@ -210,13 +298,26 @@
   padding: 20px 0;
 }
 .post_card_title,
-.post_title {
+.post_title,.post_title_light,.post_card_title_light {
   margin-top: 15px;
   margin-bottom: 10px;
+}
+.post_card_title_light
+{
+  color: #070707;
 }
 .post_card_title_link,
 .post_card_title {
   cursor: pointer;
+}
+.post_card_summary_light
+{
+  flex: 4;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+  color: #858585;
+  font-size: smaller; 
 }
 .post_card_summary {
   flex: 4;
@@ -249,22 +350,26 @@
 }
 
 .post_title,
-.post_card_title {
+.post_card_title,.post_title_light,.post_card_title_light {
   transition: color 200ms ease;
 }
-.post_title:hover,
-.post_card_title:hover {
+.post_title:hover,.post_title_light:hover,
+.post_card_title:hover,.post_card_title_light:hover {
   color: #e94057;
 }
-.post_summary,
-.post_card_summary {
+.post_summary,.post_summary_light
+.post_card_summary,.post_card_summary_light {
   transition: color 200ms ease;
 }
+
 .post_summary:hover,
 .post_card_summary:hover {
   color: white;
 }
-
+.post_card_summary_light:hover
+{
+  color: #070707;
+}
 @media screen and (max-width: 768px) {
   .blog_title_element_container {
     flex-direction: column;
@@ -310,6 +415,39 @@
   .container {
     margin-top: 120px;
   }
+
+  .btn {
+    font-size: x-small;
+  }
+
+  .postPage,.postPage_light {
+    border-color: black;
+    width: 100%;
+  }
+
+  .postPage p,.postPage_light p {
+    font-size: small;
+    text-align: left;
+    margin: 0;
+  }
+
+  .postPage li,.postPage_light li {
+    font-size: small;
+  }
+
+  .backText {
+    font-size: small;
+  }
+  .backText_light{
+    font-size: small;
+  }
+
+  .postDate {
+    font-size: small;
+  }
+  .postDate_light {
+    font-size: small;
+  }
 }
 
 @media (max-height: 580px) {
@@ -339,4 +477,154 @@
   position: relative;
   z-index: 1;
   height: 90vh;
+}
+
+/* Slug Styles */
+
+.PostPageMain {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.PostPageMain_light {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.title_light
+{
+  color: #070707;
+}
+.postPage {
+  margin: 50px auto;
+  align-self: center;
+  color: white;
+  width: 90%;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  max-width: 800px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+.postPage_light {
+  margin: 50px auto;
+  align-self: center;
+  color: white;
+  width: 90%;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  max-width: 800px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.postImage {
+  border-radius: 15px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.creator_info {
+  margin: 30px 20px;
+}
+
+.blogPostTitle {
+  font-size: 3rem;
+}
+
+.postPage h1,.postPage_light h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.postPage h2,.postPage_light h2 {
+  text-align: left;
+  margin: 10px auto;
+}
+
+.postDate,.postDate_light {
+  text-align: left;
+}
+
+
+.postPage p,.postPage_light p {
+  margin: 20px;
+  text-align: justify;
+  width: 600px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.postPage ol, .postPage_light ol {
+  text-align: left;
+  max-width: 400px;
+}
+
+.postBody {
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.postBody_light {
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #070707;
+}
+
+.back {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin: 20px;
+}
+
+.backBtn {
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+.backBtn:hover {
+  cursor: pointer;
+}
+
+.backText {
+  margin: auto 10px;
+  color: white;
+}
+.backText_light
+{
+  margin: auto 10px;
+  color: black; 
+  font-weight:600;
+}
+
+.postDate {
+  text-align: right;
+  color: rgb(151, 151, 151);
+  margin: 50px;
+}
+.postDate_light
+{
+  text-align: right;
+  color: rgb(122, 122, 122);
+  margin: 50px;  
 }

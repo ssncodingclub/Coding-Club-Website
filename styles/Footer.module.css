@@ -6,6 +6,16 @@
   height: 90vh;
   color: white;
 }
+.footerContainer_light {
+  position: fixed;
+  flex-direction: column;
+  bottom: 0;
+  z-index: -5;
+  height: 90vh;
+  color: black;
+  background-color: white;
+  margin-top: -100px;
+}
 
 .footer {
   display: flex;
@@ -51,30 +61,54 @@
   z-index: 20;
 }
 
-.social_icon {
+.social_icon_light {
   text-decoration: none;
   margin: 0 30px;
+  margin-top: -10px;
+  color: black;
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-.social_icon:hover {
+
+.social_icon,.insta {
+  text-decoration: none;
+  margin: 0 30px;
+  margin-top: -10px;
+}
+
+.insta_light
+{
+  background: linear-gradient(90deg, black,black);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;  
+}
+
+
+.insta:hover
+{
   background: linear-gradient(90deg, #ff8a00, #e52e71);
   text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
-.social_icon {
-  margin-top: -10px;
-}
-.discord:hover .social_icon {
+
+.discord:hover .social_icon,.discord:hover .social_icon_light {
   color: #7289da;
 }
-.linkedin:hover .social_icon {
+.linkedin:hover .social_icon,.linkedin:hover .social_icon_light {
   color: #0072b1;
 }
-.github:hover .social_icon {
+.github:hover .social_icon,.github:hover .social_icon_light {
   color: #80d8ff;
 }
+
+
+
 @media (max-width: 550px) {
   .footer h1 {
     font-size: 50px;

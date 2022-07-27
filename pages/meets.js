@@ -7,7 +7,7 @@ import timelineData from "../data/meets.json";
 import styles from "../styles/meets.module.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import { FaPlayCircle,FaFileAlt} from "react-icons/fa";
+import { FaPlayCircle, FaFileAlt } from "react-icons/fa";
 
 const TimelineItem = ({ data }) => (
   <div className={styles.timelineItem}>
@@ -16,18 +16,28 @@ const TimelineItem = ({ data }) => (
         {data.category.tag}
       </span>
       <time>{data.date}</time>
-      <Badge className={styles.meetStatus} bg={data.status==="finished"?"success":"secondary"}>{data.status}</Badge>
+      <Badge
+        className={styles.meetStatus}
+        bg={data.status === "finished" ? "success" : "secondary"}
+      >
+        {data.status}
+      </Badge>
       <h4 className={styles.meetTitle}>{data.text}</h4>
       <div className={styles.meetDesc}>{data.description}</div>
-      <span ><a href={data.link.url} target="_blank" rel="noreferrer" title="session recordings">
-        <FaPlayCircle size={28} style={{ color: data.category.color }}></FaPlayCircle>
-      </a>
-      {data.resource ? (
-        <a href={data.resource.url} target="_blank" rel="noreferrer" title="resources">
-          <FaFileAlt className={styles.res_icons} size={28}  style={{ color: data.category.color }}></FaFileAlt>
+      <span>
+        <a href={data.link.url} target="_blank" rel="noreferrer" title="session recordings">
+          <FaPlayCircle size={28} style={{ color: data.category.color }}></FaPlayCircle>
         </a>
-        
-      ) : null}</span>
+        {data.resource ? (
+          <a href={data.resource.url} target="_blank" rel="noreferrer" title="resources">
+            <FaFileAlt
+              className={styles.res_icons}
+              size={28}
+              style={{ color: data.category.color }}
+            ></FaFileAlt>
+          </a>
+        ) : null}
+      </span>
 
       <span className={styles.circle} />
     </div>
@@ -56,8 +66,9 @@ const Timeline = (filter) => {
   }
 };
 
-export default function Meets() {
+export default function Meets(props) {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
+
   useEffect(() => {
     setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
   }, []);
@@ -65,7 +76,7 @@ export default function Meets() {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={props.theme ? styles.container_light : styles.container}>
         <Head>
           <title>SSN Coding Club</title>
           <meta name="description" content="Official SSN Coding Club Website" />
@@ -76,20 +87,20 @@ export default function Meets() {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
         </Head>
-        <Navbar />
+        <Navbar transfer={props.theme} setTheme={props.setTheme} />
         {isAppleDevice ? (
           <div className={styles.appleHeader}>
             <h1>Meets Timeline</h1>
           </div>
         ) : (
-          <div className={styles.header}>
+          <div className={props.theme ? styles.header_light : styles.header}>
             <h1>Meets Timeline</h1>
           </div>
         )}
-        <div className={styles.dropdownContainer}>
+        <div className={props.theme ? styles.dropdownContainer_light : styles.dropdownContainer}>
           <Dropdown
             style={{ "z-index": "10", position: "relative" }}
-            className={styles.filterDropdown}
+            className={props.theme ? styles.filterDropdown_light : styles.filterDropdown}
           >
             <Dropdown.Toggle variant="dark" id="dropdown-basic">
               Filters
@@ -118,15 +129,15 @@ export default function Meets() {
             </Dropdown.Menu>
           </Dropdown>
         </div>
-        <div className={styles.main}>
-          <div className={styles.subheader}>
+        <div className={props.theme ? styles.main_light : styles.main}>
+          <div className={props.theme ? styles.subheader_light : styles.subheader}>
             <h1>{filter} meets</h1>
           </div>
           {Timeline(filter)}
         </div>
       </div>
       <div className={styles.placeholder}>
-        <Footer />
+        <Footer theme={props.theme} />
       </div>
     </>
   );

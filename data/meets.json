@@ -1,12 +1,57 @@
 [
   {
+    "text": "Deployment of ML Models",
+    "date": "March 27th 2022",
+    "category": {
+      "tag": "AI/ML",
+      "color": "green"
+    },
+    "description": "ML Team demonstrates how to integrate ML into web dev projects and explains how ML Models are deployed in production.",
+    "link": {
+      "url": "https://web.microsoftstream.com/video/0ca7be93-f38f-4756-9942-8d3c101bb32f"
+    },
+    "resource": {
+      "url": "https://github.com/ssncodingclub/Machine-Learning/tree/master/Meet-6"
+    },
+    "status":"finished"
+  },
+  {
+    "text": "Introduction to UI/UX",
+    "date": "March 19th 2022",
+    "category": {
+      "tag": "SD",
+      "color": "purple"
+    },
+    "description": "Software Dev team gives an intro to UI/UX design. Takeaways are UI tools & inspirations, design process and how to get a job in ui/ux design.",
+    "link": {
+      "url": "https://web.microsoftstream.com/video/b7e113bc-5e65-449d-a3e9-21073f4968c9?list=trending"
+    },
+    "status":"finished"
+  },
+  {
+    "text": "Google Summer of Code",
+    "date": "February 27th 2022",
+    "category": {
+      "tag": "SD",
+      "color": "purple"
+    },
+    "description": "An interactive session with an alumnus who participated in GSoC 2020 under Homebrew. Introduction to GSoC and its benefits were covered.",
+    "link": {
+      "url": "https://web.microsoftstream.com/video/1a04ec6e-dafa-4e5e-b9b1-472bb4f8ffc3"
+    },
+    "resource": {
+      "url": "https://www.ssncc.tech/blog/all-about-gsoc"
+    },
+    "status":"finished"
+  },
+  {
     "text": "Building a Sudoku Solver Part 2: Deep Neural Networks",
     "date": "January 24th 2022",
     "category": {
       "tag": "AI/ML",
       "color": "green"
     },
-    "description": "Part 2 of the Sudoku Solver Series, ML Team introduce and code nueral Networks, introduce image recognition with deep learning.",
+    "description": "Part 2 of the Sudoku Solver Series, ML team introduced deep learning, the architecture of a deep neural network and used it to detect digits from sudoku images.",
     "link": {
       "url": "https://drive.google.com/drive/u/2/folders/1I-wGsunFiNhTuUboipZzaVi22YfKPumo"
     },

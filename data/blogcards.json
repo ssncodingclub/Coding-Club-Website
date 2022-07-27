@@ -1,1 +1,23 @@
-[]
+[{
+    "domain": "Open Source Dev",
+    "publishDate": "December 12, 2021",
+    "title": "All About GSOC",
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odio molestiae mollitia accusamus sed iusto, doloremque tempore amet nihil laborum recusandae deleniti quidem deserunt voluptatibus explicabo rem praesentium repellendus perspiciatis.",
+    "authorName": "Lokesh",
+    "authorPic": "./BlogPage/profilepic.png",
+    "authorDomain": "Software Dev",
+    "postImage": "./BlogPage/GSoC_card.png",
+    "post": "_posts/all-about-gsoc.md"
+  },
+  {
+    "domain": "Software Dev",
+    "publishDate": "February 27, 2022",
+    "title": "Organizations to look out for: GSoC 2022",
+    "summary": "Here are a few organizations to look out for when you apply for GSoC 2022! Make sure you do your own research and invest time into figuring out which organization you can contribute to.",
+    "authorName": "Software Dev Team",
+    "authorPic": "./favicon.ico",
+    "authorDomain": "Software Dev",
+    "postImage": "./BlogPage/gsoc_orgs.png",
+    "post": "/blog/gsoc-organizations"
+  }
+]

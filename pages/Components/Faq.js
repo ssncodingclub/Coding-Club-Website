@@ -10,8 +10,8 @@ import Typography from '@mui/material/Typography';
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-    backgroundColor: "white", 
-    border: "4px solid white",
+    backgroundColor: "black", 
+    border: "4px solid black",
     marginBottom: "25px",
     borderRadius: "8px"
 }));
@@ -24,7 +24,7 @@ const AccordionSummary = styled((props) => (
 ))(({ theme }) => ({
     backgroundColor: "#17141d",
     borderRadius: "10px",
-    border: "1px solid #E0C6B2",
+    border: "1px solid black",
     color: "#EEE",
     flexDirection: 'row-reverse',
     '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
@@ -41,9 +41,9 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     borderRadius: "10px",
 }));
 
-export default function CustomizedAccordions() {
+export default function CustomizedAccordions(props) {
     const [expanded, setExpanded] = React.useState('panel1');
-
+    
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
     };
@@ -60,13 +60,14 @@ export default function CustomizedAccordions() {
                             <Typography style={{
                                 fontSize: "20px",
                                 fontWeight: "400",
-                                fontFamily: "Poppins, sans-serif"
+                                fontFamily: "Poppins, sans-serif",
                             }}>{questionnaire.question}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography style={{
                                 fontSize: "18px",
-                                fontFamily: "Overpass, sans-serif"
+                                fontFamily: "Overpass, sans-serif",
+                            
                             }}>
                                 {questionnaire.answer}
                             </Typography>

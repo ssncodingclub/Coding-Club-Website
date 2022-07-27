@@ -14,8 +14,23 @@
   z-index: 10;
   position: relative;
 }
+.header_light {
+  text-align: center;
+  background: url("../public/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -6rem;
+  background-position-x: -6rem;
+  z-index: 10;
+  position: relative;
+  margin-top: 110px;
 
-.header h1 {
+}
+
+.header h1,.header_light h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
 }
@@ -36,6 +51,15 @@
   font-size: 40px;
   font-weight: 600;
   color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.subheader_light {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #070707;
   margin-top: 20px;
   text-align: center;
   margin-bottom: 20px;
@@ -64,9 +88,30 @@
   justify-content: center;
   background-color: #070707;
 }
+.container_light {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  margin-top: 90px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
 
 .main {
   background-color: #070707;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+.main_light {
+  background-color: white;
   box-sizing: border-box;
   position: relative;
   z-index: 10;
@@ -87,11 +132,22 @@
   z-index: 20;
   background: #070707;
 }
+.dropdownContainer_light {
+  position: relative;
+  z-index: 20;
+  background: white;
+}
 
 .filterDropdown {
   z-index: 20;
   position: relative;
   background: #070707;
+  margin-left: 90%;
+}
+.filterDropdown_light {
+  z-index: 20;
+  position: relative;
+  background: white;
   margin-left: 90%;
 }
 
@@ -286,8 +342,15 @@
   }
 }
 
+@media only screen and (max-width:375px) {
+  .container_light{
+    margin-top: 1px ;
+  }
+  
+}
+
 @media only screen and (max-width: 890px) {
-  .filterDropdown {
+  .filterDropdown,.filterDropdown_light {
     margin: 0;
     align-self: center;
     margin-left: 45%;
@@ -308,7 +371,7 @@
 }
 
 @media only screen and (max-width: 690px) {
-  .filterDropdown {
+  .filterDropdown,.filterDropdown_light {
     margin: 0;
     align-self: center;
     margin-left: 40%;
@@ -321,22 +384,23 @@
 
 @media screen and (max-width: 420px) {
   .header h1,
-  .appleHeader h1 {
+  .appleHeader h1,
+  .header_light h1{
     font-size: 20vw;
   }
-  .container {
+  .container,.container_light {
     margin-top: 120px;
   }
 }
 
 @media screen and (max-width: 426px) {
-  .header h1 {
+  .header h1,.header_light h1 {
     font-size: 50px;
   }
 }
 
 @media (max-height: 580px) {
-  .header {
+  .header,.header_light {
     text-align: center;
     background: linear-gradient(
       to right,
@@ -352,7 +416,7 @@
     background-position-y: -6rem;
     background-position-x: -8rem;
   }
-  .header h1 {
+  .header h1,.header_light h1 {
     color: rgb(244, 58, 79);
   }
 }
