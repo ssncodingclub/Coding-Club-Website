@@ -1,5 +1,6 @@
 import React from "react";
 import styles from '../../styles/Card.module.css';
+import { FaDiscord } from "react-icons/fa";
 import Image from 'next/image';
 
 const ProfileCard = ({
@@ -50,11 +51,15 @@ const ProfileCard = ({
               socials.discord 
               ? 
                 <a 
-                  href={socials.discord} 
+                  href="https://discord.com/invite/hSGEaRUnws" 
                   target="_blank" 
                   rel="noreferrer" 
-                  className={`fa-brands fa-discord ${theme? styles.social_icon_light:styles.social_icon}`}
-                ></a>
+                  className={styles.discord}>
+                    <FaDiscord className={props.theme ? styles.social_icon_light : styles.social_icon} />
+                </a>
+                    
+                
+                
               : null
             }
             { 
