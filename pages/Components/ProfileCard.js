@@ -8,7 +8,7 @@ const ProfileCard = ({
     alt="", 
     profilePic="", 
     socials={
-      github: "",
+      discord: "",
       linkedin: "",
       instagram: ""
     },
@@ -47,13 +47,13 @@ const ProfileCard = ({
               : null
             }
             { 
-              socials.github 
+              socials.discord 
               ? 
                 <a 
-                  href={socials.github} 
+                  href={socials.discord} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className={`fa fa-github ${theme? styles.social_icon_light:styles.social_icon}`}
+                  className={`fa fa-discord ${theme? styles.social_icon_light:styles.social_icon}`}
                 ></a>
               : null
             }
