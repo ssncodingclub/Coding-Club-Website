@@ -6,10 +6,13 @@ import Navbar from "./Components/Navbar";
 import Domain from "./Components/Domain";
 import Department from "./Components/Department";
 import domains from "../data/domains.json";
+import exofficebearers from "../data/exofficebearers.json";
 import Faq from "./Components/Faq";
 import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
+import DomainCard from "./Components/DomainCard";
+
 
 export default function About(props) {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
@@ -78,6 +81,19 @@ export default function About(props) {
             return <Domain key={i} domain={domain} theme={props.theme} />;
           })}
         </div>
+        {/* Insert Alumni Section here*/}
+        <h2 className={props.theme ? styles.subheader_light : styles.subheader} style={{ "fontSize": "30px" }}>
+          Ex-Office Bearers
+        </h2>
+        <div className={styles.container} style={{ paddingLeft: "2rem" }}>
+          <h3 className={props.theme ? styles.batch_light : styles.batch}>Batch of 2018-22</h3>
+          <section className={props.theme ? styles.newcontainer_light : styles.newcontainer} >
+            {exofficebearers.map((team, i) => {
+              return <DomainCard key={i} isOffice={true} title={team.title} theme={props.theme} members={team.members}></DomainCard>
+            })}
+          </section>
+        </div>
+
         <div className={styles.faq}>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             Frequently Asked Questions
