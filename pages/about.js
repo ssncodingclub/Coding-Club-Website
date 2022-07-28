@@ -31,11 +31,11 @@ export default function About(props) {
         <title>SSN Coding Club</title>
         <meta name="description" content="Official SSN Coding Club Website" />
         <link rel="icon" href="/favicon.ico" />
-        
+
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        /> 
+        />
       </Head>
       <Navbar transfer={props.theme} setTheme={props.setTheme} />
 
@@ -89,7 +89,16 @@ export default function About(props) {
           <h3 className={props.theme ? styles.batch_light : styles.batch}>Batch of 2018-22</h3>
           <section className={props.theme ? styles.newcontainer_light : styles.newcontainer} >
             {exofficebearers.map((team, i) => {
-              return <DomainCard key={i} isOffice={true} title={team.title} theme={props.theme} members={team.members}></DomainCard>
+              return <DomainCard
+                key={i}
+                isOffice={true}
+                title={team.title}
+                theme={props.theme}
+                members={team.members}
+                height={team.height}
+                overflow={team.overflow}
+              >
+              </DomainCard>
             })}
           </section>
         </div>

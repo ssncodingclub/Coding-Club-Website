@@ -3,12 +3,12 @@ import styles from '../../styles/Card.module.css';
 import Image from 'next/image';
 
 
-const DomainCard = ({ title = "", discord = "", tags = [], style = "", theme, isOffice, members = [] }) => {
+const DomainCard = ({ title = "", discord = "", tags = [], style = "", theme, isOffice, members = [], height = "", overflow = "" }) => {
   return (
     <>
       {isOffice ?
         <>
-          <article className={`${theme ? styles.card_light : styles.card}`} style={{ ...style, minWidth: "300px", height: "550px" }}>
+          <article className={`${overflow ? styles.expand : null} ${theme ? styles.card_light : styles.card} `} style={{ ...style, minWidth: "300px" }}>
             <header className={styles.card_header}>
               <h2 style={{ fontSize: "20px" }} className={styles.office_h2}>
                 {
@@ -27,7 +27,7 @@ const DomainCard = ({ title = "", discord = "", tags = [], style = "", theme, is
                     <h6 className={styles.office_names} key={i}>{mem.name}</h6>
                     <h6 className={styles.office_posi}>{mem.position}</h6>
                     <div className={styles.office_profile}>
-                      <Image src={mem.profilePic} height="40" width="40"></Image>
+                      <Image src={mem.profilePic} height="45" width="45" className={styles.office_profile_img}></Image>
                     </div>
                   </>
                 )
