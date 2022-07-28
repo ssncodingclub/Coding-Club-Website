@@ -8,7 +8,7 @@ const ProfileCard = ({
     alt="", 
     profilePic="", 
     socials={
-      github: "",
+      discord: "",
       linkedin: "",
       instagram: ""
     },
@@ -35,6 +35,18 @@ const ProfileCard = ({
             <div className={styles.profile_subtitle}>{position}</div>
           </header>
           <div className={styles.social_media}>
+            
+            { 
+              socials.discord 
+              ? 
+                <a 
+                  href={socials.discord} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className={`fab fa-discord ${theme? styles.social_icon_light:styles.social_icon}`}
+                ></a>
+              : null
+            }
             { 
               socials.linkedin 
               ? 
@@ -42,18 +54,7 @@ const ProfileCard = ({
                   href={socials.linkedin} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className={`fa fa-linkedin ${theme? styles.social_icon_light:styles.social_icon}`}
-                ></a>
-              : null
-            }
-            { 
-              socials.github 
-              ? 
-                <a 
-                  href={socials.github} 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className={`fa fa-github ${theme? styles.social_icon_light:styles.social_icon}`}
+                  className={`fab fa-linkedin ${theme? styles.social_icon_light:styles.social_icon}`}
                 ></a>
               : null
             }
@@ -64,7 +65,7 @@ const ProfileCard = ({
                   href={socials.instagram} 
                   target="_blank" 
                   rel="noreferrer"
-                  className={`fa fa-instagram ${theme? styles.social_icon_light:styles.social_icon}`}
+                  className={`fab fa-instagram ${theme? styles.social_icon_light:styles.social_icon}`}
                 ></a>
               : null
             }

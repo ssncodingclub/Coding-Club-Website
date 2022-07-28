@@ -178,7 +178,7 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .service {
-    width: 90%;
+    width: 100%;
   }
   .service h4 {
     font-size: 14px;
