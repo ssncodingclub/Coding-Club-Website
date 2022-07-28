@@ -1,17 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import DomainCard from "./Components/DomainCard";
+import exofficebearers from "../data/exofficebearers.json";
 import styles from "../styles/about.module.css";
 import Navbar from "./Components/Navbar";
 import Domain from "./Components/Domain";
 import Department from "./Components/Department";
 import domains from "../data/domains.json";
-import exofficebearers from "../data/exofficebearers.json";
 import Faq from "./Components/Faq";
 import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
-import DomainCard from "./Components/DomainCard";
 
 
 export default function About(props) {
@@ -113,7 +113,7 @@ export default function About(props) {
         </div>
       </main>
       <div className={styles.placeholder}>
-        <Footer theme={props.theme} />
+        <Footer theme={props.theme} about={true} />
       </div>
     </div>
   );
