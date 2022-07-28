@@ -265,6 +265,8 @@
 .profile_pic img,
 .office_profile img {
   border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .office_profile img {

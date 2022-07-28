@@ -28,7 +28,7 @@ const Footer = (props) => {
                         href="https://www.instagram.com/ssn_coding_club/"
                         target="_blank"
                         rel="noreferrer"
-                        className={`fa fa-instagram ${props.theme ? styles.insta + " " + styles.insta_light : styles.social_icon + " " + styles.insta}`}
+                        className={`fab fa-instagram ${props.theme ? styles.insta + " " + styles.insta_light : styles.social_icon + " " + styles.insta}`}
                     ></a>
                     <a href="https://discord.com/invite/hSGEaRUnws" className={styles.discord} target="_blank">
                         <FaDiscord className={props.theme ? styles.social_icon_light : styles.social_icon} />
