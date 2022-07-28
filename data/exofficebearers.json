@@ -1,0 +1,109 @@
+[
+    {
+        "title":"The Core Committee",
+        "height":"380px",
+        "overflow":true,
+        "members":[
+            {
+                "name": "Vrishin Vigneshwar",
+                "position":"President",
+                "profilePic": "/profiles/Core/Ex/2018-22/vrishin.jpeg"
+            },
+            {
+                "name": "Venkataraman ",
+                "position": "Vice President",
+                "profilePic": "/profiles/Core/Ex/2018-22/venkat.jpeg"
+            },
+            {
+                "name": "Sakthi Sairaj",
+                "position": "Secretary",
+                "profilePic": "/profiles/Core/Ex/2018-22/sakthi.jpeg"  
+            },
+            {
+                "name": "Vanathi Ganeshraj",
+                "position": "Joint Secretary",
+                "profilePic": "/profiles/Core/Ex/2018-22/vanathi.jpeg"
+            },
+            {
+                "name": "Aditya Krishna",
+                "position": "Event Head",
+                "profilePic": "/profiles/Core/Ex/2018-22/adityakp.jpeg"
+            },
+            {
+                "name": "Shashank Ravishankar",
+                "position": "Tech Lead",
+                "alt": "shashank",
+                "profilePic": "/profiles/Core/Ex/2018-22/shashank.jpeg"   
+            }
+        ]
+    },
+    {
+        "title":"Software Development",
+        "height":"380px",
+        "overflow":false,
+        "members":[
+            {
+                "name": "Sneha Sriram",
+                "position": "Head",
+                "profilePic": "/profiles/Dev/Ex/2018-22/sneha.jpeg"
+              },
+              {
+                "name": "Dhiganth Rao",
+                "position": "Deputy Head",
+                "profilePic": "/profiles/Dev/Ex/2018-22/dhiganth.jpeg"
+              }            
+        ]
+    },
+    {
+        "title":"Machine Learning ",
+        "height":"380px",
+        "overflow":false,
+        "members":[
+            {
+                "name": "Siddharth Sriraman",
+                "position": "Head",
+                "profilePic": "/profiles/ML/Ex/2018-22/siddharth.jpeg"
+
+              },
+              {
+                "name": "Mahesh Bharadwaj",
+                "position": "Deputy Head",
+                "profilePic": "/profiles/ML/Ex/2018-22/mahesh.jpeg"
+              }
+        ]
+    },
+    {
+        "title":"Competitive Programming ",
+        "height":"380px",
+        "overflow":false,
+        "members":[
+            {
+                "name": "Avinash Kartik",
+                "position": "Head",
+                "profilePic": "/profiles/CP/Ex/2018-22/avinash.jpeg"
+              },
+              {
+                "name": "Joseph Amirtharaj",
+                "position": "Deputy Head",
+                "profilePic": "/profiles/CP/Ex/2018-22/joseph.jpeg"
+              }
+        ]
+    },
+    {
+        "title":"Design and Social Media ",
+        "height":"380px",
+        "overflow":false,
+        "members":[
+            {
+                "name": "Nethraa Sivakumar",
+                "position": "Head",
+                "profilePic": "/profiles/DSM/Ex/2018-22/nethraa.jpeg"
+              },
+              {
+                "name": "Shreya Sriram",
+                "position": "Deputy Head",
+                "profilePic": "/profiles/DSM/Ex/2018-22/shreya.jpeg"
+              }
+        ]
+    }
+]
