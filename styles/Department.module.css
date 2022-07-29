@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500&display=swap");
 
 .department-container {
   margin-top: 25px;
@@ -43,11 +43,10 @@
   border-radius: 50%;
   margin: -90px auto 0;
   /* background-color: #070707; */
-  background: var(--dept-bg-color); 
+  background: var(--dept-bg-color);
   /* border: 18px solid var(--bs-body-color1);  */
   border: 18px solid #070707;
   /* border: 18px solid white; */
-
 }
 .service_logo_light {
   width: 130px;
@@ -55,10 +54,9 @@
   border-radius: 50%;
   margin: -90px auto 0;
   /* background-color: #070707; */
-  background: lightgray; 
+  background: lightgray;
 
   border: 18px solid white;
-
 }
 
 .service_logo img {
@@ -69,7 +67,7 @@
 
   /* background-color: #030380; */
 }
-.service_logo_light img{
+.service_logo_light img {
   width: 50px;
   margin-top: 20px;
   transition: transform 1s;
@@ -97,7 +95,7 @@
 
 .service p {
   position: absolute;
-  font-family: "Overpass", monospace;
+  font-family: "Overpass";
   top: 100px;
   height: 80%;
   width: 90%;
