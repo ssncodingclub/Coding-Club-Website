@@ -1,8 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import DomainCard from "./Components/DomainCard";
-import exofficebearers from "../data/exofficebearers.json";
 import styles from "../styles/about.module.css";
 import Navbar from "./Components/Navbar";
 import Domain from "./Components/Domain";
@@ -12,7 +10,6 @@ import Faq from "./Components/Faq";
 import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
-
 
 export default function About(props) {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
@@ -31,10 +28,10 @@ export default function About(props) {
         <title>SSN Coding Club</title>
         <meta name="description" content="Official SSN Coding Club Website" />
         <link rel="icon" href="/favicon.ico" />
-
+        {/* for fontawesome */}
         <link
           rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
       <Navbar transfer={props.theme} setTheme={props.setTheme} />
@@ -81,28 +78,6 @@ export default function About(props) {
             return <Domain key={i} domain={domain} theme={props.theme} />;
           })}
         </div>
-        {/* Insert Alumni Section here*/}
-        <h2 className={props.theme ? styles.subheader_light : styles.subheader} style={{ "fontSize": "30px" }}>
-          Ex-Office Bearers
-        </h2>
-        <div className={styles.container} style={{ paddingLeft: "2rem" }}>
-          <h3 className={props.theme ? styles.batch_light : styles.batch}>Batch of 2018-22</h3>
-          <section className={props.theme ? styles.newcontainer_light : styles.newcontainer} >
-            {exofficebearers.map((team, i) => {
-              return <DomainCard
-                key={i}
-                isOffice={true}
-                title={team.title}
-                theme={props.theme}
-                members={team.members}
-                height={team.height}
-                overflow={team.overflow}
-              >
-              </DomainCard>
-            })}
-          </section>
-        </div>
-
         <div className={styles.faq}>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             Frequently Asked Questions
@@ -113,7 +88,7 @@ export default function About(props) {
         </div>
       </main>
       <div className={styles.placeholder}>
-        <Footer theme={props.theme} about={true} />
+        <Footer theme={props.theme} />
       </div>
     </div>
   );

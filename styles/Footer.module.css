@@ -71,22 +71,25 @@
   -webkit-background-clip: text;
 }
 
-.social_icon,
-.insta {
+
+.social_icon,.insta {
   text-decoration: none;
   margin: 0 30px;
   margin-top: -10px;
 }
 
-.insta_light {
-  background: linear-gradient(90deg, black, black);
+.insta_light
+{
+  background: linear-gradient(90deg, black,black);
   text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: text;  
 }
 
-.insta:hover {
+
+.insta:hover
+{
   background: linear-gradient(90deg, #ff8a00, #e52e71);
   text-shadow: none;
   -webkit-text-fill-color: transparent;
@@ -94,18 +97,17 @@
   background-clip: text;
 }
 
-.discord:hover .social_icon,
-.discord:hover .social_icon_light {
+.discord:hover .social_icon,.discord:hover .social_icon_light {
   color: #7289da;
 }
-.linkedin:hover .social_icon,
-.linkedin:hover .social_icon_light {
+.linkedin:hover .social_icon,.linkedin:hover .social_icon_light {
   color: #0072b1;
 }
-.github:hover .social_icon,
-.github:hover .social_icon_light {
+.github:hover .social_icon,.github:hover .social_icon_light {
   color: #80d8ff;
 }
+
+
 
 @media (max-width: 550px) {
   .footer h1 {
