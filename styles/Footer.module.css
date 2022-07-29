@@ -28,6 +28,7 @@
 }
 
 .footerText {
+  font-family: "Montserrat", sans-serif !important;
   text-align: center;
   background: url("../public/biggradient.jpg");
   background-clip: text;
@@ -44,14 +45,14 @@
 }
 
 .footer h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 90px;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 90px !important;
 }
 
 .footer h2 {
-  font-family: "Montserrat", sans-serif;
-  margin-top: 20px;
-  font-size: 40px;
+  font-family: "Montserrat", sans-serif !important;
+  margin-top: 20px !important;
+  font-size: 40px !important;
 }
 
 .social_media {
