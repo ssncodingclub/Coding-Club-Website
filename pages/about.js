@@ -13,6 +13,7 @@ import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
 
+
 export default function About(props) {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
 
