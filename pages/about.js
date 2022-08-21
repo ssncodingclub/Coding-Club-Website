@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import DomainCard from "./Components/DomainCard";
 import exofficebearers from "../data/exofficebearers.json";
 import styles from "../styles/about.module.css";
@@ -52,14 +53,12 @@ export default function About(props) {
           </div>
         )}
         <div className={styles.subcontainer}>
-          <div className="image">
-            <img src="C:\Users\user\ssnccw\Coding-Club-Website\public\ssnlogo.png"/>
-          </div>
-          <div className="text">
-            <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+          <Image src="C:\Users\user\ssnccw\Coding-Club-Website\public\ssnlogo.png" width={75} height={48} />
+          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             About SSN
-            </h2>
-          </div>
+          </h2>
+            
+          
           <p className={props.theme ? styles.para_light_main : styles.para_main}>
             SSN Institutions, established by Mr. Shiv Nadar, Founder-Chairman, HCL Technologies, stands out as a
             premier center of higher learning with a mission of pursuing excellence in education and research. With
@@ -70,18 +69,13 @@ export default function About(props) {
             role in the realization of the institution’s quest for educational distinction in computing and emerging
             fields.
 
-            <div id="leftbox">
-              <h3 id="facultyname">Dr. T.T. Mirnalinee</h3>
-              Honorary Member
+            <div className="main">
+              <div>Dr. T.T. Mirnalinee - Honorary Member </div>
+              <div> Dr. Chitra Babu - Club Incharge</div>
+              <div>Dr. V. Balasubramanian - Club Incharge  </div>
             </div>
-            <div id="middlebox">
-              <h3 id="facultyname">Dr. Chitra Babu</h3>
-              Club Incharge
-            </div>
-            <div id="rightbox">
-              <h3 id="facultyname">Dr. V. Balasubramanian</h3>
-              Club Incharge
-            </div>
+
+
           </p>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             What is SSN Coding Club?
