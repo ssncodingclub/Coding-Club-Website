@@ -74,6 +74,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-items: center;
 }
 
 .main div {
@@ -81,6 +82,7 @@
   border: 1px solid white;
   display: flex;
   align-items: center;
+  justify-items: center;
 }
 
 
