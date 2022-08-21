@@ -4,31 +4,31 @@ import { FaDiscord } from "react-icons/fa";
 import Image from 'next/image';
 
 const ProfileCard = ({
-    name="", 
-    position="", 
-    alt="", 
-    profilePic="", 
-    socials={
-      discord: "",
-      linkedin: "",
-      instagram: ""
-    },
-    marginFlag=true,
-    theme
-  }) => {
+  name = "",
+  position = "",
+  alt = "",
+  profilePic = "",
+  socials = {
+    discord: "",
+    linkedin: "",
+    instagram: ""
+  },
+  marginFlag = true,
+  theme
+}) => {
   return (
     <>
-      <article className={theme? styles.card_light:styles.card} style={{marginLeft: marginFlag ? "-2rem" : "-50px"}}>
+      <article className={theme ? styles.card_light : styles.card} style={{ marginLeft: marginFlag ? "-2rem" : "-50px" }}>
         <div className={styles.profile}>
           <div className={styles.profile_pic}>
             <Image width="130" height="130" src={profilePic} alt={alt}></Image>
           </div>
           <header className={styles.card_header}>
-            <h2 className={theme?styles.profile_name_light:styles.profile_name}>
+            <h2 className={theme ? styles.profile_name_light : styles.profile_name}>
               {
                 name.split(' ').map((word, i) => {
                   return (<>
-                    {word}<br key={i}/>
+                    {word}<br key={i} />
                   </>);
                 })
               }
@@ -36,6 +36,7 @@ const ProfileCard = ({
             <div className={styles.profile_subtitle}>{position}</div>
           </header>
           <div className={styles.social_media}>
+<<<<<<< HEAD
             { 
               socials.linkedin 
               ? 
@@ -68,10 +69,41 @@ const ProfileCard = ({
                 <a 
                   href={socials.instagram} 
                   target="_blank" 
+=======
+
+            {
+              socials.discord
+                ?
+                <a
+                  href={socials.discord}
+                  target="_blank"
+>>>>>>> upstream/main
                   rel="noreferrer"
-                  className={`fa fa-instagram ${theme? styles.social_icon_light:styles.social_icon}`}
+                  className={`fab fa-discord ${theme ? styles.social_icon_light : styles.social_icon}`}
                 ></a>
-              : null
+                : null
+            }
+            {
+              socials.linkedin
+                ?
+                <a
+                  href={socials.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`fab fa-linkedin ${theme ? styles.social_icon_light : styles.social_icon}`}
+                ></a>
+                : null
+            }
+            {
+              socials.instagram
+                ?
+                <a
+                  href={socials.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`fab fa-instagram ${theme ? styles.social_icon_light : styles.social_icon}`}
+                ></a>
+                : null
             }
           </div>
         </div>

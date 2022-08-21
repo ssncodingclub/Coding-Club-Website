@@ -1,5 +1,37 @@
 [
   {
+    "text": "Getting started with Web Development: HTML & CSS",
+    "date": "August 14th 2022",
+    "category": {
+      "tag": "SD",
+      "color": "purple"
+    },
+    "description": "Software Dev team gives an intro to Web Development, by teaching the basics of HTML & CSS and by demonstrating live examples.",
+    "link": {
+      "url": "https://drive.google.com/drive/folders/1iP7Jw34dg3sZ68GutNz-pawphBVNcIke"
+    },
+    "resource":{
+      "url":"https://drive.google.com/drive/folders/1iP7Jw34dg3sZ68GutNz-pawphBVNcIke"
+    },
+    "status":"finished"    
+  },
+  {
+    "text": "Introduction to Two Pointers",
+    "date": "August 9th 2022",
+    "category": {
+      "tag": "CP",
+      "color": "orangered"
+    },
+    "description": "The CP team of SSN Coding club delivers a presentation, teaching the Two Pointers technique for solving problems.",
+    "link": {
+      "url": "https://drive.google.com/drive/folders/1Q23qV0q5eS-HLDCZRS30MKYHcBRKbg60"
+    },
+    "resource": {
+      "url": "https://docs.google.com/document/d/1gWmXk80ZwABBcPE3Qg3M_ZobqWpeKjVk/edit"
+    },
+    "status":"finished"    
+  },
+  {
     "text": "Deployment of ML Models",
     "date": "March 27th 2022",
     "category": {

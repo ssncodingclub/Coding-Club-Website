@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@400&family=Overpass:wght@300&family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@800&display=swap");
+
+.header {
+  text-align: center;
+  background: url("https://i.ibb.co/rpsWqvc/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -6rem;
+  background-position-x: -8rem;
+  margin-top: 110px;
+}
+
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85px;
+}
+
+.appleHeader {
+  text-align: center;
+  color: rgb(244, 58, 79);
+  margin-top: 110px;
+}
+
+.appleHeader h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85px;
+}
+
+.about_main_container {
+  position: relative;
+  z-index: 10;
+  background-color: #070707;
+}
+
+.about_main_container_light {
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.subheader {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.subheader_light {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #070707;
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.para {
+  width: 80%;
+  max-width: 800px;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 25px;
+}
+.para_light {
+  width: 80%;
+  max-width: 800px;
+  color: #070707;
+  font-family: "Overpass", sans-serif;
+  font-size: 25px;
+}
+
+<<<<<<< HEAD
+.para_main {
+  width: 80%;
+  max-width: 800px;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: small;
+}
+.para_light_main {
+  width: 80%;
+  max-width: 800px;
+  color: #070707;
+  font-family: "Overpass", sans-serif;
+  font-size: small;
+}
+.left{
+  float: left;
+}
+.center{
+  display: inline-block;
+  margin: 0 auto;
+
+}
+.right{
+  float: right;
+}
+=======
+.batch {
+  margin-top: -60px;
+  padding-left: 2.7rem;
+  color: #ffffff;
+  font-size: 25px;
+}
+.batch_light {
+  margin-top: -60px;
+  padding-left: 2.7rem;
+  color: #000;
+  font-size: 25px;
+}
+
+>>>>>>> upstream/main
+.container {
+  display: flex;
+  margin-top: 90px;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+.newcontainer,
+.newcontainer_light {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  padding-left: 2.5rem;
+  overflow-x: scroll;
+  margin-top: -40px;
+}
+
+.newcontainer::-webkit-scrollbar,
+.newcontainer_light::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  justify-content: center;
+}
+.newcontainer_light::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px #e2e2e2;
+}
+.newcontainer::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.newcontainer_light::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #ffffff, #dbdbdb 1px, #ececec 0, #ebebeb);
+}
+.newcontainer::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+.departmentContainer {
+  width: 80%;
+  margin-top: 25px;
+}
+
+.faqContainer {
+  width: 80%;
+}
+
+@media (max-width: 426px) {
+  .header h1,
+  .appleHeader h1 {
+    font-size: 50px;
+  }
+  .subheader {
+    font-size: 30px;
+  }
+
+  .container {
+    margin-top: 120px;
+  }
+}
+
+/* placeholder for footer (parallax effect) */
+.placeholder {
+  position: relative;
+  z-index: 1;
+  height: 90vh;
+  margin-top: 40px;
+}
+
+@media (max-height: 580px) {
+  .header {
+    text-align: center;
+    background: linear-gradient(
+      to right,
+      rgb(255, 96, 170),
+      rgb(255, 139, 61),
+      rgb(255, 118, 182)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -6rem;
+    background-position-x: -8rem;
+  }
+  .header h1 {
+    color: rgb(244, 58, 79);
+  }
+}
