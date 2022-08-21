@@ -65,18 +65,18 @@ export default function About(props) {
             role in the realization of the institution’s quest for educational distinction in computing and emerging
             fields.
 
-            <div id="leftbox">
-              <h2 id="facultyname">Dr. T.T. Mirnalinee</h2>
-              Honorary Member
-            </div>
-            <div id="middlebox">
-              <h2 id="facultyname">Dr. Chitra Babu</h2>
-              Club Incharge
-            </div>
-            <div id="rightbox">
-              <h2 id="facultyname">Dr. V. Balasubramanian</h2>
-              Club Incharge
-            </div>
+              <div id="leftbox">
+                <h2 id="facultyname">Dr. T.T. Mirnalinee</h2>
+                Honorary Member
+              </div>
+              <div id="middlebox">
+                <h2 id="facultyname">Dr. Chitra Babu</h2>
+                Club Incharge
+              </div>
+              <div id="rightbox">
+                <h2 id="facultyname">Dr. V. Balasubramanian</h2>
+                Club Incharge
+              </div>
           </p>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             What is SSN Coding Club?
