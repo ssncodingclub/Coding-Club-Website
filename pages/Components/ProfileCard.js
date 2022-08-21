@@ -1,6 +1,5 @@
 import React from "react";
 import styles from '../../styles/Card.module.css';
-import { FaDiscord } from "react-icons/fa";
 import Image from 'next/image';
 
 const ProfileCard = ({
@@ -36,7 +35,6 @@ const ProfileCard = ({
             <div className={styles.profile_subtitle}>{position}</div>
           </header>
           <div className={styles.social_media}>
-
 
             {
               socials.discord
