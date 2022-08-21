@@ -54,7 +54,7 @@ export default function About(props) {
         )}
         <div className={styles.subcontainer}>
           <div>
-            <Image src="public\ssnlogo.png" width={75} height={48} />
+            <Image src="/ssnlogo.png" width={75} height={48} />
           </div>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             About SSN
