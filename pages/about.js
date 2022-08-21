@@ -65,14 +65,17 @@ export default function About(props) {
             role in the realization of the institution’s quest for educational distinction in computing and emerging
             fields.
 
-            <div className="left">
-              Dr. T.T. Mirnalinee - Honorary Member
+            <div id="leftbox">
+              <h2 id="facultyname">Dr. T.T. Mirnalinee</h2>
+              Honorary Member
             </div>
-            <div className="center">
-              Dr. Chitra Babu - Club Incharge
+            <div id="middlebox">
+              <h2 id="facultyname">Dr. Chitra Babu</h2>
+              Club Incharge
             </div>
-            <div className="right">
-              Dr. V. Balasubramanian - Club Incharge
+            <div id="rightbox">
+              <h2 id="facultyname">Dr. V. Balasubramanian</h2>
+              Club Incharge
             </div>
           </p>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
