@@ -2,7 +2,9 @@
   {
     "title": "The\nCore\nCommittee",
     "discord": "@Core Committee",
-    "tags": ["admin"],
+    "tags": [
+      "admin"
+    ],
     "bgColorStyle": {
       "background": "linear-gradient(135deg, #1f005c, #35005e, #5f0060, #8f0860, #bc365d, #dd635c, #f28c5f, #fcaa67, #ffb56b)"
     },
@@ -78,7 +80,10 @@
   {
     "title": "Software\nDevelopment\nTeam",
     "discord": "@Software Dev Team",
-    "tags": ["web/app-dev", "open-source"],
+    "tags": [
+      "web/app-dev",
+      "open-source"
+    ],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
@@ -172,7 +177,7 @@
         }
       },
       {
-        "name": "Shajith Hameed",
+        "name": "Shajith H",
         "position": "Member",
         "alt": "shajith",
         "profilePic": "/profiles/Dev/shajith.jpeg",
@@ -198,13 +203,16 @@
   {
     "title": "Machine\nLearning\nTeam",
     "discord": "@ML/AI Team",
-    "tags": ["research", "deep-learning"],
+    "tags": [
+      "research",
+      "deep-learning"
+    ],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
     "members": [
       {
-        "name": "Karthik Desingu",
+        "name": "Karthik D",
         "position": "Head",
         "alt": "karthik",
         "profilePic": "/profiles/ML/KarthikD.jpeg",
@@ -215,7 +223,7 @@
         }
       },
       {
-        "name": "Krishi Vijayanand",
+        "name": "Krishi V",
         "position": "Deputy Head",
         "alt": "krishi",
         "profilePic": "/profiles/ML/kris.jpeg",
@@ -248,17 +256,16 @@
         }
       },
       {
-        "name": "Haricharan Bharathi",
+        "name": "Haricharan B",
         "position": "Member",
         "alt": "haricharan",
         "profilePic": "/profiles/ML/haricharanb.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/572426680577163264",
-          "linkedin":"https://www.linkedin.com/in/haricharan-bharathi-654a6621a/" ,
+          "linkedin": "https://www.linkedin.com/in/haricharan-bharathi-654a6621a/",
           "instagram": "https://www.instagram.com/hari.charan03"
         }
       },
-
       {
         "name": "Gokul Prakash",
         "position": "Member",
@@ -266,12 +273,12 @@
         "profilePic": "/profiles/ML/gokulprakash.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/708000349234921522",
-          "linkedin":"https://www.linkedin.com/in/gokul-r-227326200/" ,
+          "linkedin": "https://www.linkedin.com/in/gokul-r-227326200/",
           "instagram": "https://www.instagram.com/gokul_r_prakash"
         }
       },
       {
-        "name": "Varsha Yeshwant",
+        "name": "Varsha Y",
         "position": "Member",
         "alt": "varsha",
         "profilePic": "/profiles/ML/varsha2.jpeg",
@@ -308,7 +315,10 @@
   {
     "title": "Competitive\nProgramming\nTeam",
     "discord": "@CP Team",
-    "tags": ["algorithms", "dsa"],
+    "tags": [
+      "algorithms",
+      "dsa"
+    ],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
@@ -341,7 +351,7 @@
         "alt": "hariprasad",
         "profilePic": "/profiles/CP/Hariprasad-B.jpeg",
         "socials": {
-          "discord":"https://discordapp.com/users/759419975278002197" ,
+          "discord": "https://discordapp.com/users/759419975278002197",
           "linkedin": "https://www.linkedin.com/in/hariprasad-b-7a6b58206",
           "instagram": "https://www.instagram.com/ihariprasadb"
         }
@@ -428,7 +438,10 @@
   {
     "title": "Design and\nSocial Media\nTeam",
     "discord": "@Design/Social Team",
-    "tags": ["socials", "marketing"],
+    "tags": [
+      "socials",
+      "marketing"
+    ],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
@@ -488,9 +501,8 @@
           "instagram": "https://www.instagram.com/poornimaawww"
         }
       },
-      
       {
-        "name": "Supraja Vaidhyanathan",
+        "name": "Supraja V",
         "position": "Member",
         "alt": "suprajav",
         "profilePic": "/profiles/DSM/suprajav.jpeg",
@@ -522,7 +534,6 @@
           "instagram": "https://www.instagram.com/san_ju_yk"
         }
       },
-      
       {
         "name": "Ayshwarya B",
         "position": "Member",
@@ -541,7 +552,7 @@
         "profilePic": "/profiles/DSM/Ojus.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/583540157643489280",
-          "linkedin":"www.linkedin.com/in/y-v-ojus-70270b23b",
+          "linkedin": "www.linkedin.com/in/y-v-ojus-70270b23b",
           "instagram": null
         }
       }
@@ -550,7 +561,10 @@
   {
     "title": "Open Source\nTeam",
     "discord": "@Project-Moderators",
-    "tags": ["full stack", "github"],
+    "tags": [
+      "full stack",
+      "github"
+    ],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
@@ -578,7 +592,7 @@
         }
       },
       {
-        "name": "Aathish Sivasubrahmanian",
+        "name": "Aathish S",
         "position": "Member",
         "alt": "aathish",
         "profilePic": "/profiles/OS/Aathish.jpeg",
