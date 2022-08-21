@@ -83,6 +83,31 @@
   font-size: 25px;
 }
 
+.para_main {
+  width: 80%;
+  max-width: 800px;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: small;
+}
+.para_light_main {
+  width: 80%;
+  max-width: 800px;
+  color: #070707;
+  font-family: "Overpass", sans-serif;
+  font-size: small;
+}
+.left{
+  float: left;
+}
+.center{
+  display: inline-block;
+  margin: 0 auto;
+
+}
+.right{
+  float: right;
+}
 .container {
   display: flex;
   margin-top: 90px;
