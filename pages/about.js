@@ -69,7 +69,7 @@ export default function About(props) {
             role in the realization of the institution’s quest for educational distinction in computing and emerging
             fields.
 
-            <div className="main">
+            <div className={styles.main}>
               <div>Dr. T.T. Mirnalinee - Honorary Member </div>
               <div> Dr. Chitra Babu - Club Incharge</div>
               <div>Dr. V. Balasubramanian - Club Incharge  </div>
