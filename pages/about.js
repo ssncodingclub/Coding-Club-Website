@@ -53,7 +53,7 @@ export default function About(props) {
         )}
         <div className={styles.subcontainer}>
           <div className="image">
-            <img src="C:\Users\user\ssnccw\Coding-Club-Website\public\SSN_LOGO .png"/>
+            <img src="C:\Users\user\ssnccw\Coding-Club-Website\public\ssnlogo.png"/>
           </div>
           <div className="text">
             <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
