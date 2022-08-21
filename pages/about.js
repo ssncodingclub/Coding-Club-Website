@@ -52,9 +52,14 @@ export default function About(props) {
           </div>
         )}
         <div className={styles.subcontainer}>
-          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+          <div className="image">
+            <img src="C:\Users\user\ssnccw\Coding-Club-Website\public\SSN_LOGO .png"/>
+          </div>
+          <div className="text">
+            <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             About SSN
-          </h2>
+            </h2>
+          </div>
           <p className={props.theme ? styles.para_light_main : styles.para_main}>
             SSN Institutions, established by Mr. Shiv Nadar, Founder-Chairman, HCL Technologies, stands out as a
             premier center of higher learning with a mission of pursuing excellence in education and research. With
@@ -65,18 +70,18 @@ export default function About(props) {
             role in the realization of the institution’s quest for educational distinction in computing and emerging
             fields.
 
-              <div id="leftbox">
-                <h2 id="facultyname">Dr. T.T. Mirnalinee</h2>
-                Honorary Member
-              </div>
-              <div id="middlebox">
-                <h2 id="facultyname">Dr. Chitra Babu</h2>
-                Club Incharge
-              </div>
-              <div id="rightbox">
-                <h2 id="facultyname">Dr. V. Balasubramanian</h2>
-                Club Incharge
-              </div>
+            <div id="leftbox">
+              <h3 id="facultyname">Dr. T.T. Mirnalinee</h3>
+              Honorary Member
+            </div>
+            <div id="middlebox">
+              <h3 id="facultyname">Dr. Chitra Babu</h3>
+              Club Incharge
+            </div>
+            <div id="rightbox">
+              <h3 id="facultyname">Dr. V. Balasubramanian</h3>
+              Club Incharge
+            </div>
           </p>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             What is SSN Coding Club?

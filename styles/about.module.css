@@ -67,7 +67,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:800px;
+  width: 100%;
+}
+
+img {
+  max-width: 100%
+}
+
+.image {
+  flex-basis: 30%
+}
+
+.text {
+  font-size: 40px;
+  padding-left: 20px;
 }
 
 .para {
@@ -107,7 +120,7 @@
 
 #leftbox {
   float: left;
-  width: 200px;
+  width: 25%;
   height: 100px;
   border: 3px solid white;
   padding: 10px;
@@ -115,18 +128,18 @@
 
 #middlebox {
   float: left;
-  width: 200px;
+  width: 50%;
   height: 100px;
-  border:solid white;
+  border: solid white;
   margin-left: 20px;
   padding: 10px;
 }
 
 #rightbox {
   float: right;
-  width: 200px;
+  width: 25%;
   height: 100px;
-  border:solid white;
+  border: solid white;
   padding: 10px;
 }
 
