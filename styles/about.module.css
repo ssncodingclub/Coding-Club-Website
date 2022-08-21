@@ -83,7 +83,7 @@
   font-size: 25px;
 }
 
-<<<<<<< HEAD
+
 .para_main {
   width: 80%;
   max-width: 800px;
@@ -109,7 +109,7 @@
 .right{
   float: right;
 }
-=======
+
 .batch {
   margin-top: -60px;
   padding-left: 2.7rem;
@@ -123,7 +123,6 @@
   font-size: 25px;
 }
 
->>>>>>> upstream/main
 .container {
   display: flex;
   margin-top: 90px;
