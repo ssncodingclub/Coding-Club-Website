@@ -67,6 +67,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:800px;
 }
 
 .para {
@@ -91,6 +92,7 @@
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 15px;
+  margin-bottom: 3.5rem;
 }
 
 .para_light_main {
@@ -99,7 +101,9 @@
   color: #070707;
   font-family: "Overpass", sans-serif;
   font-size: 15px;
+  margin-bottom: 3.5rem;
 }
+
 
 #leftbox {
   float: left;
@@ -124,7 +128,7 @@
 }
 
 #facultyname {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
 }
 
