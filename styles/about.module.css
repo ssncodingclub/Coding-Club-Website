@@ -74,6 +74,7 @@
   width: 100%;
   height: 100px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-items: center;
 }
@@ -88,14 +89,29 @@
   font-weight:bold;
   padding-left: 10px;
   margin-left: 20px;
-  font-size: 22px;
+  font-size: 21px;
+}
+.box{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
 }
 
-.ssnimg{ 
+.box p Image{
   float: left;
+  margin-right: 15px;
+  border-radius:20px;
+}
+
+  
+
+.ssnimg{ 
   width: 200px;
   height: 200px;
-  margin-right: 3rem;
+  border-radius: 20px;
 }
 
 
