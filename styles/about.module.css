@@ -91,18 +91,10 @@
   margin-left: 20px;
   font-size: 21px;
 }
-.box{
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-items: center;
-}
 
-.box p Image{
+.subcontainer p Image{
   float: left;
-  margin-right: 15px;
+  margin-right: 20px;
   border-radius:20px;
 }
 

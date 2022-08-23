@@ -53,7 +53,7 @@ export default function About(props) {
           </div>
         )}
         <div className={styles.subcontainer}>
-          <div className={styles.box}>
+          
               <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
                 About SSN
               </h2>
@@ -78,7 +78,7 @@ export default function About(props) {
 
 
               </p>
-          </div>
+          
          
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             What is SSN Coding Club?
