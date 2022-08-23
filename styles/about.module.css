@@ -80,15 +80,30 @@
 
 .main div {
   flex: 1;
-  border: 1px solid white;
+  border: 4px solid white;
   display: flex;
   align-items: center;
   justify-items: center;
   min-height: 75px;
-  font-weight:bold;
+  font-weight:bolder;
   padding-left: 10px;
   margin-left: 20px;
+  font-size: 23px;
 }
+
+.box Image{ 
+  float: left;
+  width: 100px;
+  height: 60px;
+
+}
+
+.box h2{
+  position: relative;
+  top: 5px;
+
+} 
+
 
 
 .para {
@@ -112,7 +127,7 @@
   max-width: 800px;
   color: white;
   font-family: "Overpass", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 3.5rem;
 }
 
@@ -121,7 +136,7 @@
   max-width: 800px;
   color: #070707;
   font-family: "Overpass", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 3.5rem;
 }
 

@@ -53,14 +53,11 @@ export default function About(props) {
           </div>
         )}
         <div className={styles.subcontainer}>
-          <div>
-            <Image src="/ssnlogo.png" width={75} height={48} />
+          <div className={styles.box}>
+            <Image src="/ssnlogo.png" width={100} height={60} />
+            <h2 className={props.theme ? styles.subheader_light : styles.subheader}>About SSN</h2>
           </div>
-          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
-            About SSN
-          </h2>
-            
-          
+
           <p className={props.theme ? styles.para_light_main : styles.para_main}>
             SSN Institutions, established by Mr. Shiv Nadar, Founder-Chairman, HCL Technologies, stands out as a
             premier center of higher learning with a mission of pursuing excellence in education and research. With
@@ -79,6 +76,7 @@ export default function About(props) {
 
 
           </p>
+
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             What is SSN Coding Club?
           </h2>
