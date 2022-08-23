@@ -93,7 +93,9 @@
 }
 
 .subcontainer p p Image{
+  position: relative;
   left: 0;
+  float: left;
   
   border-radius:20px;
 }
