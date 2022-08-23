@@ -76,19 +76,17 @@ export default function About(props) {
                   <div> Dr. Chitra Babu - Club Incharge</div>
                   <div>Dr. V. Balasubramanian - Club Incharge  </div>
                 </div>
-
+              
 
               </p>
-          
-         
-          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
-            What is SSN Coding Club?
-          </h2>
-          <p className={props.theme ? styles.para_light : styles.para}>
-            We are a community of coders specialised in domains like Competitive Coding, Machine
-            Learning, Web and App Development etc. We aim to support and nurture future developers
-            and ensure equity in coding!
-          </p>
+              <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+                What is SSN Coding Club?
+              </h2>
+              <p className={props.theme ? styles.para_light : styles.para}>
+                We are a community of coders specialised in domains like Competitive Coding, Machine
+                Learning, Web and App Development etc. We aim to support and nurture future developers
+                and ensure equity in coding!
+              </p>
         </div>
         <div>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
