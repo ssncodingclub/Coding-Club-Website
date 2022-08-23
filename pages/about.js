@@ -53,12 +53,14 @@ export default function About(props) {
           </div>
         )}
         <div className={styles.subcontainer}>
-          <div className={styles.box}>
-            <Image src="/ssnlogo.png" width={100} height={60} />
+          
+            
+            <Image className={styles.ssnimg} src="\ssnfountain.jpg" width={200} height={200} />
+            
             <h2 className={props.theme ? styles.subheader_light : styles.subheader}>About SSN</h2>
-          </div>
+          
 
-          <p className={props.theme ? styles.para_light_main : styles.para_main}>
+            <p className={props.theme ? styles.para_light_main : styles.para_main}>
             SSN Institutions, established by Mr. Shiv Nadar, Founder-Chairman, HCL Technologies, stands out as a
             premier center of higher learning with a mission of pursuing excellence in education and research. With
             an aim to support and foster the thriving coding culture on campus, SSN strives to provide a platform
@@ -68,23 +70,23 @@ export default function About(props) {
             role in the realization of the institution’s quest for educational distinction in computing and emerging
             fields.
 
-            <div className={styles.main}>
-              <div>Dr. T.T. Mirnalinee - Honorary Member </div>
-              <div> Dr. Chitra Babu - Club Incharge</div>
-              <div>Dr. V. Balasubramanian - Club Incharge  </div>
-            </div>
+              <div className={styles.main}>
+                <div>Dr. T.T. Mirnalinee - Honorary Member </div>
+                <div> Dr. Chitra Babu - Club Incharge</div>
+                <div>Dr. V. Balasubramanian - Club Incharge  </div>
+              </div>
 
 
-          </p>
-
-          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
-            What is SSN Coding Club?
-          </h2>
-          <p className={props.theme ? styles.para_light : styles.para}>
-            We are a community of coders specialised in domains like Competitive Coding, Machine
-            Learning, Web and App Development etc. We aim to support and nurture future developers
-            and ensure equity in coding!
-          </p>
+            </p>
+          
+            <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+              What is SSN Coding Club?
+            </h2>
+            <p className={props.theme ? styles.para_light : styles.para}>
+              We are a community of coders specialised in domains like Competitive Coding, Machine
+              Learning, Web and App Development etc. We aim to support and nurture future developers
+              and ensure equity in coding!
+            </p>
         </div>
         <div>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
