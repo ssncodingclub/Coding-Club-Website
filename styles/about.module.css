@@ -108,8 +108,8 @@
 .ssnimg{ 
   display: flex;
   position: relative;
-  width: 200px;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
   border-radius: 20px;
 }
 
