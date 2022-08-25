@@ -92,6 +92,10 @@
   font-size: 21px;
 }
 
+.subcontainer p p {
+  display: flex;
+}
+
 .subcontainer p p Image{
   position: relative;
   left: 0;
