@@ -98,9 +98,6 @@
 
 .subcontainer p p Image{
   position: relative;
-  left: 0;
-  float: left;
-  
   border-radius:20px;
 }
 
@@ -109,7 +106,6 @@
 .ssnimg{ 
   display: flex;
   position: relative;
-  float: left;
   width: 200px;
   height: 200px;
   border-radius: 20px;
