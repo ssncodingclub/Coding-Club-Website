@@ -99,8 +99,11 @@
 .subcontainer div Image{
   position: relative;
   border-radius:20px;
-  min-width: 200px;
-  min-height: 200px;
+  max-height: 200px !important;
+  height: 200px;
+  width: 100% !important;
+  max-width: 200px !important;
+  height:100% !important ;
 }
 
   
@@ -108,9 +111,10 @@
 .ssnimg{ 
   display: flex;
   position: relative;
-  min-width: 200px;
-  min-height: 200px;
+  width: 200px !important;
+  height: 200px !important;
   border-radius: 20px;
+  margin-right: 15px ;
 }
 
 
@@ -126,7 +130,7 @@
 
 .para_light {
   width: 80%;
-  max-width: 800px;
+  max-width: 700px;
   color: #070707;
   font-family: "Overpass", sans-serif;
   font-size: 25px;
@@ -134,16 +138,17 @@
 
 .para_main {
   width: 80%;
-  max-width: 800px;
+  max-width: 600px;
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 20px;
+  margin-left: 15px;
   margin-bottom: 3.5rem;
 }
 
 .para_light_main {
   width: 80%;
-  max-width: 800px;
+  max-width: 600px;
   color: #070707;
   font-family: "Overpass", sans-serif;
   font-size: 20px;
