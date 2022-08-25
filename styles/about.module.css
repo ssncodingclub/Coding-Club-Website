@@ -81,7 +81,8 @@
 
 .main div {
   flex: 1;
-  border: 2px solid white;
+  border-color: rgb(221, 255, 255) ;
+  border-style: outset;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -89,7 +90,7 @@
   font-weight:bold;
   padding-left: 10px;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .box {
@@ -111,10 +112,12 @@
 .ssnimg{ 
   display: flex;
   position: relative;
+  align-items: baseline !important;
   width: 200px !important;
-  max-height: 200px !important;
+  height: 200px !important;
   border-radius: 20px;
   margin-right: 15px ;
+  object-fit: contain !important;
 }
 
 
@@ -138,7 +141,7 @@
 
 .para_main {
   width: 100%;
-  max-width: 600px;
+  max-width: 640px;
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 20px;
@@ -148,10 +151,11 @@
 
 .para_light_main {
   width: 100%;
-  max-width: 600px;
+  max-width: 640px;
   color: #070707;
   font-family: "Overpass", sans-serif;
   font-size: 20px;
+  margin-left: 15px;
   margin-bottom: 3.5rem;
 }
 
