@@ -87,10 +87,11 @@
   align-items: center;
   justify-items: center;
   min-height: 100px;
+  min-width: 220px;
   font-weight:bold;
-  font-style: italic;
   padding-left: 10px;
   margin-left: 20px;
+  margin-top: 30px;
   font-size: 21px;
 }
 
@@ -98,25 +99,19 @@
   display: flex !important;
 }
 
-.subcontainer Image{
-  border-radius: 22px;
-  max-height: 200px !important;
-  height: 200px;
-  width: 100% !important;
-  max-width: 200px !important;
-  height:100% !important ;
-}
 
   
 
 .ssnimg{ 
   display: flex;
   position: relative;
-  width: 200px !important;
-  height: 200px !important;
+  width: 158.1px !important;
+  height: 105px !important;
   border-radius: 20px;
   float: left !important;
   margin-right: 15px ;
+  object-fit: cover;
+  align-items: flex-start;
   
 }
 
@@ -147,6 +142,7 @@
   font-size: 20px;
   margin-left: 15px;
   margin-bottom: 3.5rem;
+  align-content: space-between;
 }
 
 .para_light_main {
