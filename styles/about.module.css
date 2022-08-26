@@ -86,8 +86,9 @@
   display: flex;
   align-items: center;
   justify-items: center;
-  min-height: 75px;
+  min-height: 100px;
   font-weight:bold;
+  font-style: italic;
   padding-left: 10px;
   margin-left: 20px;
   font-size: 21px;
@@ -97,9 +98,8 @@
   display: flex !important;
 }
 
-.subcontainer div Image{
-  position: relative;
-  border-radius:20px;
+.subcontainer Image{
+  border-radius: 22px;
   max-height: 200px !important;
   height: 200px;
   width: 100% !important;
@@ -112,12 +112,12 @@
 .ssnimg{ 
   display: flex;
   position: relative;
-  align-items: baseline !important;
   width: 200px !important;
   height: 200px !important;
   border-radius: 20px;
+  float: left !important;
   margin-right: 15px ;
-  object-fit: contain !important;
+  
 }
 
 
@@ -141,7 +141,7 @@
 
 .para_main {
   width: 100%;
-  max-width: 640px;
+  max-width: 680px;
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 20px;
@@ -151,7 +151,7 @@
 
 .para_light_main {
   width: 100%;
-  max-width: 640px;
+  max-width: 680px;
   color: #070707;
   font-family: "Overpass", sans-serif;
   font-size: 20px;
