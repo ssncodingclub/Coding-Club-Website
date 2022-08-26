@@ -87,7 +87,7 @@
   align-items: center;
   justify-items: center;
   text-align: initial !important;
-  min-height: 100px;
+  min-height: 85px;
   font-weight:bold;
   padding-left: 10px;
   margin-left: 20px;
@@ -107,9 +107,10 @@
   display: flex;
   align-self: center !important;
   position: relative;
-  width: 158.1px !important;
-  height: 60% !important;
-  max-height: 105px !important;
+  width: 80% !important;
+  max-width: 240px !important;
+  height: 80% !important;
+  max-height: 475px !important;
   border-radius: 20px;
   float: left !important;
   margin-right: 15px ;
@@ -142,9 +143,9 @@
   max-width: 800px;
   color: white;
   font-family: "Overpass", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 15px;
-  margin-right: 30px;
+  margin-right: 40px;
   align-content: space-between;
   text-align: justify !important;
   text-justify: inter-word;
@@ -155,8 +156,9 @@
   max-width: 800px;
   color: #070707;
   font-family: "Overpass", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 15px;
+  margin-right: 40px;
   text-align: justify !important;
   text-justify: inter-word;
 }
