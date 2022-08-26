@@ -86,6 +86,7 @@
   display: flex;
   align-items: center;
   justify-items: center;
+  text-align: initial !important;
   min-height: 100px;
   font-weight:bold;
   padding-left: 10px;
@@ -104,6 +105,7 @@
 
 .ssnimg{ 
   display: flex;
+  align-self:flex-start !important;
   position: relative;
   width: 158.1px !important;
   height: 105px !important;
