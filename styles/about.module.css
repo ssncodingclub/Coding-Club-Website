@@ -87,16 +87,16 @@
   align-items: center;
   justify-items: center;
   min-height: 100px;
-  min-width: 220px;
   font-weight:bold;
   padding-left: 10px;
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 21px;
 }
 
 .box {
   display: flex !important;
+  float: left;
 }
 
 
@@ -107,11 +107,11 @@
   position: relative;
   width: 158.1px !important;
   height: 105px !important;
+  max-height: 105px !important;
   border-radius: 20px;
   float: left !important;
   margin-right: 15px ;
-  object-fit: cover;
-  align-items: flex-start;
+  
   
 }
 
@@ -124,6 +124,7 @@
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 25px;
+  
 }
 
 .para_light {
@@ -143,6 +144,8 @@
   margin-left: 15px;
   margin-bottom: 3.5rem;
   align-content: space-between;
+  text-align: justify !important;
+  text-justify: inter-word;
 }
 
 .para_light_main {
@@ -153,6 +156,8 @@
   font-size: 20px;
   margin-left: 15px;
   margin-bottom: 3.5rem;
+  text-align: justify !important;
+  text-justify: inter-word;
 }
 
 
