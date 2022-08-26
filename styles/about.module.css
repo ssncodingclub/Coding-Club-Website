@@ -236,6 +236,23 @@
   width: 80%;
 }
 
+@media (max-width: 769px) {
+  .para_main,
+  .para_light_main {
+    display: block;
+  }
+  .main {
+    display: block;
+    
+  }
+  .ssnimg{
+    width: 100%;
+    height: auto;
+    margin: 30%;
+  }
+
+}
+
 @media (max-width: 426px) {
 
   .header h1,
