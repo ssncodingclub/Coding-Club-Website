@@ -59,7 +59,7 @@ export default function About(props) {
               </h2>
 
               <div className={styles.box}>
-                <Image className={styles.ssnimg} src="\ssnfountain.jpg" width={200} height={200} />
+                <Image className={styles.ssnimg} src="\ssnfountain.jpg" width={158.1} height={105} />
                 <p className={props.theme ? styles.para_light_main : styles.para_main}>
                   SSN Institutions, established by Mr. Shiv Nadar, Founder-Chairman, HCL Technologies, stands out as a
                   premier center of higher learning with a mission of pursuing excellence in education and research. With
