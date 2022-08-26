@@ -138,26 +138,24 @@
 }
 
 .para_main {
-  width: 100%;
-  max-width: 680px;
+  width: 80%;
+  max-width: 800px;
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 20px;
   margin-left: 15px;
-  margin-bottom: 3.5rem;
   align-content: space-between;
   text-align: justify !important;
   text-justify: inter-word;
 }
 
 .para_light_main {
-  width: 100%;
-  max-width: 680px;
+  width: 80%;
+  max-width: 800px;
   color: #070707;
   font-family: "Overpass", sans-serif;
   font-size: 20px;
   margin-left: 15px;
-  margin-bottom: 3.5rem;
   text-align: justify !important;
   text-justify: inter-word;
 }
