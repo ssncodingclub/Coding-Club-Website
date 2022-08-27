@@ -79,14 +79,6 @@
 
 .main div {
   flex: 1;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      rgb(255, 255, 255), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-  border-width: 3px;
   display: flex;
   align-items: center;
   text-align: initial ;
@@ -144,8 +136,8 @@
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: medium;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   align-content: space-between;
   text-align: justify !important;
   text-justify: inter-word;
@@ -157,8 +149,8 @@
   color: #070707;
   font-family: "Overpass", sans-serif;
   font-size: medium;
-  margin-left: 15px;
-  margin-right: 40px;
+  margin-left:1.5em;
+  margin-right: 1.5em;
   text-align: justify !important;
   text-justify: inter-word;
 }
@@ -248,7 +240,6 @@
 
   .para_main,
   .para_light_main{
-    width: auto;
     margin-top: 1.5em;
     margin: 0 auto;
     
@@ -274,6 +265,7 @@
     
   }
   .ssnimg{
+
     display: block;
     flex: none;
     left: 0 !important;
