@@ -91,8 +91,8 @@
   font-weight:bold;
   margin-left: 20px;
   margin-top: 40px;
-  font-size: 2rem;
-  padding: 1.25em 1.25em;
+  font-size: 1rem;
+  padding: 0.5em;
 }
 
 .box {
@@ -109,9 +109,10 @@
   align-self: center !important;
   position: relative;
   max-width: 100% !important;
-  height: auto !important;
+  max-height: 100%;
+  height: auto;
   border-radius: 20px;
-  float: left !important;
+  float: left;
   margin-right: 15px ;
   
   
@@ -238,6 +239,9 @@
 @media (max-width: 769px) {
   .box{
     display: block;
+    width: 80%;
+    margin: 0 auto;
+    
   }
   .main {
     display: block;
