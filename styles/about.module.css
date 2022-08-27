@@ -96,7 +96,7 @@
 }
 
 .box {
-  display: flex !important;
+  display: flex;
   float: left;
   
 }
@@ -109,8 +109,8 @@
   align-self: center !important;
   position: relative;
   max-width: 100% !important;
-  max-height: 100%;
-  height: auto;
+  max-height: 380px !important;
+  height: 90% !important;
   border-radius: 20px;
   float: left;
   margin-right: 15px ;
@@ -236,21 +236,22 @@
   width: 80%;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 811px) {
   .box{
     display: block;
+    float: none;
     width: 80%;
     margin: 0 auto;
     
   }
-  .main {
+  .main div {
     display: block;
     
   }
   .ssnimg{
     width: 100%;
     height: auto;
-    margin: 30%;
+    margin: 0 auto;
   }
 
 }
