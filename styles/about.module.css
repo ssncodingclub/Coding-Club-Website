@@ -275,12 +275,12 @@
   .ssnimg{
     display: block;
     flex: none;
-    left: 50% !important;
-    transform: translate(-50%, 0) !important;
+    left: 0 !important;
+    right: 0 !important;
     float: none !important ;
     width: 100% !important;
     height: auto !important;
-    margin: 0 auto !important;
+    margin: auto !important;
 
   }
 
