@@ -89,15 +89,16 @@
   text-align: initial !important;
   min-height: 85px;
   font-weight:bold;
-  padding-left: 10px;
   margin-left: 20px;
   margin-top: 40px;
-  font-size: 21px;
+  font-size: 2rem;
+  padding: 1.25em 1.25em;
 }
 
 .box {
   display: flex !important;
   float: left;
+  
 }
 
 
@@ -141,7 +142,7 @@
   max-width: 800px;
   color: white;
   font-family: "Overpass", sans-serif;
-  
+  font-size: medium;
   margin-left: 15px;
   margin-right: 40px;
   align-content: space-between;
@@ -154,7 +155,7 @@
   max-width: 800px;
   color: #070707;
   font-family: "Overpass", sans-serif;
-  
+  font-size: medium;
   margin-left: 15px;
   margin-right: 40px;
   text-align: justify !important;
