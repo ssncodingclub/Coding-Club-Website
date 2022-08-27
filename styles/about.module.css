@@ -89,7 +89,7 @@
   border-width: 3px;
   display: flex;
   align-items: center;
-  text-align: initial !important;
+  text-align: initial ;
   min-height: 85px;
   font-weight:bold;
   margin-left: 20px;
@@ -110,7 +110,7 @@
 .ssnimg{ 
   display: flex;
   position: relative;
-  max-width: 100% ;
+  width: 50% ;
   border-radius: 20px;
   float: left;
   margin-right: 15px ;
@@ -239,7 +239,7 @@
 @media (max-width: 850px) {
   .box{
     display: block;
-    float: none;
+    float: none !important;
     width: 80%;
     margin: 0 auto;
     
@@ -255,6 +255,7 @@
 
   .main {
     display: block;
+    margin-top: 1.5em ;
     
   }
 
@@ -266,17 +267,18 @@
     max-width: 600px; 
     width: 95%;
     margin-bottom: 3.5rem;
+    text-align: center !important;
 
     
   }
   .ssnimg{
     display: block;
     flex: none;
-    width: 75% !important;
-    max-width: 600px !important;
+    float: none !important ;
+    width: 100% !important;
     height: auto !important;
     margin: 0 auto !important;
-    margin-bottom: 3.5rem ;
+
   }
 
 }
