@@ -98,8 +98,6 @@
 .box {
   display: flex !important;
   float: left;
-  font-size: 13px;
-
 }
 
 
@@ -143,7 +141,7 @@
   max-width: 800px;
   color: white;
   font-family: "Overpass", sans-serif;
-  font-size: 1.5em;
+  
   margin-left: 15px;
   margin-right: 40px;
   align-content: space-between;
@@ -156,7 +154,7 @@
   max-width: 800px;
   color: #070707;
   font-family: "Overpass", sans-serif;
-  font-size: 1.5em;
+  
   margin-left: 15px;
   margin-right: 40px;
   text-align: justify !important;
