@@ -242,7 +242,7 @@
     float: none !important;
     justify-content: center !important;
     width: 80%;
-    margin: 0 auto;
+    
     
   }
 
@@ -250,6 +250,7 @@
   .para_light_main{
     width: auto;
     margin-top: 1.5em;
+    margin: 0 auto;
     
   }
 
