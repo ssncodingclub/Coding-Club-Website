@@ -92,16 +92,10 @@
 
 .box {
   display: flex;
-  float: left;
-  
 }
-
-
-  
 
 .ssnimg{ 
   display: flex;
-  position: relative;
   width: 50% ;
   border-radius: 20px;
   float: left;
@@ -109,8 +103,6 @@
   
   
 }
-
-
 
 
 .para {
@@ -135,7 +127,7 @@
   max-width: 800px;
   color: white;
   font-family: "Overpass", sans-serif;
-  font-size: medium;
+  font-size: large;
   margin-left: 1.5em;
   margin-right: 1.5em;
   align-content: space-between;
@@ -148,7 +140,7 @@
   max-width: 800px;
   color: #070707;
   font-family: "Overpass", sans-serif;
-  font-size: medium;
+  font-size: large;
   margin-left:1.5em;
   margin-right: 1.5em;
   text-align: justify !important;
@@ -231,9 +223,8 @@
 @media (max-width: 850px) {
   .box{
     display: block;
-    float: none !important;
-    justify-content: center !important;
-    width: 80%;
+    width: 90%;
+    text-align: center;
     
     
   }
@@ -267,17 +258,12 @@
   .ssnimg{
 
     display: block;
-    flex: none;
-    left: 0 !important;
-    right: 0 !important;
-    float: none !important ;
     width: 100% !important;
-    height: auto !important;
-    margin: auto !important;
 
   }
 
 }
+
 
 @media (max-width: 426px) {
 
