@@ -50,15 +50,37 @@ export default function About(props) {
             <h1>About Us</h1>
           </div>
         )}
-        <div className={styles.subcontainer}>
-          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
-            What is SSN Coding Club?
-          </h2>
-          <p className={props.theme ? styles.para_light : styles.para}>
-            We are a community of coders specialised in domains like Competitive Coding, Machine
-            Learning, Web and App Development etc. We aim to support and nurture future developers
-            and ensure equity in coding!
-          </p>
+        <div className={styles.subcontainer}>          
+              <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+                About SSN
+              </h2>
+
+              <div className={styles.box}>
+                <img className={styles.ssnimg} src="\ssntower.jpg" alt="ssn" />
+                <p className={props.theme ? styles.para_light_main : styles.para_main}>
+                  SSN Institutions, established by Mr. Shiv Nadar, Founder-Chairman, HCL Technologies, stands out as a
+                  premier center of higher learning with a mission of pursuing excellence in education and research. With
+                  an aim to support and foster the thriving coding culture on campus, SSN strives to provide a platform
+                  for students to hone their technical skills by encouraging them to pursue cutting-edge technology and
+                  software. It serves as a forum for creative output and facilitates exciting opportunities to innovate,
+                  collaborate and nurture a zeal for programming . A committed team of faculty and staff play an integral
+                  role in the realization of the institution’s quest for educational distinction in computing and emerging
+                  fields.
+                  <div className={styles.main}>
+                    <div>Dr. T.T. Mirnalinee - Honorary Member </div>
+                    <div> Dr. Chitra Babu - Club Incharge</div>
+                    <div>Dr. V. Balasubramanian - Club Incharge  </div>
+                  </div>
+                </p>
+              </div>
+              <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+                What is SSN Coding Club?
+              </h2>
+              <p className={props.theme ? styles.para_light : styles.para}>
+                We are a community of coders specialised in domains like Competitive Coding, Machine
+                Learning, Web and App Development etc. We aim to support and nurture future developers
+                and ensure equity in coding!
+              </p>
         </div>
         <div>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
