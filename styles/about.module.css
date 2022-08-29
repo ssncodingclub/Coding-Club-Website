@@ -52,7 +52,6 @@
   text-align: center;
   margin-bottom: 3.5rem;
 }
-
 .subheader_light {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -67,7 +66,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .main {
@@ -101,11 +99,7 @@
   border-radius: 20px;
   margin-left: 2em;
   margin-right: 2em;
-  
-  
-  
 }
-
 
 .para {
   width: 80%;
@@ -115,7 +109,6 @@
   font-size: 25px;
   
 }
-
 .para_light {
   width: 80%;
   max-width: 800px;
@@ -147,16 +140,12 @@
   text-justify: inter-word;
 }
 
-
-
-
 .batch {
   margin-top: -60px;
   padding-left: 2.7rem;
   color: #ffffff;
   font-size: 25px;
 }
-
 .batch_light {
   margin-top: -60px;
   padding-left: 2.7rem;
@@ -188,14 +177,12 @@
   height: 10px;
   justify-content: center;
 }
-
 .newcontainer_light::-webkit-scrollbar-thumb {
   background: #000000;
   border-radius: 10px;
   box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
     inset -2px -2px 2px #e2e2e2;
 }
-
 .newcontainer::-webkit-scrollbar-thumb {
   background: #201c29;
   border-radius: 10px;
@@ -206,7 +193,6 @@
 .newcontainer_light::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #ffffff, #dbdbdb 1px, #ececec 0, #ebebeb);
 }
-
 .newcontainer::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
@@ -271,12 +257,10 @@
 
 
 @media (max-width: 426px) {
-
   .header h1,
   .appleHeader h1 {
     font-size: 50px;
   }
-
   .subheader {
     font-size: 30px;
   }
@@ -297,10 +281,12 @@
 @media (max-height: 580px) {
   .header {
     text-align: center;
-    background: linear-gradient(to right,
-        rgb(255, 96, 170),
-        rgb(255, 139, 61),
-        rgb(255, 118, 182));
+    background: linear-gradient(
+      to right,
+      rgb(255, 96, 170),
+      rgb(255, 139, 61),
+      rgb(255, 118, 182)
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -309,7 +295,6 @@
     background-position-y: -6rem;
     background-position-x: -8rem;
   }
-
   .header h1 {
     color: rgb(244, 58, 79);
   }
