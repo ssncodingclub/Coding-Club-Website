@@ -1,9 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import DomainCard from "./Components/DomainCard";
-import exofficebearers from "../data/exofficebearers.json";
-import styles from "../styles/about.module.css";
 import Navbar from "./Components/Navbar";
 import Domain from "./Components/Domain";
 import Department from "./Components/Department";
@@ -12,7 +9,9 @@ import Faq from "./Components/Faq";
 import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
-
+import OffBearSec from "./Components/OffBearSec";
+import exofficebearers_18_22 from "../data/exofficebearers_18-22.json"
+import styles from "../styles/about.module.css"
 
 export default function About(props) {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
@@ -53,6 +52,28 @@ export default function About(props) {
         )}
         <div className={styles.subcontainer}>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
+            About SSN
+          </h2>
+
+          <div className={styles.box}>
+            <img className={styles.ssnimg} src="\ssntower.jpg" alt="ssn" />
+            <p className={props.theme ? styles.para_light_main : styles.para_main}>
+              SSN Institutions, established by Mr. Shiv Nadar, Founder-Chairman, HCL Technologies, stands out as a
+              premier center of higher learning with a mission of pursuing excellence in education and research. With
+              an aim to support and foster the thriving coding culture on campus, SSN strives to provide a platform
+              for students to hone their technical skills by encouraging them to pursue cutting-edge technology and
+              software. It serves as a forum for creative output and facilitates exciting opportunities to innovate,
+              collaborate and nurture a zeal for programming . A committed team of faculty and staff play an integral
+              role in the realization of the institution's quest for educational distinction in computing and emerging
+              fields.
+              <div className={styles.main}>
+                <div>Dr. T.T. Mirnalinee - Honorary Member </div>
+                <div> Dr. Chitra Babu - Club Incharge</div>
+                <div>Dr. V. Balasubramanian - Club Incharge  </div>
+              </div>
+            </p>
+          </div>
+          <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
             What is SSN Coding Club?
           </h2>
           <p className={props.theme ? styles.para_light : styles.para}>
@@ -81,27 +102,13 @@ export default function About(props) {
             return <Domain key={i} domain={domain} theme={props.theme} />;
           })}
         </div>
-        {/* Insert Alumni Section here*/}
+
+        {/*  Alumni Section */}
         <h2 className={props.theme ? styles.subheader_light : styles.subheader} style={{ "fontSize": "30px" }}>
           Ex-Office Bearers
         </h2>
-        <div className={styles.container} style={{ paddingLeft: "2rem" }}>
-          <h3 className={props.theme ? styles.batch_light : styles.batch}>Batch of 2018-22</h3>
-          <section className={props.theme ? styles.newcontainer_light : styles.newcontainer} >
-            {exofficebearers.map((team, i) => {
-              return <DomainCard
-                key={i}
-                isOffice={true}
-                title={team.title}
-                theme={props.theme}
-                members={team.members}
-                height={team.height}
-                overflow={team.overflow}
-              >
-              </DomainCard>
-            })}
-          </section>
-        </div>
+        <OffBearSec year="2018-22" theme={props.theme} file={exofficebearers_18_22} />
+        {/* */}
 
         <div className={styles.faq}>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>

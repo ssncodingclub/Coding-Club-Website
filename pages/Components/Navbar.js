@@ -21,7 +21,7 @@ function NavBar(props) {
     }
   }
 
-  const handleScroll = () => {};
+  const handleScroll = () => { };
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -85,22 +85,22 @@ function NavBar(props) {
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
 
-            
-              <Nav.Item
-                className={styles.nav_toggle_icons}
-                onClick={() => props.setTheme(!props.transfer)}
-              >
-                {props.transfer ? (
-                  <div className={styles.toggle_icons_light}>
-                    <FiMoon size={20} />
-                  </div>
-                ) : (
-                  <div className={styles.toggle_icons}>
-                    <FiSun size={20} />
-                  </div>
-                )}
-              </Nav.Item>
-            
+
+            <Nav.Item
+              className={styles.nav_toggle_icons}
+              onClick={() => props.setTheme(!props.transfer)}
+            >
+              {props.transfer ? (
+                <div className={styles.toggle_icons_light}>
+                  <FiMoon size={20} />
+                </div>
+              ) : (
+                <div className={styles.toggle_icons}>
+                  <FiSun size={20} />
+                </div>
+              )}
+            </Nav.Item>
+
 
             <div className={styles.menuToggle}>
               <input type="checkbox" />

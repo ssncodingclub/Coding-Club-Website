@@ -68,12 +68,46 @@
   align-items: center;
 }
 
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: initial ;
+  min-height: 85px;
+  font-weight:bold;
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 1rem;
+  padding: 0.5em;
+}
+
+.box {
+  display: flex;
+}
+
+.ssnimg{ 
+  display: flex;
+  width: 260px ;
+  height: 329px;
+  border-radius: 20px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 .para {
   width: 80%;
   max-width: 800px;
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 25px;
+  
 }
 .para_light {
   width: 80%;
@@ -81,6 +115,29 @@
   color: #070707;
   font-family: "Overpass", sans-serif;
   font-size: 25px;
+}
+
+.para_main {
+  width: 80%;
+  max-width: 800px;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: large;
+  margin-right: 2em;
+  align-content: space-between;
+  text-align: justify !important;
+  text-justify: inter-word;
+}
+
+.para_light_main {
+  width: 80%;
+  max-width: 800px;
+  color: #070707;
+  font-family: "Overpass", sans-serif;
+  font-size: large;
+  margin-right: 2em;
+  text-align: justify !important;
+  text-justify: inter-word;
 }
 
 .batch {
@@ -148,6 +205,56 @@
 .faqContainer {
   width: 80%;
 }
+
+@media (max-width: 850px) {
+  .box{
+    display: block;
+    width: 90%;
+    text-align: center;
+    
+    
+  }
+
+  .para_main,
+  .para_light_main{
+    margin-top: 1.5em;
+    margin: 0 auto;
+    
+  }
+
+
+  .main {
+    display: block;
+    margin-top: 1.5em ;
+    
+  }
+
+  .main div {
+    display: block;
+    flex: none;
+    min-height: auto;
+    margin: 0 auto;
+    max-width: 600px; 
+    width: 95%;
+    margin-bottom: 3.5rem;
+    text-align: center !important;
+
+    
+  }
+  .ssnimg{
+
+    display: block;
+    width: 100vw !important;
+    height: auto  ;
+    max-width: 100% !important;
+    padding: 5vw !important ;
+    margin: auto !important;
+
+
+  }
+
+}
+
 
 @media (max-width: 426px) {
   .header h1,
