@@ -3,12 +3,12 @@ import React from "react";
 import styles from '../../styles/Card.module.css';
 
 
-const DomainCard = ({ title = "", discord = "", tags = [], style = "", theme, isOffice, members = [], height = "", overflow = "" }) => {
+const DomainCard = ({ title = "", discord = "", tags = [], style = "", theme, isOffice, members = [], overflow = "" }) => {
   return (
     <>
       {isOffice ?
         <>
-          <article className={`${overflow ? styles.expand : null} ${theme ? styles.card_light : styles.card} `} style={{ ...style, minWidth: "300px" }}>
+          <article className={`${overflow ? styles.expand : null} ${theme ? styles.card_light : styles.card} `} style={{ ...style, minWidth: "300px", maxWidth: "300px" }}>
             <header className={styles.card_header}>
               <h2 style={{ fontSize: "20px" }} className={styles.office_h2}>
                 {

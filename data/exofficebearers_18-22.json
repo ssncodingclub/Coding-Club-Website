@@ -1,7 +1,6 @@
 [
-    {
+    {   
         "title":"The Core Committee",
-        "height":"380px",
         "overflow":true,
         "members":[
             {
@@ -39,7 +38,6 @@
     },
     {
         "title":"Software Development",
-        "height":"380px",
         "overflow":false,
         "members":[
             {
@@ -56,7 +54,6 @@
     },
     {
         "title":"Machine Learning ",
-        "height":"380px",
         "overflow":false,
         "members":[
             {
@@ -74,7 +71,6 @@
     },
     {
         "title":"Competitive Programming ",
-        "height":"380px",
         "overflow":false,
         "members":[
             {
@@ -91,7 +87,6 @@
     },
     {
         "title":"Design and Social Media ",
-        "height":"380px",
         "overflow":false,
         "members":[
             {

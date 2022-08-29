@@ -1,9 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import DomainCard from "./Components/DomainCard";
-import exofficebearers from "../data/exofficebearers.json";
-import styles from "../styles/about.module.css";
 import Navbar from "./Components/Navbar";
 import Domain from "./Components/Domain";
 import Department from "./Components/Department";
@@ -12,7 +9,9 @@ import Faq from "./Components/Faq";
 import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
-
+import OffBearSec from "./Components/OffBearSec";
+import exofficebearers_18_22 from "../data/exofficebearers_18-22.json"
+import styles from "../styles/about.module.css"
 
 export default function About(props) {
   const [isAppleDevice, setIsAppleDevice] = useState(false);
@@ -81,27 +80,13 @@ export default function About(props) {
             return <Domain key={i} domain={domain} theme={props.theme} />;
           })}
         </div>
-        {/* Insert Alumni Section here*/}
+
+        {/*  Alumni Section */}
         <h2 className={props.theme ? styles.subheader_light : styles.subheader} style={{ "fontSize": "30px" }}>
           Ex-Office Bearers
         </h2>
-        <div className={styles.container} style={{ paddingLeft: "2rem" }}>
-          <h3 className={props.theme ? styles.batch_light : styles.batch}>Batch of 2018-22</h3>
-          <section className={props.theme ? styles.newcontainer_light : styles.newcontainer} >
-            {exofficebearers.map((team, i) => {
-              return <DomainCard
-                key={i}
-                isOffice={true}
-                title={team.title}
-                theme={props.theme}
-                members={team.members}
-                height={team.height}
-                overflow={team.overflow}
-              >
-              </DomainCard>
-            })}
-          </section>
-        </div>
+        <OffBearSec year="2018-22" theme={props.theme} file={exofficebearers_18_22} />
+        {/* */}
 
         <div className={styles.faq}>
           <h2 className={props.theme ? styles.subheader_light : styles.subheader}>
