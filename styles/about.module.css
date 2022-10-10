@@ -18,6 +18,7 @@
 .header h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
+  margin-bottom: 4rem;
 }
 
 .appleHeader {
@@ -29,6 +30,8 @@
 .appleHeader h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
+  margin-bottom: 4rem;
+
 }
 
 .about_main_container {
@@ -124,6 +127,7 @@
   font-family: "Overpass", sans-serif;
   font-size: large;
   margin-right: 2em;
+  margin-bottom: 12em !important;
   align-content: space-between;
   text-align: justify !important;
   text-justify: inter-word;
@@ -136,6 +140,7 @@
   font-family: "Overpass", sans-serif;
   font-size: large;
   margin-right: 2em;
+  margin-bottom: 12em !important;
   text-align: justify !important;
   text-justify: inter-word;
 }
