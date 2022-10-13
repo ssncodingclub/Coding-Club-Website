@@ -1,12 +1,13 @@
 [
   {
     "title": "Faculty\nIncharges",
+    "tags": ["faculty", "CSE-DEPT"],
     "bgColorStyle": {
       "background": "linear-gradient(135deg, #1f005c, #35005e, #5f0060, #8f0860, #bc365d, #dd635c, #f28c5f, #fcaa67, #ffb56b)"
     },
     "members": [
       {
-        "name": "Dr. T.T. Mirnalinee",
+        "name": "Dr.T.T.Mirnalinee",
         "position": "Honorary Member",
         "alt": "mirnaline",
         "profilePic": "/profiles/Faculty/Mirnaline.png",
@@ -17,7 +18,7 @@
         }
       },
       {
-        "name": "Dr. Chitra Babu",
+        "name": "Dr.Chitra Babu",
         "position": "Club Incharge",
         "alt": "chitra",
         "profilePic": "/profiles/Faculty/Chitra.png",
@@ -26,7 +27,7 @@
         }
       },
       {
-        "name": "Dr. V. Balasubramanian",
+        "name": "Dr.Balasubramanian",
         "position": "Club Incharge",
         "alt": "bala",
         "profilePic": "/profiles/Faculty/balasubu.jpg",
