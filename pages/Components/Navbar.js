@@ -41,10 +41,12 @@ function NavBar(props) {
         <Navbar.Brand href="/">
           <Nav.Item>
             <img width="50" src="./favicon.ico" alt="logo"></img>
+            <h2> SSN Coding Club</h2>
           </Nav.Item>
         </Navbar.Brand>
         <Navbar>
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
+            <h2> SSN Coding Club</h2>
             <Link
               href="/"
               onClick={() => {
