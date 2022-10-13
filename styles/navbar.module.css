@@ -32,6 +32,9 @@
 .navbar_nav {
   margin-left: auto;
 }
+.logotext{
+  display: flex;
+}
 
 @media (max-width: 767px) {
 }

@@ -39,13 +39,14 @@ function NavBar(props) {
     >
       <Container>
         <Navbar.Brand href="/">
-          <Nav.Item>
+          <Nav.Item className={styles.logotext}>
             <img width="50" src="./favicon.ico" alt="logo"></img>
+            <h4> SSN Coding Club</h4>
           </Nav.Item>
         </Navbar.Brand>
         <Navbar>
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
-            <h4> SSN Coding Club</h4>
+            
             <Link
               href="/"
               onClick={() => {
