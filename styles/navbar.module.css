@@ -36,12 +36,12 @@
   display: flex;
 }
 .logotext h4{
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   font-family: "Rubik", sans-serif;
   
 }
 .logotext img{
-  margin-top:1rem;
+  margin-right:1rem;
 }
 
 @media (max-width: 767px) {
