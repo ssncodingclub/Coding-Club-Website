@@ -35,9 +35,17 @@
 .logotext{
   display: flex;
 }
+.logotext h4{
+  margin-top: 0.5rem;
+  font-family: "Rubik", sans-serif;
+  
+}
+.logotext img{
+  margin-top:1rem;
+}
 
 @media (max-width: 767px) {
-}
+};
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
