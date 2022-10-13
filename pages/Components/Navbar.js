@@ -64,15 +64,6 @@ function NavBar(props) {
               <Nav.Item className={styles.nav_item}>About</Nav.Item>
             </Link>
             <Link
-              href="/aboutssn"
-              onClick={() => {
-                setExpanded(false);
-              }}
-              passHref
-            >
-              <Nav.Item className={styles.nav_item}>About SSN</Nav.Item>
-            </Link>
-            <Link
               href="/meets"
               onClick={() => {
                 setExpanded(false);
@@ -137,17 +128,6 @@ function NavBar(props) {
                     passHref
                   >
                     <Nav.Item style={{ cursor: "pointer" }}>About</Nav.Item>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/aboutssn"
-                    onClick={() => {
-                      setExpanded(false);
-                    }}
-                    passHref
-                  >
-                    <Nav.Item style={{ cursor: "pointer" }}>About SSN</Nav.Item>
                   </Link>
                 </li>
                 <li>
