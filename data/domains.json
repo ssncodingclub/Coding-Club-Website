@@ -1,5 +1,46 @@
 [
   {
+    "title": "Faculty\nIncharges",
+    "tags": ["faculty", "CSE-DEPT"],
+    "bgColorStyle": {
+      "background": "linear-gradient(135deg, #1f005c, #35005e, #5f0060, #8f0860, #bc365d, #dd635c, #f28c5f, #fcaa67, #ffb56b)"
+    },
+    "members": [
+      {
+        "name": "Dr. T.T.Mirnalinee",
+        "position": "Honorary Member",
+        "alt": "mirnalinee mam",
+        "profilePic": "/profiles/Faculty/Mirnaline.png",
+        "socials": {
+          "discord": null,
+          "linkedin": null,
+          "instagram": null
+        }
+      },
+      {
+        "name": "Dr.Chitra Babu",
+        "position": "Club Incharge",
+        "alt": "chitra mam",
+        "profilePic": "/profiles/Faculty/Chitra.png",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/chitra-babu-320b2a8/"
+        }
+      },
+      {
+        "name": "Dr. Balasubramanian",
+        "position": "Club Incharge",
+        "alt": "bala sir",
+        "profilePic": "/profiles/Faculty/balasubu.jpg",
+        "socials": {
+          
+          "linkedin": "https://www.linkedin.com/in/balasubramanian-viswanathan-5a617016/"
+    
+        }
+      }
+      
+    ]
+  },
+  {
     "title": "The\nCore\nCommittee",
     "discord": "@Core Committee",
     "tags": ["admin"],

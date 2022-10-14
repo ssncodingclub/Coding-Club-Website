@@ -39,12 +39,14 @@ function NavBar(props) {
     >
       <Container>
         <Navbar.Brand href="/">
-          <Nav.Item>
+          <Nav.Item className={styles.logotext}>
             <img width="50" src="./favicon.ico" alt="logo"></img>
+            <h4> SSNCC </h4>
           </Nav.Item>
         </Navbar.Brand>
         <Navbar>
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
+            
             <Link
               href="/"
               onClick={() => {
@@ -62,15 +64,6 @@ function NavBar(props) {
               passHref
             >
               <Nav.Item className={styles.nav_item}>About</Nav.Item>
-            </Link>
-            <Link
-              href="/aboutssn"
-              onClick={() => {
-                setExpanded(false);
-              }}
-              passHref
-            >
-              <Nav.Item className={styles.nav_item}>About SSN</Nav.Item>
             </Link>
             <Link
               href="/meets"
@@ -137,17 +130,6 @@ function NavBar(props) {
                     passHref
                   >
                     <Nav.Item style={{ cursor: "pointer" }}>About</Nav.Item>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/aboutssn"
-                    onClick={() => {
-                      setExpanded(false);
-                    }}
-                    passHref
-                  >
-                    <Nav.Item style={{ cursor: "pointer" }}>About SSN</Nav.Item>
                   </Link>
                 </li>
                 <li>
