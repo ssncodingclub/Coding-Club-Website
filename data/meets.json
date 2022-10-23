@@ -1,5 +1,51 @@
 [
   {
+    "text": "Induction meet for Second Years",
+    "date": "October 21st 2022",
+    "category": {
+      "tag": "General",
+      "color": "grey"
+    },
+    "description": "The SSNCC team provides the roadmap to improving your skill set in many domains including CP, AI/ML, software dev and gives a deep dive into the various activities of the club. ",
+    "link": {
+      "url": "https://drive.google.com/file/d/1nlV0fwPfAvh8077nAqZCFggrfDuZcWuh/view?usp=sharing"
+    },
+    
+    "status":"finished"    
+  },
+  {
+    "text": "Building an AI Chatbot: Part 1",
+    "date": "October 1st 2022",
+    "category": {
+      "tag": "AI/ML",
+      "color": "green"
+    },
+    "description": "ML team introduced everyone to Natural Language Processing by building an AI chatbot that simulates human-like conversations.",
+    "link": {
+      "url": "https://drive.google.com/file/d/1r3hv6Ut2vS7tmDH68o8ZXLzAg7SZsNp7/view?usp=sharing"
+    },
+    "resource":{
+      "url":"https://drive.google.com/drive/folders/15NZjg9eu9HkRMu-MBzbbDs0Npecqv372?usp=sharing"
+    },
+    "status":"finished"    
+  },
+  {
+    "text": "ML - Reboot Session",
+    "date": "August 20th 2022",
+    "category": {
+      "tag": "AI/ML",
+      "color": "green"
+    },
+    "description": "An introduction to ML as a domain, where the team presents a roadmap to learn ML, recapitulates previous year's concepts and sets up the base for this year's sessions.",
+    "link": {
+      "url": "https://drive.google.com/file/d/1Kd_V9J2K1bAn8nvQpqGPBhxZdoZfqMsj/view?usp=sharing"
+    },
+    "resource":{
+      "url":"https://drive.google.com/drive/folders/1j25j6eYxYOOk0rgu2INXjR_XI4pnYgje?usp=sharing"
+    },
+    "status":"finished"    
+  },
+  {
     "text": "Getting started with Web Development: HTML & CSS",
     "date": "August 14th 2022",
     "category": {
