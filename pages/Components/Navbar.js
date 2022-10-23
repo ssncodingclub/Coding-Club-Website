@@ -21,7 +21,7 @@ function NavBar(props) {
     }
   }
 
-  const handleScroll = () => { };
+  const handleScroll = () => {};
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -39,14 +39,15 @@ function NavBar(props) {
     >
       <Container>
         <Navbar.Brand href="/">
-          <Nav.Item className={styles.logotext}>
+          <Nav.Item
+            className={props.transfer ? styles.logotext_light : styles.logotext}
+          >
             <img width="50" src="./favicon.ico" alt="logo"></img>
             <h4> SSNCC </h4>
           </Nav.Item>
         </Navbar.Brand>
         <Navbar>
           <Nav className={styles.navbar_nav} defaultActiveKey="#home">
-            
             <Link
               href="/"
               onClick={() => {
@@ -87,7 +88,6 @@ function NavBar(props) {
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
 
-
             <Nav.Item
               className={styles.nav_toggle_icons}
               onClick={() => props.setTheme(!props.transfer)}
@@ -103,12 +103,17 @@ function NavBar(props) {
               )}
             </Nav.Item>
 
-
             <div className={styles.menuToggle}>
               <input type="checkbox" />
-              <span className={props.transfer ? styles.menuSpan_light : ""}></span>
-              <span className={props.transfer ? styles.menuSpan_light : ""}></span>
-              <span className={props.transfer ? styles.menuSpan_light : ""}></span>
+              <span
+                className={props.transfer ? styles.menuSpan_light : ""}
+              ></span>
+              <span
+                className={props.transfer ? styles.menuSpan_light : ""}
+              ></span>
+              <span
+                className={props.transfer ? styles.menuSpan_light : ""}
+              ></span>
               <ul className={styles.mobilenavul + " " + styles.menu}>
                 <li>
                   <Link
