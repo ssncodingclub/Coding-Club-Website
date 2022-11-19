@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Pickle Rickle",
+      "techStack": null,
+      "domain": "Competitive Programming",
+      "eventImage": "./events/PICKLE RICKLE.jpeg",
+      "contributors": null,
+      "projectDescription": null,
+      "projectLink":null
+    },
+    {
+      "name": "HTML CSS GO!",
+      "techStack": null,
+      "domain": "Software Development",
+      "projectImage": "./events/HTMLCSSGO.png",
+      "contributors": null,
+      "projectDescription": null,
+      "projectLink":null
+    }
+  ]
+  
