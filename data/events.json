@@ -1,21 +1,16 @@
 [
-    {
-      "name": "Pickle Rickle",
-      "techStack": null,
-      "domain": "Competitive Programming",
-      "eventImage": "./events/PICKLE RICKLE.jpeg",
-      "contributors": null,
-      "projectDescription": null,
-      "projectLink":null
-    },
-    {
-      "name": "HTML CSS GO!",
-      "techStack": null,
-      "domain": "Software Devlopment",
-      "projectImage": "./events/HTMLCSSGO.png",
-      "contributors": null,
-      "projectDescription": null,
-      "projectLink":null
-    }
-  ]
-  
+  {
+    "name": "HTML CSS GO!",
+    "techStack": null,
+    "domain": "Software Development",
+    "projectImage": "./events/HTMLCSSGO.png",
+    "projectDescription": "Are you looking to quench your thirst for knowledge and competition ? Brace yourselves because here is a golden opportunity to showcase your skills in HTML CSS GO ! - a web development competition (CSS battle) open to SSN and SNU."
+  },
+  {
+    "name": "PICKLE RICKLE",
+    "techStack": null,
+    "domain": "Competitive Programming",
+    "projectImage": "./events/PICKLE RICKLE.jpeg",
+    "projectDescription": "We are thrilled and delighted to unveil our first-ever nationwide event in collaboration with the well renowned platform, GeeksforGeeks.Yes, you read that right!A national level programming contest - 'PICKLE RICKLE' open to all colleges is being organised by the Coding Club of SSNCE."
+  }
+]

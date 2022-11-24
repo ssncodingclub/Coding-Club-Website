@@ -3,7 +3,7 @@ import styles from "../styles/projects.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import Navbar from "./Components/Navbar";
-import Projects from "../data/projects.json";
+import Events from "../data/events.json";
 import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Footer from "./Components/Footer";
@@ -145,7 +145,7 @@ const ProjectsPage = (props) => {
           </h2>
         </div> */}
 
-        {Projects.length > 0 ? (
+        {Events.length > 0 ? (
           <div
             className={
               props.theme
@@ -154,7 +154,7 @@ const ProjectsPage = (props) => {
             }
           >
             <div className={styles.left_pane}>
-              {Projects.map((project, i) => (
+              {Events.map((project, i) => (
                 <ProjectCard
                   showDescription={showDescription}
                   width={windowWidth}
