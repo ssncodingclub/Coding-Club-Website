@@ -75,6 +75,15 @@ function NavBar(props) {
             >
               <Nav.Item className={styles.nav_item}>Meets</Nav.Item>
             </Link>
+            <Link
+              href="/events"
+              onClick={() => {
+                setExpanded(false);
+              }}
+              passHref
+            >
+              <Nav.Item className={styles.nav_item}>Events</Nav.Item>
+            </Link>
             <Link href="/projects" passHref>
               <Nav.Item className={styles.nav_item}>Projects</Nav.Item>
             </Link>
