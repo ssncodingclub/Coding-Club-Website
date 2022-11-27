@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
-import styles from "../styles/projects.module.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import Head from "next/head";
-import Navbar from "./Components/Navbar";
-import Events from "../data/events.json";
-import Modal from "react-modal";
-import CloseIcon from "@mui/icons-material/Close";
-import Footer from "./Components/Footer";
 
 const LightboxContext = React.createContext();
 const { Provider, Consumer } = LightboxContext;
