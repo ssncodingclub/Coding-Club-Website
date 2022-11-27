@@ -8,186 +8,337 @@ import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Footer from "./Components/Footer";
 
-const RightCard = ({ id, modalIsOpen, closeModal }) => {
-  if (id !== null) {
-    const { name, projectDescription, projectLink } = Projects[id];
+const LightboxContext = React.createContext();
+const { Provider, Consumer } = LightboxContext;
+
+class MyProvider extends React.Component {
+  state = {
+    isOpen: false,
+    isActive: false,
+    isLoading: false,
+    activeImageId: null,
+    setActiveImageId: (id) => this.setActiveImageId(id),
+    toggleActive: () => this.toggleActive(),
+    hideLightbox: () => this.hideLightbox(),
+    showPrevImage: () => this.showPrevImage(),
+    showNextImage: () => this.showNextImage(),
+    data: [
+      {
+        id: 0,
+        small: 'https://images.unsplash.com/photo-1510412094233-53186308173b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af8eae835a4287e33f92411138ffc0f9&auto=format&fit=crop&w=1950&q=80?auto=compress&fit=crop&w=224&q=40',
+        dataFull: 'https://images.unsplash.com/photo-1510412094233-53186308173b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af8eae835a4287e33f92411138ffc0f9'
+      },
+      {
+        id: 1,
+        small: 'https://images.unsplash.com/photo-1516161786189-4c01a74daa94?ixlib=rb-0.3.5&s=5720ace14b95cf35d11b4b1e7231e1f6?auto=compress&fit=crop&w=224&q=40',
+        dataFull: 'https://images.unsplash.com/photo-1516161786189-4c01a74daa94?ixlib=rb-0.3.5&s=5720ace14b95cf35d11b4b1e7231e1f6' 
+      },
+      {
+        id: 2,
+        small: 'https://images.unsplash.com/photo-1422065254131-0959ca26ded4?ixlib=rb-0.3.5&s=e13052f68effa67a8de344863c5b9997?auto=compress&fit=crop&w=224&q=40',
+        dataFull: 'https://images.unsplash.com/photo-1422065254131-0959ca26ded4?ixlib=rb-0.3.5&s=e13052f68effa67a8de344863c5b9997'
+      },
+      {
+        id: 3,
+        small: 'https://images.unsplash.com/photo-1486666188991-b5be4844c800?ixlib=rb-0.3.5&s=24024135f79e7e1157dd40d1819d066e?auto=compress&fit=crop&w=224&q=40',
+        dataFull: 'https://images.unsplash.com/photo-1486666188991-b5be4844c800?ixlib=rb-0.3.5&s=24024135f79e7e1157dd40d1819d066e' 
+      },
+      {
+        id: 4,
+        small: 'https://images.unsplash.com/photo-1508844958472-0762647aebac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=870693ca86035205c5161ee55421347c?auto=compress&fit=crop&w=224&q=40', 
+        dataFull: 'https://images.unsplash.com/photo-1508844958472-0762647aebac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=870693ca86035205c5161ee55421347c'
+      },
+      {
+        id: 5,
+        small: 'https://images.unsplash.com/photo-1473789810014-375ed569d0ed?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=41fd11c0f441d3bee2e6225054604dc9?auto=compress&fit=crop&w=224&q=40', 
+        dataFull: 'https://images.unsplash.com/photo-1473789810014-375ed569d0ed?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=41fd11c0f441d3bee2e6225054604dc9'
+      }, 
+    ]
+  };
+
+  setActiveImageId = (id) => {
+    if (id === null) {
+      this.setState({
+        activeImageId: null,
+        isOpen: false,
+        isActive: false
+      })
+    } 
+    else {
+      this.setState({
+        activeImageId: id,
+        isOpen: true,
+        isLoading: true,
+      });
+    }
+  }
+
+  toggleActive = () => {
+    this.setState({
+      isLoading: false,
+      isActive: true,
+    });
+  }
+
+  hideLightbox = () => {
+    this.setState({
+      isOpen: false,
+      isLoading: false,
+      isActive: false,
+    });
+  }
+  
+  showPrevImage = () => {
+    if (this.state.activeImageId + 1 >= 0) {
+      this.setState(prevState => ({
+        isLoading: true,
+        isActive: false,
+        activeImageId: prevState.activeImageId - 1
+      }));
+    }
+  }
+  
+  showNextImage = () => {
+    if (this.state.activeImageId + 1 < this.state.data.length) {
+      this.setState(prevState => ({
+        isLoading: true,
+        isActive: false,
+        activeImageId: prevState.activeImageId + 1
+      }));
+    }
+  }
+  
+  render() {
     return (
-      <div className={styles.RightCard}>
-        {modalIsOpen ? (
-          <CloseIcon
-            className={styles.rightcard_modalclose}
-            onClick={() => closeModal()}
-          ></CloseIcon>
-        ) : (
-          ""
-        )}
-        <div className={styles.imageContainer}>
-          <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29kZXxlbnwwfHwwfHw%3D&w=1000&q=80" />
-        </div>
-        <div className={styles.subheader}>
-          <h1>{name}</h1>
-        </div>
-        <p className={styles.project_desc}>{projectDescription}</p>
-        <div className={styles.project_link}>
-          <a href={projectLink} target="_blank">
-            Check it out
-          </a>
-        </div>
+      <Provider value={this.state}>
+        {this.props.children}
+      </Provider>
+    )
+  }
+}
+
+// applications classnames
+const classes = {
+  lightbox: 'lightbox',
+  wrapper: 'lightbox__wrapper',
+  content: 'lightbox__content',
+  contentImage: 'lightbox__content__image',
+  display: 'lightbox__display',
+  displayImage: 'lightbox__display__image',
+  loading: 'lightbox--loading',
+  active: 'lightbox--active',
+  loader: 'lightbox__loader',
+  prev: 'lightbox__previous',
+  next: 'lightbox__next'
+};
+
+class LightboxWrapper extends React.Component {
+  render() {
+    return (
+      <div className={classes.wrapper}>
+        <LightboxContent />
+        <Consumer>
+          {(context) => (
+            <Lightbox values={context}/>
+          )}
+        </Consumer>
       </div>
     );
-  } else {
-    return <h2 className={styles.defaulttext_rightcard}>Select any of the Projects!</h2>;
   }
-};
+}
 
-const ProjectCard = ({
-  name,
-  techStack,
-  domain,
-  projectImage,
-  id,
-  width,
-  showDescription,
-  theme,
-}) => {
-  const classNamePrefix = "projectcard_item_",
-    className = classNamePrefix + id;
+class LightboxContent extends React.Component {
+  renderContentImages = (context) => {
+    return context.data.map(data => (
+      <LightboxContentImage 
+        key={data.small} 
+        src={data.small} 
+        imageId={data.id} 
+      />
+    ));
+  }
+ 
+  render() {
+    return (
+      <Consumer>
+        {(context) => (
+           <div className={classes.content}>
+            {this.renderContentImages(context)}
+          </div>
+        )}
+      </Consumer>
+    );
+  }
+} 
 
+class LightboxContentImage extends React.Component {
+  handleClick = (context, id) => {
+    return () => {
+      context.setActiveImageId(id);
+    }
+  }
+  render() {
+    return (
+      <Consumer>
+        {(context) => (
+          <div className={classes.contentImage} onClick={this.handleClick(context, this.props.imageId)}>
+            <img src={this.props.src} alt=""/>
+          </div>
+        )}
+      </Consumer>
+    );
+  }
+}
+
+class Lightbox extends React.Component {
+  componentDidMount() {
+    this.lightbox.addEventListener('click', ({ target }) => {
+      if (target === this.lightbox && (this.props.values.isActive || this.props.values.isLoading)) {
+        this.props.values.hideLightbox();
+      }
+    });
+  }
+
+  render() {
+    const { isActive, isLoading, isOpen, activeImageId } = this.props.values;
+    const activeClass = isActive ? classes.active : '';
+    const loadingClass = isLoading ? classes.loading : '';
+ 
+    return (
+      <div className={`${classes.lightbox} ${activeClass} ${loadingClass}`} ref={(ref) => this.lightbox = ref}>
+        {isLoading && !isActive ? <Loader /> : null}
+        <Consumer>
+          {(context) => (
+            <React.Fragment>
+              <NavButton classname={classes.prev} handleNextImage={context.showPrevImage}>
+                <span>&lt;</span>
+              </NavButton>
+              <LightboxDisplayImage 
+                imageLoaded={context.toggleActive}
+                values={context}
+              />
+              <NavButton classname={classes.next} handleNextImage={context.showNextImage}>
+                <span>&gt;</span>
+              </NavButton>
+            </React.Fragment>
+          )}
+        </Consumer>
+      </div>
+    )
+  }
+}
+
+class LightboxDisplayImage extends React.Component {
+  state = {
+    currentImage: null,
+    cachedImages: {},
+  };
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.values === this.props.values) {
+      return;
+    }
+    else {
+      const { activeImageId } = nextProps.values;
+      const isInCache = this.checkCache(activeImageId);
+
+      if (isInCache) {
+        this.setState((prevState) => ({ currentImage: prevState.cachedImages[activeImageId] }));
+      }
+      else {
+        const imgSrc = nextProps.values.data[activeImageId].dataFull;
+        this.setState((prevState) => {
+          const updatedCache = Object.assign({}, prevState.cachedImages, {[activeImageId]: imgSrc});
+          return { 
+            cachedImages: updatedCache,
+            currentImage: imgSrc
+          }
+        });
+      }
+    }
+  }
+
+  handleOnLoad = () => {
+    this.props.imageLoaded();
+  }
+    
+  checkCache = (index) => {
+    const { cachedImages } = this.state;
+    if (!cachedImages.hasOwnProperty(index)) {
+      return false;
+    }
+    return true;
+  }
+
+  render() {
+    return (
+      <div className={classes.display}>
+        {!this.state.currentImage ? 
+          null 
+        : (
+          <Image src={this.state.currentImage} classname={classes.displayImage} onLoad={this.handleOnLoad} />
+        )}
+      </div>
+    )
+  }
+}
+
+const Loader = () => (
+  <div className={classes.loader}>
+    <div></div>
+  </div>
+);
+
+const Image = ({ src, classname, onLoad, alt = '' }) => {
   return (
-    <div className={`${styles.project_card} ${className}`} onClick={() => showDescription(id)}>
-      <div className={styles.projects_card_item_image}>
-        <img src={projectImage} alt="ProjectTitle" className={styles.projects_card_image} />
-      </div>
-      <div className={styles.projects_card_text_container}>
-        <div className={styles.project_domain}>{domain}</div>
-        <button
-          href="/events"
-          className={theme ? styles.project_card_title_link_light : styles.project_card_title_link}
-          onClick={() => {
-            console.log("clicked");
-          }}
-        >
-          <h2 className={styles.project_card_title}>{name}</h2>
-        </button>
-        <div className={theme ? styles.project_card_summary_light : styles.project_card_summary}>
-          {techStack}
-        </div>
-      </div>
-    </div>
+    <img src={src} className={classname} alt={alt} onLoad={onLoad} />
   );
 };
 
-const ProjectsPage = (props) => {
-  const [windowWidth, setWindowWidth] = useState(0);
-  const [projectId, setprojectId] = useState(null);
-  const [modalIsOpen, setmodalIsOpen] = useState(false);
-  const [isAppleDevice, setIsAppleDevice] = useState(false);
+const NavButton = ({ classname, handleNextImage, children }) => (
+  <button className={classname} onClick={handleNextImage}>
+    {children}
+  </button>
+);
 
-  useEffect(() => {
-    Modal.setAppElement("body");
-    setWindowWidth(window.screen.width);
-    setIsAppleDevice(/Firefox|iPhone|iPad|iPod/i.test(navigator.userAgent));
-  }, []);
+class ErrorBoundary extends React.Component {
+  state = {
+    hasError: false,
+  }
+  
+  componentDidCatch(error, info) {
+    console.log(error, info);
+    this.setState(state => ({ hasError: true }));
+  }
 
-  const showDescription = (id) => {
-    setprojectId(id);
-    if (windowWidth <= 425) showModal();
-  };
-  const disableScrolling = () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    window.onscroll = () => {
-      window.scrollTo({ top: scrollTop, left: 0, behavior: "instant" });
-    };
-  };
-  const enableScrolling = () => {
-    window.onscroll = () => {};
-  };
-  const showModal = () => {
-    disableScrolling();
-    setmodalIsOpen(true);
-  };
-  const closeModal = () => {
-    enableScrolling();
-    setmodalIsOpen(false);
-  };
+  render() {
+    if (this.state.hasError) {
+      return (
+        <p>Sorry, something went wrong. Please check the console</p>
+      );
+    } else {
+      return (
+        <div>{this.props.children}</div>
+      );
+    }
+  } 
+}
 
-  return (
-    <div className={props.theme ? styles.container_light : styles.container}>
-      <Head>
-        <title>SSN Coding Club</title>
-        <meta name="description" content="Official SSN Coding Club Website" />
-        <link rel="icon" href="/favicon.ico" />
-        {/* for fontawesome */}
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-      </Head>
-      <Navbar transfer={props.theme} setTheme={props.setTheme} />
-      <main
-        className={
-          props.theme ? styles.projects_main_container_light : styles.projects_main_container
-        }
-      >
-        {isAppleDevice ? (
-          <div className={styles.appleHeader}>
-            <h1>Events</h1>
-          </div>
-        ) : (
-          <div className={styles.header}>
-            <h1>Events</h1>
-          </div>
-        )}
-        {/*
-        <div className={styles.subcontainer}>
-          <h2 className={styles.subheader}>
-            Get immersed in knowledge with our blogs! Catchy Text
-          </h2>
-        </div> */}
+class App extends React.Component {
+  render() {
+    return (
+      <MyProvider>
+        <ErrorBoundary>
+          <LightboxWrapper /> 
+        </ErrorBoundary>
+      </MyProvider>
+    );
+  }
+}
 
-        {Events.length > 0 ? (
-          <div
-            className={
-              props.theme
-                ? styles.project_submain_container_light
-                : styles.project_submain_container
-            }
-          >
-            <div className={styles.left_pane}>
-              {Events.map((project, i) => (
-                <ProjectCard
-                  showDescription={showDescription}
-                  width={windowWidth}
-                  id={i}
-                  name={project.name}
-                  domain={project.domain}
-                  techStack={project.techStack}
-                  projectImage={project.projectImage}
-                  theme={props.theme}
-                />
-              ))}
-            </div>
-
-            <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={closeModal}
-              contentLabel="Project Description"
-            >
-              <RightCard id={projectId} modalIsOpen={modalIsOpen} closeModal={closeModal} />
-            </Modal>
-            <div className={styles.right_pane}>
-              <RightCard id={projectId} modalIsOpen={modalIsOpen} closeModal={closeModal} />
-            </div>
-          </div>
-        ) : (
-          <div className={styles.coming_soon}>Coming Soon 😉</div>
-        )}
-      </main>
-      <div className={styles.placeholder}>
-        <Footer theme={props.theme} />
-      </div>
-    </div>
-  );
-};
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+);
 
 export default ProjectsPage;
