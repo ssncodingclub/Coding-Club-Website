@@ -1,5 +1,19 @@
 [
   {
+    "text": "Building an AI Chatbot: Part 2",
+    "date": "October 30th 2022",
+    "category": {
+      "tag": "AI/ML",
+      "color": "green"
+    },
+    "description": "Continuation of the AI/ML session on building an AI chatbot.",
+    "link": {
+      "url": "https://drive.google.com/file/d/1SEUZQPO4w4zptnceonCLqWXbn_watPxl/view?usp=share_link"
+    },
+    
+    "status":"finished"    
+  },
+  {
     "text": "Induction meet for Second Years",
     "date": "October 21st 2022",
     "category": {
