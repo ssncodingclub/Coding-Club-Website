@@ -54,6 +54,16 @@
   font-size: 40px;
 }
 
+.footer h3 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.footer h3:hover {
+  color: #673ab7;
+}
+
 .social_media {
   position: relative;
   margin-top: 20px;
