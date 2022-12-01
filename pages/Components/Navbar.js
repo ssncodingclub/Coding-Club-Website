@@ -1,7 +1,4 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
@@ -11,7 +8,6 @@ import { FiSun, FiMoon } from "react-icons/fi";
 function NavBar(props) {
   const [expand, setExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
-  const router = useRouter();
 
   function scrollHandler() {
     if (window.scrollY >= 40) {
@@ -87,6 +83,17 @@ function NavBar(props) {
             >
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
+            <a
+              href="https://forms.gle/ZvHBBLT2KPGqxuNy6"
+              onClick={() => {
+                setExpanded(false);
+              }}
+              passHref
+              target={"_blank"}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <Nav.Item className={styles.nav_item}>Join Us</Nav.Item>
+            </a>
 
             <Nav.Item
               className={styles.nav_toggle_icons}
@@ -167,8 +174,21 @@ function NavBar(props) {
                     }}
                     passHref
                   >
-                    <Nav.Item style={{ cursor: "pointer" }}>Blog</Nav.Item>
+                    <Nav.Item>Blog</Nav.Item>
                   </Link>
+                </li>
+                <li>
+                  <a
+                    href="https://forms.gle/ZvHBBLT2KPGqxuNy6"
+                    onClick={() => {
+                      setExpanded(false);
+                    }}
+                    passHref
+                    target={"_blank"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <Nav.Item style={{ cursor: "pointer" }}>Join Us</Nav.Item>
+                  </a>
                 </li>
               </ul>
             </div>
