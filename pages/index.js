@@ -37,7 +37,11 @@ export default function Home(props) {
         <main className={styles.main}>
           <div className={styles.headerSection}>
             {isAppleDevice ? (
-              <img src="./Title.png" className={styles.responsive} alt="Title" />
+              <img
+                src="./Title.png"
+                className={styles.responsive}
+                alt="Title"
+              />
             ) : (
               <div className={styles.header}>
                 <h1>SSN Coding Club</h1>
@@ -48,9 +52,15 @@ export default function Home(props) {
             </h1>
             <a href="#info">
               {props.theme ? (
-                <BsChevronDoubleDown color="black" size="45"></BsChevronDoubleDown>
+                <BsChevronDoubleDown
+                  color="black"
+                  size="45"
+                ></BsChevronDoubleDown>
               ) : (
-                <BsChevronDoubleDown color="white" size="45"></BsChevronDoubleDown>
+                <BsChevronDoubleDown
+                  color="white"
+                  size="45"
+                ></BsChevronDoubleDown>
               )}
             </a>
           </div>
@@ -63,7 +73,9 @@ export default function Home(props) {
                   <Col md="6" sm="12" lg="4">
                     <Card
                       className={
-                        props.theme ? styles.infoContainerCard_light : styles.infoContainerCard
+                        props.theme
+                          ? styles.infoContainerCard_light
+                          : styles.infoContainerCard
                       }
                     >
                       <Card.Img variant="top" src={cardInfo.img} />
@@ -106,14 +118,20 @@ export default function Home(props) {
               </div>
             )}
             <p>
-              We are the biggest ever community in SSN. What, you don't believe us? We hit 1000+
-              members on our discord channel in 1 year. Talk about speed. Wait there's more - we are
-              what we are because of our unrivaled community.
+              We are the biggest ever community in SSN. What, you don't believe
+              us? We hit 1000+ members on our discord channel in 1 year. Talk
+              about speed. Wait there's more - we are what we are because of our
+              unrivaled community.
               <br />
-              <br /> We engage with everyone and the community chooses what we should focus on next.
-              We are present on several platforms and we are looking forward to interact with you!{" "}
+              <br /> We engage with everyone and the community chooses what we
+              should focus on next. We are present on several platforms and we
+              are looking forward to interact with you!{" "}
             </p>
-            <Button className={props.theme ? styles.joinUsButton_light : styles.joinUsButton}>
+            <Button
+              className={
+                props.theme ? styles.joinUsButton_light : styles.joinUsButton
+              }
+            >
               <a href="https://linktr.ee/ssncc" target="_blank">
                 Join Us
               </a>
@@ -133,7 +151,11 @@ export default function Home(props) {
           <Row>
             <Col sm="12" md={`${isAppleDevice ? 8 : 12}`}>
               {isAppleDevice ? (
-                <img src="./HomePage/LoD.png" className={styles.domainHeaderApple} alt="Title" />
+                <img
+                  src="./HomePage/LoD.png"
+                  className={styles.domainHeaderApple}
+                  alt="Title"
+                />
               ) : (
                 <div className={styles.domainHeader}>
                   <div className={styles.domainHeader1}>Lots of</div>
@@ -144,18 +166,31 @@ export default function Home(props) {
           </Row>
           <Row className={styles.domainRow}>
             <Col sm="12" md="5" className={styles.domainImgContainer}>
-              <img src="./HomePage/cp.png" className={styles.domainImages} alt="Title" />
-              <h4 className={props.theme ? styles.domainName_light : styles.domainName}>
+              <img
+                src="./HomePage/cp.png"
+                className={styles.domainImages}
+                alt="Title"
+              />
+              <h4
+                className={
+                  props.theme ? styles.domainName_light : styles.domainName
+                }
+              >
                 Competitive Programming
               </h4>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
-              <p className={props.theme ? styles.domainInfo_light : styles.domainInfo}>
-                Join us on a journey to master the tricks of the trade - popular CP concepts,
-                algorithms and stratagems, boosting your cognitive, logical reasoning and enhancing
-                your coding interview skills along the way. We also hold contests where you can
-                compete with your peers and challenge yourself. We are available 24/7 to clarify
-                your doubts and for any other assistance you may need.
+              <p
+                className={
+                  props.theme ? styles.domainInfo_light : styles.domainInfo
+                }
+              >
+                Join us on a journey to master the tricks of the trade - popular
+                CP concepts, algorithms and stratagems, boosting your cognitive,
+                logical reasoning and enhancing your coding interview skills
+                along the way. We also hold contests where you can compete with
+                your peers and challenge yourself. We are available 24/7 to
+                clarify your doubts and for any other assistance you may need.
               </p>
             </Col>
           </Row>
@@ -166,11 +201,17 @@ export default function Home(props) {
               md={{ span: 7, order: "first" }}
               className={styles.domainInfoContainer}
             >
-              <p className={props.theme ? styles.domainInfo_light : styles.domainInfo}>
-                Rome wasn't built in a day, and neither was our website. Learn state-of-the-art app
-                building and end-to-end full-stack development with zero compromises. Do you have
-                anything in particular you want to learn? No problem! Our team of developers have
-                experience in various fields, and can help out whenever required.
+              <p
+                className={
+                  props.theme ? styles.domainInfo_light : styles.domainInfo
+                }
+              >
+                Rome wasn't built in a day, and neither was our website. Learn
+                state-of-the-art app building and end-to-end full-stack
+                development with zero compromises. Do you have anything in
+                particular you want to learn? No problem! Our team of developers
+                have experience in various fields, and can help out whenever
+                required.
               </p>
             </Col>
             <Col
@@ -179,26 +220,47 @@ export default function Home(props) {
               md={{ span: 5, order: "last" }}
               className={styles.domainImgContainer}
             >
-              <img src="./HomePage/sd.png" className={styles.domainImages} alt="Title" />
-              <h4 className={props.theme ? styles.domainName_light : styles.domainName}>
+              <img
+                src="./HomePage/sd.png"
+                className={styles.domainImages}
+                alt="Title"
+              />
+              <h4
+                className={
+                  props.theme ? styles.domainName_light : styles.domainName
+                }
+              >
                 Software Development
               </h4>
             </Col>
           </Row>
           <Row className={styles.domainRow}>
             <Col s m="12" md="5" className={styles.domainImgContainer}>
-              <img src="./HomePage/ml.png" className={styles.domainImages} alt="Title" />
-              <h4 className={props.theme ? styles.domainName_light : styles.domainName}>
+              <img
+                src="./HomePage/ml.png"
+                className={styles.domainImages}
+                alt="Title"
+              />
+              <h4
+                className={
+                  props.theme ? styles.domainName_light : styles.domainName
+                }
+              >
                 Machine Learning
               </h4>
             </Col>
             <Col sm="12" md="7" className={styles.domainInfoContainer}>
-              <p className={props.theme ? styles.domainInfo_light : styles.domainInfo}>
-                What if you were told that 15 years from now, the code that you currently write
-                "manually", will learn to write itself automatically. Interesting, right? That's
-                barely scratching the surface. Come learn about the future with us where we teach
-                and code machine learning from scratch. We also provide a roadmap so everyone can
-                learn at their own pace.
+              <p
+                className={
+                  props.theme ? styles.domainInfo_light : styles.domainInfo
+                }
+              >
+                What if you were told that 15 years from now, the code that you
+                currently write "manually", will learn to write itself
+                automatically. Interesting, right? That's barely scratching the
+                surface. Come learn about the future with us where we teach and
+                code machine learning from scratch. We also provide a roadmap so
+                everyone can learn at their own pace.
               </p>
             </Col>
           </Row>
@@ -220,8 +282,16 @@ export default function Home(props) {
               >
                 Check it out
               </button>
-              <img src="./HomePage/guy1.png" alt="Title" className={styles.openSourceImg1} />
-              <img src="./HomePage/guy2.png" alt="Title" className={styles.openSourceImg2} />
+              <img
+                src="./HomePage/guy1.png"
+                alt="Title"
+                className={styles.openSourceImg1}
+              />
+              <img
+                src="./HomePage/guy2.png"
+                alt="Title"
+                className={styles.openSourceImg2}
+              />
             </div>
           </div>
         </div>
@@ -242,17 +312,37 @@ export default function Home(props) {
                 <Tile tileColor="redBG" tileImage="induction.jpeg" />
               </Col>
 
-              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
+              <Col
+                xs="12"
+                sm="6"
+                md="3"
+                className={styles.tileContainer + " " + styles.row2}
+              >
                 <Tile tileColor="greenBG" tileImage="dp.jpeg" />
               </Col>
-              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
+              <Col
+                xs="12"
+                sm="6"
+                md="3"
+                className={styles.tileContainer + " " + styles.row2}
+              >
                 <Tile tileColor="redBG" tileImage="pipeline.jpeg" />
               </Col>
-              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
+              <Col
+                xs="12"
+                sm="6"
+                md="3"
+                className={styles.tileContainer + " " + styles.row2}
+              >
                 <Tile tileColor="blueBG" tileImage="git.jpeg" />
               </Col>
 
-              <Col xs="12" sm="6" md="3" className={styles.tileContainer + " " + styles.row2}>
+              <Col
+                xs="12"
+                sm="6"
+                md="3"
+                className={styles.tileContainer + " " + styles.row2}
+              >
                 <Tile tileColor="purpleBG" tileImage="devintro.jpeg" />
               </Col>
             </Row>

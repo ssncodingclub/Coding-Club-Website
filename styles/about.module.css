@@ -31,7 +31,6 @@
   font-family: "Montserrat", sans-serif;
   font-size: 85px;
   margin-bottom: 4rem;
-
 }
 
 .about_main_container {
@@ -82,9 +81,9 @@
   flex: 1;
   display: flex;
   align-items: center;
-  text-align: initial ;
+  text-align: initial;
   min-height: 85px;
-  font-weight:bold;
+  font-weight: bold;
   margin-left: 20px;
   margin-top: 40px;
   font-size: 1rem;
@@ -95,9 +94,9 @@
   display: flex;
 }
 
-.ssnimg{ 
+.ssnimg {
   display: flex;
-  width: 260px ;
+  width: 260px;
   height: 329px;
   border-radius: 20px;
   margin-left: 2em;
@@ -110,7 +109,6 @@
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 25px;
-  
 }
 .para_light {
   width: 80%;
@@ -212,26 +210,21 @@
 }
 
 @media (max-width: 850px) {
-  .box{
+  .box {
     display: block;
     width: 90%;
     text-align: center;
-    
-    
   }
 
   .para_main,
-  .para_light_main{
+  .para_light_main {
     margin-top: 1.5em;
     margin: 0 auto;
-    
   }
-
 
   .main {
     display: block;
-    margin-top: 1.5em ;
-    
+    margin-top: 1.5em;
   }
 
   .main div {
@@ -239,27 +232,20 @@
     flex: none;
     min-height: auto;
     margin: 0 auto;
-    max-width: 600px; 
+    max-width: 600px;
     width: 95%;
     margin-bottom: 3.5rem;
     text-align: center !important;
-
-    
   }
-  .ssnimg{
-
+  .ssnimg {
     display: block;
     width: 100vw !important;
-    height: auto  ;
+    height: auto;
     max-width: 100% !important;
     padding: 5vw !important ;
     margin: auto !important;
-
-
   }
-
 }
-
 
 @media (max-width: 426px) {
   .header h1,

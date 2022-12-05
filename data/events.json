@@ -1,0 +1,22 @@
+[
+    {
+        "EventName":"Pickle Rickle",
+        "Tag":"CODING",
+        "Description":"Prizes worth 11,000 rupees and geeksforgeeks goodies, awarded across the top 30 participants and geeks-forgeeks coupons for all participants.",
+        "Winner_gold":"Vikash Sangai",
+        "Winner_silver":"Shlok Goyal",
+        "Winner_bronze":"Murugan K",
+        "Pic":"./pickleRickle.jpeg",
+        "Sponsors":["GeeksforGeeks","Motorq"]
+    },
+    {
+        "EventName":"HTML CSS GO!",
+        "Tag":"CODING",
+        "Description":"A web development competition (CSS battle) open to SSN & SNU. Compete online and win cash prize pool of 3000 INR.",
+        "Winner_gold":"Vetrivel M",
+        "Winner_silver":"Cyrilmelvin Vincent",
+        "Winner_bronze":"Pradheeshwar",
+        "Pic":"./HTMLCSSGO.png",
+        "Sponsors":["Motorq"]
+    }
+]
