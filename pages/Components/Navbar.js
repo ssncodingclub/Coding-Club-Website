@@ -166,6 +166,17 @@ function NavBar(props) {
                 </li>
                 <li>
                   <Link
+                    href="/events"
+                    onClick={() => {
+                      setExpanded(false);
+                    }}
+                    passHref
+                  >
+                    <Nav.Item style={{ cursor: "pointer" }}>Events</Nav.Item>
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/projects"
                     onClick={() => {
                       setExpanded(false);
