@@ -94,7 +94,7 @@
 .flex_container {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 5px;
+  border-radius: 15px;
   width: fit-content;
   height: fit-content;
   align-items: center;
