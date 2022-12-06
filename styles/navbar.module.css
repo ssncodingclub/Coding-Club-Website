@@ -41,6 +41,7 @@
 }
 
 .logotext h4 {
+  color: white;
   margin-top: 0.8rem;
   font-family: "Rubik", sans-serif;
 }
@@ -257,7 +258,7 @@ span.menuSpan_light {
   transform: none;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1025px) {
   .nav_item {
     display: none;
   }

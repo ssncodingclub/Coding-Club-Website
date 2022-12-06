@@ -1,18 +1,21 @@
 import React from "react";
-import styles from '../../styles/Card.module.css';
+import styles from "../../styles/Card.module.css";
 import DomainCard from "./DomainCard";
 import ProfileCard from "./ProfileCard";
 
-const Domain = ({ domain = {
-  title: "",
-  discord: "",
-  tags: [],
-  bgColorStyle: {
-    background: "linear-gradient(135deg, #1f005c, #35005e, #5f0060, #8f0860, #bc365d, #dd635c, #f28c5f, #fcaa67, #ffb56b)"
+const Domain = ({
+  domain = {
+    title: "",
+    discord: "",
+    tags: [],
+    bgColorStyle: {
+      background:
+        "linear-gradient(135deg, #1f005c, #35005e, #5f0060, #8f0860, #bc365d, #dd635c, #f28c5f, #fcaa67, #ffb56b)",
+    },
+    members: [],
   },
-  members: []
-}, theme }) => {
-
+  theme,
+}) => {
   return (
     <div className={styles.container} style={{ paddingLeft: "2rem" }}>
       <section className={theme ? styles.card_list_light : styles.card_list}>
@@ -23,8 +26,8 @@ const Domain = ({ domain = {
           style={domain.bgColorStyle}
           theme={theme}
         />
-        {
-          domain.members.map(({ name, position, alt, profilePic, socials }, i) => {
+        {domain.members.map(
+          ({ name, position, alt, profilePic, socials }, i) => {
             return (
               <>
                 <ProfileCard
@@ -37,12 +40,13 @@ const Domain = ({ domain = {
                   key={i}
                   theme={theme}
                 />
-              </>)
-          })
-        }
+              </>
+            );
+          }
+        )}
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Domain
+export default Domain;
