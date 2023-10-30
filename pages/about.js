@@ -10,7 +10,8 @@ import departments from "../data/departments.json";
 import { Container, Row } from "react-bootstrap";
 import Footer from "./Components/Footer";
 import OffBearSec from "./Components/OffBearSec";
-import exofficebearers_18_22 from "../data/exofficebearers_18-22.json";
+import exofficebearers_21_22 from "../data/exofficebearers_21-22.json";
+import exofficebearers_22_23 from "../data/exofficebearers_22-23.json";
 import styles from "../styles/about.module.css";
 
 export default function About(props) {
@@ -100,9 +101,14 @@ export default function About(props) {
           Ex-Office Bearers
         </h2>
         <OffBearSec
-          year="2018-22"
+          year="2022-23"
           theme={props.theme}
-          file={exofficebearers_18_22}
+          file={exofficebearers_22_23}
+        />
+        <OffBearSec
+          year="2021-22"
+          theme={props.theme}
+          file={exofficebearers_21_22}
         />
         {/* */}
 

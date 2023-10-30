@@ -5,7 +5,7 @@ import DomainCard from "./DomainCard"
 export default function OffBearSec({ theme, year, file = [] }) {
     return (
         <div className={styles.container} style={{ paddingLeft: "2rem" }}>
-            <h3 className={theme ? styles.batch_light : styles.batch}>Batch of {year}</h3>
+            <h3 className={theme ? styles.batch_light : styles.batch}>Academic Year {year}</h3>
             <section className={theme ? styles.newcontainer_light : styles.newcontainer} >
                 {file.map((team, i) => {
                     return <DomainCard
