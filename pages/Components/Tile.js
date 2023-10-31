@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "../../styles/Tile.module.css";
-function Tile({ tileColor, tileImage }) {
+function Tile({tileImage }) {
     return (
-        <div className={styles.tileContent + " " + styles[tileColor]} >
+        <div className={styles.tileContent} >
             <a href="https://www.instagram.com/ssn_coding_club/"><img src={".././tiles/" + tileImage} className={styles.img}></img></a>
             {/* <h1>Title</h1>
             <h2>Subtitle</h2>
