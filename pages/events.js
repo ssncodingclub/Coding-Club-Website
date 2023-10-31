@@ -131,7 +131,7 @@ const Events = (props) => {
             <h1>Events</h1>
           </div>
         )}
-        <div className={styles.header}>
+        <div className={styles1.comingsoon}>
 <h1>Coming Soon...</h1>
         </div>
         <div className={styles1.grid_container}>

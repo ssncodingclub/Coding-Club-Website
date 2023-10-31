@@ -272,3 +272,31 @@
     grid-template-columns: auto auto auto;
   }
 }
+
+
+.comingsoon {
+  text-align: center;
+  background: url("https://i.ibb.co/rpsWqvc/biggradient.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -6rem;
+  background-position-x: -8rem;
+  margin-top: 50px;
+}
+
+.comingsoon h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20vh;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .comingsoon h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15vh;
+    margin-bottom: 4rem;
+  }
+}
