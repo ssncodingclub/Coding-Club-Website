@@ -199,7 +199,7 @@ function NavBar(props) {
                 </li>
                 <li>
                   <a
-                    href="https://forms.gle/ZvHBBLT2KPGqxuNy6"
+                    href="https://chat.whatsapp.com/HpVTycUxqXr1OCI6kf9So7"
                     onClick={() => {
                       setExpanded(false);
                     }}
