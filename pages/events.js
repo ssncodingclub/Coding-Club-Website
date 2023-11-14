@@ -131,6 +131,9 @@ const Events = (props) => {
             <h1>Events</h1>
           </div>
         )}
+        <div className={styles1.comingsoon}>
+<h1>Coming Soon...</h1>
+        </div>
         <div className={styles1.grid_container}>
           {events.map((event, i) => (
             <EventCard pic={event.Pic} key={i} event={event} />

@@ -338,52 +338,9 @@ export default function Home(props) {
           <Container fluid>
             <Row className={styles.tileRow}>
               <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
-                <Tile tileColor="blueBG" tileImage="sudoku.jpeg" />
-              </Col>
-              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
-                <Tile tileColor="greenBG" tileImage="flutter.jpeg" />
-              </Col>
-              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
-                {/*TODO: Can pass required content for tiles as props */}
-                <Tile tileColor="purpleBG" tileImage="mlrecap.jpeg" />
-              </Col>
-              <Col xs="12" sm="6" md="3" className={styles.tileContainer}>
-                <Tile tileColor="redBG" tileImage="induction.jpeg" />
+                <Tile tileColor="blueBG" tileImage="coderofthemonth.png" />
               </Col>
 
-              <Col
-                xs="12"
-                sm="6"
-                md="3"
-                className={styles.tileContainer + " " + styles.row2}
-              >
-                <Tile tileColor="greenBG" tileImage="dp.jpeg" />
-              </Col>
-              <Col
-                xs="12"
-                sm="6"
-                md="3"
-                className={styles.tileContainer + " " + styles.row2}
-              >
-                <Tile tileColor="redBG" tileImage="pipeline.jpeg" />
-              </Col>
-              <Col
-                xs="12"
-                sm="6"
-                md="3"
-                className={styles.tileContainer + " " + styles.row2}
-              >
-                <Tile tileColor="blueBG" tileImage="git.jpeg" />
-              </Col>
-
-              <Col
-                xs="12"
-                sm="6"
-                md="3"
-                className={styles.tileContainer + " " + styles.row2}
-              >
-                <Tile tileColor="purpleBG" tileImage="devintro.jpeg" />
-              </Col>
             </Row>
           </Container>
         </div>
