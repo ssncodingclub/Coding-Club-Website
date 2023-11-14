@@ -264,6 +264,45 @@ export default function Home(props) {
               </p>
             </Col>
           </Row>
+          <Row>
+            <Col
+              xs={{ order: "last" }}
+              sm={{ order: "last" }}
+              md={{ span: 7, order: "first" }}
+              className={styles.domainInfoContainer}
+            >
+              <p
+                className={
+                  props.theme ? styles.domainInfo_light : styles.domainInfo
+                }
+              >
+                Welcome to the Cybersecurity Division, where we eat hackers for breakfast and viruses for brunch!.
+                We're the digital defenders of the internet, the guardians of your data, and the champions of cyber justice.
+                While others are still figuring out their passwords, we're busy cracking the code to a safer online world.
+                If you think you've got what it takes to join our elite league of cyber warriors, just remember - we don't chase cybercriminals; they run from us!
+              </p>
+            </Col>
+            <Col
+              xs={{ order: "first" }}
+              sm={{ order: "first" }}
+              md={{ span: 5, order: "last" }}
+              className={styles.domainImgContainer}
+            >
+              <img
+                src="./HomePage/sd.png"
+                className={styles.domainImages}
+                alt="Title"
+              />
+              <h4
+                className={
+                  props.theme ? styles.domainName_light : styles.domainName
+                }
+              >
+                Cyber Security
+              </h4>
+            </Col>
+          </Row>
+
         </div>
         <div className={styles.opensourceSection}>
           <div className={styles.gradientDiv}>

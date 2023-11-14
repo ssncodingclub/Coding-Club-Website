@@ -1,3 +1,13 @@
+
+## TODO
+
+Fix Pages for Mobile View
+Automate content updation for events and meets
+Automate Instagram post links in Home page
+Update Linktr
+Bully juniors into writing blogs
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 This website is maintained as an open source project by the SSN coding club! This is the ultimate resource to get all information about the club in one place. 

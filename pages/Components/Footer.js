@@ -49,22 +49,20 @@ const Footer = (props) => {
               href="https://www.instagram.com/ssn_coding_club/"
               target="_blank"
               rel="noreferrer"
-              className={`fab fa-instagram ${
-                props.theme
+              className={`fab fa-instagram ${props.theme
                   ? styles.insta + " " + styles.insta_light
                   : styles.social_icon + " " + styles.insta
-              }`}
+                }`}
             ></a>
           ) : (
             <a
               href="https://www.instagram.com/ssn_coding_club/"
               target="_blank"
               rel="noreferrer"
-              className={`fa fa-instagram ${
-                props.theme
+              className={`fa fa-instagram ${props.theme
                   ? styles.insta + " " + styles.insta_light
                   : styles.social_icon + " " + styles.insta
-              }`}
+                }`}
             ></a>
           )}
           <a
@@ -86,7 +84,7 @@ const Footer = (props) => {
             }}
           >
             <a
-              href="https://forms.gle/ZvHBBLT2KPGqxuNy6"
+              href="https://chat.whatsapp.com/HpVTycUxqXr1OCI6kf9So7"
               style={{ textDecoration: "none", color: "inherit" }}
               target="_blank"
             >
