@@ -19,5 +19,12 @@
     "icon": "/domain-icons/cp.svg",
     "alt": "CP",
     "description": "Join us on a journey to master the tricks of the trade - popular CP concepts, algorithms and stratagems, boosting your cognitive, logical reasoning and enhancing your coding interview skills along the way. We also hold contests where you can compete with your peers and challenge yourself. We are available 24/7 to clarify your doubts and for any other assistance you may need."
+  },
+  {
+    "name": "Cyber Security",
+    "id": "cyber-security-team",
+    "icon": "",
+    "alt": "CS",
+    "description": "We're the Cybersecurity Division!. We’re here to teach you everything there is to know about cybersecurity. From exploiting the basic most fundamental buffer overflow to reverse engineering the most convoluted self-modifying virus - we have it all covered. Hone your skills in our Capture-The-Flag events, and expand your field-of-view at our workshops on diverse topics ranging from ShellCode to Binary Exploitation."
   }
 ]

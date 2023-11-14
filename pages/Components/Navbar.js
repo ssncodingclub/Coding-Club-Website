@@ -17,7 +17,7 @@ function NavBar(props) {
     }
   }
 
-  const handleScroll = () => {};
+  const handleScroll = () => { };
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -93,7 +93,7 @@ function NavBar(props) {
               <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
             </Link>
             <a
-              href="https://forms.gle/ZvHBBLT2KPGqxuNy6"
+              href="https://chat.whatsapp.com/HpVTycUxqXr1OCI6kf9So7"
               onClick={() => {
                 setExpanded(false);
               }}
