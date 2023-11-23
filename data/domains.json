@@ -38,10 +38,10 @@
     },
     "members": [
       {
-        "name": "Anirudh TN",
+        "name": "Vignesh Balaji S",
         "position": "President",
-        "alt": "anirudh",
-        "profilePic": "/profiles/Core/anirudhtn.jpeg",
+        "alt": "Vignesh",
+        "profilePic": "/profiles/Core/vb.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/691279198102355998",
           "linkedin": "https://www.linkedin.com/in/anirudhtn/",
@@ -49,10 +49,10 @@
         }
       },
       {
-        "name": "Lokesh NN",
+        "name": "Harshavardhan Suresh",
         "position": "Vice President",
-        "alt": "lokesh",
-        "profilePic": "/profiles/Core/Lokesh N N.jpeg",
+        "alt": "Harshavardhan",
+        "profilePic": "/profiles/Core/hs.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/703957251198550118",
           "linkedin": "https://www.linkedin.com/in/lokesh-n-n",
@@ -60,10 +60,10 @@
         }
       },
       {
-        "name": "Shreya Sriram",
+        "name": "Gunanicaa Arun",
         "position": "Secretary",
-        "alt": "shreya",
-        "profilePic": "/profiles/Core/Shreya-Sriram.jpeg",
+        "alt": "Gunanicaa",
+        "profilePic": "/profiles/Core/ga.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/760836754528927794",
           "linkedin": "https://www.linkedin.com/in/shreya-sriram-s1/",
@@ -71,21 +71,10 @@
         }
       },
       {
-        "name": "Karun Anantharaman",
-        "position": "Head of Ext. Aff.",
-        "alt": "karun",
-        "profilePic": "/profiles/Core/Karun-Anantharaman.jpeg",
-        "socials": {
-          "discord": "https://discordapp.com/users/315171395132981249",
-          "linkedin": "https://www.linkedin.com/in/karun84/",
-          "instagram": "https://www.instagram.com/_bla5t3r_/"
-        }
-      },
-      {
-        "name": "Shashank Panda",
+        "name": "Nithin Balaji",
         "position": "Tech Lead",
-        "alt": "shashank",
-        "profilePic": "/profiles/Core/Shashank Panda.jpeg",
+        "alt": "Nithin",
+        "profilePic": "/profiles/Core/nb.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/693507019415748658",
           "linkedin": "https://www.linkedin.com/in/shashank-panda/",
@@ -93,10 +82,10 @@
         }
       },
       {
-        "name": "Joseph Amirtharaj",
-        "position": "Head of CP",
-        "alt": "joseph",
-        "profilePic": "/profiles/Core/Josephimmanuel-Amirtharaj.jpeg",
+        "name": "Kiran Raj KB",
+        "position": "Event Chair",
+        "alt": "Kiran",
+        "profilePic": "/profiles/Core/kr.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/708746945568571452",
           "linkedin": "https://www.linkedin.com/in/joseph-amirtharaj/",
@@ -114,10 +103,10 @@
     },
     "members": [
       {
-        "name": "Aditya R",
+        "name": "Gokulram A",
         "position": "Head",
-        "alt": "adityar",
-        "profilePic": "/profiles/Dev/adityar.jpeg",
+        "alt": "Gokulram",
+        "profilePic": "/profiles/Dev/ga.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/401392104456060928",
           "linkedin": "https://www.linkedin.com/in/aditya-r-2496941ba/",
@@ -125,10 +114,10 @@
         }
       },
       {
-        "name": "Vignesh Balaji",
+        "name": "Akil Karthikeyan",
         "position": "Deputy Head",
-        "alt": "vignesh",
-        "profilePic": "/profiles/Dev/Vigneshbalaji.jpeg",
+        "alt": "Akil",
+        "profilePic": "/profiles/Dev/ak.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/760092361090662400",
           "linkedin": "https://www.linkedin.com/in/vignesh-balaji-saravanarajan-397713200/",
@@ -136,10 +125,21 @@
         }
       },
       {
-        "name": "Aravind KR",
+        "name": "Cyril Melvin Vincent",
+        "position": "Deputy Head",
+        "alt": "Cyril",
+        "profilePic": "/profiles/Dev/cmv.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/760092361090662400",
+          "linkedin": "https://www.linkedin.com/in/vignesh-balaji-saravanarajan-397713200/",
+          "instagram": "https://www.instagram.com/vigneshbalaji.exe/"
+        }
+      },
+      {
+        "name": "Jahnavi Murali",
         "position": "Member",
-        "alt": "aravind",
-        "profilePic": "/profiles/Dev/aravindk.jpeg",
+        "alt": "Jahnavi",
+        "profilePic": "/profiles/Dev/jm.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/407050982787252226",
           "linkedin": "https://www.linkedin.com/in/aravind-kannan-rathinasabapathi/",
@@ -147,10 +147,10 @@
         }
       },
       {
-        "name": "Harisaran G",
+        "name": "Indirakanth Vengatachalapathy",
         "position": "Member",
-        "alt": "harisaran",
-        "profilePic": "/profiles/Dev/harisarang.jpeg",
+        "alt": "Indirakanth1",
+        "profilePic": "/profiles/Dev/iv.jpg",
         "socials": {
           "discord": null,
           "linkedin": "https://www.linkedin.com/in/harisaran-g/",
@@ -158,10 +158,10 @@
         }
       },
       {
-        "name": "Sabesh Bharathi",
+        "name": "Justin Benito B",
         "position": "Member",
-        "alt": "sabesh",
-        "profilePic": "/profiles/Dev/sabesh.jpeg",
+        "alt": "Justin",
+        "profilePic": "/profiles/Dev/jb.png",
         "socials": {
           "discord": "https://discordapp.com/users/522815302963298304",
           "linkedin": "https://www.linkedin.com/in/sabeshbharathi",
@@ -169,10 +169,10 @@
         }
       },
       {
-        "name": "Moniesh Ravichandran",
+        "name": "Nitheesh Raaja R",
         "position": "Member",
-        "alt": "moniesh",
-        "profilePic": "/profiles/Dev/moniesh.jpeg",
+        "alt": "Nitheesh",
+        "profilePic": "/profiles/Dev/nr.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/869549069343809546",
           "linkedin": "https://www.linkedin.com/in/moniesh",
@@ -180,10 +180,10 @@
         }
       },
       {
-        "name": "Kailash SR",
+        "name": "Vignesh S M",
         "position": "Member",
-        "alt": "kailash",
-        "profilePic": "/profiles/Dev/Kailash.jpeg",
+        "alt": "Vignesh",
+        "profilePic": "/profiles/Dev/vsm.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/722062004210368572",
           "linkedin": "https://www.linkedin.com/in/kailash-saravanan-8034671bb/",
@@ -191,10 +191,10 @@
         }
       },
       {
-        "name": "Mohamed Arshad",
+        "name": "Charumathi P",
         "position": "Member",
-        "alt": "mohamed",
-        "profilePic": "/profiles/Dev/arshad.jpeg",
+        "alt": "Charumathi",
+        "profilePic": "/profiles/Dev/cp.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/726128244591689780",
           "linkedin": "https://www.linkedin.com/in/mohamed-arshad-vaseem-37621b1a4",
@@ -202,10 +202,10 @@
         }
       },
       {
-        "name": "Shajith Hameed",
+        "name": "Supraja Sridhar",
         "position": "Member",
-        "alt": "shajith",
-        "profilePic": "/profiles/Dev/shajith.jpeg",
+        "alt": "Supraja",
+        "profilePic": "/profiles/Dev/ss.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/561381453519388673",
           "linkedin": "https://www.linkedin.com/in/shajith-hameed-4122a01b8",
@@ -213,10 +213,43 @@
         }
       },
       {
-        "name": "Gokulram A",
+        "name": "Mitul Krishna B",
         "position": "Member",
-        "alt": "gokulram",
-        "profilePic": "/profiles/Dev/gokulramA.jpeg",
+        "alt": "Mitul",
+        "profilePic": "/profiles/Dev/mkb.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/739038717540565052",
+          "linkedin": "https://www.linkedin.com/in/gokulrama/",
+          "instagram": "https://www.instagram.com/gokul_ghv"
+        }
+      },
+      {
+        "name": "Gavutham K",
+        "position": "Member",
+        "alt": "Gavutham",
+        "profilePic": "/profiles/Dev/gk.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/739038717540565052",
+          "linkedin": "https://www.linkedin.com/in/gokulrama/",
+          "instagram": "https://www.instagram.com/gokul_ghv"
+        }
+      },
+      {
+        "name": "A Sadhana",
+        "position": "Member",
+        "alt": "Sadhana",
+        "profilePic": "/profiles/Dev/sa.jpeg",
+        "socials": {
+          "discord": "https://discordapp.com/users/739038717540565052",
+          "linkedin": "https://www.linkedin.com/in/gokulrama/",
+          "instagram": "https://www.instagram.com/gokul_ghv"
+        }
+      },
+      {
+        "name": "Swetha J",
+        "position": "Member",
+        "alt": "Swetha",
+        "profilePic": "/profiles/Dev/sj.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/739038717540565052",
           "linkedin": "https://www.linkedin.com/in/gokulrama/",
@@ -234,10 +267,10 @@
     },
     "members": [
       {
-        "name": "Karthik Desingu",
+        "name": "Haricharan Bharathi",
         "position": "Head",
-        "alt": "karthik",
-        "profilePic": "/profiles/ML/KarthikD.jpeg",
+        "alt": "Haricharan",
+        "profilePic": "/profiles/ML/hb.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/835632366638727168",
           "linkedin": "https://www.linkedin.com/in/karthik-desingu/",
@@ -245,10 +278,10 @@
         }
       },
       {
-        "name": "Krishi Vijayanand",
+        "name": "Anirudh",
         "position": "Deputy Head",
-        "alt": "krishi",
-        "profilePic": "/profiles/ML/kris.jpeg",
+        "alt": "Anirudh",
+        "profilePic": "/profiles/ML/ab.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/764430664949825576",
           "linkedin": "https://www.linkedin.com/in/krishi-vijayanand-51793220b/",
@@ -256,10 +289,21 @@
         }
       },
       {
-        "name": "Anirudh A",
+        "name": "Gayathri",
+        "position": "Deputy Head",
+        "alt": "Gayathri",
+        "profilePic": "/profiles/ML/ggl.jpeg",
+        "socials": {
+          "discord": "https://discordapp.com/users/764430664949825576",
+          "linkedin": "https://www.linkedin.com/in/krishi-vijayanand-51793220b/",
+          "instagram": "https://www.instagram.com/krisiii.811"
+        }
+      },
+      {
+        "name": "Nishaanth R",
         "position": "Member",
-        "alt": "anirudha",
-        "profilePic": "/profiles/ML/anirudhA.jpeg",
+        "alt": "Nishaanth",
+        "profilePic": "/profiles/ML/nr.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/735352325434245220",
           "linkedin": "https://www.linkedin.com/in/anirudh-anand-805761245/",
@@ -267,10 +311,10 @@
         }
       },
       {
-        "name": "Pranith P",
+        "name": "A Bhavana",
         "position": "Member",
-        "alt": "pranith",
-        "profilePic": "/profiles/ML/pranith.jpeg",
+        "alt": "Bhavana",
+        "profilePic": "/profiles/ML/ba.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/727789904611901480",
           "linkedin": "https://www.linkedin.com/in/pranith-%E2%80%8E-6673581b7",
@@ -278,10 +322,10 @@
         }
       },
       {
-        "name": "Haricharan Bharathi",
+        "name": "A Ankitha Reddy",
         "position": "Member",
-        "alt": "haricharan",
-        "profilePic": "/profiles/ML/haricharanb.jpeg",
+        "alt": "Ankitha",
+        "profilePic": "/profiles/ML/aar.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/572426680577163264",
           "linkedin":"https://www.linkedin.com/in/haricharan-bharathi-654a6621a/" ,
@@ -290,10 +334,10 @@
       },
 
       {
-        "name": "Gokul Prakash",
+        "name": "Abhishek R",
         "position": "Member",
-        "alt": "gokul",
-        "profilePic": "/profiles/ML/gokulprakash.jpeg",
+        "alt": "Abhishek",
+        "profilePic": "/profiles/ML/ra.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/708000349234921522",
           "linkedin":"https://www.linkedin.com/in/gokul-r-227326200/" ,
@@ -301,10 +345,10 @@
         }
       },
       {
-        "name": "Varsha Yeshwant",
+        "name": "Y.V.Ojus",
         "position": "Member",
-        "alt": "varsha",
-        "profilePic": "/profiles/ML/varsha2.jpeg",
+        "alt": "Ojus",
+        "profilePic": "/profiles/ML/voy.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/772147084852723782",
           "linkedin": "https://www.linkedin.com/in/varsha-yeshwanth/",
@@ -312,10 +356,10 @@
         }
       },
       {
-        "name": "Subhashree M",
+        "name": "Aishwarya R",
         "position": "Member",
-        "alt": "subha",
-        "profilePic": "/profiles/ML/subha.jpeg",
+        "alt": "Aishwarya",
+        "profilePic": "/profiles/ML/ar.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/756168444432482354",
           "linkedin": "https://www.linkedin.com/in/subhashree-manogaran-2850a9220",
@@ -323,10 +367,21 @@
         }
       },
       {
-        "name": "Anirudh Bhaskar",
+        "name": "Mohith A",
         "position": "Member",
-        "alt": "anirudhb",
-        "profilePic": "/profiles/ML/anirudhb.jpeg",
+        "alt": "Mohith",
+        "profilePic": "/profiles/ML/ma.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/723538532206903367",
+          "linkedin": "https://www.linkedin.com/in/anirudh-bhaskar-086867245/",
+          "instagram": "https://www.instagram.com/anirudhb02"
+        }
+      },
+      {
+        "name": "Shudhesh Velusamy",
+        "position": "Member",
+        "alt": "Shudhesh",
+        "profilePic": "/profiles/ML/sv.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/723538532206903367",
           "linkedin": "https://www.linkedin.com/in/anirudh-bhaskar-086867245/",
@@ -344,10 +399,10 @@
     },
     "members": [
       {
-        "name": "Joseph Amirtharaj",
+        "name": "Deepak Sriram",
         "position": "Head",
-        "alt": "joseph",
-        "profilePic": "/profiles/CP/Josephimmanuel-Amirtharaj.jpeg",
+        "alt": "Deepak",
+        "profilePic": "/profiles/CP/sd.png",
         "socials": {
           "discord": "https://discordapp.com/users/708746945568571452",
           "linkedin": null,
@@ -355,10 +410,10 @@
         }
       },
       {
-        "name": "Harshavardhan Suresh",
+        "name": "Suraj P",
         "position": "Deputy Head",
-        "alt": "harsha",
-        "profilePic": "/profiles/CP/Harshavardhan Suresh.jpeg",
+        "alt": "Suraj",
+        "profilePic": "/profiles/CP/sp.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/787236492845121536",
           "linkedin": "https://www.linkedin.com/in/harshavardhan-suresh-0a8686176/",
@@ -366,10 +421,21 @@
         }
       },
       {
-        "name": "Hariprasad B",
+        "name": "Saravanan J",
+        "position": "Deputy Head",
+        "alt": "Saravanan",
+        "profilePic": "/profiles/CP/sj.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/787236492845121536",
+          "linkedin": "https://www.linkedin.com/in/harshavardhan-suresh-0a8686176/",
+          "instagram": "https://www.instagram.com/black_devil_2k02"
+        }
+      },
+      {
+        "name": "Pranav Moorthi",
         "position": "Member",
-        "alt": "hariprasad",
-        "profilePic": "/profiles/CP/Hariprasad-B.jpeg",
+        "alt": "Pranav",
+        "profilePic": "/profiles/CP/pm.jpeg",
         "socials": {
           "discord":"https://discordapp.com/users/759419975278002197" ,
           "linkedin": "https://www.linkedin.com/in/hariprasad-b-7a6b58206",
@@ -377,10 +443,10 @@
         }
       },
       {
-        "name": "Karthik Raja",
+        "name": "S Harshavardan",
         "position": "Member",
-        "alt": "karthik",
-        "profilePic": "/profiles/CP/Karthikraja.jpeg",
+        "alt": "Harshavardan",
+        "profilePic": "/profiles/CP/hs.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/750980512830586892",
           "linkedin": "https://www.linkedin.com/in/karthik-raja-anandan-87ab5b200/",
@@ -388,10 +454,10 @@
         }
       },
       {
-        "name": "Kiran Raj",
+        "name": "Pradeep KM",
         "position": "Member",
-        "alt": "kiran",
-        "profilePic": "/profiles/CP/Kiranraj.jpeg",
+        "alt": "Pradeep",
+        "profilePic": "/profiles/CP/pkm.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/817327836683042836",
           "linkedin": null,
@@ -399,10 +465,10 @@
         }
       },
       {
-        "name": "Deepak ",
+        "name": "Aswathy AR",
         "position": "Member",
-        "alt": "deepak",
-        "profilePic": "/profiles/CP/Deepak.jpeg",
+        "alt": "Aswathy",
+        "profilePic": "/profiles/CP/aar.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/750758596169433211",
           "linkedin": null,
@@ -410,10 +476,10 @@
         }
       },
       {
-        "name": "Saravanan J",
+        "name": "Shravan Sreeram",
         "position": "Member",
-        "alt": "saravanan",
-        "profilePic": "/profiles/CP/Saravanan.jpeg",
+        "alt": "Shravan",
+        "profilePic": "/profiles/CP/ss.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/759378570437984278",
           "linkedin": "https://www.linkedin.com/in/saravanan-j-2bb2b01bb",
@@ -421,10 +487,10 @@
         }
       },
       {
-        "name": "Suraj P",
+        "name": "S Neha Shanmitha",
         "position": "Member",
-        "alt": "suraj",
-        "profilePic": "/profiles/CP/SurajP.jpeg",
+        "alt": "Neha",
+        "profilePic": "/profiles/CP/sns.jpeg",
         "socials": {
           "discord": "https://discordapp.com/users/731510069979643975",
           "linkedin": null,
@@ -432,10 +498,10 @@
         }
       },
       {
-        "name": "P Rahulram",
+        "name": "Vaishnavi Thummalacheruvu",
         "position": "Member",
-        "alt": "rahul",
-        "profilePic": "/profiles/CP/rahulram.jpeg",
+        "alt": "Vaishnavi",
+        "profilePic": "/profiles/CP/vt.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/731161653856698410",
           "linkedin": "https://www.linkedin.com/in/rahulram-p/",
@@ -443,10 +509,10 @@
         }
       },
       {
-        "name": "Subramanian N",
+        "name": "Danish Sharma",
         "position": "Member",
-        "alt": "subramanian",
-        "profilePic": "/profiles/CP/Subramanian.jpeg",
+        "alt": "Danish",
+        "profilePic": "/profiles/CP/ds.jpg",
         "socials": {
           "discord": "https://discordapp.com/users/700599343366930432",
           "linkedin": "https://www.linkedin.com/in/subramanian-nambi/",
@@ -456,199 +522,328 @@
     ]
   },
   {
-    "title": "Design and\nSocial Media\nTeam",
-    "discord": "@Design/Social Team",
-    "tags": ["socials", "marketing"],
+    "title": "Cyber\nSecurity\nTeam",
+    "discord": "@Cyber Security Team",
+    "tags": ["CyberSec", "CTF"],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
     "members": [
       {
-        "name": "Anjali Anand",
-        "position": "Design Head",
-        "alt": "anjali",
-        "profilePic": "/profiles/DSM/anjali.jpeg",
+        "name": "Jeevesh Krishna Arigala",
+        "position": "Head",
+        "alt": "Jeevesh",
+        "profilePic": "/profiles/CyberSec/jka.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/777926389336506389",
+          "discord": "https://discordapp.com/users/708746945568571452",
           "linkedin": null,
-          "instagram": "https://www.instagram.com/anjalianand1010"
+          "instagram": "https://www.instagram.com/joseph_amirth"
         }
       },
       {
-        "name": "Ananya Kundu",
-        "position": "Social Media Head",
-        "alt": "ananya",
-        "profilePic": "/profiles/DSM/ananya.jpeg",
+        "name": "Dhanya Srinivasan",
+        "position": "Deputy Head",
+        "alt": "Dhanya",
+        "profilePic": "/profiles/CyberSec/ds.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/760497435851358290",
+          "discord": "https://discordapp.com/users/787236492845121536",
+          "linkedin": "https://www.linkedin.com/in/harshavardhan-suresh-0a8686176/",
+          "instagram": "https://www.instagram.com/black_devil_2k02"
+        }
+      },
+      {
+        "name": "Sarath Donepudi",
+        "position": "Deputy Head",
+        "alt": "Sarath",
+        "profilePic": "/profiles/CyberSec/sd.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/787236492845121536",
+          "linkedin": "https://www.linkedin.com/in/harshavardhan-suresh-0a8686176/",
+          "instagram": "https://www.instagram.com/black_devil_2k02"
+        }
+      },
+      {
+        "name": "Ashiq S",
+        "position": "Member",
+        "alt": "Ashiq",
+        "profilePic": "/profiles/CyberSec/sa.jpg",
+        "socials": {
+          "discord":"https://discordapp.com/users/759419975278002197" ,
+          "linkedin": "https://www.linkedin.com/in/hariprasad-b-7a6b58206",
+          "instagram": "https://www.instagram.com/ihariprasadb"
+        }
+      },
+      {
+        "name": "Aathish Sivasubrahmanian",
+        "position": "Member",
+        "alt": "Aathish",
+        "profilePic": "/profiles/CyberSec/as.png",
+        "socials": {
+          "discord": "https://discordapp.com/users/750980512830586892",
+          "linkedin": "https://www.linkedin.com/in/karthik-raja-anandan-87ab5b200/",
+          "instagram": null
+        }
+      },
+      {
+        "name": "Surabhi Kamath",
+        "position": "Member",
+        "alt": "Surabhi",
+        "profilePic": "/profiles/CyberSec/sk.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/817327836683042836",
           "linkedin": null,
-          "instagram": "https://www.instagram.com/malakundu"
+          "instagram": "https://www.instagram.com/kiran_2211_"
         }
       },
       {
-        "name": "Akash Kumar",
-        "position": "Social Media Head",
-        "alt": "Akash",
-        "profilePic": "/profiles/DSM/akashk.jpeg",
+        "name": "Rakshith Subramanian",
+        "position": "Member",
+        "alt": "Rakshith",
+        "profilePic": "/profiles/CyberSec/rs.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/690967356943368274",
+          "discord": "https://discordapp.com/users/750758596169433211",
           "linkedin": null,
-          "instagram": "https://www.instagram.com/awkaaash"
+          "instagram": "https://www.instagram.com/deepak_sriram"
         }
       },
       {
-        "name": "Gunanicaa Arun",
+        "name": "Vidisha Desai",
         "position": "Member",
-        "alt": "gunanicca",
-        "profilePic": "/profiles/DSM/gunanicaa.jpeg",
+        "alt": "Vidisha",
+        "profilePic": "/profiles/CyberSec/vd.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/761939617670103050",
-          "linkedin": "www.linkedin.com/in/gunanicaa-arun",
-          "instagram": "https://www.instagram.com/gunanicaa_arun"
+          "discord": "https://discordapp.com/users/759378570437984278",
+          "linkedin": "https://www.linkedin.com/in/saravanan-j-2bb2b01bb",
+          "instagram": "https://www.instagram.com/saravanan_js_3"
         }
       },
       {
-        "name": "K.Poornima ",
+        "name": "Gayathri Venkatesan",
         "position": "Member",
-        "alt": "poornima",
-        "profilePic": "/profiles/DSM/PoornimaK.jpeg",
+        "alt": "Gayathri",
+        "profilePic": "/profiles/CyberSec/gv.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/791174460353937419",
+          "discord": "https://discordapp.com/users/731510069979643975",
           "linkedin": null,
-          "instagram": "https://www.instagram.com/poornimaawww"
-        }
-      },
-      
-      {
-        "name": "Supraja Vaidhyanathan",
-        "position": "Member",
-        "alt": "suprajav",
-        "profilePic": "/profiles/DSM/suprajav.jpeg",
-        "socials": {
-          "discord": "https://discordapp.com/users/761859220030226462",
-          "linkedin": "https://www.linkedin.com/in/supraja-vaidhyanathan",
-          "instagram": "https://www.instagram.com/_kairosclere_"
+          "instagram": "https://www.instagram.com/suraj_.10"
         }
       },
       {
-        "name": "Daawood ",
+        "name": "Sanjjit S",
         "position": "Member",
-        "alt": "daawood",
-        "profilePic": "/profiles/DSM/Daawood.jpeg",
+        "alt": "Sanjjit",
+        "profilePic": "/profiles/CyberSec/ss.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/754722771698843808",
-          "linkedin": "https://www.linkedin.com/in/daawood-shadhuly-a621617b",
-          "instagram": "https://www.instagram.com/thewoodchadli"
+          "discord": "https://discordapp.com/users/731161653856698410",
+          "linkedin": "https://www.linkedin.com/in/rahulram-p/",
+          "instagram": "https://www.instagram.com/rahul._.appu"
         }
       },
       {
-        "name": "Sanjeevini R",
+        "name": "Ramdhanush V",
         "position": "Member",
-        "alt": "sanjeevini",
-        "profilePic": "/profiles/DSM/Sanjeevini.jpeg",
+        "alt": "Ramdhanush",
+        "profilePic": "/profiles/CyberSec/rv.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/909046895828168764",
-          "linkedin": "https://www.linkedin.com/in/sanjeevini-rakesh-7487a9225",
-          "instagram": "https://www.instagram.com/san_ju_yk"
-        }
-      },
-      
-      {
-        "name": "Ayshwarya B",
-        "position": "Member",
-        "alt": "ayshwarya ",
-        "profilePic": "/profiles/DSM/Ayshwarya.jpeg",
-        "socials": {
-          "discord": null,
-          "linkedin": "https://www.linkedin.com/in/ayshwaryabadhrinath",
-          "instagram": "https://www.instagram.com/__ayshu__05"
+          "discord": "https://discordapp.com/users/700599343366930432",
+          "linkedin": "https://www.linkedin.com/in/subramanian-nambi/",
+          "instagram": null
         }
       },
       {
-        "name": "Y.V. Ojus",
+        "name": "Rosan D",
         "position": "Member",
-        "alt": "ojus",
-        "profilePic": "/profiles/DSM/Ojus.jpeg",
+        "alt": "Rosan",
+        "profilePic": "/profiles/CyberSec/rd.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/583540157643489280",
-          "linkedin":"www.linkedin.com/in/y-v-ojus-70270b23b",
+          "discord": "https://discordapp.com/users/700599343366930432",
+          "linkedin": "https://www.linkedin.com/in/subramanian-nambi/",
+          "instagram": null
+        }
+      },
+      {
+        "name": "Sai Deshna Budideti",
+        "position": "Member",
+        "alt": "Deshna",
+        "profilePic": "/profiles/CyberSec/sdb.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/700599343366930432",
+          "linkedin": "https://www.linkedin.com/in/subramanian-nambi/",
           "instagram": null
         }
       }
     ]
   },
   {
-    "title": "Open Source\nTeam",
-    "discord": "@Project-Moderators",
-    "tags": ["full stack", "github"],
+    "title": "Design\nTeam",
+    "discord": "@Design/Social Team",
+    "tags": ["Design", "ux"],
     "bgColorStyle": {
       "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
     },
     "members": [
       {
-        "name": "Nithin BK",
-        "position": "Member",
-        "alt": "nithin",
-        "profilePic": "/profiles/OS/Nithin.jpeg",
+        "name": "Akash Kumar",
+        "position": "Head",
+        "alt": "Akash",
+        "profilePic": "/profiles/DSM/Design/ak.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/756511707228143646",
-          "linkedin": "https://www.linkedin.com/in/thenithinbalaji/",
-          "instagram": "https://www.instagram.com/thenithinbalaji"
-        }
-      },
-      {
-        "name": "Supraja Sridhar",
-        "position": "Member",
-        "alt": "suprajas",
-        "profilePic": "/profiles/OS/Supraja.jpeg",
-        "socials": {
-          "discord": "https://discordapp.com/users/755814726411485295",
-          "linkedin": "www.linkedin.com/in/suprajasridh",
-          "instagram": "https://www.instagram.com/sups_24"
-        }
-      },
-      {
-        "name": "Aathish Sivasubrahmanian",
-        "position": "Member",
-        "alt": "aathish",
-        "profilePic": "/profiles/OS/Aathish.jpeg",
-        "socials": {
-          "discord": "https://discordapp.com/users/325239504854188032",
-          "linkedin": "https://www.linkedin.com/in/aathish-sivasubrahmanian-932462227",
-          "instagram": "https://www.instagram.com/aathish04"
-        }
-      },
-      {
-        "name": "Akash R",
-        "position": "Member",
-        "alt": "akashr",
-        "profilePic": "/profiles/OS/AkashR.jpeg",
-        "socials": {
-          "discord": "https://discordapp.com/users/723147774534877246",
+          "discord": "https://discordapp.com/users/708746945568571452",
           "linkedin": null,
-          "instagram": "https://www.instagram.com/akash._.77"
+          "instagram": "https://www.instagram.com/joseph_amirth"
         }
       },
       {
-        "name": "Charumathi P",
+        "name": "Tejshree S",
         "position": "Member",
-        "alt": "charu",
-        "profilePic": "/profiles/OS/Charumathi.jpeg",
+        "alt": "Tejshree",
+        "profilePic": "/profiles/DSM/Design/ts.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/900638659592728577",
-          "linkedin": "https://www.linkedin.com/in/charumathi-p/",
-          "instagram": "https://www.instagram.com/charumathip21"
+          "discord":"https://discordapp.com/users/759419975278002197" ,
+          "linkedin": "https://www.linkedin.com/in/hariprasad-b-7a6b58206",
+          "instagram": "https://www.instagram.com/ihariprasadb"
         }
       },
       {
-        "name": "Themozhi J",
+        "name": "S.Sanjnaa",
         "position": "Member",
-        "alt": "themozhi",
-        "profilePic": "/profiles/OS/themozhi.jpeg",
+        "alt": "Sanjnaa",
+        "profilePic": "/profiles/DSM/Design/ss.jpg",
         "socials": {
-          "discord": "https://discordapp.com/users/1001554189895356516",
-          "linkedin": "https://www.linkedin.com/in/themozhi-j-3103a8214",
-          "instagram": "https://www.instagram.com/_.beyond._.infinity1212"
+          "discord": "https://discordapp.com/users/750980512830586892",
+          "linkedin": "https://www.linkedin.com/in/karthik-raja-anandan-87ab5b200/",
+          "instagram": null
+        }
+      },
+      {
+        "name": "Karunanidhi",
+        "position": "Member",
+        "alt": "Karunanidhi",
+        "profilePic": "/profiles/DSM/Design/ka.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/817327836683042836",
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/kiran_2211_"
+        }
+      },
+      {
+        "name": "Sarumathi.K",
+        "position": "Member",
+        "alt": "Sarumathi",
+        "profilePic": "/profiles/DSM/Design/sk.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/750758596169433211",
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/deepak_sriram"
+        }
+      },
+      {
+        "name": "Kathir Kaman A",
+        "position": "Member",
+        "alt": "Kathir",
+        "profilePic": "/profiles/DSM/Design/kka.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/759378570437984278",
+          "linkedin": "https://www.linkedin.com/in/saravanan-j-2bb2b01bb",
+          "instagram": "https://www.instagram.com/saravanan_js_3"
+        }
+      },
+      {
+        "name": "Varshini Venkatesh",
+        "position": "Member",
+        "alt": "Varshini",
+        "profilePic": "/profiles/DSM/Design/vv.png",
+        "socials": {
+          "discord": "https://discordapp.com/users/731510069979643975",
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/suraj_.10"
+        }
+      },
+      {
+        "name": "S Kaushik Ananth Kumar",
+        "position": "Member",
+        "alt": "Kaushik",
+        "profilePic": "/profiles/DSM/Design/kaks.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/731161653856698410",
+          "linkedin": "https://www.linkedin.com/in/rahulram-p/",
+          "instagram": "https://www.instagram.com/rahul._.appu"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Social\nMedia\nTeam",
+    "discord": "@Design/Social Team",
+    "tags": ["Marketing", "PR"],
+    "bgColorStyle": {
+      "background": "linear-gradient(90deg, #2a2a72, #2d3986, #2f499a, #2e5aae, #2c6ac2, #267bd6, #1b8de9, #009ffd)"
+    },
+    "members": [
+      {
+        "name": "Ananya Kundu",
+        "position": "Head",
+        "alt": "Ananya",
+        "profilePic": "/profiles/DSM/Social/ak.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/708746945568571452",
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/joseph_amirth"
+        }
+      },
+      {
+        "name": "K. Poornima",
+        "position": "Member",
+        "alt": "Poornima",
+        "profilePic": "/profiles/DSM/Social/pk.jpg",
+        "socials": {
+          "discord":"https://discordapp.com/users/759419975278002197" ,
+          "linkedin": "https://www.linkedin.com/in/hariprasad-b-7a6b58206",
+          "instagram": "https://www.instagram.com/ihariprasadb"
+        }
+      },
+      {
+        "name": "Keerthan V S",
+        "position": "Member",
+        "alt": "Keerthan",
+        "profilePic": "/profiles/DSM/Social/kv.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/750980512830586892",
+          "linkedin": "https://www.linkedin.com/in/karthik-raja-anandan-87ab5b200/",
+          "instagram": null
+        }
+      },
+      {
+        "name": "B Ayshwarya",
+        "position": "Member",
+        "alt": "Ayshwarya",
+        "profilePic": "/profiles/DSM/Social/ab.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/817327836683042836",
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/kiran_2211_"
+        }
+      },
+      {
+        "name": "R.Nithyasri",
+        "position": "Member",
+        "alt": "Nithyasri",
+        "profilePic": "/profiles/DSM/Social/nr.jpg",
+        "socials": {
+          "discord": "https://discordapp.com/users/750758596169433211",
+          "linkedin": null,
+          "instagram": "https://www.instagram.com/deepak_sriram"
+        }
+      },
+      {
+        "name": "Mohit Sandeep",
+        "position": "Member",
+        "alt": "Mohit",
+        "profilePic": "/profiles/DSM/Social/ms.jpeg",
+        "socials": {
+          "discord": "https://discordapp.com/users/759378570437984278",
+          "linkedin": "https://www.linkedin.com/in/saravanan-j-2bb2b01bb",
+          "instagram": "https://www.instagram.com/saravanan_js_3"
         }
       }
     ]
