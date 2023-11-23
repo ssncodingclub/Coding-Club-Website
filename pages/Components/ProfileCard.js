@@ -24,13 +24,7 @@ const ProfileCard = ({
           </div>
           <header className={styles.card_header}>
             <h2 className={theme ? styles.profile_name_light : styles.profile_name}>
-              {
-                name.split(' ').map((word, i) => {
-                  return (<>
-                    {word}<br key={i} />
-                  </>);
-                })
-              }
+              <DisplayName name={name} />
             </h2>
             <div className={styles.profile_subtitle}>{position}</div>
           </header>
@@ -72,6 +66,20 @@ const ProfileCard = ({
           </div>
         </div>
       </article>
+    </>
+  );
+}
+
+const DisplayName = ({ name }) => {
+  const split = name.split(' ');
+
+  const middleIndex = Math.floor(split.length / 2);
+  const firstPart = split.slice(0, middleIndex).join(" ");
+  const secondPart = split.slice(middleIndex).join(" ");
+
+  return (
+    <>
+      {firstPart}<br />{secondPart}
     </>
   );
 }
