@@ -343,6 +343,10 @@
   margin: auto;
 }
 
+.infoDiv{
+  padding-top:100px;
+}
+
 .joinUsButton_light {
   display: block;
   width: 308px;

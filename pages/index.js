@@ -65,7 +65,7 @@ export default function Home(props) {
             </a>
           </div>
         </main>
-        <div id="info">
+        <div id="info" className={styles.infoDiv}>
           <Container className={styles.infoContainer}>
             <Row>
               {cardDetails.map((cardInfo, i) => {
